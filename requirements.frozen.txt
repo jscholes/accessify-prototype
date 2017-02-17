@@ -1,0 +1,2 @@
+six==1.10.0
+wxPython-Phoenix==3.0.3.dev2828+929a8af
