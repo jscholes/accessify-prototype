@@ -21,6 +21,8 @@ class MainWindow(wx.Frame):
             wx.NewId(): PlaybackButton('&Play/Pause', spotify.play_pause),
             wx.NewId(): PlaybackButton('P&revious', spotify.previous_track),
             wx.NewId(): PlaybackButton('&Next', spotify.next_track),
+            wx.NewId(): PlaybackButton('Re&wind', spotify.seek_backwards),
+            wx.NewId(): PlaybackButton('&Fast Forward', spotify.seek_forwards),
         }
         for id, button in self.buttons.items():
             btn = wx.Button(self.panel, id, button.label)

@@ -9,6 +9,8 @@ SPOTIFY_WINDOW_CLASS = 'SpotifyMainWindow'
 CMD_PLAY_PAUSE = 114
 CMD_PREV_TRACK = 116
 CMD_NEXT_TRACK = 115
+CMD_SEEK_BACKWARD = 118
+CMD_SEEK_FORWARD = 117
 CMD_VOLUME_UP = 121
 CMD_VOLUME_DOWN = 122
 
@@ -23,6 +25,14 @@ def previous_track():
 
 def next_track():
     send_command(CMD_NEXT_TRACK)
+
+
+def seek_backwards():
+    send_command(CMD_SEEK_BACKWARD)
+
+
+def seek_forwards():
+    send_command(CMD_SEEK_FORWARD)
 
 
 def decrease_volume():
