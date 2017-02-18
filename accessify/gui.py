@@ -15,7 +15,6 @@ LABEL_FAST_FORWARD = '&Fast Forward'
 LABEL_INCREASE_VOLUME = '&Increase Volume'
 LABEL_DECREASE_VOLUME = '&Decrease Volume'
 
-
 PlaybackCommand = namedtuple('PlaybackCommand', ['label', 'func', 'hotkey', 'show_as_button'])
 
 
