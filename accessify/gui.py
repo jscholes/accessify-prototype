@@ -7,32 +7,41 @@ import spotify
 
 WINDOW_TITLE = 'Accessify'
 
-PlaybackButton = namedtuple('PlaybackButton', ['label', 'func'])
+PlaybackCommand = namedtuple('PlaybackCommand', ['label', 'func', 'hotkey', 'show_as_button'])
 
 
 class MainWindow(wx.Frame):
     def __init__(self, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
         self.panel = wx.Panel(self)
-        self.create_buttons()
-
-    def create_buttons(self):
-        self.buttons = {
-            wx.NewId(): PlaybackButton('&Play/Pause', spotify.play_pause),
-            wx.NewId(): PlaybackButton('P&revious', spotify.previous_track),
-            wx.NewId(): PlaybackButton('&Next', spotify.next_track),
-            wx.NewId(): PlaybackButton('Re&wind', spotify.seek_backwards),
-            wx.NewId(): PlaybackButton('&Fast Forward', spotify.seek_forwards),
+        self.commands = {
+            wx.NewId(): PlaybackCommand('P&lay/Pause', spotify.play_pause, 'Space', True),
+            wx.NewId(): PlaybackCommand('P&revious', spotify.previous_track, 'Ctrl+Left', True),
+            wx.NewId(): PlaybackCommand('&Next', spotify.next_track, 'Ctrl+Right', True),
+            wx.NewId(): PlaybackCommand('Re&wind', spotify.seek_backwards, 'Shift+Left', True),
+            wx.NewId(): PlaybackCommand('&Fast Forward', spotify.seek_forwards, 'Shift+Right', True),
+            wx.NewId(): PlaybackCommand('&Increase Volume', spotify.increase_volume, 'Ctrl+Up', False),
+            wx.NewId(): PlaybackCommand('&Decrease Volume', spotify.decrease_volume, 'Ctrl+Down', False),
         }
-        for id, button in self.buttons.items():
-            btn = wx.Button(self.panel, id, button.label)
-            btn.Bind(wx.EVT_BUTTON, self.onButtonPress)
+        self.setup_commands(self.commands)
 
-    def onButtonPress(self, event):
+    def setup_commands(self, command_dict):
+        playback_menu = wx.Menu()
+        for id, command in command_dict.items():
+            if command.show_as_button:
+                btn = wx.Button(self.panel, id, command.label)
+                btn.Bind(wx.EVT_BUTTON, self.onPlaybackCommand)
+            playback_menu.Append(id, '{0}\t{1}'.format(command.label, command.hotkey))
+            self.Bind(wx.EVT_MENU, self.onPlaybackCommand)
+        menu_bar = wx.MenuBar()
+        menu_bar.Append(playback_menu, '&Playback')
+        self.SetMenuBar(menu_bar)
+
+    def onPlaybackCommand(self, event):
         id = event.GetId()
-        button = self.buttons[id]
+        command = self.commands[id]
         try:
-            button.func()
+            command.func()
         except spotify.WindowNotFoundError:
             show_error(self, 'Spotify doesn\'t seem to be running!')
         except spotify.CommandError as e:
