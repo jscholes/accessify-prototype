@@ -52,8 +52,6 @@ class MainWindow(wx.Frame):
             command.func()
         except spotify.WindowNotFoundError:
             show_error(self, 'Spotify doesn\'t seem to be running!')
-        except spotify.CommandError as e:
-            show_error(self, 'Error while sending command to Spotify.  Error code: {0}'.format(e.result))
 
 
 def show_error(parent, message):
