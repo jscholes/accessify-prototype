@@ -42,7 +42,7 @@ def send_command(command_id):
         raise CommandError(result=result)
 
 
-class SpotifyWindowNotFoundError(Exception):
+class WindowNotFoundError(Exception):
     """Raised when the HWND of the Spotify main window cannot be found."""
 
 
