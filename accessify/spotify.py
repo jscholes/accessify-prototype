@@ -47,17 +47,8 @@ def send_command(command_id):
     hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
     if hwnd == 0:
         raise SpotifyWindowNotFoundError
-    result = send_message(hwnd, WM_COMMAND, command_id, 0)
-    if result != 0:
-        raise CommandError(result=result)
+    send_message(hwnd, WM_COMMAND, command_id, 0)
 
 
 class WindowNotFoundError(Exception):
     """Raised when the HWND of the Spotify main window cannot be found."""
-
-
-class CommandError(Exception):
-    """Raised when sending a message to the Spotify window does not complete successfully."""
-    def __init__(self, *args, **kwargs):
-        self.result = kwargs.pop(result)
-        super().__init__(*args, **kwargs)
