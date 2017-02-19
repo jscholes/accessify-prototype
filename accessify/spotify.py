@@ -1,6 +1,13 @@
 from ctypes import windll
+# TODO: Use ujson for faster JSON processing
+import json
+import random
+import string
 
 import psutil
+import requests
+
+requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
 
 
 WM_COMMAND = 0x111
@@ -10,6 +17,7 @@ send_message = windll.User32.SendMessageW
 SPOTIFY_WINDOW_CLASS = 'SpotifyMainWindow'
 WEB_HELPER_PROCESS = 'SpotifyWebHelper.exe'
 SPOTIFY_PROCESS = 'Spotify.exe'
+SPOTIFY_OPEN_TOKEN_URL = 'https://open.spotify.com/token'
 
 CMD_PLAY_PAUSE = 114
 CMD_PREV_TRACK = 116
@@ -73,6 +81,66 @@ def get_web_helper_port():
     else:
         connections = sorted(helper_process.connections(), key=lambda conn: conn.laddr[1])
         return connections[0].laddr[1]
+
+
+class RemoteBridge:
+    """
+    A Python interface to the remote bridge services hosted by the Spotify Web Helper.
+    """
+
+    def __init__(self, port):
+        self._port = port
+        self._session = requests.Session()
+        self._session.headers.update({'Origin': 'https://open.spotify.com'})
+        self._session.verify = False
+        # These are lazy loaded when they're needed
+        self._hostname = None
+        self._csrf_token = None
+        self._oauth_token = None
+
+    def get_status(self):
+        return self.remote_request('status')
+
+    def play_uri(self, uri, context=None):
+        params = {
+            'uri': uri,
+        }
+        if context is not None:
+            params.update(context=context)
+        else:
+            params.update(context=uri)
+        return self.remote_request('play', params=params)
+
+    def remote_request(self, endpoint, params=None):
+        if self._hostname is None:
+            self._hostname = self.generate_hostname()
+        if self._csrf_token is None:
+            self._csrf_token = self.get_csrf_token()
+        if self._oauth_token is None:
+            self._oauth_token = self.get_oauth_token()
+        request_url = 'https://{0}:{1}/remote/{2}.json'.format(self._hostname, self._port, endpoint)
+        request_params = {
+            'oauth': self._oauth_token,
+            'csrf': self._csrf_token,
+        }
+        if params is not None:
+            request_params.update(params)
+        return self._session.get(request_url, params=request_params).json()
+
+    def generate_hostname(self):
+        subdomain = ''.join(random.choice(string.ascii_lowercase) for x in range(10))
+        return '{0}.spotilocal.com'.format(subdomain)
+
+    def get_csrf_token(self):
+        url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._hostname, self._port)
+        response = self._session.get(url)
+        data = response.json()
+        return data['token']
+
+    def get_oauth_token(self):
+        response = self._session.get(SPOTIFY_OPEN_TOKEN_URL)
+        data = response.json()
+        return data['t']
 
 
 class SpotifyNotRunningError(Exception):
