@@ -98,8 +98,15 @@ class RemoteBridge:
         self._csrf_token = None
         self._oauth_token = None
 
-    def get_status(self):
-        return self.remote_request('status')
+    def get_status(self, return_after=None):
+        if return_after is not None:
+            params = {
+                'returnafter': return_after,
+                'returnon': 'login,logout,play,pause,error,ap',
+            }
+            return self.remote_request('status', params=params)
+        else:
+            return self.remote_request('status')
 
     def play_uri(self, uri, context=None):
         params = {
