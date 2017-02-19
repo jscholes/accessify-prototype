@@ -1,6 +1,5 @@
 from collections import namedtuple
 import threading
-import time
 
 import wx
 
@@ -63,10 +62,11 @@ class MainWindow(wx.Frame):
 
 def connect_to_spotify(status_callback):
     remote = spotify.RemoteBridge(spotify.get_web_helper_port())
+    status = remote.get_status()
+    status_callback(status)
     while True:
-        status = remote.get_status()
+        status = remote.get_status(return_after=60)
         status_callback(status)
-        time.sleep(0.1)
 
 
 def show_error(parent, message):
