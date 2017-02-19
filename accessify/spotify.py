@@ -1,11 +1,16 @@
 from ctypes import windll
 
+import psutil
+
 
 WM_COMMAND = 0x111
 find_window = windll.User32.FindWindowW
 send_message = windll.User32.SendMessageW
 
 SPOTIFY_WINDOW_CLASS = 'SpotifyMainWindow'
+WEB_HELPER_PROCESS = 'SpotifyWebHelper.exe'
+SPOTIFY_PROCESS = 'Spotify.exe'
+
 CMD_PLAY_PAUSE = 114
 CMD_PREV_TRACK = 116
 CMD_NEXT_TRACK = 115
@@ -48,6 +53,26 @@ def send_command(command_id):
     if hwnd == 0:
         raise SpotifyNotRunningError
     send_message(hwnd, WM_COMMAND, command_id, 0)
+
+
+def get_web_helper_port():
+    """
+    Attempt to find the HTTPS port that the SpotifyWebHelper process is listening on.
+
+    If SpotifyWebHelper.exe is not running, raises SpotifyNotRunningError.  Otherwise returns the port number.
+    """
+    # TODO: Find the listening port for Spotify.exe if the Web Helper isn't running
+    helper_process = None
+    for process in psutil.process_iter():
+        if process.name() == WEB_HELPER_PROCESS:
+            helper_process = process
+            break
+
+    if helper_process is None:
+        raise SpotifyNotRunningError
+    else:
+        connections = sorted(helper_process.connections(), key=lambda conn: conn.laddr[1])
+        return connections[0].laddr[1]
 
 
 class SpotifyNotRunningError(Exception):
