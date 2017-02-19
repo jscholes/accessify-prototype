@@ -50,7 +50,7 @@ class MainWindow(wx.Frame):
         command = self.commands[id]
         try:
             command.func()
-        except spotify.WindowNotFoundError:
+        except spotify.SpotifyNotRunningError:
             show_error(self, 'Spotify doesn\'t seem to be running!')
 
 
