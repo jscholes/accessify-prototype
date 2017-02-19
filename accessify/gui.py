@@ -1,4 +1,6 @@
 from collections import namedtuple
+import threading
+import time
 
 import wx
 
@@ -53,6 +55,19 @@ class MainWindow(wx.Frame):
         except spotify.SpotifyNotRunningError:
             show_error(self, 'Spotify doesn\'t seem to be running!')
 
+    def onSpotifyStatus(self, status_dict):
+        track_node = status_dict['track']
+        current_track = '{0} - {1}'.format(track_node['artist_resource']['name'], track_node['track_resource']['name'])
+        wx.CallAfter(self.SetTitle, '{0}: {1}'.format(WINDOW_TITLE, current_track))
+
+
+def connect_to_spotify(status_callback):
+    remote = spotify.RemoteBridge(spotify.get_web_helper_port())
+    while True:
+        status = remote.get_status()
+        status_callback(status)
+        time.sleep(0.1)
+
 
 def show_error(parent, message):
     wx.MessageBox(message, 'Error', parent=parent, style=wx.ICON_ERROR)
@@ -61,5 +76,6 @@ def show_error(parent, message):
 if __name__ == '__main__':
     app = wx.App()
     window = MainWindow()
+    threading.Thread(daemon=True, target=connect_to_spotify, args=(window.onSpotifyStatus,)).start()
     window.Show()
     app.MainLoop()
