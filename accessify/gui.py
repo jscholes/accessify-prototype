@@ -5,6 +5,7 @@ import spotify
 
 WINDOW_TITLE = 'Accessify'
 MENU_PLAYBACK = '&Playback'
+LABEL_URI = 'Spoti&fy URI'
 ID_PLAY_PAUSE = wx.NewId()
 LABEL_PLAY_PAUSE = 'P&lay'
 ID_PREVIOUS = wx.NewId()
@@ -39,6 +40,9 @@ class MainWindow(wx.Frame):
         self.subscribe_to_spotify_events()
 
     def setup_commands(self, command_dict):
+        uri_label = wx.StaticText(self.panel, -1, LABEL_URI)
+        self.uri_field = wx.TextCtrl(self.panel, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
+        self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.onUriEntered)
         playback_menu = wx.Menu()
         for id, command in command_dict.items():
             if command.show_as_button:
@@ -58,6 +62,14 @@ class MainWindow(wx.Frame):
         event_manager.subscribe(spotify.EVENT_PLAY, self.onPlay)
         event_manager.subscribe(spotify.EVENT_PAUSE, self.onPause)
         event_manager.start()
+
+    def onUriEntered(self, event):
+        uri = self.uri_field.GetValue()
+        if uri:
+            if uri.startswith('spotify:'):
+                self._spotify_remote.play_uri(uri)
+            else:
+                show_error(self, 'Not a valid Spotify URI.')
 
     def onPlaybackCommand(self, event):
         id = event.GetId()
