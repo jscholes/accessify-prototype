@@ -2,6 +2,7 @@ from collections import defaultdict
 from ctypes import windll
 # TODO: Use ujson for faster JSON processing
 import json
+import queue
 import random
 import string
 import threading
@@ -169,6 +170,28 @@ class EventManager(threading.Thread):
         super().__init__(*args, **kwargs)
         self.setDaemon(True)
         self._remote_bridge = remote_bridge
+        self._event_queue = queue.Queue()
+        self._event_consumer = EventConsumer(self._event_queue)
+
+    def subscribe(self, event_type, callback):
+        self._event_consumer.subscribe(event_type, callback)
+
+    def run(self):
+        self._event_consumer.start()
+        # Get initial status
+        status = self._remote_bridge.get_status()
+        self._event_queue.put(status)
+        # Then poll for changes
+        while True:
+            status = self._remote_bridge.get_status(return_after=60)
+            self._event_queue.put(status)
+
+
+class EventConsumer(threading.Thread):
+    def __init__(self, event_queue, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.setDaemon(True)
+        self._event_queue = event_queue
         self._callbacks = defaultdict(lambda: [])
         self._current_track = None
         self._playback_state = STATE_UNDETERMINED
@@ -178,12 +201,8 @@ class EventManager(threading.Thread):
         self._callbacks[event_type].append(callback)
 
     def run(self):
-        # Get initial status
-        status = self._remote_bridge.get_status()
-        self._process_update(status)
-        # Then poll for changes
         while True:
-            status = self._remote_bridge.get_status(return_after=60)
+            status = self._event_queue.get()
             self._process_update(status)
 
     def _process_update(self, status_dict):
