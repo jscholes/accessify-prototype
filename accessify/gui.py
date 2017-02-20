@@ -22,8 +22,9 @@ LABEL_DECREASE_VOLUME = '&Decrease Volume'
 
 
 class MainWindow(wx.Frame):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, spotify_remote, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
+        self._spotify_remote = spotify_remote
         self.panel = wx.Panel(self)
         self.commands = {
             ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.play_pause, 'Space', True),
@@ -35,6 +36,7 @@ class MainWindow(wx.Frame):
             ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.decrease_volume, 'Ctrl+Down', False),
         }
         self.setup_commands(self.commands)
+        self.subscribe_to_spotify_events()
 
     def setup_commands(self, command_dict):
         playback_menu = wx.Menu()
@@ -49,6 +51,13 @@ class MainWindow(wx.Frame):
         menu_bar = wx.MenuBar()
         menu_bar.Append(playback_menu, MENU_PLAYBACK)
         self.SetMenuBar(menu_bar)
+
+    def subscribe_to_spotify_events(self):
+        event_manager = self._spotify_remote.event_manager
+        event_manager.subscribe(spotify.EVENT_TRACK_CHANGE, self.onTrackChange)
+        event_manager.subscribe(spotify.EVENT_PLAY, self.onPlay)
+        event_manager.subscribe(spotify.EVENT_PAUSE, self.onPause)
+        event_manager.start()
 
     def onPlaybackCommand(self, event):
         id = event.GetId()
@@ -94,11 +103,7 @@ def show_error(parent, message):
 
 if __name__ == '__main__':
     app = wx.App()
-    window = MainWindow()
     remote = spotify.RemoteBridge(spotify.get_web_helper_port())
-    remote.event_manager.subscribe(spotify.EVENT_TRACK_CHANGE, window.onTrackChange)
-    remote.event_manager.subscribe(spotify.EVENT_PLAY, window.onPlay)
-    remote.event_manager.subscribe(spotify.EVENT_PAUSE, window.onPause)
-    remote.event_manager.start()
+    window = MainWindow(remote)
     window.Show()
     app.MainLoop()
