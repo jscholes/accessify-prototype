@@ -65,6 +65,7 @@ class MainWindow(wx.Frame):
 
     def onUriEntered(self, event):
         uri = self.uri_field.GetValue()
+        self.uri_field.Clear()
         if uri:
             if uri.startswith('spotify:'):
                 self._spotify_remote.play_uri(uri)
