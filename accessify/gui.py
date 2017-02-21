@@ -68,6 +68,13 @@ class MainWindow(wx.Frame):
         event_manager.subscribe(spotify.EVENT_ERROR, self.onError)
         event_manager.start()
 
+    def set_current_track(self, track):
+        self._current_track = track
+        if self._current_track is None:
+            self.SetTitle(WINDOW_TITLE)
+        else:
+            self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(self._current_track)))
+
     def onUriEntered(self, event):
         uri = self.uri_field.GetValue()
         self.uri_field.Clear()
@@ -84,8 +91,7 @@ class MainWindow(wx.Frame):
         self._spotify_remote.send_command(command.command_id)
 
     def onTrackChange(self, track):
-        current_track = '{0} - {1}'.format(track.artist.name, track.name).replace('&', 'and')
-        wx.CallAfter(self.SetTitle, current_track)
+        wx.CallAfter(self.set_current_track, track)
 
     def onPause(self):
         wx.CallAfter(self.commands[ID_PLAY_PAUSE].update_label, 'P&lay')
@@ -124,6 +130,10 @@ class PlaybackCommand:
 
 def show_error(parent, message):
     wx.CallAfter(wx.MessageBox, message, 'Error', parent=parent, style=wx.ICON_ERROR)
+
+
+def format_track_display(track):
+    return '{0} - {1}'.format(track.artist.name, track.name).replace('&', 'and')
 
 
 if __name__ == '__main__':
