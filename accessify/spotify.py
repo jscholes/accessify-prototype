@@ -1,5 +1,4 @@
 from collections import defaultdict
-from ctypes import windll
 # TODO: Use ujson for faster JSON processing
 import json
 import queue
@@ -8,6 +7,7 @@ import socket
 import string
 import threading
 import time
+from ctypes import windll
 
 import psutil
 import requests
@@ -45,6 +45,32 @@ EVENT_TRACK_CHANGE = 3
 STATE_UNDETERMINED = 0
 STATE_PLAYING = 1
 STATE_PAUSED = 2
+
+spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
+    '4001': 'Unknown method',
+    '4002': 'Error parsing request',
+    '4003': 'Unknown service',
+    '4004': 'Service not responding',
+    '4102': 'Invalid OAuthToken',
+    '4103': 'Expired OAuth token',
+    '4104': 'OAuth token not verified',
+    '4105': 'Token verification denied too many requests',
+    '4106': 'Token verification timeout',
+    '4107': 'Invalid Csrf token',
+    '4108': 'OAuth token is invalid for current user',
+    '4109': 'Invalid Csrf path',
+    '4110': 'No user logged in',
+    '4111': 'Invalid scope',
+    '4112': 'Csrf challenge failed',
+    '4201': 'Upgrade to premium',
+    '4202': 'Upgrade to premium or wait',
+    '4203': 'Billing failed',
+    '4204': 'Technical error',
+    '4205': 'Commercial is playing',
+    '4301': 'Content is unavailable but can be purchased',
+    '4302': 'Premium only content',
+    '4303': 'Content unavailable',
+})
 
 
 def get_web_helper_port():
@@ -128,7 +154,12 @@ class RemoteBridge:
         }
         if params is not None:
             request_params.update(params)
-        return self._session.get(request_url, params=request_params).json()
+        response = self._session.get(request_url, params=request_params).json()
+        if 'error' in response:
+            error_code = response['error']['type']
+            error_description = spotify_remote_errors[error_code]
+            raise SpotifyRemoteError(error_code, error_description)
+        return response
 
     def generate_hostname(self):
         subdomain = ''.join(random.choice(string.ascii_lowercase) for x in range(10))
@@ -283,3 +314,12 @@ def deserialize_track(track_dict):
 
 class SpotifyNotRunningError(Exception):
     """Raised when the HWND of the Spotify main window cannot be found."""
+
+
+class SpotifyRemoteError(Exception):
+    """Raised when the Spotify remote service returns an error code."""
+
+    def __init__(self, error_code, error_description, *args, **kwargs):
+        self.error_code = error_code
+        self.error_description = error_description
+
