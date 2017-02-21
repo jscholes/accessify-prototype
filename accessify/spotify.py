@@ -127,9 +127,16 @@ class RemoteBridge:
                 'returnafter': return_after,
                 'returnon': 'login,logout,play,pause,error,ap',
             }
-            return self.remote_request('status', params=params, hostname=hostname)
+            response = self.remote_request('status', params=params, hostname=hostname)
         else:
-            return self.remote_request('status', hostname=hostname)
+            response = self.remote_request('status', hostname=hostname)
+        # Do we have all the metadata we need?
+        album = response['track'].get('album_resource')
+        artist = response['track'].get('artist_resource')
+        track_name = response['track']['track_resource'].get('name')
+        if not album or not artist or not track_name:
+            raise MetadataNotReadyError
+        return response
 
     def play_uri(self, uri, context=None):
         params = {
@@ -236,6 +243,9 @@ class EventManager(threading.Thread):
             try:
                 status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
                 self._event_queue.put(status)
+            except MetadataNotReadyError:
+                time.sleep(0.1)
+                continue
             except SpotifyRemoteError as e:
                 self._event_queue.put(e)
 
@@ -264,11 +274,8 @@ class EventConsumer(threading.Thread):
                     self._in_error_state = True
                     self._update_subscribers(EVENT_ERROR, context=status)
                     continue
-            try:
-                self._process_update(status)
-                self._in_error_state = False
-            except KeyError as e:
-                pass
+            self._process_update(status)
+            self._in_error_state = False
 
     def _process_update(self, status_dict):
         # Remove the keys we're not really interested in
@@ -343,4 +350,8 @@ class SpotifyRemoteError(Exception):
     def __init__(self, error_code, error_description, *args, **kwargs):
         self.error_code = error_code
         self.error_description = error_description
+
+
+class MetadataNotReadyError(Exception):
+    """Raised when Spotify has started playing a track, but the track resource hasn't been fully populated with metadata yet."""
 
