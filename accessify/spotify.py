@@ -73,20 +73,25 @@ class RemoteBridge:
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
         self._session.verify = False
         self.event_manager = EventManager(self)
+        self._control_hostname = self.generate_hostname()
+        self._event_manager_hostname = self.generate_hostname()
         # These are lazy loaded when they're needed
-        self._hostname = None
         self._csrf_token = None
         self._oauth_token = None
 
-    def get_status(self, return_after=None):
+    def get_status(self, return_after=None, from_event_manager=False):
+        if from_event_manager:
+            hostname = self._event_manager_hostname
+        else:
+            hostname = self._control_hostname
         if return_after is not None:
             params = {
                 'returnafter': return_after,
                 'returnon': 'login,logout,play,pause,error,ap',
             }
-            return self.remote_request('status', params=params)
+            return self.remote_request('status', params=params, hostname=hostname)
         else:
-            return self.remote_request('status')
+            return self.remote_request('status', hostname=hostname)
 
     def play_uri(self, uri, context=None):
         params = {
@@ -98,20 +103,14 @@ class RemoteBridge:
             params.update(context=uri)
         return self.remote_request('play', params=params)
 
-    def send_command(self, command_id):
-        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
-        if hwnd == 0:
-            raise SpotifyNotRunningError
-        send_message(hwnd, WM_COMMAND, command_id, 0)
-
-    def remote_request(self, endpoint, params=None):
-        if self._hostname is None:
-            self._hostname = self.generate_hostname()
+    def remote_request(self, endpoint, params=None, hostname=None):
+        if hostname is None:
+            hostname = self._control_hostname
         if self._csrf_token is None:
             self._csrf_token = self.get_csrf_token()
         if self._oauth_token is None:
             self._oauth_token = self.get_oauth_token()
-        request_url = 'https://{0}:{1}/remote/{2}.json'.format(self._hostname, self._port, endpoint)
+        request_url = 'https://{0}:{1}/remote/{2}.json'.format(hostname, self._port, endpoint)
         request_params = {
             'oauth': self._oauth_token,
             'csrf': self._csrf_token,
@@ -125,7 +124,7 @@ class RemoteBridge:
         return '{0}.spotilocal.com'.format(subdomain)
 
     def get_csrf_token(self):
-        url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._hostname, self._port)
+        url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._control_hostname, self._port)
         response = self._session.get(url)
         data = response.json()
         return data['token']
@@ -134,6 +133,12 @@ class RemoteBridge:
         response = self._session.get(SPOTIFY_OPEN_TOKEN_URL)
         data = response.json()
         return data['t']
+
+    def send_command(self, command_id):
+        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
+        if hwnd == 0:
+            raise SpotifyNotRunningError
+        send_message(hwnd, WM_COMMAND, command_id, 0)
 
 
 class EventManager(threading.Thread):
@@ -150,11 +155,11 @@ class EventManager(threading.Thread):
     def run(self):
         self._event_consumer.start()
         # Get initial status
-        status = self._remote_bridge.get_status()
+        status = self._remote_bridge.get_status(from_event_manager=True)
         self._event_queue.put(status)
         # Then poll for changes
         while True:
-            status = self._remote_bridge.get_status(return_after=60)
+            status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
             self._event_queue.put(status)
 
 
