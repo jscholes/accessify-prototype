@@ -7,6 +7,7 @@ import random
 import socket
 import string
 import threading
+import time
 
 import psutil
 import requests
@@ -256,10 +257,12 @@ class CommandConsumer(threading.Thread):
         self._connected_event = connected_event
 
     def run(self):
+        self._connected_event.wait()
         while True:
             command = self._command_queue.get()
-            self._connected_event.wait()
             self._send_command(command)
+            if command in (CMD_PLAY_PAUSE, CMD_PREV_TRACK, CMD_NEXT_TRACK):
+                time.sleep(0.3)
 
     def _send_command(self, command_id):
         hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
