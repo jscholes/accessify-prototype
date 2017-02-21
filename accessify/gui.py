@@ -28,13 +28,13 @@ class MainWindow(wx.Frame):
         self._spotify_remote = spotify_remote
         self.panel = wx.Panel(self)
         self.commands = {
-            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.play_pause, 'Space', True),
-            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.previous_track, 'Ctrl+Left', True),
-            ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.next_track, 'Ctrl+Right', True),
-            ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.seek_backwards, 'Shift+Left', True),
-            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, spotify.seek_forwards, 'Shift+Right', True),
-            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.increase_volume, 'Ctrl+Up', False),
-            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.decrease_volume, 'Ctrl+Down', False),
+            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, 'play_pause', 'Space', True),
+            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, 'previous_track', 'Ctrl+Left', True),
+            ID_NEXT: PlaybackCommand(LABEL_NEXT, 'next_track', 'Ctrl+Right', True),
+            ID_REWIND: PlaybackCommand(LABEL_REWIND, 'seek_backwards', 'Shift+Left', True),
+            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, 'seek_forwards', 'Shift+Right', True),
+            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, 'increase_volume', 'Ctrl+Up', False),
+            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, 'decrease_volume', 'Ctrl+Down', False),
         }
         self.setup_commands(self.commands)
         self.subscribe_to_spotify_events()
@@ -75,8 +75,9 @@ class MainWindow(wx.Frame):
     def onPlaybackCommand(self, event):
         id = event.GetId()
         command = self.commands[id]
+        func = getattr(self._spotify_remote, command.func)
         try:
-            command.func()
+            func()
         except spotify.SpotifyNotRunningError:
             show_error(self, 'Spotify doesn\'t seem to be running!')
 

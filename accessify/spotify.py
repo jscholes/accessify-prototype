@@ -42,41 +42,6 @@ STATE_PLAYING = 1
 STATE_PAUSED = 2
 
 
-def play_pause():
-    send_command(CMD_PLAY_PAUSE)
-
-
-def previous_track():
-    send_command(CMD_PREV_TRACK)
-
-
-def next_track():
-    send_command(CMD_NEXT_TRACK)
-
-
-def seek_backwards():
-    send_command(CMD_SEEK_BACKWARD)
-
-
-def seek_forwards():
-    send_command(CMD_SEEK_FORWARD)
-
-
-def decrease_volume():
-    send_command(CMD_VOLUME_DOWN)
-
-
-def increase_volume():
-    send_command(CMD_VOLUME_UP)
-
-
-def send_command(command_id):
-    hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
-    if hwnd == 0:
-        raise SpotifyNotRunningError
-    send_message(hwnd, WM_COMMAND, command_id, 0)
-
-
 def get_web_helper_port():
     """
     Attempt to find the HTTPS port that the SpotifyWebHelper process is listening on.
@@ -132,6 +97,33 @@ class RemoteBridge:
         else:
             params.update(context=uri)
         return self.remote_request('play', params=params)
+
+    def play_pause(self):
+        self.send_command(CMD_PLAY_PAUSE)
+
+    def previous_track(self):
+        self.send_command(CMD_PREV_TRACK)
+
+    def next_track(self):
+        self.send_command(CMD_NEXT_TRACK)
+
+    def seek_backwards(self):
+        self.send_command(CMD_SEEK_BACKWARD)
+
+    def seek_forwards(self):
+        send_command(CMD_SEEK_FORWARD)
+
+    def decrease_volume(self):
+        self.send_command(CMD_VOLUME_DOWN)
+
+    def increase_volume(self):
+        self.send_command(CMD_VOLUME_UP)
+
+    def send_command(self, command_id):
+        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
+        if hwnd == 0:
+            raise SpotifyNotRunningError
+        send_message(hwnd, WM_COMMAND, command_id, 0)
 
     def remote_request(self, endpoint, params=None):
         if self._hostname is None:
