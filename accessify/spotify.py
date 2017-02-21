@@ -326,7 +326,7 @@ class CommandConsumer(threading.Thread):
     def _send_command(self, command_id):
         hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
         if hwnd == 0:
-            raise SpotifyNotRunningError
+            return
         send_message(hwnd, WM_COMMAND, command_id, 0)
 
 

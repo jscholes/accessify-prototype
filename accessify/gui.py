@@ -29,6 +29,7 @@ class MainWindow(wx.Frame):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
         self._executor = futures.ThreadPoolExecutor(1)
         self._spotify_remote = spotify_remote
+        self._current_track = None
         self.panel = wx.Panel(self)
         self.commands = {
             ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.CMD_PLAY_PAUSE, 'Space', True),
@@ -80,10 +81,7 @@ class MainWindow(wx.Frame):
     def onPlaybackCommand(self, event):
         id = event.GetId()
         command = self.commands[id]
-        try:
-            self._spotify_remote.send_command(command.command_id)
-        except spotify.SpotifyNotRunningError:
-            show_error(self, 'Spotify doesn\'t seem to be running!')
+        self._spotify_remote.send_command(command.command_id)
 
     def onTrackChange(self, track):
         current_track = '{0} - {1}'.format(track.artist.name, track.name).replace('&', 'and')
