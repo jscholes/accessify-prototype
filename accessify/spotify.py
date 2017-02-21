@@ -41,6 +41,7 @@ CMD_VOLUME_DOWN = 122
 EVENT_PLAY = 1
 EVENT_PAUSE = 2
 EVENT_TRACK_CHANGE = 3
+EVENT_ERROR = 4
 
 STATE_UNDETERMINED = 0
 STATE_PLAYING = 1
@@ -225,12 +226,18 @@ class EventManager(threading.Thread):
     def run(self):
         self._event_consumer.start()
         # Get initial status
-        status = self._remote_bridge.get_status(from_event_manager=True)
-        self._event_queue.put(status)
+        try:
+            status = self._remote_bridge.get_status(from_event_manager=True)
+            self._event_queue.put(status)
+        except SpotifyRemoteError as e:
+            self._event_queue.put(e)
         # Then poll for changes
         while True:
-            status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
-            self._event_queue.put(status)
+            try:
+                status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
+                self._event_queue.put(status)
+            except SpotifyRemoteError as e:
+                self._event_queue.put(e)
 
 
 class EventConsumer(threading.Thread):
@@ -243,16 +250,27 @@ class EventConsumer(threading.Thread):
         self._playback_state = STATE_UNDETERMINED
 
     def subscribe(self, event_type, callback):
+        self._in_error_state = False
         self._update_subscriber(event_type, callback)
         self._callbacks[event_type].append(callback)
 
     def run(self):
         while True:
             status = self._event_queue.get()
-            self._process_update(status)
+            if isinstance(status, SpotifyRemoteError):
+                if self._in_error_state:
+                    continue
+                else:
+                    self._in_error_state = True
+                    self._update_subscribers(EVENT_ERROR, context=status)
+                    continue
+            try:
+                self._process_update(status)
+                self._in_error_state = False
+            except KeyError as e:
+                pass
 
     def _process_update(self, status_dict):
-        # TODO: Handle errors
         # Remove the keys we're not really interested in
         for key in ('version', 'play_enabled', 'prev_enabled', 'next_enabled', 'open_graph_state', 'context', 'online', 'server_time'):
             status_dict.pop(key)
@@ -269,15 +287,18 @@ class EventConsumer(threading.Thread):
                 self._update_subscribers(EVENT_PAUSE)
             self._playback_state = playback_state
 
-    def _update_subscribers(self, event_type):
+    def _update_subscribers(self, event_type, context=None):
         for callback in self._callbacks[event_type]:
-            self._update_subscriber(event_type, callback)
+            self._update_subscriber(event_type, callback, context=context)
 
-    def _update_subscriber(self, event_type, callback):
-        if event_type == EVENT_TRACK_CHANGE and self._current_track is not None:
-            callback(self._current_track)
-        elif event_type in (EVENT_PLAY, EVENT_PAUSE):
-            callback()
+    def _update_subscriber(self, event_type, callback, context=None):
+        if context is not None:
+            callback(context)
+        else:
+            if event_type == EVENT_TRACK_CHANGE and self._current_track is not None:
+                callback(self._current_track)
+            elif event_type in (EVENT_PLAY, EVENT_PAUSE):
+                callback()
 
 
 class CommandConsumer(threading.Thread):
