@@ -86,7 +86,7 @@ class MainWindow(wx.Frame):
             show_error(self, 'Spotify doesn\'t seem to be running!')
 
     def onTrackChange(self, track):
-        current_track = '{0} - {1}'.format(track.artist.name, track.name)
+        current_track = '{0} - {1}'.format(track.artist.name, track.name).replace('&', 'and')
         wx.CallAfter(self.SetTitle, current_track)
 
     def onPause(self):
