@@ -121,7 +121,7 @@ class PlaybackCommand:
 
 
 def show_error(parent, message):
-    wx.MessageBox(message, 'Error', parent=parent, style=wx.ICON_ERROR)
+    wx.CallAfter(wx.MessageBox, message, 'Error', parent=parent, style=wx.ICON_ERROR)
 
 
 if __name__ == '__main__':
