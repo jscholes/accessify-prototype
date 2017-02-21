@@ -76,8 +76,11 @@ class RemoteBridge:
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
         self.event_manager = EventManager(self)
-        self.connected = threading.Event()
-        adapter = SpotifyRemoteAdapter(self.connected)
+        self._connected = threading.Event()
+        self._command_queue = queue.Queue()
+        command_consumer = CommandConsumer(self._command_queue, self._connected)
+        command_consumer.start()
+        adapter = SpotifyRemoteAdapter(self._connected)
         self._session = requests.Session()
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
         self._session.verify = False
@@ -142,10 +145,7 @@ class RemoteBridge:
         return data['t']
 
     def send_command(self, command_id):
-        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
-        if hwnd == 0:
-            raise SpotifyNotRunningError
-        send_message(hwnd, WM_COMMAND, command_id, 0)
+        self._command_queue.put(command_id)
 
 
 class SpotifyRemoteAdapter(HTTPAdapter):
@@ -173,10 +173,6 @@ class SpotifyRemoteConnection(HTTPSConnection):
     def endheaders(self, *args, **kwargs):
         super().endheaders(*args, **kwargs)
         self.connected_event.set()
-
-    def close(self):
-        self.connected_event.clear()
-        super().close()
 
 
 class SpotifyRemoteConnectionPool(HTTPSConnectionPool):
@@ -250,6 +246,26 @@ class EventConsumer(threading.Thread):
             callback(self._current_track)
         elif event_type in (EVENT_PLAY, EVENT_PAUSE):
             callback()
+
+
+class CommandConsumer(threading.Thread):
+    def __init__(self, command_queue, connected_event, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.setDaemon(True)
+        self._command_queue = command_queue
+        self._connected_event = connected_event
+
+    def run(self):
+        while True:
+            command = self._command_queue.get()
+            self._connected_event.wait()
+            self._send_command(command)
+
+    def _send_command(self, command_id):
+        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
+        if hwnd == 0:
+            raise SpotifyNotRunningError
+        send_message(hwnd, WM_COMMAND, command_id, 0)
 
 
 def deserialize_track(track_dict):
