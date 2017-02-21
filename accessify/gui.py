@@ -71,7 +71,8 @@ class MainWindow(wx.Frame):
         self.uri_field.Clear()
         if uri:
             if uri.startswith('spotify:'):
-                self._executor.submit(self._spotify_remote.play_uri, uri)
+                future = self._executor.submit(self._spotify_remote.play_uri, uri)
+                future.add_done_callback(self.onSpotifyRemoteResponse)
             else:
                 show_error(self, 'Not a valid Spotify URI.')
 
@@ -92,6 +93,12 @@ class MainWindow(wx.Frame):
 
     def onPlay(self):
         wx.CallAfter(self.commands[ID_PLAY_PAUSE].update_label, 'P&ause')
+
+    def onSpotifyRemoteResponse(self, future):
+        try:
+            result = future.result()
+        except spotify.SpotifyRemoteError as e:
+            show_error(self, e.error_description)
 
 
 class PlaybackCommand:
