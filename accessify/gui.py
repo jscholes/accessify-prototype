@@ -28,13 +28,13 @@ class MainWindow(wx.Frame):
         self._spotify_remote = spotify_remote
         self.panel = wx.Panel(self)
         self.commands = {
-            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, 'play_pause', 'Space', True),
-            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, 'previous_track', 'Ctrl+Left', True),
-            ID_NEXT: PlaybackCommand(LABEL_NEXT, 'next_track', 'Ctrl+Right', True),
-            ID_REWIND: PlaybackCommand(LABEL_REWIND, 'seek_backwards', 'Shift+Left', True),
-            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, 'seek_forwards', 'Shift+Right', True),
-            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, 'increase_volume', 'Ctrl+Up', False),
-            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, 'decrease_volume', 'Ctrl+Down', False),
+            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.CMD_PLAY_PAUSE, 'Space', True),
+            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.CMD_PREV_TRACK, 'Ctrl+Left', True),
+            ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.CMD_NEXT_TRACK, 'Ctrl+Right', True),
+            ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.CMD_SEEK_BACKWARD, 'Shift+Left', True),
+            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, spotify.CMD_SEEK_FORWARD, 'Shift+Right', True),
+            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.CMD_VOLUME_UP, 'Ctrl+Up', False),
+            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.CMD_VOLUME_DOWN, 'Ctrl+Down', False),
         }
         self.setup_commands(self.commands)
         self.subscribe_to_spotify_events()
@@ -75,9 +75,8 @@ class MainWindow(wx.Frame):
     def onPlaybackCommand(self, event):
         id = event.GetId()
         command = self.commands[id]
-        func = getattr(self._spotify_remote, command.func)
         try:
-            func()
+            self._spotify_remote.send_command(command.command_id)
         except spotify.SpotifyNotRunningError:
             show_error(self, 'Spotify doesn\'t seem to be running!')
 
@@ -93,10 +92,10 @@ class MainWindow(wx.Frame):
 
 
 class PlaybackCommand:
-    def __init__(self, label, func, hotkey, show_as_button):
+    def __init__(self, label, command_id, hotkey, show_as_button):
         self._widgets = []
         self.label = label
-        self.func = func
+        self.command_id = command_id
         self.hotkey = hotkey
         self.show_as_button = show_as_button
 
