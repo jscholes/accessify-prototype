@@ -65,6 +65,7 @@ class MainWindow(wx.Frame):
         event_manager.subscribe(spotify.EVENT_TRACK_CHANGE, self.onTrackChange)
         event_manager.subscribe(spotify.EVENT_PLAY, self.onPlay)
         event_manager.subscribe(spotify.EVENT_PAUSE, self.onPause)
+        event_manager.subscribe(spotify.EVENT_STOP, self.onStop)
         event_manager.subscribe(spotify.EVENT_ERROR, self.onError)
         event_manager.start()
 
@@ -98,6 +99,10 @@ class MainWindow(wx.Frame):
 
     def onPlay(self):
         wx.CallAfter(self.commands[ID_PLAY_PAUSE].update_label, 'P&ause')
+
+    def onStop(self):
+        wx.CallAfter(self.onPause)
+        wx.CallAfter(self.set_current_track, None)
 
     def onError(self, exception):
         show_error(self, exception.error_description)

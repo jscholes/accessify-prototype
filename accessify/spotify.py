@@ -42,10 +42,12 @@ EVENT_PLAY = 1
 EVENT_PAUSE = 2
 EVENT_TRACK_CHANGE = 3
 EVENT_ERROR = 4
+EVENT_STOP = 5
 
 STATE_UNDETERMINED = 0
 STATE_PLAYING = 1
 STATE_PAUSED = 2
+STATE_STOPPED = 3
 
 spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
     '4001': 'Unknown method',
@@ -286,12 +288,19 @@ class EventConsumer(threading.Thread):
             self._current_track = track
             self._update_subscribers(EVENT_TRACK_CHANGE)
         playing = status_dict['playing']
-        playback_state = STATE_PLAYING if playing else STATE_PAUSED
+        if playing:
+            playback_state = STATE_PLAYING
+        elif not playing and status_dict['playing_position'] == 0:
+            playback_state = STATE_STOPPED
+        else:
+            playback_state = STATE_PAUSED
         if playback_state != self._playback_state:
             if playback_state == STATE_PLAYING:
                 self._update_subscribers(EVENT_PLAY)
             elif playback_state == STATE_PAUSED:
                 self._update_subscribers(EVENT_PAUSE)
+            elif playback_state == STATE_STOPPED:
+                self._update_subscribers(EVENT_STOP)
             self._playback_state = playback_state
 
     def _update_subscribers(self, event_type, context=None):
@@ -304,7 +313,7 @@ class EventConsumer(threading.Thread):
         else:
             if event_type == EVENT_TRACK_CHANGE and self._current_track is not None:
                 callback(self._current_track)
-            elif event_type in (EVENT_PLAY, EVENT_PAUSE):
+            elif event_type in (EVENT_PLAY, EVENT_PAUSE, EVENT_STOP):
                 callback()
 
 
