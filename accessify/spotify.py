@@ -3,7 +3,6 @@ from collections import defaultdict
 import json
 import queue
 import random
-import socket
 import string
 import threading
 import time
@@ -11,13 +10,9 @@ from ctypes import windll
 
 import psutil
 import requests
-from requests.adapters import DEFAULT_POOLBLOCK, HTTPAdapter
-from requests.packages.urllib3.poolmanager import PoolManager
-from requests.packages.urllib3.connectionpool import HTTPSConnectionPool
-from requests.packages.urllib3.connection import HTTPSConnection
-from requests.packages.urllib3.util.timeout import Timeout
 
 import structures
+
 
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
 
@@ -105,16 +100,13 @@ class RemoteBridge:
         self._control_hostname = self.generate_hostname()
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
-        self._connected = threading.Event()
         self.event_manager = EventManager(self)
         self._command_queue = queue.Queue()
-        command_consumer = CommandConsumer(self._command_queue, self._connected)
+        command_consumer = CommandConsumer(self._command_queue)
         command_consumer.start()
-        adapter = SpotifyRemoteAdapter(self._connected)
         self._session = requests.Session()
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
         self._session.verify = False
-        self._session.mount('https://{0}'.format(self._event_manager_hostname), adapter)
         # These are lazy loaded when they're needed
         self._csrf_token = None
         self._oauth_token = None
@@ -188,37 +180,6 @@ class RemoteBridge:
 
     def send_command(self, command_id):
         self._command_queue.put(command_id)
-
-
-class SpotifyRemoteAdapter(HTTPAdapter):
-    def __init__(self, connected_event, *args, **kwargs):
-        self.connected_event = connected_event
-        super().__init__(*args, **kwargs)
-
-    def init_poolmanager(self, connections, maxsize, block=DEFAULT_POOLBLOCK, **pool_kwargs):
-        self._pool_connections = connections
-        self._pool_maxsize = maxsize
-        self._pool_block = block
-        pool_kwargs.update(connected_event=self.connected_event)
-        self.poolmanager = PoolManager(num_pools=connections, maxsize=maxsize, block=block, strict=True, **pool_kwargs)
-        # Avoid updating global state
-        self.poolmanager.pool_classes_by_scheme = self.poolmanager.pool_classes_by_scheme.copy()
-        self.poolmanager.pool_classes_by_scheme.update(https=SpotifyRemoteConnectionPool)
-
-
-class SpotifyRemoteConnection(HTTPSConnection):
-    def __init__(self, host, port=None, key_file=None, cert_file=None, strict=None, timeout=socket._GLOBAL_DEFAULT_TIMEOUT, ssl_context=None, **kw):
-        if not getattr(self, 'connected_event', None):
-            self.connected_event = kw.pop('connected_event')
-        super().__init__(host, port, strict=strict, timeout=timeout)
-
-    def endheaders(self, *args, **kwargs):
-        super().endheaders(*args, **kwargs)
-        self.connected_event.set()
-
-
-class SpotifyRemoteConnectionPool(HTTPSConnectionPool):
-    ConnectionCls = SpotifyRemoteConnection
 
 
 class EventManager(threading.Thread):
@@ -316,14 +277,12 @@ class EventConsumer(threading.Thread):
 
 
 class CommandConsumer(threading.Thread):
-    def __init__(self, command_queue, connected_event, *args, **kwargs):
+    def __init__(self, command_queue, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.setDaemon(True)
         self._command_queue = command_queue
-        self._connected_event = connected_event
 
     def run(self):
-        self._connected_event.wait()
         while True:
             command = self._command_queue.get()
             self._send_command(command)
