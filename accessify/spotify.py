@@ -234,21 +234,17 @@ class EventManager(threading.Thread):
 
     def run(self):
         self._event_consumer.start()
-        return_after = 60
-        # Get initial status
-        try:
-            status = self._remote_bridge.get_status(from_event_manager=True)
-            self._event_queue.put(status)
-        except SpotifyRemoteError as e:
-            self._event_queue.put(e)
-        # Then poll for changes
+        return_immediately = True
         while True:
             try:
-                status = self._remote_bridge.get_status(return_after=return_after, from_event_manager=True)
+                if return_immediately:
+                    status = self._remote_bridge.get_status(from_event_manager=True)
+                else:
+                    status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
                 self._event_queue.put(status)
-                return_after = 60
+                return_immediately = False
             except MetadataNotReadyError:
-                return_after = None
+                return_immediately = True
                 continue
             except SpotifyRemoteError as e:
                 self._event_queue.put(e)
