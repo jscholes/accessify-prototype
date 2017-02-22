@@ -105,8 +105,8 @@ class RemoteBridge:
         self._control_hostname = self.generate_hostname()
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
-        self.event_manager = EventManager(self)
         self._connected = threading.Event()
+        self.event_manager = EventManager(self)
         self._command_queue = queue.Queue()
         command_consumer = CommandConsumer(self._command_queue, self._connected)
         command_consumer.start()
@@ -234,6 +234,7 @@ class EventManager(threading.Thread):
 
     def run(self):
         self._event_consumer.start()
+        return_after = 60
         # Get initial status
         try:
             status = self._remote_bridge.get_status(from_event_manager=True)
@@ -243,10 +244,11 @@ class EventManager(threading.Thread):
         # Then poll for changes
         while True:
             try:
-                status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
+                status = self._remote_bridge.get_status(return_after=return_after, from_event_manager=True)
                 self._event_queue.put(status)
+                return_after = 60
             except MetadataNotReadyError:
-                time.sleep(0.1)
+                return_after = None
                 continue
             except SpotifyRemoteError as e:
                 self._event_queue.put(e)
