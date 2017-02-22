@@ -140,10 +140,3 @@ def show_error(parent, message):
 def format_track_display(track):
     return '{0} - {1}'.format(track.artist.name, track.name).replace('&', 'and')
 
-
-if __name__ == '__main__':
-    app = wx.App()
-    remote = spotify.RemoteBridge(spotify.get_web_helper_port())
-    window = MainWindow(remote)
-    window.Show()
-    app.MainLoop()
