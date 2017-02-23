@@ -124,6 +124,7 @@ class RemoteBridge:
             response = self.remote_request('status', params=params, hostname=hostname)
         else:
             response = self.remote_request('status', hostname=hostname)
+        print(response)
         # Do we have all the metadata we need?
         album = response['track'].get('album_resource')
         artist = response['track'].get('artist_resource')
@@ -221,22 +222,22 @@ class EventConsumer(threading.Thread):
         self._playback_state = STATE_UNDETERMINED
 
     def subscribe(self, event_type, callback):
-        self._in_error_state = False
         self._update_subscriber(event_type, callback)
         self._callbacks[event_type].append(callback)
 
     def run(self):
+        in_error_state = False
         while True:
             status = self._event_queue.get()
             if isinstance(status, SpotifyRemoteError):
-                if self._in_error_state:
+                if in_error_state:
                     continue
                 else:
-                    self._in_error_state = True
+                    in_error_state = True
                     self._update_subscribers(EVENT_ERROR, context=status)
                     continue
             self._process_update(status)
-            self._in_error_state = False
+            in_error_state = False
 
     def _process_update(self, status_dict):
         # Remove the keys we're not really interested in
