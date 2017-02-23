@@ -124,12 +124,12 @@ class RemoteBridge:
             response = self.remote_request('status', params=params, hostname=hostname)
         else:
             response = self.remote_request('status', hostname=hostname)
-        print(response)
         # Do we have all the metadata we need?
-        album = response['track'].get('album_resource')
-        artist = response['track'].get('artist_resource')
-        track_name = response['track']['track_resource'].get('name')
-        if not album or not artist or not track_name:
+        try:
+            album = response['track']['album_resource']['name']
+            artist = response['track']['artist_resource']['name']
+            track_name = response['track']['track_resource']['name']
+        except KeyError:
             raise MetadataNotReadyError
         return response
 
