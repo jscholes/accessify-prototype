@@ -1,9 +1,0 @@
-{
-    "running": false,
-    "error": {
-        "message": "No user logged in",
-        "type": "4110"
-    },
-    "client_version": "1.0.49.125.g72ee7853",
-    "version": 9
-}

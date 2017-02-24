@@ -1,9 +1,0 @@
-# Note: the requested URI will be played after the ad.
-{
-    "error": {
-        "type": "4204"
-    },
-    "client_version": "1.0.49.125.g72ee7853",
-    "version": 9,
-    "running": true
-}
