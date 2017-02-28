@@ -102,9 +102,7 @@ class RemoteBridge:
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
         self._command_queue = queue.Queue()
-        worker = threading.Thread(target=consume_queue, args=(self._command_queue, self._send_command))
-        worker.setDaemon(True)
-        worker.start()
+        consume_queue(self._command_queue, self._send_command)
         self._session = requests.Session()
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
         self._session.verify = False
@@ -213,9 +211,7 @@ class EventManager(threading.Thread):
         self._in_error_state = False
 
     def run(self):
-        worker = threading.Thread(target=consume_queue, args=(self._event_queue, self._process_item))
-        worker.setDaemon(True)
-        worker.start()
+        consume_queue(self._event_queue, self._process_item)
         return_immediately = True
         while True:
             try:
