@@ -1,5 +1,3 @@
-from concurrent import futures
-
 import wx
 
 import spotify
@@ -25,10 +23,10 @@ LABEL_DECREASE_VOLUME = '&Decrease Volume'
 
 
 class MainWindow(wx.Frame):
-    def __init__(self, spotify_remote, *args, **kwargs):
+    def __init__(self, spotify_remote, background_worker, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
-        self._executor = futures.ThreadPoolExecutor(1)
         self._spotify_remote = spotify_remote
+        self.background_worker = background_worker
         self._current_track = None
         self.panel = wx.Panel(self)
         self.commands = {
@@ -78,8 +76,7 @@ class MainWindow(wx.Frame):
         self.uri_field.Clear()
         if uri:
             if uri.startswith('spotify:'):
-                future = self._executor.submit(self._spotify_remote.play_uri, uri)
-                future.add_done_callback(self.onSpotifyRemoteResponse)
+                self.background_worker(self._spotify_remote.play_uri, uri, error_callback=self.onError)
             else:
                 show_error(self, 'Not a valid Spotify URI.')
 
@@ -103,12 +100,6 @@ class MainWindow(wx.Frame):
 
     def onError(self, exception):
         show_error(self, exception.error_description)
-
-    def onSpotifyRemoteResponse(self, future):
-        try:
-            result = future.result()
-        except spotify.SpotifyRemoteError as e:
-            show_error(self, e.error_description)
 
 
 class PlaybackCommand:
