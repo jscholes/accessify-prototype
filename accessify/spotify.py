@@ -102,8 +102,9 @@ class RemoteBridge:
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
         self._command_queue = queue.Queue()
-        command_consumer = CommandConsumer(self._command_queue)
-        command_consumer.start()
+        worker = threading.Thread(target=consume_queue, args=(self._command_queue, self._send_command))
+        worker.setDaemon(True)
+        worker.start()
         self._session = requests.Session()
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
         self._session.verify = False
@@ -180,7 +181,20 @@ class RemoteBridge:
         return data['t']
 
     def send_command(self, command_id):
+        """
+        Queue up a command to be delivered to the Spotify window.
+
+        The queued command will eventually be delivered by the _send_command method, which implements the actual logic.
+        """
         self._command_queue.put(command_id)
+
+    def _send_command(self, command_id):
+        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
+        if hwnd == 0:
+            return
+        send_message(hwnd, WM_COMMAND, command_id, 0)
+        if command_id in (CMD_PLAY_PAUSE, CMD_PREV_TRACK, CMD_NEXT_TRACK):
+            time.sleep(0.3)
 
 
 class EventManager(threading.Thread):
@@ -264,26 +278,6 @@ class EventManager(threading.Thread):
                 callback(self._current_track)
             elif event_type in (EVENT_PLAY, EVENT_PAUSE, EVENT_STOP):
                 callback()
-
-
-class CommandConsumer(threading.Thread):
-    def __init__(self, command_queue, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.setDaemon(True)
-        self._command_queue = command_queue
-
-    def run(self):
-        while True:
-            command = self._command_queue.get()
-            self._send_command(command)
-            if command in (CMD_PLAY_PAUSE, CMD_PREV_TRACK, CMD_NEXT_TRACK):
-                time.sleep(0.3)
-
-    def _send_command(self, command_id):
-        hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
-        if hwnd == 0:
-            return
-        send_message(hwnd, WM_COMMAND, command_id, 0)
 
 
 def deserialize_track(track_dict):
