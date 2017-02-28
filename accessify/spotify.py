@@ -202,13 +202,12 @@ class EventManager(threading.Thread):
         self._remote_bridge = remote_bridge
         self._event_queue = queue.Queue()
         self._callbacks = defaultdict(lambda: [])
-        self._current_track = None
+        self._previous_track_dict = {}
         self._playback_state = STATE_UNDETERMINED
+        self._in_error_status = False
 
     def subscribe(self, event_type, callback):
-        self._update_subscriber(event_type, callback)
         self._callbacks[event_type].append(callback)
-        self._in_error_state = False
 
     def run(self):
         consume_queue(self._event_queue, self._process_item)
@@ -242,10 +241,11 @@ class EventManager(threading.Thread):
         # Remove the keys we're not really interested in
         for key in ('version', 'play_enabled', 'prev_enabled', 'next_enabled', 'open_graph_state', 'context', 'online', 'server_time'):
             status_dict.pop(key)
-        track = deserialize_track(status_dict.pop('track'))
-        if track != self._current_track:
-            self._current_track = track
-            self._update_subscribers(EVENT_TRACK_CHANGE)
+        track_dict = status_dict.pop('track')
+        if track_dict != self._previous_track_dict:
+            track = deserialize_track(track_dict)
+            self._update_subscribers(EVENT_TRACK_CHANGE, context=track)
+            self._previous_track_dict = track_dict
         playing = status_dict['playing']
         if playing:
             playback_state = STATE_PLAYING
@@ -264,16 +264,17 @@ class EventManager(threading.Thread):
 
     def _update_subscribers(self, event_type, context=None):
         for callback in self._callbacks[event_type]:
-            self._update_subscriber(event_type, callback, context=context)
+            self._update_subscriber(event_type, callback, context)
 
     def _update_subscriber(self, event_type, callback, context=None):
         if context is not None:
             callback(context)
         else:
-            if event_type == EVENT_TRACK_CHANGE and self._current_track is not None:
-                callback(self._current_track)
-            elif event_type in (EVENT_PLAY, EVENT_PAUSE, EVENT_STOP):
-                callback()
+            callback()
+            # if event_type == EVENT_TRACK_CHANGE and self._current_track is not None:
+                # callback(self._current_track)
+            # elif event_type in (EVENT_PLAY, EVENT_PAUSE, EVENT_STOP):
+                # callback()
 
 
 def deserialize_track(track_dict):
