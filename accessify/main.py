@@ -10,7 +10,7 @@ import gui
 import spotify
 
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__package__)
 
 log_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'accessify.log')
 

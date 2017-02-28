@@ -1,6 +1,7 @@
 from collections import defaultdict
 # TODO: Use ujson for faster JSON processing
 import json
+import logging
 import queue
 import random
 import string
@@ -14,6 +15,8 @@ import requests
 from concurrency import consume_queue
 import structures
 
+
+logger = logging.getLogger(__name__)
 
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
 
@@ -89,7 +92,9 @@ def get_web_helper_port():
         raise SpotifyNotRunningError
     else:
         connections = sorted(helper_process.connections(), key=lambda conn: conn.laddr[1])
-        return connections[0].laddr[1]
+        port = connections[0].laddr[1]
+        logger.debug('WebHelper listening port: {0}'.format(port))
+        return port
 
 
 class RemoteBridge:
@@ -130,6 +135,7 @@ class RemoteBridge:
             track_name = response['track']['track_resource']['name']
             track_length = response['track']['length']
         except KeyError:
+            logger.error('Received incomplete metadata from Spotify')
             raise MetadataNotReadyError
         return response
 
@@ -157,10 +163,13 @@ class RemoteBridge:
         }
         if params is not None:
             request_params.update(params)
+        logger.debug('Requesting URL: {0} with params: {1}'.format(request_url, request_params))
         response = self._session.get(request_url, params=request_params).json()
+        logger.debug('Received response: {0}'.format(response))
         if 'error' in response:
             error_code = response['error']['type']
             error_description = spotify_remote_errors[error_code]
+            logger.debug('Error {0} from Spotify: {1}'.format(error_code, error_description))
             raise SpotifyRemoteError(error_code, error_description)
         return response
 
@@ -170,13 +179,16 @@ class RemoteBridge:
 
     def get_csrf_token(self):
         url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._control_hostname, self._port)
+        logger.debug('Requesting {0}'.format(url))
         response = self._session.get(url)
         data = response.json()
+        logger.debug('CSRF request response: {0}'.format(data))
         return data['token']
 
     def get_oauth_token(self):
         response = self._session.get(SPOTIFY_OPEN_TOKEN_URL)
         data = response.json()
+        logger.debug('OAuth token request response: {0}'.format(data))
         return data['t']
 
     def send_command(self, command_id):
@@ -185,14 +197,17 @@ class RemoteBridge:
 
         The queued command will eventually be delivered by the _send_command method, which implements the actual logic.
         """
+        logger.debug('Queuing command: {0}'.format(command_id))
         self._command_queue.put(command_id)
 
     def _send_command(self, command_id):
         hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
         if hwnd == 0:
             return
+        logger.debug('Sending command {0} to window handle {1}'.format(command_id, hwnd))
         send_message(hwnd, WM_COMMAND, command_id, 0)
         if command_id in (CMD_PLAY_PAUSE, CMD_PREV_TRACK, CMD_NEXT_TRACK):
+            logger.debug('Sleeping to avoid command flooding')
             time.sleep(0.3)
 
 
@@ -208,6 +223,7 @@ class EventManager(threading.Thread):
         self._in_error_status = False
 
     def subscribe(self, event_type, callback):
+        logger.debug('Subscribing {0} to event type {1}'.format(callback, event_type))
         self._callbacks[event_type].append(callback)
 
     def run(self):
@@ -245,6 +261,7 @@ class EventManager(threading.Thread):
         track_dict = status_dict.pop('track')
         if track_dict != self._previous_track_dict:
             track = deserialize_track(track_dict)
+            logger.debug('Deserialized track: {0}'.format(track))
             self._update_subscribers(EVENT_TRACK_CHANGE, context=track)
             self._previous_track_dict = track_dict
         playing = status_dict['playing']
@@ -264,6 +281,7 @@ class EventManager(threading.Thread):
             self._playback_state = playback_state
 
     def _update_subscribers(self, event_type, context=None):
+        logger.debug('Updating subscribers of event type {0} with context: {1}'.format(event_type, context))
         for callback in self._callbacks[event_type]:
             self._update_subscriber(event_type, callback, context)
 
