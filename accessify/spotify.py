@@ -128,6 +128,7 @@ class RemoteBridge:
             album = response['track']['album_resource']['name']
             artist = response['track']['artist_resource']['name']
             track_name = response['track']['track_resource']['name']
+            track_length = response['track']['length']
         except KeyError:
             raise MetadataNotReadyError
         return response
