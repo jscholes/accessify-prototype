@@ -11,6 +11,7 @@ from ctypes import windll
 import psutil
 import requests
 
+from concurrency import consume_queue
 import structures
 
 
@@ -188,13 +189,19 @@ class EventManager(threading.Thread):
         self.setDaemon(True)
         self._remote_bridge = remote_bridge
         self._event_queue = queue.Queue()
-        self._event_consumer = EventConsumer(self._event_queue)
+        self._callbacks = defaultdict(lambda: [])
+        self._current_track = None
+        self._playback_state = STATE_UNDETERMINED
 
     def subscribe(self, event_type, callback):
-        self._event_consumer.subscribe(event_type, callback)
+        self._update_subscriber(event_type, callback)
+        self._callbacks[event_type].append(callback)
+        self._in_error_state = False
 
     def run(self):
-        self._event_consumer.start()
+        worker = threading.Thread(target=consume_queue, args=(self._event_queue, self._process_item))
+        worker.setDaemon(True)
+        worker.start()
         return_immediately = True
         while True:
             try:
@@ -210,35 +217,18 @@ class EventManager(threading.Thread):
             except SpotifyRemoteError as e:
                 self._event_queue.put(e)
 
+    def _process_item(self, item):
+        if isinstance(item, SpotifyRemoteError):
+            if self._in_error_state:
+                return
+            else:
+                self._in_error_state = True
+                self._update_subscribers(EVENT_ERROR, context=item)
+                return
+        self._process_status_dict(item)
+        self._in_error_state = False
 
-class EventConsumer(threading.Thread):
-    def __init__(self, event_queue, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.setDaemon(True)
-        self._event_queue = event_queue
-        self._callbacks = defaultdict(lambda: [])
-        self._current_track = None
-        self._playback_state = STATE_UNDETERMINED
-
-    def subscribe(self, event_type, callback):
-        self._update_subscriber(event_type, callback)
-        self._callbacks[event_type].append(callback)
-
-    def run(self):
-        in_error_state = False
-        while True:
-            status = self._event_queue.get()
-            if isinstance(status, SpotifyRemoteError):
-                if in_error_state:
-                    continue
-                else:
-                    in_error_state = True
-                    self._update_subscribers(EVENT_ERROR, context=status)
-                    continue
-            self._process_update(status)
-            in_error_state = False
-
-    def _process_update(self, status_dict):
+    def _process_status_dict(self, status_dict):
         # Remove the keys we're not really interested in
         for key in ('version', 'play_enabled', 'prev_enabled', 'next_enabled', 'open_graph_state', 'context', 'online', 'server_time'):
             status_dict.pop(key)
