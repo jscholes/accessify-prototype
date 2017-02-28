@@ -100,7 +100,6 @@ class RemoteBridge:
         self._control_hostname = self.generate_hostname()
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
-        self.event_manager = EventManager(self)
         self._command_queue = queue.Queue()
         command_consumer = CommandConsumer(self._command_queue)
         command_consumer.start()

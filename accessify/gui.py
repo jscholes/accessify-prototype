@@ -41,7 +41,6 @@ class MainWindow(wx.Frame):
             ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.CMD_VOLUME_DOWN, 'Ctrl+Down', False),
         }
         self.setup_commands(self.commands)
-        self.subscribe_to_spotify_events()
 
     def setup_commands(self, command_dict):
         uri_label = wx.StaticText(self.panel, -1, LABEL_URI)
@@ -60,14 +59,12 @@ class MainWindow(wx.Frame):
         menu_bar.Append(playback_menu, MENU_PLAYBACK)
         self.SetMenuBar(menu_bar)
 
-    def subscribe_to_spotify_events(self):
-        event_manager = self._spotify_remote.event_manager
+    def subscribe_to_spotify_events(self, event_manager):
         event_manager.subscribe(spotify.EVENT_TRACK_CHANGE, self.onTrackChange)
         event_manager.subscribe(spotify.EVENT_PLAY, self.onPlay)
         event_manager.subscribe(spotify.EVENT_PAUSE, self.onPause)
         event_manager.subscribe(spotify.EVENT_STOP, self.onStop)
         event_manager.subscribe(spotify.EVENT_ERROR, self.onError)
-        event_manager.start()
 
     def set_current_track(self, track):
         self._current_track = track
