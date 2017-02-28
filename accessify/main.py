@@ -1,5 +1,7 @@
 from concurrent import futures
 from functools import partial
+import logging
+import os.path
 
 import wx
 
@@ -8,7 +10,19 @@ import gui
 import spotify
 
 
+logger = logging.getLogger(__name__)
+
+log_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'accessify.log')
+
+
 def main():
+    # Set up logging
+    logger.setLevel(logging.DEBUG)
+    handler = logging.FileHandler(log_path, mode='w', encoding='utf-8')
+    handler.setFormatter(logging.Formatter('%(module)s: %(message)s'))
+    logger.addHandler(handler)
+    logger.info('Application starting up')
+
     # Set up concurrency
     executor = futures.ThreadPoolExecutor()
     background_worker = partial(concurrency.submit_future, executor)
