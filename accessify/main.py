@@ -39,6 +39,10 @@ def main():
     window.Show()
     app.MainLoop()
 
+    # Shutdown
+    logger.info('Shutting down')
+    executor.shutdown()
+
 
 if __name__ == '__main__':
     main()

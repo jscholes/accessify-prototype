@@ -45,5 +45,9 @@ def submit_future(executor, func, *func_args, done_callback=None, error_callback
             else:
                 done_callback()
 
-    future = executor.submit(func, *func_args, **func_kwargs)
-    future.add_done_callback(done)
+    try:
+        future = executor.submit(func, *func_args, **func_kwargs)
+        future.add_done_callback(done)
+    except RuntimeError as e:
+        logger.error('Future submitted after executor shutdown', exc_info=True)
+        pass
