@@ -30,7 +30,7 @@ class MainWindow(wx.Frame):
         self._current_track = None
         self.panel = wx.Panel(self)
         self.commands = {
-            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.CMD_PLAY_PAUSE, 'Space', True),
+            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.CMD_PLAY_PAUSE, 'Ctrl+Space', True),
             ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.CMD_PREV_TRACK, 'Ctrl+Left', True),
             ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.CMD_NEXT_TRACK, 'Ctrl+Right', True),
             ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.CMD_SEEK_BACKWARD, 'Shift+Left', True),
