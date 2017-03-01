@@ -1,6 +1,6 @@
 import wx
 
-import spotify
+from .. import spotify
 
 
 WINDOW_TITLE = 'Accessify'
@@ -30,13 +30,13 @@ class MainWindow(wx.Frame):
         self._current_track = None
         self.panel = wx.Panel(self)
         self.commands = {
-            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.PlaybackCommand.PLAY_PAUSE, 'Ctrl+Space', True),
-            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.PlaybackCommand.PREV_TRACK, 'Ctrl+Left', True),
-            ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.PlaybackCommand.NEXT_TRACK, 'Ctrl+Right', True),
-            ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.PlaybackCommand.SEEK_BACKWARD, 'Shift+Left', True),
-            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, spotify.PlaybackCommand.SEEK_FORWARD, 'Shift+Right', True),
-            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.PlaybackCommand.VOLUME_UP, 'Ctrl+Up', False),
-            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.PlaybackCommand.VOLUME_DOWN, 'Ctrl+Down', False),
+            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.remote.PlaybackCommand.PLAY_PAUSE, 'Ctrl+Space', True),
+            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.remote.PlaybackCommand.PREV_TRACK, 'Ctrl+Left', True),
+            ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.remote.PlaybackCommand.NEXT_TRACK, 'Ctrl+Right', True),
+            ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.remote.PlaybackCommand.SEEK_BACKWARD, 'Shift+Left', True),
+            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, spotify.remote.PlaybackCommand.SEEK_FORWARD, 'Shift+Right', True),
+            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.remote.PlaybackCommand.VOLUME_UP, 'Ctrl+Up', False),
+            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.remote.PlaybackCommand.VOLUME_DOWN, 'Ctrl+Down', False),
         }
         self.setup_commands(self.commands)
 
@@ -58,11 +58,11 @@ class MainWindow(wx.Frame):
         self.SetMenuBar(menu_bar)
 
     def subscribe_to_spotify_events(self, event_manager):
-        event_manager.subscribe(spotify.EventType.TRACK_CHANGE, self.onTrackChange)
-        event_manager.subscribe(spotify.EventType.PLAY, self.onPlay)
-        event_manager.subscribe(spotify.EventType.PAUSE, self.onPause)
-        event_manager.subscribe(spotify.EventType.STOP, self.onStop)
-        event_manager.subscribe(spotify.EventType.ERROR, self.onError)
+        event_manager.subscribe(spotify.eventmanager.EventType.TRACK_CHANGE, self.onTrackChange)
+        event_manager.subscribe(spotify.eventmanager.EventType.PLAY, self.onPlay)
+        event_manager.subscribe(spotify.eventmanager.EventType.PAUSE, self.onPause)
+        event_manager.subscribe(spotify.eventmanager.EventType.STOP, self.onStop)
+        event_manager.subscribe(spotify.eventmanager.EventType.ERROR, self.onError)
 
     def set_current_track(self, track):
         self._current_track = track

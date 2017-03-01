@@ -5,9 +5,9 @@ import os.path
 
 import wx
 
-import concurrency
-import gui
-import spotify
+from . import gui
+from . import spotify
+from .utils import concurrency
 
 
 logger = logging.getLogger(__package__)
@@ -19,7 +19,7 @@ def main():
     # Set up logging
     logger.setLevel(logging.DEBUG)
     handler = logging.FileHandler(log_path, mode='w', encoding='utf-8')
-    handler.setFormatter(logging.Formatter('%(module)s: %(message)s'))
+    handler.setFormatter(logging.Formatter('%(name)s: %(message)s'))
     logger.addHandler(handler)
     logger.info('Application starting up')
 
@@ -28,13 +28,13 @@ def main():
     background_worker = partial(concurrency.submit_future, executor)
 
     # Set up communication with Spotify
-    spotify_remote = spotify.RemoteBridge(spotify.get_web_helper_port())
-    event_manager = spotify.EventManager(spotify_remote)
+    spotify_remote = spotify.remote.RemoteBridge(spotify.remote.get_web_helper_port())
+    event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
 
     # Set up the GUI
     app = wx.App()
-    window = gui.MainWindow(spotify_remote, background_worker)
+    window = gui.main.MainWindow(spotify_remote, background_worker)
     window.subscribe_to_spotify_events(event_manager)
     window.Show()
     app.MainLoop()
