@@ -30,13 +30,13 @@ class MainWindow(wx.Frame):
         self._current_track = None
         self.panel = wx.Panel(self)
         self.commands = {
-            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.CMD_PLAY_PAUSE, 'Ctrl+Space', True),
-            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.CMD_PREV_TRACK, 'Ctrl+Left', True),
-            ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.CMD_NEXT_TRACK, 'Ctrl+Right', True),
-            ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.CMD_SEEK_BACKWARD, 'Shift+Left', True),
-            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, spotify.CMD_SEEK_FORWARD, 'Shift+Right', True),
-            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.CMD_VOLUME_UP, 'Ctrl+Up', False),
-            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.CMD_VOLUME_DOWN, 'Ctrl+Down', False),
+            ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.PlaybackCommand.PLAY_PAUSE, 'Ctrl+Space', True),
+            ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.PlaybackCommand.PREV_TRACK, 'Ctrl+Left', True),
+            ID_NEXT: PlaybackCommand(LABEL_NEXT, spotify.PlaybackCommand.NEXT_TRACK, 'Ctrl+Right', True),
+            ID_REWIND: PlaybackCommand(LABEL_REWIND, spotify.PlaybackCommand.SEEK_BACKWARD, 'Shift+Left', True),
+            ID_FAST_FORWARD: PlaybackCommand(LABEL_FAST_FORWARD, spotify.PlaybackCommand.SEEK_FORWARD, 'Shift+Right', True),
+            ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.PlaybackCommand.VOLUME_UP, 'Ctrl+Up', False),
+            ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.PlaybackCommand.VOLUME_DOWN, 'Ctrl+Down', False),
         }
         self.setup_commands(self.commands)
 
@@ -58,11 +58,11 @@ class MainWindow(wx.Frame):
         self.SetMenuBar(menu_bar)
 
     def subscribe_to_spotify_events(self, event_manager):
-        event_manager.subscribe(spotify.EVENT_TRACK_CHANGE, self.onTrackChange)
-        event_manager.subscribe(spotify.EVENT_PLAY, self.onPlay)
-        event_manager.subscribe(spotify.EVENT_PAUSE, self.onPause)
-        event_manager.subscribe(spotify.EVENT_STOP, self.onStop)
-        event_manager.subscribe(spotify.EVENT_ERROR, self.onError)
+        event_manager.subscribe(spotify.EventType.TRACK_CHANGE, self.onTrackChange)
+        event_manager.subscribe(spotify.EventType.PLAY, self.onPlay)
+        event_manager.subscribe(spotify.EventType.PAUSE, self.onPause)
+        event_manager.subscribe(spotify.EventType.STOP, self.onStop)
+        event_manager.subscribe(spotify.EventType.ERROR, self.onError)
 
     def set_current_track(self, track):
         self._current_track = track

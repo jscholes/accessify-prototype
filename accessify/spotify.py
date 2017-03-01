@@ -1,4 +1,5 @@
 from collections import defaultdict
+from enum import Enum
 # TODO: Use ujson for faster JSON processing
 import json
 import logging
@@ -29,25 +30,6 @@ WEB_HELPER_PROCESS = 'SpotifyWebHelper.exe'
 SPOTIFY_PROCESS = 'Spotify.exe'
 SPOTIFY_OPEN_TOKEN_URL = 'https://open.spotify.com/token'
 
-CMD_PLAY_PAUSE = 114
-CMD_PREV_TRACK = 116
-CMD_NEXT_TRACK = 115
-CMD_SEEK_BACKWARD = 118
-CMD_SEEK_FORWARD = 117
-CMD_VOLUME_UP = 121
-CMD_VOLUME_DOWN = 122
-
-EVENT_PLAY = 1
-EVENT_PAUSE = 2
-EVENT_TRACK_CHANGE = 3
-EVENT_ERROR = 4
-EVENT_STOP = 5
-
-STATE_UNDETERMINED = 0
-STATE_PLAYING = 1
-STATE_PAUSED = 2
-STATE_STOPPED = 3
-
 spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
     '4001': 'Unknown method',
     '4002': 'Error parsing request',
@@ -73,6 +55,31 @@ spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
     '4302': 'Premium only content',
     '4303': 'Content unavailable',
 })
+
+
+class PlaybackCommand(Enum):
+    PLAY_PAUSE = 114
+    PREV_TRACK = 116
+    NEXT_TRACK = 115
+    SEEK_BACKWARD = 118
+    SEEK_FORWARD = 117
+    VOLUME_UP = 121
+    VOLUME_DOWN = 122
+
+
+class EventType(Enum):
+    PLAY = 1
+    PAUSE = 2
+    TRACK_CHANGE = 3
+    ERROR = 4
+    STOP = 5
+
+
+class PlaybackState(Enum):
+    UNDETERMINED = 0
+    PLAYING = 1
+    PAUSED = 2
+    STOPPED = 3
 
 
 def get_web_helper_port():
@@ -191,22 +198,22 @@ class RemoteBridge:
         logger.debug('OAuth token request response: {0}'.format(data))
         return data['t']
 
-    def send_command(self, command_id):
+    def send_command(self, command):
         """
-        Queue up a command to be delivered to the Spotify window.
+        Queue up a PlaybackCommand to be delivered to the Spotify window.
 
         The queued command will eventually be delivered by the _send_command method, which implements the actual logic.
         """
-        logger.debug('Queuing command: {0}'.format(command_id))
-        self._command_queue.put(command_id)
+        logger.debug('Queuing command: {0}'.format(command))
+        self._command_queue.put(command)
 
-    def _send_command(self, command_id):
+    def _send_command(self, command):
         hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
         if hwnd == 0:
             return
-        logger.debug('Sending command {0} to window handle {1}'.format(command_id, hwnd))
-        send_message(hwnd, WM_COMMAND, command_id, 0)
-        if command_id in (CMD_PLAY_PAUSE, CMD_PREV_TRACK, CMD_NEXT_TRACK):
+        logger.debug('Sending command {0} to window handle {1}'.format(command, hwnd))
+        send_message(hwnd, WM_COMMAND, command.value, 0)
+        if command in (PlaybackCommand.PLAY_PAUSE, PlaybackCommand.PREV_TRACK, PlaybackCommand.NEXT_TRACK):
             logger.debug('Sleeping to avoid command flooding')
             time.sleep(0.3)
 
@@ -219,11 +226,11 @@ class EventManager(threading.Thread):
         self._event_queue = queue.Queue()
         self._callbacks = defaultdict(lambda: [])
         self._previous_track_dict = {}
-        self._playback_state = STATE_UNDETERMINED
+        self._playback_state = PlaybackState.UNDETERMINED
         self._in_error_status = False
 
     def subscribe(self, event_type, callback):
-        logger.debug('Subscribing {0} to event type {1}'.format(callback, event_type))
+        logger.debug('Subscribing callback {0} to {1}'.format(callback, event_type))
         self._callbacks[event_type].append(callback)
 
     def run(self):
@@ -249,7 +256,7 @@ class EventManager(threading.Thread):
                 return
             else:
                 self._in_error_state = True
-                self._update_subscribers(EVENT_ERROR, context=item)
+                self._update_subscribers(EventType.ERROR, context=item)
                 return
         self._process_status_dict(item)
         self._in_error_state = False
@@ -262,26 +269,26 @@ class EventManager(threading.Thread):
         if track_dict != self._previous_track_dict:
             track = deserialize_track(track_dict)
             logger.debug('Deserialized track: {0}'.format(track))
-            self._update_subscribers(EVENT_TRACK_CHANGE, context=track)
+            self._update_subscribers(EventType.TRACK_CHANGE, context=track)
             self._previous_track_dict = track_dict
         playing = status_dict['playing']
         if playing:
-            playback_state = STATE_PLAYING
+            playback_state = PlaybackState.PLAYING
         elif not playing and status_dict['playing_position'] == 0:
-            playback_state = STATE_STOPPED
+            playback_state = PlaybackState.STOPPED
         else:
-            playback_state = STATE_PAUSED
+            playback_state = PlaybackState.PAUSED
         if playback_state != self._playback_state:
-            if playback_state == STATE_PLAYING:
-                self._update_subscribers(EVENT_PLAY)
-            elif playback_state == STATE_PAUSED:
-                self._update_subscribers(EVENT_PAUSE)
-            elif playback_state == STATE_STOPPED:
-                self._update_subscribers(EVENT_STOP)
+            if playback_state == PlaybackState.PLAYING:
+                self._update_subscribers(EventType.PLAY)
+            elif playback_state == PlaybackState.PAUSED:
+                self._update_subscribers(EventType.PAUSE)
+            elif playback_state == PlaybackState.STOPPED:
+                self._update_subscribers(EventType.STOP)
             self._playback_state = playback_state
 
     def _update_subscribers(self, event_type, context=None):
-        logger.debug('Updating subscribers of event type {0} with context: {1}'.format(event_type, context))
+        logger.debug('Updating subscribers to {0} with context: {1}'.format(event_type, context))
         for callback in self._callbacks[event_type]:
             self._update_subscriber(event_type, callback, context)
 
@@ -290,10 +297,6 @@ class EventManager(threading.Thread):
             callback(context)
         else:
             callback()
-            # if event_type == EVENT_TRACK_CHANGE and self._current_track is not None:
-                # callback(self._current_track)
-            # elif event_type in (EVENT_PLAY, EVENT_PAUSE, EVENT_STOP):
-                # callback()
 
 
 def deserialize_track(track_dict):
