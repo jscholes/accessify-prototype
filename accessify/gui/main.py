@@ -43,11 +43,10 @@ class MainWindow(wx.Frame):
         self.panel = wx.Panel(self)
         self.tabs = controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
         self.now_playing_panel = NowPlayingPanel(self.tabs, self)
-        self.search_panel = SearchPanel(self.tabs)
-        self.tabs.AddPage(self.search_panel, 'Search')
         self.setup_commands(self.commands)
         self.now_playing_panel.setup_commands(self.commands)
         self.tabs.AddPage(self.now_playing_panel, LABEL_NOW_PLAYING)
+        self.Bind(wx.EVT_SHOW, self.onShow)
 
     def setup_commands(self, command_dict):
         playback_menu = wx.Menu()
@@ -72,6 +71,13 @@ class MainWindow(wx.Frame):
             self.SetTitle(WINDOW_TITLE)
         else:
             self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(self._current_track)))
+
+    def onShow(self, event):
+        page = self.tabs.GetCurrentPage()
+        initial_focus = getattr(page, 'initial_focus', None)
+        if initial_focus:
+            initial_focus.SetFocus()
+        event.Skip()
 
     def onUriEntered(self, event):
         uri = self.now_playing_panel.uri_field.GetValue()
@@ -113,6 +119,7 @@ class NowPlayingPanel(wx.Panel):
         uri_label = wx.StaticText(self, -1, LABEL_URI)
         self.uri_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
         self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.main_window.onUriEntered)
+        self.initial_focus = self.uri_field
         for id, command in command_dict.items():
             if command.show_as_button:
                 btn = wx.Button(self, id, command.label)
