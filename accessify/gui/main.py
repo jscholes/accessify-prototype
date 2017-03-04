@@ -2,9 +2,12 @@ import wx
 
 from .. import spotify
 
+from . import controls
+
 
 WINDOW_TITLE = 'Accessify'
 MENU_PLAYBACK = '&Playback'
+LABEL_NOW_PLAYING = 'Now playing'
 LABEL_URI = 'Spoti&fy URI'
 ID_PLAY_PAUSE = wx.NewId()
 LABEL_PLAY_PAUSE = 'P&lay'
@@ -28,7 +31,6 @@ class MainWindow(wx.Frame):
         self._spotify_remote = spotify_remote
         self.background_worker = background_worker
         self._current_track = None
-        self.panel = wx.Panel(self)
         self.commands = {
             ID_PLAY_PAUSE: PlaybackCommand(LABEL_PLAY_PAUSE, spotify.remote.PlaybackCommand.PLAY_PAUSE, 'Ctrl+Space', True),
             ID_PREVIOUS: PlaybackCommand(LABEL_PREVIOUS, spotify.remote.PlaybackCommand.PREV_TRACK, 'Ctrl+Left', True),
@@ -38,18 +40,18 @@ class MainWindow(wx.Frame):
             ID_INCREASE_VOLUME: PlaybackCommand(LABEL_INCREASE_VOLUME, spotify.remote.PlaybackCommand.VOLUME_UP, 'Ctrl+Up', False),
             ID_DECREASE_VOLUME: PlaybackCommand(LABEL_DECREASE_VOLUME, spotify.remote.PlaybackCommand.VOLUME_DOWN, 'Ctrl+Down', False),
         }
+        self.panel = wx.Panel(self)
+        self.tabs = controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
+        self.now_playing_panel = NowPlayingPanel(self.tabs, self)
+        self.search_panel = SearchPanel(self.tabs)
+        self.tabs.AddPage(self.search_panel, 'Search')
         self.setup_commands(self.commands)
+        self.now_playing_panel.setup_commands(self.commands)
+        self.tabs.AddPage(self.now_playing_panel, LABEL_NOW_PLAYING)
 
     def setup_commands(self, command_dict):
-        uri_label = wx.StaticText(self.panel, -1, LABEL_URI)
-        self.uri_field = wx.TextCtrl(self.panel, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
-        self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.onUriEntered)
         playback_menu = wx.Menu()
         for id, command in command_dict.items():
-            if command.show_as_button:
-                btn = wx.Button(self.panel, id, command.label)
-                command.add_widget(btn)
-                btn.Bind(wx.EVT_BUTTON, self.onPlaybackCommand)
             menu_item = playback_menu.Append(id, '{0}\t{1}'.format(command.label, command.hotkey))
             command.add_widget(menu_item)
             self.Bind(wx.EVT_MENU, self.onPlaybackCommand)
@@ -72,8 +74,8 @@ class MainWindow(wx.Frame):
             self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(self._current_track)))
 
     def onUriEntered(self, event):
-        uri = self.uri_field.GetValue()
-        self.uri_field.Clear()
+        uri = self.now_playing_panel.uri_field.GetValue()
+        self.now_playing_panel.uri_field.Clear()
         if uri:
             if uri.startswith('spotify:'):
                 self.background_worker(self._spotify_remote.play_uri, uri, error_callback=self.onError)
@@ -100,6 +102,22 @@ class MainWindow(wx.Frame):
 
     def onError(self, exception):
         show_error(self, exception.error_description)
+
+
+class NowPlayingPanel(wx.Panel):
+    def __init__(self, parent, main_window, *args, **kwargs):
+        super().__init__(parent, *args, **kwargs)
+        self.main_window = main_window
+
+    def setup_commands(self, command_dict):
+        uri_label = wx.StaticText(self, -1, LABEL_URI)
+        self.uri_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
+        self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.main_window.onUriEntered)
+        for id, command in command_dict.items():
+            if command.show_as_button:
+                btn = wx.Button(self, id, command.label)
+                command.add_widget(btn)
+                btn.Bind(wx.EVT_BUTTON, self.main_window.onPlaybackCommand)
 
 
 class PlaybackCommand:
