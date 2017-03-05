@@ -156,7 +156,7 @@ class RemoteBridge:
         if params is not None:
             request_params.update(params)
         logger.debug('Requesting URL: {0} with params: {1}'.format(request_url, request_params))
-        response = self._session.get(request_url, params=request_params).json()
+        response = json.loads(self._session.get(request_url, params=request_params).content)
         logger.debug('Received response: {0}'.format(response))
         if 'error' in response:
             error_code = response['error']['type']
@@ -173,13 +173,13 @@ class RemoteBridge:
         url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._control_hostname, self._port)
         logger.debug('Requesting {0}'.format(url))
         response = self._session.get(url)
-        data = response.json()
+        data = json.loads(response.content)
         logger.debug('CSRF request response: {0}'.format(data))
         return data['token']
 
     def get_oauth_token(self):
         response = self._session.get(SPOTIFY_OPEN_TOKEN_URL)
-        data = response.json()
+        data = json.loads(response.content)
         logger.debug('OAuth token request response: {0}'.format(data))
         return data['t']
 
