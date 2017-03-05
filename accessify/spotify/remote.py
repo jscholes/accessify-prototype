@@ -1,7 +1,5 @@
 from collections import defaultdict
 from enum import Enum
-# TODO: Use ujson for faster JSON processing
-import json
 import logging
 import queue
 import random
@@ -12,6 +10,7 @@ from ctypes import windll
 
 import psutil
 import requests
+import ujson as json
 
 from ..utils.concurrency import consume_queue
 
