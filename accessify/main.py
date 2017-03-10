@@ -1,13 +1,12 @@
 from concurrent import futures
-from functools import partial
 import logging
 import os.path
 
 import wx
 
 from . import gui
+from . import playback
 from . import spotify
-from .utils import concurrency
 
 
 logger = logging.getLogger(__package__)
@@ -25,16 +24,16 @@ def main():
 
     # Set up concurrency
     executor = futures.ThreadPoolExecutor()
-    background_worker = partial(concurrency.submit_future, executor)
 
     # Set up communication with Spotify
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.get_web_helper_port())
+    playback_controller = playback.PlaybackController(spotify_remote, executor)
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
 
     # Set up the GUI
     app = wx.App()
-    window = gui.main.MainWindow(spotify_remote, background_worker)
+    window = gui.main.MainWindow(playback_controller)
     window.subscribe_to_spotify_events(event_manager)
     window.Show()
     app.MainLoop()

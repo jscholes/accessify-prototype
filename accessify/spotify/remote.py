@@ -183,7 +183,7 @@ class RemoteBridge:
         logger.debug('OAuth token request response: {0}'.format(data))
         return data['t']
 
-    def send_command(self, command):
+    def queue_command(self, command):
         """
         Queue up a PlaybackCommand to be delivered to the Spotify window.
 
