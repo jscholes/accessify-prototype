@@ -21,6 +21,7 @@ playback_commands = {
     wx.NewId(): {'label': '&Fast Forward\tShift+Right', 'method': 'seek_forward'},
     wx.NewId(): {'label': '&Decrease Volume\tCtrl+Down', 'method': 'decrease_volume'},
     wx.NewId(): {'label': '&Increase Volume\tCtrl+Up', 'method': 'increase_volume'},
+    wx.NewId(): {'label': 'Clear playback &Queue', 'method': 'clear_queue'},
     wx.NewId(): {'label': 'Copy current track &URI\tCtrl+C', 'method': 'copy_current_track_uri'},
 }
 
@@ -57,7 +58,6 @@ class MainWindow(wx.Frame):
     def _bindEvents(self):
         self.Bind(wx.EVT_MENU, self.onPlaybackAction)
         self.Bind(wx.EVT_SHOW, self.onShow)
-
 
     def subscribe_to_spotify_events(self, event_manager):
         event_manager.subscribe(spotify.eventmanager.EventType.TRACK_CHANGE, self.onTrackChange)

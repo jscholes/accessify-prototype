@@ -1,3 +1,4 @@
+import collections
 import queue
 
 import pyperclip
@@ -9,7 +10,7 @@ from .spotify.remote import PlaybackCommand
 class PlaybackController:
     def __init__(self, spotify_remote, event_manager, thread_pool_executor):
         self.executor = thread_pool_executor
-        self.playback_queue = queue.Queue()
+        self.playback_queue = collections.deque()
         self.spotify = spotify_remote
         event_manager.subscribe(EventType.STOP, self.advance_playback_queue)
         self.current_track = None
@@ -19,16 +20,18 @@ class PlaybackController:
             pyperclip.copy(self.current_track.uri)
 
     def queue_uri(self, uri, context=None):
-        self.playback_queue.put({'uri': uri, 'context': context})
+        self.playback_queue.append({'uri': uri, 'context': context})
 
     def advance_playback_queue(self):
         try:
-            item = self.playback_queue.get(block=False)
-            self.playback_queue.task_done()
-        except quque.Empty:
+            item = self.playback_queue.popleft()
+        except IndexError:
             return
 
         self.play_uri(item['uri'], item['context'])
+
+    def clear_queue(self):
+        self.playback_queue.clear()
 
     def play_pause(self):
         self.spotify.queue_command(PlaybackCommand.PLAY_PAUSE)
