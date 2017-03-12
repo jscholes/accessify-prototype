@@ -2,6 +2,7 @@ appdirs
 packaging
 psutil
 pyparsing
+pyperclip
 requests
 six
 ujson
