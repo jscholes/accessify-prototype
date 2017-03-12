@@ -27,9 +27,9 @@ def main():
 
     # Set up communication with Spotify
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.get_web_helper_port())
-    playback_controller = playback.PlaybackController(spotify_remote, executor)
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
+    playback_controller = playback.PlaybackController(spotify_remote, event_manager, executor)
 
     # Set up the GUI
     app = wx.App()

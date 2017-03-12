@@ -8,6 +8,8 @@ import threading
 import time
 from ctypes import windll
 
+from requests.packages.urllib3 import disable_warnings
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import psutil
 import requests
 import ujson as json
@@ -19,52 +21,15 @@ from . import exceptions
 
 logger = logging.getLogger(__name__)
 
-requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
+disable_warnings(InsecureRequestWarning)
 
-WM_COMMAND = 0x111
 find_window = windll.User32.FindWindowW
 send_message = windll.User32.SendMessageW
 
+WM_COMMAND = 0x111
 SPOTIFY_WINDOW_CLASS = 'SpotifyMainWindow'
 WEB_HELPER_PROCESS = 'SpotifyWebHelper.exe'
-SPOTIFY_PROCESS = 'Spotify.exe'
 SPOTIFY_OPEN_TOKEN_URL = 'https://open.spotify.com/token'
-
-spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
-    '4001': 'Unknown method',
-    '4002': 'Error parsing request',
-    '4003': 'Unknown service',
-    '4004': 'Service not responding',
-    '4102': 'Invalid OAuthToken',
-    '4103': 'Expired OAuth token',
-    '4104': 'OAuth token not verified',
-    '4105': 'Token verification denied too many requests',
-    '4106': 'Token verification timeout',
-    '4107': 'Invalid Csrf token',
-    '4108': 'OAuth token is invalid for current user',
-    '4109': 'Invalid Csrf path',
-    '4110': 'No user logged in',
-    '4111': 'Invalid scope',
-    '4112': 'Csrf challenge failed',
-    '4201': 'Upgrade to premium',
-    '4202': 'Upgrade to premium or wait',
-    '4203': 'Billing failed',
-    '4204': 'Technical error',
-    '4205': 'Commercial is playing',
-    '4301': 'Content is unavailable but can be purchased',
-    '4302': 'Premium only content',
-    '4303': 'Content unavailable',
-})
-
-
-class PlaybackCommand(Enum):
-    PLAY_PAUSE = 114
-    PREV_TRACK = 116
-    NEXT_TRACK = 115
-    SEEK_BACKWARD = 118
-    SEEK_FORWARD = 117
-    VOLUME_UP = 121
-    VOLUME_DOWN = 122
 
 
 def get_web_helper_port():
@@ -201,4 +166,39 @@ class RemoteBridge:
         if command in (PlaybackCommand.PLAY_PAUSE, PlaybackCommand.PREV_TRACK, PlaybackCommand.NEXT_TRACK):
             logger.debug('Sleeping to avoid command flooding')
             time.sleep(0.3)
+
+class PlaybackCommand(Enum):
+    PLAY_PAUSE = 114
+    PREV_TRACK = 116
+    NEXT_TRACK = 115
+    SEEK_BACKWARD = 118
+    SEEK_FORWARD = 117
+    VOLUME_UP = 121
+    VOLUME_DOWN = 122
+
+spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
+    '4001': 'Unknown method',
+    '4002': 'Error parsing request',
+    '4003': 'Unknown service',
+    '4004': 'Service not responding',
+    '4102': 'Invalid OAuthToken',
+    '4103': 'Expired OAuth token',
+    '4104': 'OAuth token not verified',
+    '4105': 'Token verification denied too many requests',
+    '4106': 'Token verification timeout',
+    '4107': 'Invalid Csrf token',
+    '4108': 'OAuth token is invalid for current user',
+    '4109': 'Invalid Csrf path',
+    '4110': 'No user logged in',
+    '4111': 'Invalid scope',
+    '4112': 'Csrf challenge failed',
+    '4201': 'Upgrade to premium',
+    '4202': 'Upgrade to premium or wait',
+    '4203': 'Billing failed',
+    '4204': 'Technical error',
+    '4205': 'Commercial is playing',
+    '4301': 'Content is unavailable but can be purchased',
+    '4302': 'Premium only content',
+    '4303': 'Content unavailable',
+})
 

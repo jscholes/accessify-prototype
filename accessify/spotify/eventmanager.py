@@ -17,9 +17,11 @@ class EventManager(threading.Thread):
     def __init__(self, remote_bridge, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.setDaemon(True)
+
         self._remote_bridge = remote_bridge
         self._event_queue = queue.Queue()
-        self._callbacks = defaultdict(lambda: [])
+        self._callbacks = defaultdict(list)
+
         self._previous_track_dict = {}
         self._playback_state = PlaybackState.UNDETERMINED
         self._in_error_status = False
