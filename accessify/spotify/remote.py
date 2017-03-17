@@ -12,6 +12,7 @@ from requests.packages.urllib3 import disable_warnings
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import psutil
 import requests
+from functional import seq
 import ujson as json
 
 from ..utils.concurrency import consume_queue
@@ -28,30 +29,38 @@ send_message = windll.User32.SendMessageW
 
 WM_COMMAND = 0x111
 SPOTIFY_WINDOW_CLASS = 'SpotifyMainWindow'
-WEB_HELPER_PROCESS = 'SpotifyWebHelper.exe'
+SPOTIFY_PROCESSES = ('Spotify.exe', 'SpotifyWebHelper.exe')
+SPOTIFY_PORT_RANGE = range(4370, 4380)
 SPOTIFY_OPEN_TOKEN_URL = 'https://open.spotify.com/token'
 
 
-def get_web_helper_port():
+def find_listening_port():
     """
     Attempt to find the HTTPS port that the SpotifyWebHelper process is listening on.
 
-    If SpotifyWebHelper.exe is not running, raises SpotifyNotRunningError.  Otherwise returns the port number.
+    If SpotifyWebHelper.exe is not running, this function will atempt to find the listening port for Spotify.exe as a backup.  If neither process is running, exceptions.SpotifyNotRunningError will be raised.  Otherwise it will return the port number which is guaranteed to be between 4370 and 4380 (not inclusive).
     """
-    # TODO: Find the listening port for Spotify.exe if the Web Helper isn't running
-    helper_process = None
-    for process in psutil.process_iter():
-        if process.name() == WEB_HELPER_PROCESS:
-            helper_process = process
-            break
+    # Find all Spotify processes with at least one active connection
+    spotify_processes = (seq(psutil.process_iter())
+        .filter(lambda proc: proc.name() in SPOTIFY_PROCESSES and any(proc.connections()))
+    )
 
-    if helper_process is None:
+    if not spotify_processes:
         raise exceptions.SpotifyNotRunningError
-    else:
-        connections = sorted(helper_process.connections(), key=lambda conn: conn.laddr[1])
-        port = connections[0].laddr[1]
-        logger.debug('WebHelper listening port: {0}'.format(port))
-        return port
+
+    # Find the first Spotify connection listening on ports 4370-4379
+    try:
+        connection = (seq(proc.connections() for proc in spotify_processes)
+            .flatten()
+            .filter(lambda conn: conn.status == 'LISTEN' and conn.laddr[1] in SPOTIFY_PORT_RANGE)
+            .sorted(key=lambda conn: conn.laddr[1])
+            .first()
+        )
+    except IndexError:
+        raise exceptions.SpotifyNotRunningError
+
+    host, port = connection.laddr
+    return port
 
 
 class RemoteBridge:

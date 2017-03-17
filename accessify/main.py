@@ -26,7 +26,7 @@ def main():
     executor = futures.ThreadPoolExecutor()
 
     # Set up communication with Spotify
-    spotify_remote = spotify.remote.RemoteBridge(spotify.remote.get_web_helper_port())
+    spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController(spotify_remote, event_manager, executor)
