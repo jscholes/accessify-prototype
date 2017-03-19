@@ -37,8 +37,10 @@ SEARCH_TYPES = ['&Track', '&Artist', 'A&lbum', '&Playlist', '&User']
 
 ID_PLAY_SELECTED = wx.NewId()
 ID_COPY_SELECTED = wx.NewId()
+ID_QUEUE_SELECTED = wx.NewId()
 context_menu_commands = {
     ID_PLAY_SELECTED: {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
+    ID_QUEUE_SELECTED: {'label': 'Play ne&xt', 'method': 'QueueSelectedURI'},
     ID_COPY_SELECTED: {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C'},
 }
 
@@ -218,6 +220,11 @@ class SearchPage(TabsPage):
         result_uri = self.GetSelectedURI()
         if result_uri:
             self.playback.copy_uri(result_uri)
+
+    def QueueSelectedURI(self):
+        result_uri = self.GetSelectedURI()
+        if result_uri:
+            self.playback.queue_uri(result_uri)
 
     def GetSelectedURI(self):
         selected_result = self.results.GetSelection()
