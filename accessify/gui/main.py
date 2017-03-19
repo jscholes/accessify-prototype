@@ -13,6 +13,7 @@ LABEL_SEARCH_QUERY = 'S&earch'
 LABEL_SEARCH_TYPE = 'Search &type'
 LABEL_SEARCH_BUTTON = '&Search'
 LABEL_RESULTS = '&Results'
+LABEL_PLAY_SELECTED = '&Play\tReturn'
 
 LABEL_NOW_PLAYING = 'Now playing'
 LABEL_URI = 'Spoti&fy URI'
@@ -33,6 +34,11 @@ playback_commands = {
 }
 
 SEARCH_TYPES = ['&Track', '&Artist', 'A&lbum', '&Playlist', '&User']
+
+ID_PLAY_SELECTED = wx.NewId()
+context_menu_commands = {
+    ID_PLAY_SELECTED: {'label': '&Play', 'method': 'play_selected_result'},
+}
 
 class MainWindow(wx.Frame):
     def __init__(self, playback_controller, *args, **kwargs):
@@ -148,7 +154,7 @@ class SearchPage(TabsPage):
     def _createResultsList(self):
         results_label = wx.StaticText(self, -1, LABEL_RESULTS)
         self.results = wx.ListBox(self, style=wx.LB_SINGLE)
-        self.results.Bind(wx.EVT_KEY_UP, self.onKeyUp)
+        self._createContextMenu()
 
         # Add some dummy results for testing
         sample_results = [
@@ -164,6 +170,20 @@ class SearchPage(TabsPage):
             self.results.Append(text, clientData=uri)
         self.results.SetSelection(0)
 
+    def _createContextMenu(self):
+        context_menu = wx.Menu()
+        for id, command_dict in context_menu_commands.items():
+            context_menu.Append(id, command_dict['label'])
+        self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
+        self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
+
+        accelerators = [
+            wx.AcceleratorEntry(keyCode=wx.WXK_RETURN, cmd=ID_PLAY_SELECTED)
+        ]
+        shortcuts = wx.AcceleratorTable(accelerators)
+        self.results.SetAcceleratorTable(shortcuts)
+        self.context_menu = context_menu
+
     def onQueryEntered(self, event):
         query = self.query_field.GetValue()
         if not query:
@@ -174,12 +194,13 @@ class SearchPage(TabsPage):
     def onSearch(self, event):
         self.onQueryEntered(None)
 
-    def onKeyUp(self, event):
-        key = event.GetKeyCode()
-        if key == wx.WXK_RETURN:
-            self.play_selected_result()
-        else:
-            event.Skip()
+    def onContextMenu(self, event):
+        self.PopupMenu(self.context_menu, event.GetPosition())
+
+    def onContextMenuCommand(self, event):
+        command_dict = context_menu_commands.get(event.GetId(), None)
+        if command_dict:
+            getattr(self, command_dict['method'])()
 
     def play_selected_result(self):
         selected_result = self.results.GetSelection()
