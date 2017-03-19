@@ -7,6 +7,13 @@ from . import controls
 
 WINDOW_TITLE = 'Accessify'
 MENU_PLAYBACK = '&Playback'
+
+LABEL_SEARCH = 'Search'
+LABEL_SEARCH_QUERY = 'S&earch'
+LABEL_SEARCH_TYPE = 'Search &type'
+LABEL_SEARCH_BUTTON = '&Search'
+LABEL_RESULTS = '&Results'
+
 LABEL_NOW_PLAYING = 'Now playing'
 LABEL_URI = 'Spoti&fy URI'
 LABEL_PLAY_URI = '&Play'
@@ -25,6 +32,7 @@ playback_commands = {
     wx.NewId(): {'label': 'Copy current track &URI\tCtrl+C', 'method': 'copy_current_track_uri'},
 }
 
+SEARCH_TYPES = ['&Track', '&Artist', 'A&lbum', '&Playlist', '&User']
 
 class MainWindow(wx.Frame):
     def __init__(self, playback_controller, *args, **kwargs):
@@ -44,6 +52,7 @@ class MainWindow(wx.Frame):
         return controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
 
     def         _addPages(self):
+        self.tabs.AddPage(SearchPage(self.tabs, self.playback), LABEL_SEARCH)
         self.tabs.AddPage(NowPlayingPage(self.tabs, self.playback), LABEL_NOW_PLAYING)
 
     def _createMenu(self):
@@ -121,6 +130,35 @@ class TabsPage(wx.Panel):
         self.InitialiseControls()
 
 
+class SearchPage(TabsPage):
+    def InitialiseControls(self):
+        query_label = wx.StaticText(self, -1, LABEL_SEARCH_QUERY)
+        self.query_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
+        self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
+        self.initial_focus = self.query_field
+
+        self._addButtons()
+        self._createResultsList()
+
+    def _addButtons(self):
+        self.search_type = controls.PopupChoiceButton(self, mainLabel=LABEL_SEARCH_TYPE, choices=SEARCH_TYPES)
+        search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
+        search_button.Bind(wx.EVT_BUTTON, self.onSearch)
+
+    def _createResultsList(self):
+        results_label = wx.StaticText(self, -1, LABEL_RESULTS)
+        self.results = wx.ListBox(self, style=wx.LB_SINGLE)
+
+
+    def onQueryEntered(self, event):
+        query = self.query_field.GetValue()
+        if not query:
+            return
+        else:
+            self.results.SetFocus()
+
+    def onSearch(self, event):
+        self.onQueryEntered(None)
 
 
 class NowPlayingPage(TabsPage):
