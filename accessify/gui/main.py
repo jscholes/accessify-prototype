@@ -159,20 +159,6 @@ class SearchPage(TabsPage):
         self.results = wx.ListBox(self, style=wx.LB_SINGLE)
         self._createContextMenu()
 
-        # Add some dummy results for testing
-        sample_results = [
-            ('Little Bird', 'Sharon Shannon', 'spotify:track:3KntH6hRCc4HY6E70xMn8F'),
-            ('I\'ll Be Wise', 'Kate Rusby', 'spotify:track:5XMWL43ivHgti9I6LCqYPF'),
-            ('Skibereen', 'The Wolfe Tones', 'spotify:track:7sS4BK6MdXqu3fCqPXStPb'),
-            ('Song For Ireland', 'The Dubliners', 'spotify:track:26DVAZXVZ6vHgShGFW1Ebo'),
-            ('The Dutchman', 'Liam Clancy', 'spotify:track:2KKQwSx8WlYLFLMi6KAoEn'),
-        ]
-
-        for title, artist, uri in sample_results:
-            text = '{0} by {1}'.format(title, artist)
-            self.results.Append(text, clientData=uri)
-        self.results.SetSelection(0)
-
     def _createContextMenu(self):
         context_menu = wx.Menu()
         accelerators = []
@@ -194,6 +180,15 @@ class SearchPage(TabsPage):
         if not query:
             return
         else:
+            # Add some dummy results for testing
+            sample_results = [
+                ('Little Bird', 'Sharon Shannon', 'spotify:track:3KntH6hRCc4HY6E70xMn8F'),
+                ('I\'ll Be Wise', 'Kate Rusby', 'spotify:track:5XMWL43ivHgti9I6LCqYPF'),
+                ('Skibereen', 'The Wolfe Tones', 'spotify:track:7sS4BK6MdXqu3fCqPXStPb'),
+                ('Song For Ireland', 'The Dubliners', 'spotify:track:26DVAZXVZ6vHgShGFW1Ebo'),
+                ('The Dutchman', 'Liam Clancy', 'spotify:track:2KKQwSx8WlYLFLMi6KAoEn'),
+            ]
+            self.AddResults(sample_results)
             self.results.SetFocus()
 
     def onSearch(self, event):
@@ -206,6 +201,14 @@ class SearchPage(TabsPage):
         command_dict = context_menu_commands.get(event.GetId(), None)
         if command_dict:
             getattr(self, command_dict['method'])()
+
+    def AddResults(self, results):
+        for title, artist, uri in results:
+            text = '{0} by {1}'.format(title, artist)
+            self.results.Append(text, clientData=uri)
+        if self.get_selected_uri() is None:
+            self.results.SetSelection(0)
+
 
     def play_selected_uri(self):
         result_uri = self.get_selected_uri()
