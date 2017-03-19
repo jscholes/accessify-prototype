@@ -1,5 +1,4 @@
 import collections
-import queue
 
 import pyperclip
 
