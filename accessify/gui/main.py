@@ -36,9 +36,12 @@ playback_commands = {
 SEARCH_TYPES = ['&Track', '&Artist', 'A&lbum', '&Playlist', '&User']
 
 ID_PLAY_SELECTED = wx.NewId()
+ID_COPY_SELECTED = wx.NewId()
 context_menu_commands = {
-    ID_PLAY_SELECTED: {'label': '&Play', 'method': 'play_selected_result'},
+    ID_PLAY_SELECTED: {'label': '&Play', 'method': 'play_selected_uri', 'shortcut': 'Return'},
+    ID_COPY_SELECTED: {'label': '&Copy Spotify URI', 'method': 'copy_selected_uri', 'shortcut': 'Ctrl+C'},
 }
+
 
 class MainWindow(wx.Frame):
     def __init__(self, playback_controller, *args, **kwargs):
@@ -172,14 +175,16 @@ class SearchPage(TabsPage):
 
     def _createContextMenu(self):
         context_menu = wx.Menu()
+        accelerators = []
         for id, command_dict in context_menu_commands.items():
             context_menu.Append(id, command_dict['label'])
+            shortcut = command_dict.get('shortcut', None)
+            if shortcut:
+                accelerator = wx.AcceleratorEntry(cmd=id)
+                accelerator.FromString(shortcut)
+                accelerators.append(accelerator)
         self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
         self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
-
-        accelerators = [
-            wx.AcceleratorEntry(keyCode=wx.WXK_RETURN, cmd=ID_PLAY_SELECTED)
-        ]
         shortcuts = wx.AcceleratorTable(accelerators)
         self.results.SetAcceleratorTable(shortcuts)
         self.context_menu = context_menu
@@ -202,12 +207,24 @@ class SearchPage(TabsPage):
         if command_dict:
             getattr(self, command_dict['method'])()
 
-    def play_selected_result(self):
+    def play_selected_uri(self):
+        result_uri = self.get_selected_uri()
+        if result_uri:
+            self.playback.play_uri(result_uri)
+
+    def copy_selected_uri(self):
+        result_uri = self.get_selected_uri()
+        if result_uri:
+            self.playback.copy_uri(result_uri)
+
+    def get_selected_uri(self):
         selected_result = self.results.GetSelection()
         if selected_result != wx.NOT_FOUND:
             result_uri = self.results.GetClientData(selected_result)
-            if result_uri:
-                self.playback.play_uri(result_uri)
+            return result_uri
+        else:
+            return None
+
 
 
 class NowPlayingPage(TabsPage):
