@@ -46,9 +46,10 @@ context_menu_commands = {
 
 
 class MainWindow(wx.Frame):
-    def __init__(self, playback_controller, *args, **kwargs):
+    def __init__(self, playback_controller, search_controller, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
         self.playback = playback_controller
+        self.search = search_controller
         self.InitialiseControls()
 
     def InitialiseControls(self):
@@ -62,7 +63,7 @@ class MainWindow(wx.Frame):
         return controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
 
     def         _addPages(self):
-        self.tabs.AddPage(SearchPage(self.tabs, self.playback), LABEL_SEARCH)
+        self.tabs.AddPage(SearchPage(self.tabs, self.playback, self.search), LABEL_SEARCH)
         self.tabs.AddPage(NowPlayingPage(self.tabs, self.playback), LABEL_NOW_PLAYING)
 
     def _createMenus(self):
@@ -139,6 +140,10 @@ class TabsPage(wx.Panel):
 
 
 class SearchPage(TabsPage):
+    def __init__(self, parent, playback_controller, search_controller, *args, **kwargs):
+        self.search = search_controller
+        super().__init__(parent, playback_controller, *args, **kwargs)
+
     def InitialiseControls(self):
         self._createSearchFields()
         self._createResultsList()
@@ -182,15 +187,13 @@ class SearchPage(TabsPage):
         if not query:
             return
         else:
-            # Add some dummy results for testing
-            sample_results = [
-                ('Little Bird', 'Sharon Shannon', 'spotify:track:3KntH6hRCc4HY6E70xMn8F'),
-                ('I\'ll Be Wise', 'Kate Rusby', 'spotify:track:5XMWL43ivHgti9I6LCqYPF'),
-                ('Skibereen', 'The Wolfe Tones', 'spotify:track:7sS4BK6MdXqu3fCqPXStPb'),
-                ('Song For Ireland', 'The Dubliners', 'spotify:track:26DVAZXVZ6vHgShGFW1Ebo'),
-                ('The Dutchman', 'Liam Clancy', 'spotify:track:2KKQwSx8WlYLFLMi6KAoEn'),
-            ]
-            self.AddResults(sample_results)
+            self.results.Clear()
+            results = self.search.perform_new_search(query)
+            if results:
+                self.AddResults(results)
+            else:
+                self.results.Append('No results')
+                self.results.SetSelection(0)
             self.results.SetFocus()
 
     def onSearch(self, event):

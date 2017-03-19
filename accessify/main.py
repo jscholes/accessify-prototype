@@ -6,6 +6,7 @@ import wx
 
 from . import gui
 from . import playback
+from . import search
 from . import spotify
 
 
@@ -30,10 +31,11 @@ def main():
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController(spotify_remote, event_manager, executor)
+    search_controller = search.SearchController()
 
     # Set up the GUI
     app = wx.App()
-    window = gui.main.MainWindow(playback_controller)
+    window = gui.main.MainWindow(playback_controller, search_controller)
     window.SubscribeToSpotifyEvents(event_manager)
     window.Show()
     app.MainLoop()
