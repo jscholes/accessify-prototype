@@ -31,20 +31,20 @@ class MainWindow(wx.Frame):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
         self.playback = playback_controller
         self._current_track = None
-        self._initialiseControls()
+        self.InitialiseControls()
 
-    def _initialiseControls(self):
+    def InitialiseControls(self):
         self.panel = wx.Panel(self)
         self.tabs = self._createTabs()
         self._addPages()
         self._createMenu()
         self._bindEvents()
 
-    def         _addPages(self):
-        self.tabs.AddPage(NowPlayingPage(self.tabs, self.playback), LABEL_NOW_PLAYING)
-
     def _createTabs(self):
         return controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
+
+    def         _addPages(self):
+        self.tabs.AddPage(NowPlayingPage(self.tabs, self.playback), LABEL_NOW_PLAYING)
 
     def _createMenu(self):
         playback_menu = playback_menu = wx.Menu()
@@ -118,11 +118,13 @@ class TabsPage(wx.Panel):
     def __init__(self, parent, playback_controller, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.playback = playback_controller
-        self._initialiseControls()
+        self.InitialiseControls()
+
+
 
 
 class NowPlayingPage(TabsPage):
-    def _initialiseControls(self):
+    def InitialiseControls(self):
         uri_label = wx.StaticText(self, -1, LABEL_URI)
         self.uri_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
         self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.onUriEntered)

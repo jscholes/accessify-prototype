@@ -67,7 +67,7 @@ class PopupChoiceButton(wx.adv.CommandLinkButton):
     Methods accepting an itemIndex parameter will raise IndexError if itemIndex is less than, greater than or equal to the number of items in the control.  You can obtain the number of items with GetCount.
     """
 
-    def __init__ (self, parent, id=wx.ID_ANY, mainLabel='', note='', pos=wx.DefaultPosition, size=wx.DefaultSize, choices=None, style=0, validator=wx.DefaultValidator, name='popupchoicebutton'):
+    def __init__ (self, parent, id=wx.ID_ANY, mainLabel='', note='', pos=wx.DefaultPosition, size=wx.DefaultSize, choices=None, style=wx.WANTS_CHARS, validator=wx.DefaultValidator, name='popupchoicebutton'):
         super().__init__(parent=parent, id=id, mainLabel=mainLabel, note=note, pos=pos, size=size, style=style, validator=validator, name=name)
         self._label_prefix = self.GetLabel()
         if not choices:
@@ -90,7 +90,7 @@ class PopupChoiceButton(wx.adv.CommandLinkButton):
 
     def _bindEvents(self):
         self.Bind(wx.EVT_BUTTON, self.onClick)
-        self.Bind(wx.EVT_KEY_UP, self.onChoiceSelectedFromKeyboard)
+        self.Bind(wx.EVT_KEY_DOWN, self.onChoiceSelectedFromKeyboard)
         self.menu.Bind(wx.EVT_MENU, self.onChoiceSelectedFromMenu)
 
     def Append(self, item, clientData=None):
@@ -185,8 +185,12 @@ class PopupChoiceButton(wx.adv.CommandLinkButton):
             self.SetSelection((self._selected_item_index - 1) % len(self._items))
         elif key == wx.WXK_RIGHT:
             self.SetSelection((self._selected_item_index + 1) % len(self._items))
+        elif key == wx.WXK_RETURN:
+            # TODO: Work out why this makes the default Windows beep sound
+            self.onClick(None)
         else:
-            event.Skip()
+            if not self.HandleAsNavigationKey(event):
+                event.Skip()
 
     def onChoiceSelectedFromMenu(self, event):
         selected = event.GetId()
