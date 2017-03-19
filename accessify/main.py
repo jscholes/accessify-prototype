@@ -34,7 +34,7 @@ def main():
     # Set up the GUI
     app = wx.App()
     window = gui.main.MainWindow(playback_controller)
-    window.subscribe_to_spotify_events(event_manager)
+    window.SubscribeToSpotifyEvents(event_manager)
     window.Show()
     app.MainLoop()
 

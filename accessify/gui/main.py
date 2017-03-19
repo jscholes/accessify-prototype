@@ -38,8 +38,8 @@ SEARCH_TYPES = ['&Track', '&Artist', 'A&lbum', '&Playlist', '&User']
 ID_PLAY_SELECTED = wx.NewId()
 ID_COPY_SELECTED = wx.NewId()
 context_menu_commands = {
-    ID_PLAY_SELECTED: {'label': '&Play', 'method': 'play_selected_uri', 'shortcut': 'Return'},
-    ID_COPY_SELECTED: {'label': '&Copy Spotify URI', 'method': 'copy_selected_uri', 'shortcut': 'Ctrl+C'},
+    ID_PLAY_SELECTED: {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
+    ID_COPY_SELECTED: {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C'},
 }
 
 
@@ -47,14 +47,13 @@ class MainWindow(wx.Frame):
     def __init__(self, playback_controller, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
         self.playback = playback_controller
-        self._current_track = None
         self.InitialiseControls()
 
     def InitialiseControls(self):
         self.panel = wx.Panel(self)
         self.tabs = self._createTabs()
         self._addPages()
-        self._createMenu()
+        self._createMenus()
         self._bindEvents()
 
     def _createTabs(self):
@@ -64,7 +63,7 @@ class MainWindow(wx.Frame):
         self.tabs.AddPage(SearchPage(self.tabs, self.playback), LABEL_SEARCH)
         self.tabs.AddPage(NowPlayingPage(self.tabs, self.playback), LABEL_NOW_PLAYING)
 
-    def _createMenu(self):
+    def _createMenus(self):
         playback_menu = playback_menu = wx.Menu()
         for id, command_dict in playback_commands.items():
             menu_item = playback_menu.Append(id, command_dict['label'])
@@ -74,18 +73,17 @@ class MainWindow(wx.Frame):
         self.playback_menu = playback_menu
 
     def _bindEvents(self):
-        self.Bind(wx.EVT_MENU, self.onPlaybackAction)
+        self.Bind(wx.EVT_MENU, self.onPlaybackCommand)
         self.Bind(wx.EVT_SHOW, self.onShow)
 
-    def subscribe_to_spotify_events(self, event_manager):
+    def SubscribeToSpotifyEvents(self, event_manager):
         event_manager.subscribe(spotify.eventmanager.EventType.TRACK_CHANGE, self.onTrackChange)
         event_manager.subscribe(spotify.eventmanager.EventType.PLAY, self.onPlay)
         event_manager.subscribe(spotify.eventmanager.EventType.PAUSE, self.onPause)
         event_manager.subscribe(spotify.eventmanager.EventType.STOP, self.onStop)
         event_manager.subscribe(spotify.eventmanager.EventType.ERROR, self.onError)
 
-    def set_current_track(self, track):
-        self.playback.current_track = track
+    def UpdateTrackDisplay(self, track):
         if track is None:
             self.SetTitle(WINDOW_TITLE)
         else:
@@ -98,15 +96,14 @@ class MainWindow(wx.Frame):
             initial_focus.SetFocus()
         event.Skip()
 
-    def onPlaybackAction(self, event):
+    def onPlaybackCommand(self, event):
         id = event.GetId()
         command = playback_commands.get(id)
         if command:
-            callback = getattr(self.playback, command['method'])
-            callback()
+            getattr(self.playback, command['method'])()
 
     def onTrackChange(self, track):
-        wx.CallAfter(self.set_current_track, track)
+        wx.CallAfter(self.UpdateTrackDisplay, track)
 
     def onPause(self):
         # TODO: Remove this ugly hack with CallAfter decorator
@@ -126,7 +123,7 @@ class MainWindow(wx.Frame):
 
     def onStop(self):
         wx.CallAfter(self.onPause)
-        wx.CallAfter(self.set_current_track, None)
+        wx.CallAfter(self.UpdateTrackDisplay, None)
 
     def onError(self, exception):
         show_error(self, exception.error_description)
@@ -141,18 +138,17 @@ class TabsPage(wx.Panel):
 
 class SearchPage(TabsPage):
     def InitialiseControls(self):
+        self._createSearchFields()
+        self._createResultsList()
+        self._bindEvents()
+
+    def _createSearchFields(self):
         query_label = wx.StaticText(self, -1, LABEL_SEARCH_QUERY)
         self.query_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
-        self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
         self.initial_focus = self.query_field
 
-        self._addButtons()
-        self._createResultsList()
-
-    def _addButtons(self):
         self.search_type = controls.PopupChoiceButton(self, mainLabel=LABEL_SEARCH_TYPE, choices=SEARCH_TYPES)
-        search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
-        search_button.Bind(wx.EVT_BUTTON, self.onSearch)
+        self.search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
 
     def _createResultsList(self):
         results_label = wx.StaticText(self, -1, LABEL_RESULTS)
@@ -169,11 +165,15 @@ class SearchPage(TabsPage):
                 accelerator = wx.AcceleratorEntry(cmd=id)
                 accelerator.FromString(shortcut)
                 accelerators.append(accelerator)
-        self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
-        self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
         shortcuts = wx.AcceleratorTable(accelerators)
         self.results.SetAcceleratorTable(shortcuts)
         self.context_menu = context_menu
+
+    def _bindEvents(self):
+        self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
+        self.search_button.Bind(wx.EVT_BUTTON, self.onSearch)
+        self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
+        self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
     def onQueryEntered(self, event):
         query = self.query_field.GetValue()
@@ -206,21 +206,20 @@ class SearchPage(TabsPage):
         for title, artist, uri in results:
             text = '{0} by {1}'.format(title, artist)
             self.results.Append(text, clientData=uri)
-        if self.get_selected_uri() is None:
+        if self.GetSelectedURI() is None:
             self.results.SetSelection(0)
 
-
-    def play_selected_uri(self):
-        result_uri = self.get_selected_uri()
+    def PlaySelectedURI(self):
+        result_uri = self.GetSelectedURI()
         if result_uri:
             self.playback.play_uri(result_uri)
 
-    def copy_selected_uri(self):
-        result_uri = self.get_selected_uri()
+    def CopySelectedURI(self):
+        result_uri = self.GetSelectedURI()
         if result_uri:
             self.playback.copy_uri(result_uri)
 
-    def get_selected_uri(self):
+    def GetSelectedURI(self):
         selected_result = self.results.GetSelection()
         if selected_result != wx.NOT_FOUND:
             result_uri = self.results.GetClientData(selected_result)
@@ -229,12 +228,11 @@ class SearchPage(TabsPage):
             return None
 
 
-
 class NowPlayingPage(TabsPage):
     def InitialiseControls(self):
         uri_label = wx.StaticText(self, -1, LABEL_URI)
         self.uri_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
-        self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.onUriEntered)
+        self.uri_field.Bind(wx.EVT_TEXT_ENTER, self.onURIEntered)
         self.initial_focus = self.uri_field
 
         self._addButtons()
@@ -245,7 +243,7 @@ class NowPlayingPage(TabsPage):
         queue_button = wx.Button(self, wx.ID_ANY, LABEL_QUEUE_URI)
         queue_button.Bind(wx.EVT_BUTTON, self.onQueue)
 
-    def onUriEntered(self, event):
+    def onURIEntered(self, event):
         uri = self.uri_field.GetValue()
         self.uri_field.Clear()
         if uri:
@@ -255,14 +253,13 @@ class NowPlayingPage(TabsPage):
                 show_error(self, 'Not a valid Spotify URI.')
 
     def onPlay(self, event):
-        self.onUriEntered(None)
+        self.onURIEntered(None)
         self.uri_field.SetFocus()
 
     def onQueue(self, event):
         self.playback.queue_uri(self.uri_field.GetValue())
         self.uri_field.Clear()
         self.uri_field.SetFocus()
-
 
 
 def show_error(parent, message):
