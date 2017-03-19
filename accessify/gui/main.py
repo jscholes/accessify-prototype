@@ -1,5 +1,6 @@
 import wx
 
+from ..search import SearchType
 from .. import spotify
 
 from . import controls
@@ -33,7 +34,13 @@ playback_commands = {
     wx.NewId(): {'label': 'Copy current track &URI\tCtrl+C', 'method': 'copy_current_track_uri'},
 }
 
-SEARCH_TYPES = ['&Track', '&Artist', 'A&lbum', '&Playlist', '&User']
+SEARCH_TYPES = [
+    (SearchType.TRACK, '&Track'),
+    (SearchType.ARTIST, '&Artist'),
+    (SearchType.ALBUM, 'A&lbum'),
+    (SearchType.PLAYLIST, '&Playlist'),
+    (SearchType.USER, '&User'),
+]
 
 ID_PLAY_SELECTED = wx.NewId()
 ID_COPY_SELECTED = wx.NewId()
@@ -154,7 +161,9 @@ class SearchPage(TabsPage):
         self.query_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
         self.initial_focus = self.query_field
 
-        self.search_type = controls.PopupChoiceButton(self, mainLabel=LABEL_SEARCH_TYPE, choices=SEARCH_TYPES)
+        self.search_type = controls.PopupChoiceButton(self, mainLabel=LABEL_SEARCH_TYPE)
+        for type, label in SEARCH_TYPES:
+            self.search_type.Append(label, clientData=type)
         self.search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
 
     def _createResultsList(self):
@@ -188,7 +197,8 @@ class SearchPage(TabsPage):
             return
         else:
             self.results.Clear()
-            results = self.search.perform_new_search(query)
+            search_type = self.search_type.GetClientData(self.search_type.GetSelection())
+            results = self.search.perform_new_search(query, search_type)
             if results:
                 self.AddResults(results)
             else:
