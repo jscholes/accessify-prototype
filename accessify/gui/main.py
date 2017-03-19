@@ -148,6 +148,7 @@ class SearchPage(TabsPage):
     def _createResultsList(self):
         results_label = wx.StaticText(self, -1, LABEL_RESULTS)
         self.results = wx.ListBox(self, style=wx.LB_SINGLE)
+        self.results.Bind(wx.EVT_KEY_UP, self.onKeyUp)
 
         # Add some dummy results for testing
         sample_results = [
@@ -172,6 +173,20 @@ class SearchPage(TabsPage):
 
     def onSearch(self, event):
         self.onQueryEntered(None)
+
+    def onKeyUp(self, event):
+        key = event.GetKeyCode()
+        if key == wx.WXK_RETURN:
+            self.play_selected_result()
+        else:
+            event.Skip()
+
+    def play_selected_result(self):
+        selected_result = self.results.GetSelection()
+        if selected_result != wx.NOT_FOUND:
+            result_uri = self.results.GetClientData(selected_result)
+            if result_uri:
+                self.playback.play_uri(result_uri)
 
 
 class NowPlayingPage(TabsPage):
