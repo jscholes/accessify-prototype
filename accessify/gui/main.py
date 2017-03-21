@@ -189,7 +189,7 @@ class SearchPage(TabsPage):
         self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
         self.search_button.Bind(wx.EVT_BUTTON, self.onSearch)
         self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
-        self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
+        self.results.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
     def onQueryEntered(self, event):
         query = self.query_field.GetValue()
