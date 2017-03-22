@@ -2,6 +2,7 @@ import wx
 
 from ..search import SearchType
 from .. import spotify
+from .. import structures
 
 from . import controls
 
@@ -189,7 +190,7 @@ class SearchPage(TabsPage):
         self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
         self.search_button.Bind(wx.EVT_BUTTON, self.onSearch)
         self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
-        self.results.Bind(wx.EVT_MENU, self.onContextMenuCommand)
+        self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
     def onQueryEntered(self, event):
         query = self.query_field.GetValue()
@@ -218,9 +219,15 @@ class SearchPage(TabsPage):
             getattr(self, command_dict['method'])()
 
     def AddResults(self, results):
-        for title, artist, uri in results:
-            text = '{0} by {1}'.format(title, artist)
-            self.results.Append(text, clientData=uri)
+        for result in results:
+            if isinstance(result, structures.Track):
+                text = '{0} by {1}'.format(result.name, result.artist.name)
+            elif isinstance(result, structures.Artist):
+                text = result.name
+            else:
+                show_error(self, 'This result type is not yet supported')
+                return
+            self.results.Append(text, clientData=result.uri)
         if self.GetSelectedURI() is None:
             self.results.SetSelection(0)
 
