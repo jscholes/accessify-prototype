@@ -1,8 +1,22 @@
-from collections import namedtuple
+from typing import NamedTuple, Optional
 
 
-Track = namedtuple('Track', ['artist', 'album', 'name', 'length', 'type', 'uri'])
-Artist = namedtuple('Artist', ['name', 'uri'])
-Album = namedtuple('Album', ['artist', 'name', 'uri'])
-PlaybackStatus = namedtuple('PlaybackStatus', ['playing', 'position', 'volume', 'repeat', 'shuffle'])
-SpotifyStatus = namedtuple('SpotifyStatus', ['client_version', 'running'])
+class Artist(NamedTuple):
+    name: str
+    uri: Optional[str] = None
+
+
+class Album(NamedTuple):
+    artist: Artist
+    name: str
+    uri: Optional[str] = None
+
+
+class Track(NamedTuple):
+    artist: Artist
+    name: str
+    uri: Optional[str] = None
+    album: Optional[Album] = None
+    length: Optional[int] = None
+    type: str = 'normal'
+
