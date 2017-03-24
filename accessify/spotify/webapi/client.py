@@ -1,12 +1,15 @@
 from collections import defaultdict
+import os.path
+
+import ujson as json
 
 from accessify import structures
-from accessify.search import SearchType
 
 
 class WebAPIClient:
     def search(self, query, search_type):
         return sample_results[search_type]
+
 
 sample_results = defaultdict(list)
 
@@ -25,7 +28,7 @@ sample_artists = [
 ]
 
 sample_results.update({
-    SearchType.TRACK: sample_tracks,
-    SearchType.ARTIST: sample_artists,
+    'track': sample_tracks,
+    'artist': sample_artists,
 })
 

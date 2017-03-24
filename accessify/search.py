@@ -12,7 +12,8 @@ class SearchController:
         self.api_client = api_client
 
     def perform_new_search(self, query, search_type):
-        logger.debug('Searching for {0} in {1}'.format(query, search_type))
+        search_type = search_type.value
+        logger.debug('Searching for {0} (search type: {1})'.format(query, search_type))
         return self.api_client.search(query, search_type)
 
 
