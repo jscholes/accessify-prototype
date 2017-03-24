@@ -220,10 +220,12 @@ class SearchPage(TabsPage):
 
     def AddResults(self, results):
         for result in results:
-            if isinstance(result, structures.Track):
+            if type(result) in (structures.Track, structures.Album):
                 text = '{0} by {1}'.format(result.name, ', '.join([artist.name for artist in result.artists]))
             elif isinstance(result, structures.Artist):
                 text = result.name
+            elif isinstance(result, structures.Playlist):
+                text = '{0} ({1} tracks)'.format(result.name, result.total_tracks)
             else:
                 show_error(self, 'This result type is not yet supported')
                 return

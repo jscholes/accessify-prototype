@@ -17,22 +17,32 @@ class SearchController:
         logger.debug('Searching for {0} (search type: {1})'.format(query, search_type))
         results = self.api_client.search(query, search_type.value)
         if results:
-            return (seq(results['tracks']['items'])
-                .map(deserialize_item)
+            container = item_containers[search_type]
+            deserializer = item_deserializers[search_type]
+            return (seq(results[container]['items'])
+                .map(deserializer)
             )
         else:
             return []
 
 
-def deserialize_item(item):
-    artists_node = item['artists']
-    artists = []
-    for artist in artists_node:
-        artists.append(structures.Artist(name=artist['name'], uri=artist['uri']))
-    album_node = item['album']
-    album = structures.Album(artists=[artist], name=album_node['name'], uri=album_node['uri'])
-    track = structures.Track(artists=artists, name=item['name'], uri=item['uri'], album=album, length=item['duration_ms'] / 1000)
-    return track
+def deserialize_track(track):
+    artists = seq(track['artists']).map(deserialize_artist)
+    album = deserialize_album(track['album'])
+    return structures.Track(artists=artists, name=track['name'], uri=track['uri'], album=album, length=track['duration_ms'] / 1000)
+
+
+def deserialize_album(album):
+    artists = seq(album['artists']).map(deserialize_artist)
+    return structures.Album(artists=artists, name=album['name'], uri=album['uri'])
+
+
+def deserialize_artist(artist):
+    return structures.Artist(name=artist['name'], uri=artist['uri'])
+
+
+def deserialize_playlist(playlist):
+    return structures.Playlist(name=playlist['name'], total_tracks=playlist['tracks']['total'], uri=playlist['uri'])
 
 
 class SearchType(Enum):
@@ -40,4 +50,21 @@ class SearchType(Enum):
     ARTIST = 'artist'
     ALBUM = 'album'
     PLAYLIST = 'playlist'
+
+
+item_containers = {
+    SearchType.TRACK: 'tracks',
+    SearchType.ALBUM: 'albums',
+    SearchType.ARTIST: 'artists',
+    SearchType.PLAYLIST: 'playlists',
+}
+
+
+# TODO: Probably a better way of doing this
+item_deserializers = {
+    SearchType.TRACK: deserialize_track,
+    SearchType.ALBUM: deserialize_album,
+    SearchType.ARTIST: deserialize_artist,
+    SearchType.PLAYLIST: deserialize_playlist,
+}
 
