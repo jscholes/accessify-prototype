@@ -31,7 +31,7 @@ def main():
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController(spotify_remote, event_manager, executor)
-    search_controller = search.SearchController()
+    search_controller = search.SearchController(spotify.webapi.WebAPIClient())
 
     # Set up the GUI
     app = wx.App()
