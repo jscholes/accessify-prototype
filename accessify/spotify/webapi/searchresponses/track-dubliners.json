@@ -1,0 +1,3400 @@
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Dubliners&type=track&market=GB&offset=0&limit=50",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "JP", "LI", "LT", "LU", "LV", "MC", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6awwYk1jSoD7Qd9RPh8u9H"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6awwYk1jSoD7Qd9RPh8u9H",
+        "id" : "6awwYk1jSoD7Qd9RPh8u9H",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/a3aeca47f470ed560e77dfa3a2a7d73a4143830d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/76a0b8e298d9f5478cd24e842846756b208fc102",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ed0f538a4a7b1a0fd8814de88d524dbe472fb0f5",
+          "width" : 64
+        } ],
+        "name" : "The Best Of The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:6awwYk1jSoD7Qd9RPh8u9H"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "JP", "LI", "LT", "LU", "LV", "MC", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 178533,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM10113823"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1UzofFX5AkfTDnwjcBkM4J"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1UzofFX5AkfTDnwjcBkM4J",
+      "id" : "1UzofFX5AkfTDnwjcBkM4J",
+      "name" : "Whiskey In The Jar",
+      "popularity" : 52,
+      "preview_url" : "https://p.scdn.co/mp3-preview/eec93eff62ccc81f629843f8e90a2180d24a18cb?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:1UzofFX5AkfTDnwjcBkM4J"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6zSE18SYsAeMn6x8bmk6ZL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6zSE18SYsAeMn6x8bmk6ZL",
+        "id" : "6zSE18SYsAeMn6x8bmk6ZL",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e22deb774c816a126d21ffa27fe1cbdd2c5de7fd",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/81627b658a4bdbf58656427950585f560fc30bd3",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/42865447cd4e1a73f478ddb95f34fbb9b253c18e",
+          "width" : 64
+        } ],
+        "name" : "Live At The Gaiety",
+        "type" : "album",
+        "uri" : "spotify:album:6zSE18SYsAeMn6x8bmk6ZL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 279680,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0800071"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/17f7vVLfZlSvoCTE0cfcBG"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/17f7vVLfZlSvoCTE0cfcBG",
+      "id" : "17f7vVLfZlSvoCTE0cfcBG",
+      "name" : "The Fields Of Athenry",
+      "popularity" : 47,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9ff5f191fd70ada2ecbee7014ddeb2e0801f16d2?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:17f7vVLfZlSvoCTE0cfcBG"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2JaU7begujrJQaORvAnVwD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2JaU7begujrJQaORvAnVwD",
+        "id" : "2JaU7begujrJQaORvAnVwD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c49e8878f0768b80d5d4e71d512366b3b2137596",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a1257ba3f596955c19a1680844b8bdaf078aecc7",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e4056b8ac65fc153ebe59b6b47603335a48c03e8",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:2JaU7begujrJQaORvAnVwD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 244840,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500018"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/23gju7aYMKGkVu5SNWExPs"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/23gju7aYMKGkVu5SNWExPs",
+      "id" : "23gju7aYMKGkVu5SNWExPs",
+      "name" : "Spancil Hill",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3db641d69318482eadfa27c38b12da3176315f4c?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 18,
+      "type" : "track",
+      "uri" : "spotify:track:23gju7aYMKGkVu5SNWExPs"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6zSE18SYsAeMn6x8bmk6ZL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6zSE18SYsAeMn6x8bmk6ZL",
+        "id" : "6zSE18SYsAeMn6x8bmk6ZL",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e22deb774c816a126d21ffa27fe1cbdd2c5de7fd",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/81627b658a4bdbf58656427950585f560fc30bd3",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/42865447cd4e1a73f478ddb95f34fbb9b253c18e",
+          "width" : 64
+        } ],
+        "name" : "Live At The Gaiety",
+        "type" : "album",
+        "uri" : "spotify:album:6zSE18SYsAeMn6x8bmk6ZL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 249093,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0800074"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6K9cjIloubdwJxwxrDcETI"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6K9cjIloubdwJxwxrDcETI",
+      "id" : "6K9cjIloubdwJxwxrDcETI",
+      "name" : "The Wild Rover",
+      "popularity" : 48,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f350ce503b668cd93fcdd57110f6fc5ff86cb578?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:6K9cjIloubdwJxwxrDcETI"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+          "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+          "name" : "The Pogues",
+          "type" : "artist",
+          "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3wRRu2P6cndiyru88yCXnL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3wRRu2P6cndiyru88yCXnL",
+        "id" : "3wRRu2P6cndiyru88yCXnL",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/75a2e26b38aaf1930ce047f55c9991aba9fc602a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ea30a667eb5b14fb3fd0fe4cf16f710cb49cf897",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6636e43acd8343bc2880961ca5ed28532040ef7c",
+          "width" : 64
+        } ],
+        "name" : "Very Best Of The Pogues (US Version)",
+        "type" : "album",
+        "uri" : "spotify:album:3wRRu2P6cndiyru88yCXnL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+        "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+        "name" : "The Pogues",
+        "type" : "artist",
+        "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 248279,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHT0400305"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2bi81jmDAmBJ4LeVmfyaVG"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2bi81jmDAmBJ4LeVmfyaVG",
+      "id" : "2bi81jmDAmBJ4LeVmfyaVG",
+      "name" : "The Irish Rover - feat. The Dubliners",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0d7dbd591a3e37f4b31de0300c3397a51c1fa473?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2bi81jmDAmBJ4LeVmfyaVG"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/14p25ZN9xDdhJP5Vkn1NG1"
+        },
+        "href" : "https://api.spotify.com/v1/albums/14p25ZN9xDdhJP5Vkn1NG1",
+        "id" : "14p25ZN9xDdhJP5Vkn1NG1",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/7f6f676bf9595d12717aa272b1ce80ceaadaa18e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/fb4e2f6e6d5b71e84ae0583ffd8c756f979fba39",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a49428905e31ac6b40fa50547b6847ae7ce9324f",
+          "width" : 64
+        } ],
+        "name" : "The Best Of The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:14p25ZN9xDdhJP5Vkn1NG1"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 178240,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA560581859"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6K5kPhYPbLNkkdyvyjzP3t"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6K5kPhYPbLNkkdyvyjzP3t",
+      "id" : "6K5kPhYPbLNkkdyvyjzP3t",
+      "name" : "Molly Malone",
+      "popularity" : 44,
+      "preview_url" : "https://p.scdn.co/mp3-preview/841b57c3989452bc026e0f9ff22953241864cf62?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:6K5kPhYPbLNkkdyvyjzP3t"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 192200,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700114"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0HtYjI3oKVolGjAfUf3Qit"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0HtYjI3oKVolGjAfUf3Qit",
+      "id" : "0HtYjI3oKVolGjAfUf3Qit",
+      "name" : "Seven Drunken Nights",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f7028df1bc550c58917865c265e89f946a5bf371?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0HtYjI3oKVolGjAfUf3Qit"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/44uv5cbsQkjPcCb4i4YTPO"
+        },
+        "href" : "https://api.spotify.com/v1/albums/44uv5cbsQkjPcCb4i4YTPO",
+        "id" : "44uv5cbsQkjPcCb4i4YTPO",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3b6b09fff2a89eba448a7dbbf10c6bcc29432e27",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/351aa203bd56fb12206421e4e21a275035f3ef5b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8dba0450d42c590320f8ce862bcbcc701c9fcd5d",
+          "width" : 64
+        } ],
+        "name" : "Originals",
+        "type" : "album",
+        "uri" : "spotify:album:44uv5cbsQkjPcCb4i4YTPO"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 145293,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE6400382"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3wq4VFv8WYdy5ivVwluFNK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3wq4VFv8WYdy5ivVwluFNK",
+      "id" : "3wq4VFv8WYdy5ivVwluFNK",
+      "name" : "The Rocky Road to Dublin - Live",
+      "popularity" : 49,
+      "preview_url" : "https://p.scdn.co/mp3-preview/eaaf557ad4e3c9db41ef551d850de849a22cba2b?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:3wq4VFv8WYdy5ivVwluFNK"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2JaU7begujrJQaORvAnVwD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2JaU7begujrJQaORvAnVwD",
+        "id" : "2JaU7begujrJQaORvAnVwD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c49e8878f0768b80d5d4e71d512366b3b2137596",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a1257ba3f596955c19a1680844b8bdaf078aecc7",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e4056b8ac65fc153ebe59b6b47603335a48c03e8",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:2JaU7begujrJQaORvAnVwD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 160213,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500016"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5UVEM0D973Vi52br39bkUR"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5UVEM0D973Vi52br39bkUR",
+      "id" : "5UVEM0D973Vi52br39bkUR",
+      "name" : "The Musical Priest / The Blackthorn Stick",
+      "popularity" : 42,
+      "preview_url" : "https://p.scdn.co/mp3-preview/470fe9e73cc14cb1d785180b5505c0b3403a59a3?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:5UVEM0D973Vi52br39bkUR"
+    }, {
+      "album" : {
+        "album_type" : "compilation",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+          "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+          "name" : "The Pogues",
+          "type" : "artist",
+          "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5b91NmXdJyoz5p9Bv1p7hZ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5b91NmXdJyoz5p9Bv1p7hZ",
+        "id" : "5b91NmXdJyoz5p9Bv1p7hZ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/2c47fc68aa751c052ca8f99a470de7f2610b6b49",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/658295871ea4428e44f8509d1d12f99684dc07d9",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c87c16ca14a826becf323f6088ddbf453cbfb77e",
+          "width" : 64
+        } ],
+        "name" : "The Ultimate Collection (with bonus disc Live At The Brixton Academy)",
+        "type" : "album",
+        "uri" : "spotify:album:5b91NmXdJyoz5p9Bv1p7hZ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+        "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+        "name" : "The Pogues",
+        "type" : "artist",
+        "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 220453,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHT0105476"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6llRbFSnZvae19haB0oZWw"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6llRbFSnZvae19haB0oZWw",
+      "id" : "6llRbFSnZvae19haB0oZWw",
+      "name" : "The Irish Rover (feat. The Dubliners)",
+      "popularity" : 35,
+      "preview_url" : "https://p.scdn.co/mp3-preview/42855e322a85e8ad0045cafd1d90a9f8a4d8a03e?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:6llRbFSnZvae19haB0oZWw"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 150346,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700128"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/70R5nf9sKxJcWhO1Rheibd"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/70R5nf9sKxJcWhO1Rheibd",
+      "id" : "70R5nf9sKxJcWhO1Rheibd",
+      "name" : "I'll Tell Me Ma",
+      "popularity" : 46,
+      "preview_url" : "https://p.scdn.co/mp3-preview/67222305a401ffcb4154cb74a83751ffed1f9634?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:70R5nf9sKxJcWhO1Rheibd"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2JaU7begujrJQaORvAnVwD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2JaU7begujrJQaORvAnVwD",
+        "id" : "2JaU7begujrJQaORvAnVwD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c49e8878f0768b80d5d4e71d512366b3b2137596",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a1257ba3f596955c19a1680844b8bdaf078aecc7",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e4056b8ac65fc153ebe59b6b47603335a48c03e8",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:2JaU7begujrJQaORvAnVwD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 382026,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500012"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0Db6ciT3uXIpkn5gdfSJUB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0Db6ciT3uXIpkn5gdfSJUB",
+      "id" : "0Db6ciT3uXIpkn5gdfSJUB",
+      "name" : "The Town I Loved So Well",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/bdedd7ffc6c6e68a7fff8a82df1ae0aff649cd8e?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:0Db6ciT3uXIpkn5gdfSJUB"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5gHi6Lmw84dg1N2GfPyNPp"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5gHi6Lmw84dg1N2GfPyNPp",
+        "id" : "5gHi6Lmw84dg1N2GfPyNPp",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/b11be156e5129c61c7fcbd4db1474e82454bd5c8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/f8c1d61682f356c14948a2c68b1e0950c73e7a35",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/47bdeed562694ba1ed851fa5a3dd83c69c9f1c4c",
+          "width" : 64
+        } ],
+        "name" : "Dirty Old Town",
+        "type" : "album",
+        "uri" : "spotify:album:5gHi6Lmw84dg1N2GfPyNPp"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 197666,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "NLRD51406737"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5Tzu6Xsw2gg2Idpfvk00f8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5Tzu6Xsw2gg2Idpfvk00f8",
+      "id" : "5Tzu6Xsw2gg2Idpfvk00f8",
+      "name" : "Seven Drunken Nights",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2c1df34c6d115be1f93b7d3d0f2f7c963f6a2305?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:5Tzu6Xsw2gg2Idpfvk00f8"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+          "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+          "name" : "The Pogues",
+          "type" : "artist",
+          "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4V92Puney9WxGPecKtLG4L"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4V92Puney9WxGPecKtLG4L",
+        "id" : "4V92Puney9WxGPecKtLG4L",
+        "images" : [ {
+          "height" : 636,
+          "url" : "https://i.scdn.co/image/28a0ae8f93bdb5148a56838906393906be53a6f9",
+          "width" : 640
+        }, {
+          "height" : 298,
+          "url" : "https://i.scdn.co/image/862d92df524e9eab75345dda389d206a785ca976",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/16e07b7c4216dbd6b12e034e4d41119c738f1046",
+          "width" : 64
+        } ],
+        "name" : "If I Should Fall From Grace With God (Expanded)",
+        "type" : "album",
+        "uri" : "spotify:album:4V92Puney9WxGPecKtLG4L"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+        "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+        "name" : "The Pogues",
+        "type" : "artist",
+        "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 248279,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHT0400305"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/65op66sEX5QUbY0wKiCcoU"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/65op66sEX5QUbY0wKiCcoU",
+      "id" : "65op66sEX5QUbY0wKiCcoU",
+      "name" : "The Irish Rover - feat. The Dubliners",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0d7dbd591a3e37f4b31de0300c3397a51c1fa473?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 15,
+      "type" : "track",
+      "uri" : "spotify:track:65op66sEX5QUbY0wKiCcoU"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1XIifqPXfWSoTQfrcuXXtX"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1XIifqPXfWSoTQfrcuXXtX",
+        "id" : "1XIifqPXfWSoTQfrcuXXtX",
+        "name" : "Paddy Reilly",
+        "type" : "artist",
+        "uri" : "spotify:artist:1XIifqPXfWSoTQfrcuXXtX"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 212315,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700157"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/426iqvsLVSgvInJiS9zQv4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/426iqvsLVSgvInJiS9zQv4",
+      "id" : "426iqvsLVSgvInJiS9zQv4",
+      "name" : "Dirty Old Town",
+      "popularity" : 42,
+      "preview_url" : "https://p.scdn.co/mp3-preview/37b946182ccb4fcb5e4a1b4539b6af8178f88333?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:426iqvsLVSgvInJiS9zQv4"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3BKqlrqRs1A61oi0cq7YQv"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3BKqlrqRs1A61oi0cq7YQv",
+        "id" : "3BKqlrqRs1A61oi0cq7YQv",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d13ee0e44b8c0102f7ac88e76e456fbfdf6779a8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0502bbca2e0286ea4b9ca82bae6f73f971c07f97",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d593867c55fd83952b95c5eed300f757f1f4e42c",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:3BKqlrqRs1A61oi0cq7YQv"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 225826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE6700109"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4qtGqWvVvliy8oR2uYqIlO"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4qtGqWvVvliy8oR2uYqIlO",
+      "id" : "4qtGqWvVvliy8oR2uYqIlO",
+      "name" : "Seven Drunken Nights",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/63af26aa9664c774716edff356cfcd38f640f452?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:4qtGqWvVvliy8oR2uYqIlO"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5nhqTfeCeHX80Kg9kKpNRk"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5nhqTfeCeHX80Kg9kKpNRk",
+        "id" : "5nhqTfeCeHX80Kg9kKpNRk",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/4773b561c5d585aa14f1e640408fb544863720f0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4b8a4532e588b0414404a4e0900b71593513c98b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/93f1e985d1814248a693f5eaee0e35a20b4a5a56",
+          "width" : 64
+        } ],
+        "name" : "The Very Best Of",
+        "type" : "album",
+        "uri" : "spotify:album:5nhqTfeCeHX80Kg9kKpNRk"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 269960,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE9300731"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/26Wu4Xg6AOzuhljkMNGARK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/26Wu4Xg6AOzuhljkMNGARK",
+      "id" : "26Wu4Xg6AOzuhljkMNGARK",
+      "name" : "The Black Velvet Band - 1993 Remastered Version",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ff49a71efe9ea025310fdeb69193c0b738a141e8?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:26Wu4Xg6AOzuhljkMNGARK"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/14p25ZN9xDdhJP5Vkn1NG1"
+        },
+        "href" : "https://api.spotify.com/v1/albums/14p25ZN9xDdhJP5Vkn1NG1",
+        "id" : "14p25ZN9xDdhJP5Vkn1NG1",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/7f6f676bf9595d12717aa272b1ce80ceaadaa18e",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/fb4e2f6e6d5b71e84ae0583ffd8c756f979fba39",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a49428905e31ac6b40fa50547b6847ae7ce9324f",
+          "width" : 64
+        } ],
+        "name" : "The Best Of The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:14p25ZN9xDdhJP5Vkn1NG1"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 225253,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA560581860"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1FYk1qx5WLSrbtg7JUobkB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1FYk1qx5WLSrbtg7JUobkB",
+      "id" : "1FYk1qx5WLSrbtg7JUobkB",
+      "name" : "Oro Sé Do Bheatha' Bhaile",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3e6c9ac34e954aabb6af8562a48dc6e95d2733ac?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:1FYk1qx5WLSrbtg7JUobkB"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3BKqlrqRs1A61oi0cq7YQv"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3BKqlrqRs1A61oi0cq7YQv",
+        "id" : "3BKqlrqRs1A61oi0cq7YQv",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d13ee0e44b8c0102f7ac88e76e456fbfdf6779a8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0502bbca2e0286ea4b9ca82bae6f73f971c07f97",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d593867c55fd83952b95c5eed300f757f1f4e42c",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:3BKqlrqRs1A61oi0cq7YQv"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 173933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE6800222"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2qLgVrG9RSSsLBfYkUIWDW"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2qLgVrG9RSSsLBfYkUIWDW",
+      "id" : "2qLgVrG9RSSsLBfYkUIWDW",
+      "name" : "Dirty Old Town",
+      "popularity" : 31,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8390edcf4aced9a86e5a2f7559677f152cb19152?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2qLgVrG9RSSsLBfYkUIWDW"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2JubMFXFD0c3Ofhx6SdSOy"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2JubMFXFD0c3Ofhx6SdSOy",
+        "id" : "2JubMFXFD0c3Ofhx6SdSOy",
+        "name" : "Jim McCann",
+        "type" : "artist",
+        "uri" : "spotify:artist:2JubMFXFD0c3Ofhx6SdSOy"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 146240,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500023"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/684W0NzsO1bjtgIMp3b128"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/684W0NzsO1bjtgIMp3b128",
+      "id" : "684W0NzsO1bjtgIMp3b128",
+      "name" : "Lord of the Dance",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/559cfcefaaaf4347c4bd1ee362f28e2ce73e9760?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:684W0NzsO1bjtgIMp3b128"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ZYIql5vmxtz3LbDLIaWo9"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ZYIql5vmxtz3LbDLIaWo9",
+        "id" : "2ZYIql5vmxtz3LbDLIaWo9",
+        "name" : "Luke Kelly",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ZYIql5vmxtz3LbDLIaWo9"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 168613,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500073"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/27TY01ORBoF50bC5styK3d"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/27TY01ORBoF50bC5styK3d",
+      "id" : "27TY01ORBoF50bC5styK3d",
+      "name" : "The Wild Rover",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/576ab6f94e9b288a8115c582c834a570098b7500?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 40,
+      "type" : "track",
+      "uri" : "spotify:track:27TY01ORBoF50bC5styK3d"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+          "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+          "name" : "The Pogues",
+          "type" : "artist",
+          "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4V92Puney9WxGPecKtLG4L"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4V92Puney9WxGPecKtLG4L",
+        "id" : "4V92Puney9WxGPecKtLG4L",
+        "images" : [ {
+          "height" : 636,
+          "url" : "https://i.scdn.co/image/28a0ae8f93bdb5148a56838906393906be53a6f9",
+          "width" : 640
+        }, {
+          "height" : 298,
+          "url" : "https://i.scdn.co/image/862d92df524e9eab75345dda389d206a785ca976",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/16e07b7c4216dbd6b12e034e4d41119c738f1046",
+          "width" : 64
+        } ],
+        "name" : "If I Should Fall From Grace With God (Expanded)",
+        "type" : "album",
+        "uri" : "spotify:album:4V92Puney9WxGPecKtLG4L"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+        "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+        "name" : "The Pogues",
+        "type" : "artist",
+        "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 137546,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHT0400301"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1vg0uA3Nv2gKdQaHyM0cHf"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1vg0uA3Nv2gKdQaHyM0cHf",
+      "id" : "1vg0uA3Nv2gKdQaHyM0cHf",
+      "name" : "Mountain Dew (with The Dubliners)",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/898132b80e184d469ebe10347ec9cb3a212ad224?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:1vg0uA3Nv2gKdQaHyM0cHf"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/68lZHeroea1NAuEDsfBUjv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/68lZHeroea1NAuEDsfBUjv",
+        "id" : "68lZHeroea1NAuEDsfBUjv",
+        "name" : "Shane MacGowan",
+        "type" : "artist",
+        "uri" : "spotify:artist:68lZHeroea1NAuEDsfBUjv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 248266,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700077"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6GO8zkDzA0fwq7R2iFldXg"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6GO8zkDzA0fwq7R2iFldXg",
+      "id" : "6GO8zkDzA0fwq7R2iFldXg",
+      "name" : "The Irish Rover",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5c9e07ad4186cc6c288fd99407a8e3b9a3533b97?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 15,
+      "type" : "track",
+      "uri" : "spotify:track:6GO8zkDzA0fwq7R2iFldXg"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6goa2f1QVVT8aqSxKWnsVj"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6goa2f1QVVT8aqSxKWnsVj",
+          "id" : "6goa2f1QVVT8aqSxKWnsVj",
+          "name" : "Young Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:6goa2f1QVVT8aqSxKWnsVj"
+        } ],
+        "available_markets" : [ "AR", "AT", "BE", "BG", "BO", "CA", "CH", "CL", "CO", "CR", "CZ", "DE", "DK", "DO", "EC", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IT", "JP", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7eaWl463534fVLOCxzTOie"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7eaWl463534fVLOCxzTOie",
+        "id" : "7eaWl463534fVLOCxzTOie",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/45f44babc43734de80a795d2f2a85286bb36538f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0f27c937902e0cf7e10f8e834e0712cf1417ec76",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/7051bfd97ffc6633fb43a20f1792d32115e353b2",
+          "width" : 64
+        } ],
+        "name" : "St. Patrick's Day Party Jam!",
+        "type" : "album",
+        "uri" : "spotify:album:7eaWl463534fVLOCxzTOie"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6goa2f1QVVT8aqSxKWnsVj"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6goa2f1QVVT8aqSxKWnsVj",
+        "id" : "6goa2f1QVVT8aqSxKWnsVj",
+        "name" : "Young Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:6goa2f1QVVT8aqSxKWnsVj"
+      } ],
+      "available_markets" : [ "AR", "AT", "BE", "BG", "BO", "CA", "CH", "CL", "CO", "CR", "CZ", "DE", "DK", "DO", "EC", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IT", "JP", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 191906,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSJ10600458"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/10sAopJXAHoikM1GL7ZgSf"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/10sAopJXAHoikM1GL7ZgSf",
+      "id" : "10sAopJXAHoikM1GL7ZgSf",
+      "name" : "The Foggy Dew",
+      "popularity" : 39,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e2ec6e8515bbdcdd7d828dacc6723ac17e4814ad?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:10sAopJXAHoikM1GL7ZgSf"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/06X1H534ShWLsijvjZPDZR"
+        },
+        "href" : "https://api.spotify.com/v1/albums/06X1H534ShWLsijvjZPDZR",
+        "id" : "06X1H534ShWLsijvjZPDZR",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d3baad842f2f6ea6a20e3bb5408eabbcbbbb0061",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/216796a7e1e24a4c6662cdc327405b55cfe8d345",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f8a1c2589552e163e590483053d02d01e8c94dc0",
+          "width" : 64
+        } ],
+        "name" : "Dubliners Live",
+        "type" : "album",
+        "uri" : "spotify:album:06X1H534ShWLsijvjZPDZR"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 279678,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAAO1200053"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3VSvdkCliLHqXK3T9oLbM2"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3VSvdkCliLHqXK3T9oLbM2",
+      "id" : "3VSvdkCliLHqXK3T9oLbM2",
+      "name" : "The Fields of Athenry",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f2db5ab2faa04339df3cbb550ff4efa00b87908c?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:3VSvdkCliLHqXK3T9oLbM2"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/55NgYp82QsyF9iYdl9T3gr"
+        },
+        "href" : "https://api.spotify.com/v1/albums/55NgYp82QsyF9iYdl9T3gr",
+        "id" : "55NgYp82QsyF9iYdl9T3gr",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e11fb439f37f91675fbc85cb8096fb3acf509826",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/2db7c159099b4919ae22add8123a4e9d3a9d0a67",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b45cb0fbf4f3d15f97a475c6e43a849c5302293f",
+          "width" : 64
+        } ],
+        "name" : "20 Original Greatest Hits Volume 2",
+        "type" : "album",
+        "uri" : "spotify:album:55NgYp82QsyF9iYdl9T3gr"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 196573,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600082"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3XL9cOMd3cr5y6MExKfxfo"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3XL9cOMd3cr5y6MExKfxfo",
+      "id" : "3XL9cOMd3cr5y6MExKfxfo",
+      "name" : "The Black Velvet Band",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d888ac8c9531c266ddbf71a38cd6be37d70a9350?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3XL9cOMd3cr5y6MExKfxfo"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/56UYDMUM2w9QhcfmZvDBvN"
+        },
+        "href" : "https://api.spotify.com/v1/albums/56UYDMUM2w9QhcfmZvDBvN",
+        "id" : "56UYDMUM2w9QhcfmZvDBvN",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d7f4ca0877c7a3fb285f9fc48da780feee69c4a8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/287d80e1467b5c86dd48046f3f98693fa963d3e1",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/fa63b0a0ce4424df1aa2c57419405ba6f60f6a65",
+          "width" : 64
+        } ],
+        "name" : "Voices of Ireland",
+        "type" : "album",
+        "uri" : "spotify:album:56UYDMUM2w9QhcfmZvDBvN"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0cW2R2ryVSX5jX9GB9ScNs"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0cW2R2ryVSX5jX9GB9ScNs",
+        "id" : "0cW2R2ryVSX5jX9GB9ScNs",
+        "name" : "Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:0cW2R2ryVSX5jX9GB9ScNs"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 158160,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBLGL1273211"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6H7dnaoe23q4YtMfQGiAXH"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6H7dnaoe23q4YtMfQGiAXH",
+      "id" : "6H7dnaoe23q4YtMfQGiAXH",
+      "name" : "Weila, Waile",
+      "popularity" : 31,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ffbbbc1924beae9b2b0f3055dd8ca5411d4bd604?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:6H7dnaoe23q4YtMfQGiAXH"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2JaU7begujrJQaORvAnVwD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2JaU7begujrJQaORvAnVwD",
+        "id" : "2JaU7begujrJQaORvAnVwD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c49e8878f0768b80d5d4e71d512366b3b2137596",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a1257ba3f596955c19a1680844b8bdaf078aecc7",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e4056b8ac65fc153ebe59b6b47603335a48c03e8",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:2JaU7begujrJQaORvAnVwD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 148826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500023"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/77DRSxsaUoQSaTK0UI4I0a"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/77DRSxsaUoQSaTK0UI4I0a",
+      "id" : "77DRSxsaUoQSaTK0UI4I0a",
+      "name" : "The Lord Of The Dance",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2e564acc49ed5c7289d85285ba5a512d610d7d87?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:77DRSxsaUoQSaTK0UI4I0a"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/70e6zCcJ7IBUVQG4sUMWMY"
+        },
+        "href" : "https://api.spotify.com/v1/artists/70e6zCcJ7IBUVQG4sUMWMY",
+        "id" : "70e6zCcJ7IBUVQG4sUMWMY",
+        "name" : "Seán Cannon",
+        "type" : "artist",
+        "uri" : "spotify:artist:70e6zCcJ7IBUVQG4sUMWMY"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 163373,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700167"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2YQra3dpR7AW95m9io344e"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2YQra3dpR7AW95m9io344e",
+      "id" : "2YQra3dpR7AW95m9io344e",
+      "name" : "The Sick Note",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ecbb300dcff9d77dfc86bf2d4c974e7ffa836b9a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:2YQra3dpR7AW95m9io344e"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25CPLY94QYZvG1PWNImHvU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25CPLY94QYZvG1PWNImHvU",
+        "id" : "25CPLY94QYZvG1PWNImHvU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d671b2b044e6410ebd44c91356e57c1d33fda4b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5c2283fcbba706212c1cfca843a70fc28ea0b9bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56b699050d7409fcd9b10c422538dbfb5fe22cad",
+          "width" : 64
+        } ],
+        "name" : "18 Original Greatest Hits Volume Three",
+        "type" : "album",
+        "uri" : "spotify:album:25CPLY94QYZvG1PWNImHvU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 221093,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600088"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1nTKwg3yg7sT6K9kgZ7RvV"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1nTKwg3yg7sT6K9kgZ7RvV",
+      "id" : "1nTKwg3yg7sT6K9kgZ7RvV",
+      "name" : "Mcalpine's Fusiliers",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/678d9e3331401c980fe692c38310f51d5d1f8645?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:1nTKwg3yg7sT6K9kgZ7RvV"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3BKqlrqRs1A61oi0cq7YQv"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3BKqlrqRs1A61oi0cq7YQv",
+        "id" : "3BKqlrqRs1A61oi0cq7YQv",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d13ee0e44b8c0102f7ac88e76e456fbfdf6779a8",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0502bbca2e0286ea4b9ca82bae6f73f971c07f97",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d593867c55fd83952b95c5eed300f757f1f4e42c",
+          "width" : 64
+        } ],
+        "name" : "The Dubliners",
+        "type" : "album",
+        "uri" : "spotify:album:3BKqlrqRs1A61oi0cq7YQv"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 164106,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE6700240"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/52qDcG4Tafg86rJx70OkfF"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/52qDcG4Tafg86rJx70OkfF",
+      "id" : "52qDcG4Tafg86rJx70OkfF",
+      "name" : "A Nation Once Again",
+      "popularity" : 29,
+      "preview_url" : "https://p.scdn.co/mp3-preview/fe0ca539cf4ec68ca12a2ebb42c210aa9f24e8dd?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:52qDcG4Tafg86rJx70OkfF"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ZYIql5vmxtz3LbDLIaWo9"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ZYIql5vmxtz3LbDLIaWo9",
+        "id" : "2ZYIql5vmxtz3LbDLIaWo9",
+        "name" : "Luke Kelly",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ZYIql5vmxtz3LbDLIaWo9"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 174520,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500034"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/10zQzaQYo3OpxttrnnR0Al"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/10zQzaQYo3OpxttrnnR0Al",
+      "id" : "10zQzaQYo3OpxttrnnR0Al",
+      "name" : "The Auld Triangle",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e805ed7b47a5fb65351b0a9b52036e1894990b5d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:10zQzaQYo3OpxttrnnR0Al"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6WIDikJ6zzjK6VXs8UlVru"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6WIDikJ6zzjK6VXs8UlVru",
+        "id" : "6WIDikJ6zzjK6VXs8UlVru",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/da7ba2f8e8e7b993ee2d2b395442adb6e1d0c52b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1701bb75fe579976e5a99e38fa15a6ebcd77ff41",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/4e09bc82256cc12e835050fd4d811bb7189e74ae",
+          "width" : 64
+        } ],
+        "name" : "St. Patrick's Day Party",
+        "type" : "album",
+        "uri" : "spotify:album:6WIDikJ6zzjK6VXs8UlVru"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 181733,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE1200469"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6hKJUM5b5I4u1wf91p6EQl"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6hKJUM5b5I4u1wf91p6EQl",
+      "id" : "6hKJUM5b5I4u1wf91p6EQl",
+      "name" : "Whiskey in the Jar - 2012 Remastered Version",
+      "popularity" : 26,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0c3a109626ba4cb9e2630a09661833099e71b3ea?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:6hKJUM5b5I4u1wf91p6EQl"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25CPLY94QYZvG1PWNImHvU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25CPLY94QYZvG1PWNImHvU",
+        "id" : "25CPLY94QYZvG1PWNImHvU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d671b2b044e6410ebd44c91356e57c1d33fda4b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5c2283fcbba706212c1cfca843a70fc28ea0b9bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56b699050d7409fcd9b10c422538dbfb5fe22cad",
+          "width" : 64
+        } ],
+        "name" : "18 Original Greatest Hits Volume Three",
+        "type" : "album",
+        "uri" : "spotify:album:25CPLY94QYZvG1PWNImHvU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 379840,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600166"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5CESYz87iOyIDMFxtTgkgr"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5CESYz87iOyIDMFxtTgkgr",
+      "id" : "5CESYz87iOyIDMFxtTgkgr",
+      "name" : "The Band Played Waltzing Matilda",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/68c8e1cdd6220dfd6c437578ad702950b983500f?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:5CESYz87iOyIDMFxtTgkgr"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6WIDikJ6zzjK6VXs8UlVru"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6WIDikJ6zzjK6VXs8UlVru",
+        "id" : "6WIDikJ6zzjK6VXs8UlVru",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/da7ba2f8e8e7b993ee2d2b395442adb6e1d0c52b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1701bb75fe579976e5a99e38fa15a6ebcd77ff41",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/4e09bc82256cc12e835050fd4d811bb7189e74ae",
+          "width" : 64
+        } ],
+        "name" : "St. Patrick's Day Party",
+        "type" : "album",
+        "uri" : "spotify:album:6WIDikJ6zzjK6VXs8UlVru"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+        "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+        "name" : "The Pogues",
+        "type" : "artist",
+        "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 248279,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHT0400305"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4NuJuzU9sZjypqKU2mLWU5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4NuJuzU9sZjypqKU2mLWU5",
+      "id" : "4NuJuzU9sZjypqKU2mLWU5",
+      "name" : "The Irish Rover - feat. The Dubliners",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0d7dbd591a3e37f4b31de0300c3397a51c1fa473?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:4NuJuzU9sZjypqKU2mLWU5"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0U6dKLfNOeOl90SqjiLgdU"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0U6dKLfNOeOl90SqjiLgdU",
+        "id" : "0U6dKLfNOeOl90SqjiLgdU",
+        "name" : "Patsy Watchorn",
+        "type" : "artist",
+        "uri" : "spotify:artist:0U6dKLfNOeOl90SqjiLgdU"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 195666,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1200001"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5OM1p9cVPxzUxN0HfRYvWh"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5OM1p9cVPxzUxN0HfRYvWh",
+      "id" : "5OM1p9cVPxzUxN0HfRYvWh",
+      "name" : "All for Me Grog",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5c6648fb76bfb5742af610c4f64b9e651b58d334?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:5OM1p9cVPxzUxN0HfRYvWh"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2JubMFXFD0c3Ofhx6SdSOy"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2JubMFXFD0c3Ofhx6SdSOy",
+        "id" : "2JubMFXFD0c3Ofhx6SdSOy",
+        "name" : "Jim McCann",
+        "type" : "artist",
+        "uri" : "spotify:artist:2JubMFXFD0c3Ofhx6SdSOy"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 237826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700030"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4AsGDCBFjaBMqzYigt3o7t"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4AsGDCBFjaBMqzYigt3o7t",
+      "id" : "4AsGDCBFjaBMqzYigt3o7t",
+      "name" : "Carrickfergus",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8f4cd26ed43de9bd8159ffe1e2156c65ae762282?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 30,
+      "type" : "track",
+      "uri" : "spotify:track:4AsGDCBFjaBMqzYigt3o7t"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 148226,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700099"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7BFOwBx6CvCNrA2gHI93NI"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7BFOwBx6CvCNrA2gHI93NI",
+      "id" : "7BFOwBx6CvCNrA2gHI93NI",
+      "name" : "Finnegan's Wake",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4b6926e650e8bfa614c76ee73400ee6ef9a932eb?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:7BFOwBx6CvCNrA2gHI93NI"
+    }, {
+      "album" : {
+        "album_type" : "single",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+          "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+          "name" : "The Pogues",
+          "type" : "artist",
+          "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1l2aXTEW3taviAQmaJMRuF"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1l2aXTEW3taviAQmaJMRuF",
+        "id" : "1l2aXTEW3taviAQmaJMRuF",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/b65ca284035860b5587cb751c489d6d214cd764b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/098da0cfcb9a9395ed1c5e5de306df9e50ff93ce",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/427d3a1eeafc032d273ec2820ced22a006bac82b",
+          "width" : 64
+        } ],
+        "name" : "Jack's Heroes",
+        "type" : "album",
+        "uri" : "spotify:album:1l2aXTEW3taviAQmaJMRuF"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2wzMOQwNT6ZvVB4amvhFAH"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2wzMOQwNT6ZvVB4amvhFAH",
+        "id" : "2wzMOQwNT6ZvVB4amvhFAH",
+        "name" : "The Pogues",
+        "type" : "artist",
+        "uri" : "spotify:artist:2wzMOQwNT6ZvVB4amvhFAH"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 161773,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAHT0200194"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1wnnHnjWQgcrD2qT05JXD1"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1wnnHnjWQgcrD2qT05JXD1",
+      "id" : "1wnnHnjWQgcrD2qT05JXD1",
+      "name" : "Whiskey in the Jar",
+      "popularity" : 31,
+      "preview_url" : "https://p.scdn.co/mp3-preview/73b6275f1920ab82c8a2660a89d34dab58290946?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:1wnnHnjWQgcrD2qT05JXD1"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25CPLY94QYZvG1PWNImHvU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25CPLY94QYZvG1PWNImHvU",
+        "id" : "25CPLY94QYZvG1PWNImHvU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d671b2b044e6410ebd44c91356e57c1d33fda4b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5c2283fcbba706212c1cfca843a70fc28ea0b9bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56b699050d7409fcd9b10c422538dbfb5fe22cad",
+          "width" : 64
+        } ],
+        "name" : "18 Original Greatest Hits Volume Three",
+        "type" : "album",
+        "uri" : "spotify:album:25CPLY94QYZvG1PWNImHvU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 188706,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600111"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0WrfWYSs7W2O8kJT93qEsB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0WrfWYSs7W2O8kJT93qEsB",
+      "id" : "0WrfWYSs7W2O8kJT93qEsB",
+      "name" : "The Lark in the Morning",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/17e167044bb871579b9f6f250a86ca293834a995?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:0WrfWYSs7W2O8kJT93qEsB"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25CPLY94QYZvG1PWNImHvU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25CPLY94QYZvG1PWNImHvU",
+        "id" : "25CPLY94QYZvG1PWNImHvU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d671b2b044e6410ebd44c91356e57c1d33fda4b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5c2283fcbba706212c1cfca843a70fc28ea0b9bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56b699050d7409fcd9b10c422538dbfb5fe22cad",
+          "width" : 64
+        } ],
+        "name" : "18 Original Greatest Hits Volume Three",
+        "type" : "album",
+        "uri" : "spotify:album:25CPLY94QYZvG1PWNImHvU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 121786,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600041"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3L7bpTa0Ukz0U5IvFwUjCV"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3L7bpTa0Ukz0U5IvFwUjCV",
+      "id" : "3L7bpTa0Ukz0U5IvFwUjCV",
+      "name" : "Biddy Mulligan",
+      "popularity" : 33,
+      "preview_url" : "https://p.scdn.co/mp3-preview/cdbfb99f2e15354cbd811ef41b64f8ee139177ed?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3L7bpTa0Ukz0U5IvFwUjCV"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1XLGXDQIVgxIJtzN2cn9GD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1XLGXDQIVgxIJtzN2cn9GD",
+        "id" : "1XLGXDQIVgxIJtzN2cn9GD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/7363f3e8717844f67e6d1b6dd02cdc6fc382fd42",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4c71665fcd95d03e4e8051afe83d45efb81ea173",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/0f18c5a95e03b7d987baa8f46c5c06e9db6cf3d8",
+          "width" : 64
+        } ],
+        "name" : "50 Years",
+        "type" : "album",
+        "uri" : "spotify:album:1XLGXDQIVgxIJtzN2cn9GD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2JubMFXFD0c3Ofhx6SdSOy"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2JubMFXFD0c3Ofhx6SdSOy",
+        "id" : "2JubMFXFD0c3Ofhx6SdSOy",
+        "name" : "Jim McCann",
+        "type" : "artist",
+        "uri" : "spotify:artist:2JubMFXFD0c3Ofhx6SdSOy"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 266066,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0800018"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6oJp3kxZfOSO46BUsFk9ga"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6oJp3kxZfOSO46BUsFk9ga",
+      "id" : "6oJp3kxZfOSO46BUsFk9ga",
+      "name" : "Grace",
+      "popularity" : 30,
+      "preview_url" : "https://p.scdn.co/mp3-preview/389cec555a2f050482f6ce3c0eddecb6522d7ac1?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 15,
+      "type" : "track",
+      "uri" : "spotify:track:6oJp3kxZfOSO46BUsFk9ga"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/68lZHeroea1NAuEDsfBUjv"
+        },
+        "href" : "https://api.spotify.com/v1/artists/68lZHeroea1NAuEDsfBUjv",
+        "id" : "68lZHeroea1NAuEDsfBUjv",
+        "name" : "Shane MacGowan",
+        "type" : "artist",
+        "uri" : "spotify:artist:68lZHeroea1NAuEDsfBUjv"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 138933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700093"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1eQy7IOBqSFSZix2cVaz7F"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1eQy7IOBqSFSZix2cVaz7F",
+      "id" : "1eQy7IOBqSFSZix2cVaz7F",
+      "name" : "The Rare Auld Mountain Dew",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ddcd54ba5e21b8bb1dcc97aa54a0e578e63fc038?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:1eQy7IOBqSFSZix2cVaz7F"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25CPLY94QYZvG1PWNImHvU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25CPLY94QYZvG1PWNImHvU",
+        "id" : "25CPLY94QYZvG1PWNImHvU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d671b2b044e6410ebd44c91356e57c1d33fda4b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5c2283fcbba706212c1cfca843a70fc28ea0b9bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56b699050d7409fcd9b10c422538dbfb5fe22cad",
+          "width" : 64
+        } ],
+        "name" : "18 Original Greatest Hits Volume Three",
+        "type" : "album",
+        "uri" : "spotify:album:25CPLY94QYZvG1PWNImHvU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 332226,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600158"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5UIYbsA5RX8xJcXvLmgmzz"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5UIYbsA5RX8xJcXvLmgmzz",
+      "id" : "5UIYbsA5RX8xJcXvLmgmzz",
+      "name" : "The Rare Auld Times",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/48b09c6b50720d9d8efaec2ead54241bb12bd40a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:5UIYbsA5RX8xJcXvLmgmzz"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/44uv5cbsQkjPcCb4i4YTPO"
+        },
+        "href" : "https://api.spotify.com/v1/albums/44uv5cbsQkjPcCb4i4YTPO",
+        "id" : "44uv5cbsQkjPcCb4i4YTPO",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3b6b09fff2a89eba448a7dbbf10c6bcc29432e27",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/351aa203bd56fb12206421e4e21a275035f3ef5b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8dba0450d42c590320f8ce862bcbcc701c9fcd5d",
+          "width" : 64
+        } ],
+        "name" : "Originals",
+        "type" : "album",
+        "uri" : "spotify:album:44uv5cbsQkjPcCb4i4YTPO"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 190506,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE6400354"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6GKMk5dQi7JspCZfae8JOs"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6GKMk5dQi7JspCZfae8JOs",
+      "id" : "6GKMk5dQi7JspCZfae8JOs",
+      "name" : "The Wild Rover - Live",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/be504104987d66cac94dce7f4c17b07ff69120c0?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6GKMk5dQi7JspCZfae8JOs"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6tl6Oht93mnpK71xjsvYLc"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6tl6Oht93mnpK71xjsvYLc",
+        "id" : "6tl6Oht93mnpK71xjsvYLc",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/fcb0c3221f039dde78931fab66bb22cb3a61a2c3",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ab23c557ba7d6d395d823d329df70ce39ce7c08a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ac83975325e71040d6dc67d164799837dea4a451",
+          "width" : 64
+        } ],
+        "name" : "25 Of The Best Irish Pub Songs - Volume 1",
+        "type" : "album",
+        "uri" : "spotify:album:6tl6Oht93mnpK71xjsvYLc"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0cW2R2ryVSX5jX9GB9ScNs"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0cW2R2ryVSX5jX9GB9ScNs",
+        "id" : "0cW2R2ryVSX5jX9GB9ScNs",
+        "name" : "Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:0cW2R2ryVSX5jX9GB9ScNs"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 259413,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBHFP0402264"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6qi5JZyvQuZL9A656aP5Js"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6qi5JZyvQuZL9A656aP5Js",
+      "id" : "6qi5JZyvQuZL9A656aP5Js",
+      "name" : "Raglan Road",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/598e722eae8d4352e145181b7aa14b02e671559c?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:6qi5JZyvQuZL9A656aP5Js"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 340800,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0500051"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/32Wg6FQFIa91px9NbP0TDO"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/32Wg6FQFIa91px9NbP0TDO",
+      "id" : "32Wg6FQFIa91px9NbP0TDO",
+      "name" : "Donegal Danny",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/38d41ab308e74f85069c134b82cb3951b5e221b5?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 31,
+      "type" : "track",
+      "uri" : "spotify:track:32Wg6FQFIa91px9NbP0TDO"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0LUkfcP3XT922V0uhE3SDQ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0LUkfcP3XT922V0uhE3SDQ",
+        "id" : "0LUkfcP3XT922V0uhE3SDQ",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c3aa944531a4a7a0ce378a25e176cf6f87fdeec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3680314b3aa6ce5cbdee76bb2b4239f25c8240d8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d823694afc120a84b3f0f75503d78b8abcfa1cba",
+          "width" : 64
+        } ],
+        "name" : "Definitive Pub Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:0LUkfcP3XT922V0uhE3SDQ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/06Iyp8QTMuoS38jjgMYFx2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/06Iyp8QTMuoS38jjgMYFx2",
+        "id" : "06Iyp8QTMuoS38jjgMYFx2",
+        "name" : "Ronnie Drew",
+        "type" : "artist",
+        "uri" : "spotify:artist:06Iyp8QTMuoS38jjgMYFx2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 160840,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF0700111"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4TXzOXBJkMBEayzE8p4pbz"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4TXzOXBJkMBEayzE8p4pbz",
+      "id" : "4TXzOXBJkMBEayzE8p4pbz",
+      "name" : "Dicey Reilly",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/14c04053450338d2d66d59aef6beaa7f1241d71f?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:4TXzOXBJkMBEayzE8p4pbz"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6WIDikJ6zzjK6VXs8UlVru"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6WIDikJ6zzjK6VXs8UlVru",
+        "id" : "6WIDikJ6zzjK6VXs8UlVru",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/da7ba2f8e8e7b993ee2d2b395442adb6e1d0c52b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1701bb75fe579976e5a99e38fa15a6ebcd77ff41",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/4e09bc82256cc12e835050fd4d811bb7189e74ae",
+          "width" : 64
+        } ],
+        "name" : "St. Patrick's Day Party",
+        "type" : "album",
+        "uri" : "spotify:album:6WIDikJ6zzjK6VXs8UlVru"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 226320,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAYE1200431"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1Z2FsBJsPwIuoDCIxX8b0Y"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1Z2FsBJsPwIuoDCIxX8b0Y",
+      "id" : "1Z2FsBJsPwIuoDCIxX8b0Y",
+      "name" : "Seven Drunken Nights - 2012 Remastered Version",
+      "popularity" : 24,
+      "preview_url" : "https://p.scdn.co/mp3-preview/eebb472189db7f1e5ba1f700fa07d021323350da?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:1Z2FsBJsPwIuoDCIxX8b0Y"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+          "id" : "72RvmgEg2omdlMV9aExO6a",
+          "name" : "The Dubliners",
+          "type" : "artist",
+          "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/25CPLY94QYZvG1PWNImHvU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/25CPLY94QYZvG1PWNImHvU",
+        "id" : "25CPLY94QYZvG1PWNImHvU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d671b2b044e6410ebd44c91356e57c1d33fda4b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5c2283fcbba706212c1cfca843a70fc28ea0b9bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56b699050d7409fcd9b10c422538dbfb5fe22cad",
+          "width" : 64
+        } ],
+        "name" : "18 Original Greatest Hits Volume Three",
+        "type" : "album",
+        "uri" : "spotify:album:25CPLY94QYZvG1PWNImHvU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/72RvmgEg2omdlMV9aExO6a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/72RvmgEg2omdlMV9aExO6a",
+        "id" : "72RvmgEg2omdlMV9aExO6a",
+        "name" : "The Dubliners",
+        "type" : "artist",
+        "uri" : "spotify:artist:72RvmgEg2omdlMV9aExO6a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 174960,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "IEAOF1600062"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0F88NmyS6kNNLAHDkdU7rN"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0F88NmyS6kNNLAHDkdU7rN",
+      "id" : "0F88NmyS6kNNLAHDkdU7rN",
+      "name" : "Three Lovely Lassies from Kimmage",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b3731175390f18d08a661e86d8e30b92a7f832fe?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0F88NmyS6kNNLAHDkdU7rN"
+    } ],
+    "limit" : 50,
+    "next" : "https://api.spotify.com/v1/search?query=Dubliners&type=track&market=GB&offset=50&limit=50",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 3257
+  }
+}

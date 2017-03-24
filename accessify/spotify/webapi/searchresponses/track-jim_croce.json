@@ -1,0 +1,3211 @@
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Jim+Croce&type=track&market=GB&offset=0&limit=50",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 148586,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE7200780"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/05TQyKHNTJWeDbl1ZUZFaL"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/05TQyKHNTJWeDbl1ZUZFaL",
+      "id" : "05TQyKHNTJWeDbl1ZUZFaL",
+      "name" : "Time In a Bottle",
+      "popularity" : 54,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7e11ebe9098c1b8c06cdf6b3c8ede2515fe09431?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:05TQyKHNTJWeDbl1ZUZFaL"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 170759,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604318"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4kIEiKhXQcIYYUYtBs81ln"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4kIEiKhXQcIYYUYtBs81ln",
+      "id" : "4kIEiKhXQcIYYUYtBs81ln",
+      "name" : "Walkin' Back to Georgia",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/570473f126a3d0f8f89a0e4762399edb67a870c0?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:4kIEiKhXQcIYYUYtBs81ln"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 182240,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE7100650"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0VTkBseJw7QSw7cyVJQp6R"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0VTkBseJw7QSw7cyVJQp6R",
+      "id" : "0VTkBseJw7QSw7cyVJQp6R",
+      "name" : "Bad, Bad Leroy Brown",
+      "popularity" : 41,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6151737dde14f6a0732b6b273176263984271437?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 18,
+      "type" : "track",
+      "uri" : "spotify:track:0VTkBseJw7QSw7cyVJQp6R"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3k55Aa9R0fBxP9iRkDrBuz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3k55Aa9R0fBxP9iRkDrBuz",
+        "id" : "3k55Aa9R0fBxP9iRkDrBuz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/fcfce83a47649d31e7ce46c226683e2661744799",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/f1cd88d6d0e9e2efabd5c52b426fb6808630e47a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a2bacf868dd7b9c69e2c6d4f564f26a023e7720e",
+          "width" : 64
+        } ],
+        "name" : "Greatest",
+        "type" : "album",
+        "uri" : "spotify:album:3k55Aa9R0fBxP9iRkDrBuz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 230213,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601346"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3n8CkWIj14IATteWw27tbM"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3n8CkWIj14IATteWw27tbM",
+      "id" : "3n8CkWIj14IATteWw27tbM",
+      "name" : "Operator (That's Not the Way It Feels)",
+      "popularity" : 43,
+      "preview_url" : "https://p.scdn.co/mp3-preview/28b378b4c0b35061847f78a28f8298c07a4cb00e?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:3n8CkWIj14IATteWw27tbM"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3k55Aa9R0fBxP9iRkDrBuz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3k55Aa9R0fBxP9iRkDrBuz",
+        "id" : "3k55Aa9R0fBxP9iRkDrBuz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/fcfce83a47649d31e7ce46c226683e2661744799",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/f1cd88d6d0e9e2efabd5c52b426fb6808630e47a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a2bacf868dd7b9c69e2c6d4f564f26a023e7720e",
+          "width" : 64
+        } ],
+        "name" : "Greatest",
+        "type" : "album",
+        "uri" : "spotify:album:3k55Aa9R0fBxP9iRkDrBuz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 194493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0611144"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2S0curmaVnRDRA4IBjigDb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2S0curmaVnRDRA4IBjigDb",
+      "id" : "2S0curmaVnRDRA4IBjigDb",
+      "name" : "I Got A Name - Stereo Version",
+      "popularity" : 45,
+      "preview_url" : "https://p.scdn.co/mp3-preview/648e4423f359a113f6f6debaec847b87c7a4237d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:2S0curmaVnRDRA4IBjigDb"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 128000,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604317"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0KImhYUWrNPFb2EMjQaa7v"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0KImhYUWrNPFb2EMjQaa7v",
+      "id" : "0KImhYUWrNPFb2EMjQaa7v",
+      "name" : "Photographs & Memories",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/6049258c1c6beb5cb5b0f763f8f63d51802b6420?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:0KImhYUWrNPFb2EMjQaa7v"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 184640,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601347"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2cCegEVmSEbOyHTSrZdaIC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2cCegEVmSEbOyHTSrZdaIC",
+      "id" : "2cCegEVmSEbOyHTSrZdaIC",
+      "name" : "You Don't Mess Around with Jim",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9c02c1db860aaab82519da13201120ad93c1b7c1?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:2cCegEVmSEbOyHTSrZdaIC"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6WzavKL89mpbk1NS8bQ9WD"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6WzavKL89mpbk1NS8bQ9WD",
+        "id" : "6WzavKL89mpbk1NS8bQ9WD",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c46ab7a948dcafe7354568d683f70424b4d6f907",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/8389d1cc5437fbffc00ac2a75e904aae3c14ccd0",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/91ccfec7b39e013b8cd96f6566f0f02df4822876",
+          "width" : 64
+        } ],
+        "name" : "Perfect Day",
+        "type" : "album",
+        "uri" : "spotify:album:6WzavKL89mpbk1NS8bQ9WD"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 3,
+      "duration_ms" : 144920,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE7200780"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6Fhrf2h5oqLFavIqfXmdPg"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6Fhrf2h5oqLFavIqfXmdPg",
+      "id" : "6Fhrf2h5oqLFavIqfXmdPg",
+      "name" : "Time in a Bottle",
+      "popularity" : 18,
+      "preview_url" : "https://p.scdn.co/mp3-preview/043f286e34d0a1d099e6e022316207c81d839049?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:6Fhrf2h5oqLFavIqfXmdPg"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 143541,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451984"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2ogHp4svuZ6tKyMyFhnsa3"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2ogHp4svuZ6tKyMyFhnsa3",
+      "id" : "2ogHp4svuZ6tKyMyFhnsa3",
+      "name" : "Time in a Bottle (Demo)",
+      "popularity" : 45,
+      "preview_url" : "https://p.scdn.co/mp3-preview/84775beddc3c79325cee4cac1aefd29fe3d29f09?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 17,
+      "type" : "track",
+      "uri" : "spotify:track:2ogHp4svuZ6tKyMyFhnsa3"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 139514,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604321"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0DAkiY7CVvgwvmR8UkqPmT"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0DAkiY7CVvgwvmR8UkqPmT",
+      "id" : "0DAkiY7CVvgwvmR8UkqPmT",
+      "name" : "A Long Time Ago",
+      "popularity" : 28,
+      "preview_url" : "https://p.scdn.co/mp3-preview/12cbea9f4186eba0cdbe1cf2e38139660f339f78?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 34,
+      "type" : "track",
+      "uri" : "spotify:track:0DAkiY7CVvgwvmR8UkqPmT"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 154466,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601348"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2DPUPqxsKNwjG6hgMQlTVj"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2DPUPqxsKNwjG6hgMQlTVj",
+      "id" : "2DPUPqxsKNwjG6hgMQlTVj",
+      "name" : "It Doesn't Have to Be That Way",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b3d6a5772739ffe7017c815cc6db3a135c8ad84f?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 20,
+      "type" : "track",
+      "uri" : "spotify:track:2DPUPqxsKNwjG6hgMQlTVj"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 189053,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601342"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/23bhZn2h3UqZ0CBPeOsOvS"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/23bhZn2h3UqZ0CBPeOsOvS",
+      "id" : "23bhZn2h3UqZ0CBPeOsOvS",
+      "name" : "New York's Not My Home",
+      "popularity" : 31,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f4f42b69aae564e41d47e2d22adba783c2c85fa8?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:23bhZn2h3UqZ0CBPeOsOvS"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 154626,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604380"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0VBBEkyM1f7OGXL86WgjhU"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0VBBEkyM1f7OGXL86WgjhU",
+      "id" : "0VBBEkyM1f7OGXL86WgjhU",
+      "name" : "I'll Have To Say I Love You In A Song",
+      "popularity" : 31,
+      "preview_url" : "https://p.scdn.co/mp3-preview/795083caf5b47d55ebf74f81512ad525dbfb779b?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 29,
+      "type" : "track",
+      "uri" : "spotify:track:0VBBEkyM1f7OGXL86WgjhU"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 211080,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601343"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3ZR10D5O7uGMW5RDgcO4aB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3ZR10D5O7uGMW5RDgcO4aB",
+      "id" : "3ZR10D5O7uGMW5RDgcO4aB",
+      "name" : "Roller Derby Queen",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1456a7e9fa18682bb9bc927caa6063b7b40f8020?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 22,
+      "type" : "track",
+      "uri" : "spotify:track:3ZR10D5O7uGMW5RDgcO4aB"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 197313,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451968"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7yZ1CQNI5ohilKKNEHSCvC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7yZ1CQNI5ohilKKNEHSCvC",
+      "id" : "7yZ1CQNI5ohilKKNEHSCvC",
+      "name" : "Next Time, This Time (Harper College 2/5/73)",
+      "popularity" : 37,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c53018b2d01615eae7ae0361d84eb77406dbaf03?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:7yZ1CQNI5ohilKKNEHSCvC"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 154026,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604379"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1L2MTSCFij5U1e4aYjzJ6Z"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1L2MTSCFij5U1e4aYjzJ6Z",
+      "id" : "1L2MTSCFij5U1e4aYjzJ6Z",
+      "name" : "Workin' at the Car Wash Blues",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8d542496a8e371c95ec8ea971f61c3e0bc5a8f73?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:1L2MTSCFij5U1e4aYjzJ6Z"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 184653,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604376"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3Q8yp9BpAHcaVscc86sXHV"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3Q8yp9BpAHcaVscc86sXHV",
+      "id" : "3Q8yp9BpAHcaVscc86sXHV",
+      "name" : "Lover's Cross",
+      "popularity" : 29,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a75137fbd52093c7ef6384d8f87b15381d212576?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 25,
+      "type" : "track",
+      "uri" : "spotify:track:3Q8yp9BpAHcaVscc86sXHV"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 167880,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0611148"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1J9hPMVKRMQtLq8sighUlx"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1J9hPMVKRMQtLq8sighUlx",
+      "id" : "1J9hPMVKRMQtLq8sighUlx",
+      "name" : "One Less Set of Footsteps",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7c31d556170a4ae02059eed0d44c0e9c5c384551?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 19,
+      "type" : "track",
+      "uri" : "spotify:track:1J9hPMVKRMQtLq8sighUlx"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4ieaeNOAdq6VoYQrY0hkhq"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4ieaeNOAdq6VoYQrY0hkhq",
+        "id" : "4ieaeNOAdq6VoYQrY0hkhq",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3ef8ed8e6430d278310a73ac0e8c331b148c3591",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3a34e5110d2cb6580a96e39eebed37b7d8aa5f37",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/063ba2f54c58c7183e73791c2cb00f49253cadab",
+          "width" : 64
+        } ],
+        "name" : "I Got a Name",
+        "type" : "album",
+        "uri" : "spotify:album:4ieaeNOAdq6VoYQrY0hkhq"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 194493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0611144"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/38llcrfX1arUqrEe0DRRzW"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/38llcrfX1arUqrEe0DRRzW",
+      "id" : "38llcrfX1arUqrEe0DRRzW",
+      "name" : "I Got A Name - Stereo Version",
+      "popularity" : 29,
+      "preview_url" : "https://p.scdn.co/mp3-preview/648e4423f359a113f6f6debaec847b87c7a4237d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:38llcrfX1arUqrEe0DRRzW"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3L9sVl5T7UpFK6tNeEiXdy"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3L9sVl5T7UpFK6tNeEiXdy",
+        "id" : "3L9sVl5T7UpFK6tNeEiXdy",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/30c3ec36206eaddbdce7b65edc90ed50671bc7e7",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1024793fbf7496d24e1b09202c8cd4db7a61c168",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b3e014c07dd2e3e63559cf2b8209f53f0cd9d253",
+          "width" : 64
+        } ],
+        "name" : "You Don't Mess Around With Jim",
+        "type" : "album",
+        "uri" : "spotify:album:3L9sVl5T7UpFK6tNeEiXdy"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 163100,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604322"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1AN6pouSaPDk8fKqeQAyDG"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1AN6pouSaPDk8fKqeQAyDG",
+      "id" : "1AN6pouSaPDk8fKqeQAyDG",
+      "name" : "Hey Tomorrow",
+      "popularity" : 26,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7143b4987e2913d5ed1f2dd533c390f0c1f18d85?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:1AN6pouSaPDk8fKqeQAyDG"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3L9sVl5T7UpFK6tNeEiXdy"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3L9sVl5T7UpFK6tNeEiXdy",
+        "id" : "3L9sVl5T7UpFK6tNeEiXdy",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/30c3ec36206eaddbdce7b65edc90ed50671bc7e7",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1024793fbf7496d24e1b09202c8cd4db7a61c168",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/b3e014c07dd2e3e63559cf2b8209f53f0cd9d253",
+          "width" : 64
+        } ],
+        "name" : "You Don't Mess Around With Jim",
+        "type" : "album",
+        "uri" : "spotify:album:3L9sVl5T7UpFK6tNeEiXdy"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 170942,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604308"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3pnA5QZo2MprFEv25YEF9C"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3pnA5QZo2MprFEv25YEF9C",
+      "id" : "3pnA5QZo2MprFEv25YEF9C",
+      "name" : "Tomorrow's Gonna Be a Brighter Day",
+      "popularity" : 26,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8b88c3e40a89510c134817ed6925209d70d5bb5e?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3pnA5QZo2MprFEv25YEF9C"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 193600,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601344"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2LEMm4VZaramdA6wHMqVce"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2LEMm4VZaramdA6wHMqVce",
+      "id" : "2LEMm4VZaramdA6wHMqVce",
+      "name" : "These Dreams",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e7b0ae2f076c22c67ff918c0b27c362c7ec1e839?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 23,
+      "type" : "track",
+      "uri" : "spotify:track:2LEMm4VZaramdA6wHMqVce"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 161573,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604344"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2pghrWfgsizkm6E2Yhuwza"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2pghrWfgsizkm6E2Yhuwza",
+      "id" : "2pghrWfgsizkm6E2Yhuwza",
+      "name" : "Dreamin' Again",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/99d03b77d49d16141b85a127dde81b59d01e0c17?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 15,
+      "type" : "track",
+      "uri" : "spotify:track:2pghrWfgsizkm6E2Yhuwza"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 150226,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604385"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0sBx1gpIjhTiiCO2i5OSK5"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0sBx1gpIjhTiiCO2i5OSK5",
+      "id" : "0sBx1gpIjhTiiCO2i5OSK5",
+      "name" : "The Hard Way Every Time",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/8d95c438d2925db219ed477bddbd288ac0f6b6fb?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 34,
+      "type" : "track",
+      "uri" : "spotify:track:0sBx1gpIjhTiiCO2i5OSK5"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 228737,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451975"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4hDTlGAGTVCzlTOzQ87EEi"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4hDTlGAGTVCzlTOzQ87EEi",
+      "id" : "4hDTlGAGTVCzlTOzQ87EEi",
+      "name" : "Operator (Demo)",
+      "popularity" : 38,
+      "preview_url" : "https://p.scdn.co/mp3-preview/bea08ebb596e6a2aad1dfd5cba1a96fa4213dfcc?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:4hDTlGAGTVCzlTOzQ87EEi"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 225200,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604378"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1IthSkEc3EBhqVTO8uU4PK"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1IthSkEc3EBhqVTO8uU4PK",
+      "id" : "1IthSkEc3EBhqVTO8uU4PK",
+      "name" : "Age",
+      "popularity" : 26,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d42737d880b3acf6b7b951b5af6d096ccbe8a9b9?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 27,
+      "type" : "track",
+      "uri" : "spotify:track:1IthSkEc3EBhqVTO8uU4PK"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 126772,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451972"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2zk1IffKkL0KV4yoGWVcng"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2zk1IffKkL0KV4yoGWVcng",
+      "id" : "2zk1IffKkL0KV4yoGWVcng",
+      "name" : "A Good Time Man Like Me (Demo)",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/5686352df068c51234534e627e7b6dda96803ae4?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:2zk1IffKkL0KV4yoGWVcng"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 141826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451977"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/76IkNNCOGF3JXTtsBzU9Om"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/76IkNNCOGF3JXTtsBzU9Om",
+      "id" : "76IkNNCOGF3JXTtsBzU9Om",
+      "name" : "Seems Like Such a Long Time Ago (Demo)",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a4c11e6b62a93175f4c28155308c4d8719e535ed?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:76IkNNCOGF3JXTtsBzU9Om"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 134466,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604346"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2deROmtyn7WyUZb0w2LH2b"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2deROmtyn7WyUZb0w2LH2b",
+      "id" : "2deROmtyn7WyUZb0w2LH2b",
+      "name" : "Alabama Rain",
+      "popularity" : 25,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4cdaeb4cadc9295ffa85e5d2419ff1fbbc525cdf?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 17,
+      "type" : "track",
+      "uri" : "spotify:track:2deROmtyn7WyUZb0w2LH2b"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0HHAxnLfFtTWttAnThXVe2"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0HHAxnLfFtTWttAnThXVe2",
+        "id" : "0HHAxnLfFtTWttAnThXVe2",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/575322e9eadb39277573f4a1da7aa5c540fd2810",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4597a5c498a724009c3574f9062140cfdb368e95",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8136cd0c34f50d350d9f2b3f971b7a6fc9ffdeb3",
+          "width" : 64
+        } ],
+        "name" : "Presenting...New Year's Eve 70s Pop",
+        "type" : "album",
+        "uri" : "spotify:album:0HHAxnLfFtTWttAnThXVe2"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+      "disc_number" : 1,
+      "duration_ms" : 194493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0611144"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/10kIeEtOUXlEUHQxdz2y8e"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/10kIeEtOUXlEUHQxdz2y8e",
+      "id" : "10kIeEtOUXlEUHQxdz2y8e",
+      "name" : "I Got a Name",
+      "popularity" : 21,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a03cd75de63e77f698e1c7e5761aff3484052b65?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 14,
+      "type" : "track",
+      "uri" : "spotify:track:10kIeEtOUXlEUHQxdz2y8e"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 189880,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451985"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1zqFzRSHdjG4UoYKetOBzG"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1zqFzRSHdjG4UoYKetOBzG",
+      "id" : "1zqFzRSHdjG4UoYKetOBzG",
+      "name" : "I Got a Name (Live 1973)",
+      "popularity" : 34,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e74f3c8d085e83ce4637fcaa8e70532dc934aac6?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 18,
+      "type" : "track",
+      "uri" : "spotify:track:1zqFzRSHdjG4UoYKetOBzG"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 118770,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451971"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/793HViC6b7Zt5FLNZjar25"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/793HViC6b7Zt5FLNZjar25",
+      "id" : "793HViC6b7Zt5FLNZjar25",
+      "name" : "Careful Man (Harper College 2/5/73)",
+      "popularity" : 32,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d5d42ba459e7fec1e9dbbe8e0d11de5cc08d77aa?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:793HViC6b7Zt5FLNZjar25"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 163346,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604319"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1qIomp6gDUvpylfGyG3h59"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1qIomp6gDUvpylfGyG3h59",
+      "id" : "1qIomp6gDUvpylfGyG3h59",
+      "name" : "Rapid Roy (That Stock Car Boy)",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/668baa3480808dc58f18d969217911c5eb702af9?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:1qIomp6gDUvpylfGyG3h59"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 126640,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604347"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4hmDa59hBtYiI5deG9O4es"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4hmDa59hBtYiI5deG9O4es",
+      "id" : "4hmDa59hBtYiI5deG9O4es",
+      "name" : "A Good Time Man Like Me Ain't Got No Business (Singin' the Blues)",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b955f3710e50386d4d2b107767b7417910b6320f?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 18,
+      "type" : "track",
+      "uri" : "spotify:track:4hmDa59hBtYiI5deG9O4es"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 144733,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604320"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2wYO9BpJvLeNf6Z8BylhPn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2wYO9BpJvLeNf6Z8BylhPn",
+      "id" : "2wYO9BpJvLeNf6Z8BylhPn",
+      "name" : "Box #10",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d60aef143c497f667f979a84a62f9c3fd6e4d296?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:2wYO9BpJvLeNf6Z8BylhPn"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 146920,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601345"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0NNZgOVg8E67io0BaEcEnC"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0NNZgOVg8E67io0BaEcEnC",
+      "id" : "0NNZgOVg8E67io0BaEcEnC",
+      "name" : "Speedball Tucker",
+      "popularity" : 19,
+      "preview_url" : "https://p.scdn.co/mp3-preview/319a3c07a326c369657f8ff394b2d51933598064?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 24,
+      "type" : "track",
+      "uri" : "spotify:track:0NNZgOVg8E67io0BaEcEnC"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 169123,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451989"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4pmvHMBHo9KV2fBNWtYEuY"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4pmvHMBHo9KV2fBNWtYEuY",
+      "id" : "4pmvHMBHo9KV2fBNWtYEuY",
+      "name" : "La Bamba (Cazenovia College 1964)",
+      "popularity" : 30,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4a1e8533a5a74e0a558362481218a6f2cb969f08?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 22,
+      "type" : "track",
+      "uri" : "spotify:track:4pmvHMBHo9KV2fBNWtYEuY"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 154333,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604384"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0KHNRyMadTWXZBpB2Avsz8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0KHNRyMadTWXZBpB2Avsz8",
+      "id" : "0KHNRyMadTWXZBpB2Avsz8",
+      "name" : "Recently",
+      "popularity" : 19,
+      "preview_url" : "https://p.scdn.co/mp3-preview/05248e20fcfbe4d5ad3e186dc786a5a2e91138f4?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 33,
+      "type" : "track",
+      "uri" : "spotify:track:0KHNRyMadTWXZBpB2Avsz8"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 194493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0611144"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5Yq7rAzjqXUcrGdWjgFP4j"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5Yq7rAzjqXUcrGdWjgFP4j",
+      "id" : "5Yq7rAzjqXUcrGdWjgFP4j",
+      "name" : "I Got A Name - Stereo Version",
+      "popularity" : 17,
+      "preview_url" : "https://p.scdn.co/mp3-preview/648e4423f359a113f6f6debaec847b87c7a4237d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:5Yq7rAzjqXUcrGdWjgFP4j"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 209480,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604377"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2Jc8dcS71aCZNZlvBdZI4k"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2Jc8dcS71aCZNZlvBdZI4k",
+      "id" : "2Jc8dcS71aCZNZlvBdZI4k",
+      "name" : "Five Short Minutes",
+      "popularity" : 20,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ff69a4a4a565a1dd4330b8b65309ea6de8586a9a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 26,
+      "type" : "track",
+      "uri" : "spotify:track:2Jc8dcS71aCZNZlvBdZI4k"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4BV1WsXQAcbuhABYcIVAxg"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4BV1WsXQAcbuhABYcIVAxg",
+        "id" : "4BV1WsXQAcbuhABYcIVAxg",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c7d48485ea5d4a88f377c93543ccb67a6ca10777",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a2b054ee020a4d4e68e07c933766e4ebba354895",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/ad03b169cc46040afcead2b048bd02b65661566a",
+          "width" : 64
+        } ],
+        "name" : "Lost Time in a Bottle",
+        "type" : "album",
+        "uri" : "spotify:album:4BV1WsXQAcbuhABYcIVAxg"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 133610,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMG1451976"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0urNaP6pwOFR9nK22V6p3U"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0urNaP6pwOFR9nK22V6p3U",
+      "id" : "0urNaP6pwOFR9nK22V6p3U",
+      "name" : "Hard Time Losin' Man (Demo)",
+      "popularity" : 29,
+      "preview_url" : "https://p.scdn.co/mp3-preview/68ec3eed7a777c67cd2387647f38af3ef391e514?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:0urNaP6pwOFR9nK22V6p3U"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 143960,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601351"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0Mi3O5EA6x5TfxGuaJiVpU"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0Mi3O5EA6x5TfxGuaJiVpU",
+      "id" : "0Mi3O5EA6x5TfxGuaJiVpU",
+      "name" : "Careful Man",
+      "popularity" : 20,
+      "preview_url" : "https://p.scdn.co/mp3-preview/438c75b5f1102edbc182dff822151a336c5fc838?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:0Mi3O5EA6x5TfxGuaJiVpU"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4ieaeNOAdq6VoYQrY0hkhq"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4ieaeNOAdq6VoYQrY0hkhq",
+        "id" : "4ieaeNOAdq6VoYQrY0hkhq",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3ef8ed8e6430d278310a73ac0e8c331b148c3591",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3a34e5110d2cb6580a96e39eebed37b7d8aa5f37",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/063ba2f54c58c7183e73791c2cb00f49253cadab",
+          "width" : 64
+        } ],
+        "name" : "I Got a Name",
+        "type" : "album",
+        "uri" : "spotify:album:4ieaeNOAdq6VoYQrY0hkhq"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 147813,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604382"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0i279hYZ4T4LQKKTthZaVn"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0i279hYZ4T4LQKKTthZaVn",
+      "id" : "0i279hYZ4T4LQKKTthZaVn",
+      "name" : "Thursday",
+      "popularity" : 20,
+      "preview_url" : "https://p.scdn.co/mp3-preview/645eee49a8d5de01e951b2194345e179cc21d87a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:0i279hYZ4T4LQKKTthZaVn"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 194493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0611144"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4lmsc5y6C064poPiziERxP"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4lmsc5y6C064poPiziERxP",
+      "id" : "4lmsc5y6C064poPiziERxP",
+      "name" : "I Got A Name - Stereo Version",
+      "popularity" : 18,
+      "preview_url" : "https://p.scdn.co/mp3-preview/648e4423f359a113f6f6debaec847b87c7a4237d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 24,
+      "type" : "track",
+      "uri" : "spotify:track:4lmsc5y6C064poPiziERxP"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4asosdO6SSNJJO5Hij5QbM"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4asosdO6SSNJJO5Hij5QbM",
+        "id" : "4asosdO6SSNJJO5Hij5QbM",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/0c4705cfcd8d9c53c9431e68820c3b9e9db99fe2",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/350faa66680291239d2ff4b1f67015a3fd08d118",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c5c3465b3fb3ca520ab3adb514498f93a83f843c",
+          "width" : 64
+        } ],
+        "name" : "The Original Albums...Plus",
+        "type" : "album",
+        "uri" : "spotify:album:4asosdO6SSNJJO5Hij5QbM"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 150826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604381"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1ZGGaTZUkNwvKuhfsjntDS"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1ZGGaTZUkNwvKuhfsjntDS",
+      "id" : "1ZGGaTZUkNwvKuhfsjntDS",
+      "name" : "Salon and Saloon",
+      "popularity" : 19,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dfec4fb735fd3ec406eb0d1afeb69b9262bf59a9?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 30,
+      "type" : "track",
+      "uri" : "spotify:track:1ZGGaTZUkNwvKuhfsjntDS"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3q7L4mosMmOcmQNE1d0H4s"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3q7L4mosMmOcmQNE1d0H4s",
+        "id" : "3q7L4mosMmOcmQNE1d0H4s",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/cd3f715937d68fc7e0c84e6d3d7248a0b354011f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0ab865cd751b2ce4764b0980900221fd6641e270",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f149a3477360c43ae48c56d86b34ecde6e7c7b89",
+          "width" : 64
+        } ],
+        "name" : "Life & Times",
+        "type" : "album",
+        "uri" : "spotify:album:3q7L4mosMmOcmQNE1d0H4s"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 174626,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601349"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1er2MmHaGuHs9FxEu7hgE2"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1er2MmHaGuHs9FxEu7hgE2",
+      "id" : "1er2MmHaGuHs9FxEu7hgE2",
+      "name" : "Next Time, This Time",
+      "popularity" : 19,
+      "preview_url" : "https://p.scdn.co/mp3-preview/12b9c87af6581d4b46e1974e689cdd6870b077eb?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:1er2MmHaGuHs9FxEu7hgE2"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3k55Aa9R0fBxP9iRkDrBuz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3k55Aa9R0fBxP9iRkDrBuz",
+        "id" : "3k55Aa9R0fBxP9iRkDrBuz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/fcfce83a47649d31e7ce46c226683e2661744799",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/f1cd88d6d0e9e2efabd5c52b426fb6808630e47a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a2bacf868dd7b9c69e2c6d4f564f26a023e7720e",
+          "width" : 64
+        } ],
+        "name" : "Greatest",
+        "type" : "album",
+        "uri" : "spotify:album:3k55Aa9R0fBxP9iRkDrBuz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 280360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604329"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0I4NBICw3ljkcXuzYTAsTj"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0I4NBICw3ljkcXuzYTAsTj",
+      "id" : "0I4NBICw3ljkcXuzYTAsTj",
+      "name" : "Chain Gang Medley",
+      "popularity" : 21,
+      "preview_url" : "https://p.scdn.co/mp3-preview/16b916cd9b87ac93ba9d5b7b687d02e8ab1ba6b8?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:0I4NBICw3ljkcXuzYTAsTj"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 148586,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE7200780"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0ceEmyDasNVbthNDH1dFmN"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0ceEmyDasNVbthNDH1dFmN",
+      "id" : "0ceEmyDasNVbthNDH1dFmN",
+      "name" : "Time In a Bottle",
+      "popularity" : 15,
+      "preview_url" : "https://p.scdn.co/mp3-preview/7e11ebe9098c1b8c06cdf6b3c8ede2515fe09431?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:0ceEmyDasNVbthNDH1dFmN"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 230213,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMRSZ1601346"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4V8TxBZGzQMquQ8gUT63EN"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4V8TxBZGzQMquQ8gUT63EN",
+      "id" : "4V8TxBZGzQMquQ8gUT63EN",
+      "name" : "Operator (That's Not the Way It Feels)",
+      "popularity" : 16,
+      "preview_url" : "https://p.scdn.co/mp3-preview/28b378b4c0b35061847f78a28f8298c07a4cb00e?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:4V8TxBZGzQMquQ8gUT63EN"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+          "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+          "name" : "Jim Croce",
+          "type" : "artist",
+          "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2ehjSxVsjbLeCWIkD9dTPG"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2ehjSxVsjbLeCWIkD9dTPG",
+        "id" : "2ehjSxVsjbLeCWIkD9dTPG",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3106327f4d50e23bfc5ee38dda5b521c4b786bd9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d8864baec7dde385646548d19ac1d047ee45755c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/a96e2560c62b3bd49d75d5b7690d863db5f029a4",
+          "width" : 64
+        } ],
+        "name" : "The Definitive Croce",
+        "type" : "album",
+        "uri" : "spotify:album:2ehjSxVsjbLeCWIkD9dTPG"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1R6Hx1tJ2VOUyodEpC12xM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1R6Hx1tJ2VOUyodEpC12xM",
+        "id" : "1R6Hx1tJ2VOUyodEpC12xM",
+        "name" : "Jim Croce",
+        "type" : "artist",
+        "uri" : "spotify:artist:1R6Hx1tJ2VOUyodEpC12xM"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 154626,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAJE0604380"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5VrokkXkqoKDZ5IVx5v1dE"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5VrokkXkqoKDZ5IVx5v1dE",
+      "id" : "5VrokkXkqoKDZ5IVx5v1dE",
+      "name" : "I'll Have To Say I Love You In A Song",
+      "popularity" : 15,
+      "preview_url" : "https://p.scdn.co/mp3-preview/795083caf5b47d55ebf74f81512ad525dbfb779b?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:5VrokkXkqoKDZ5IVx5v1dE"
+    } ],
+    "limit" : 50,
+    "next" : "https://api.spotify.com/v1/search?query=Jim+Croce&type=track&market=GB&offset=50&limit=50",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 893
+  }
+}
