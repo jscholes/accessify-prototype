@@ -1,10 +1,29 @@
 import os.path
 
+import requests
 import ujson as json
 
 
+BASE_URL = 'https://api.spotify.com'
+API_VERSION = 'v1'
+
+
 class WebAPIClient:
-    pass
+    def __init__(self):
+        self._session = requests.Session()
+
+    def search(self, query, search_type):
+        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': 'GB'})
+
+    def request(self, endpoint, method='GET', query_parameters=None):
+        if query_parameters is None:
+            query_parameters = {}
+        response = self._session.request(method, url=api_url(endpoint), params=query_parameters)
+        return json.loads(response.content)
+
+
+def api_url(endpoint):
+    return '{0}/{1}/{2}'.format(BASE_URL, API_VERSION, endpoint)
 
 
 class TestWebAPIClient:
