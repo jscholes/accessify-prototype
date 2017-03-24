@@ -100,9 +100,9 @@ def deserialize_track(track_dict):
     artist_res = track_dict['artist_resource']
     album_res = track_dict['album_resource']
     track_res = track_dict['track_resource']
-    artist = structures.Artist(artist_res['name'], artist_res['uri'])
-    album = structures.Album(artist, album_res['name'], album_res['uri'])
-    track = structures.Track(artist, track_res['name'], track_res['uri'], album, track_dict['length'], track_dict['track_type'])
+    artist = structures.Artist(name=artist_res['name'], uri=artist_res['uri'])
+    album = structures.Album(artists=[artist], name=album_res['name'], uri=album_res['uri'])
+    track = structures.Track(artists=[artist], name=track_res['name'], uri=track_res['uri'], album=album, length=track_dict['length'], type=track_dict['track_type'])
     return track
 
 

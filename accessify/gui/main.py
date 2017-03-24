@@ -1,3 +1,4 @@
+from functional import seq
 import wx
 
 from ..search import SearchType
@@ -221,7 +222,7 @@ class SearchPage(TabsPage):
     def AddResults(self, results):
         for result in results:
             if isinstance(result, structures.Track):
-                text = '{0} by {1}'.format(result.name, result.artist.name)
+                text = '{0} by {1}'.format(result.name, ', '.join([artist.name for artist in result.artists]))
             elif isinstance(result, structures.Artist):
                 text = result.name
             else:
@@ -294,5 +295,5 @@ def show_error(parent, message):
 
 
 def format_track_display(track):
-    return '{0} - {1}'.format(track.artist.name, track.name).replace('&', 'and')
+    return '{0} - {1}'.format(seq(track.artists).first().name, track.name).replace('&', 'and')
 

@@ -1,4 +1,4 @@
-from typing import NamedTuple, Optional
+from typing import Iterable, NamedTuple, Optional
 
 
 class Artist(NamedTuple):
@@ -7,13 +7,13 @@ class Artist(NamedTuple):
 
 
 class Album(NamedTuple):
-    artist: Artist
+    artists: Iterable[Artist]
     name: str
     uri: Optional[str] = None
 
 
 class Track(NamedTuple):
-    artist: Artist
+    artists: Iterable[Artist]
     name: str
     uri: Optional[str] = None
     album: Optional[Album] = None

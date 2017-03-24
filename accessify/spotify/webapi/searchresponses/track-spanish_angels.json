@@ -1,0 +1,3373 @@
+{
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=spanish+angels&type=track&market=GB&offset=0&limit=50",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+          "id" : "1eYhYunlNJlDoQhtYBvPsi",
+          "name" : "Ray Charles",
+          "type" : "artist",
+          "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+        } ],
+        "available_markets" : [ "AD", "AR", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4tgLQ8VwHXVBkRi3beX95g"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4tgLQ8VwHXVBkRi3beX95g",
+        "id" : "4tgLQ8VwHXVBkRi3beX95g",
+        "images" : [ {
+          "height" : 635,
+          "url" : "https://i.scdn.co/image/397b2dbea17435c7d9c1fb57f9e522afd4d5b4fa",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/9d16d538c15b5faf367749dbf5d9d8ecab58e91b",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/f6ec3a164a9948be4bb5f8ad5e85625ee15cf49c",
+          "width" : 64
+        } ],
+        "name" : "Friendship",
+        "type" : "album",
+        "uri" : "spotify:album:4tgLQ8VwHXVBkRi3beX95g"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 231026,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM19911681"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/51EKPuV1uAWryjNMqZLtgJ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/51EKPuV1uAWryjNMqZLtgJ",
+      "id" : "51EKPuV1uAWryjNMqZLtgJ",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 50,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dbf21efde987085fa022e18a07d32fb748013150?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:51EKPuV1uAWryjNMqZLtgJ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+          "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+          "name" : "Willie Nelson",
+          "type" : "artist",
+          "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/46xgry5j79IBHzX73dkgYU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/46xgry5j79IBHzX73dkgYU",
+        "id" : "46xgry5j79IBHzX73dkgYU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/524920131236d9f1179bd803b1bd89f492382921",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/97bc97958526b3bab0fc567b7443eafa86695b25",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/5f8e4023e929b9a47f4bbaaecfeffe503346b5ac",
+          "width" : 64
+        } ],
+        "name" : "The Essential Willie Nelson",
+        "type" : "album",
+        "uri" : "spotify:album:46xgry5j79IBHzX73dkgYU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 228973,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM19911681"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7HPl9yzxN0CXvsB7jXYMgR"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7HPl9yzxN0CXvsB7jXYMgR",
+      "id" : "7HPl9yzxN0CXvsB7jXYMgR",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 36,
+      "preview_url" : "https://p.scdn.co/mp3-preview/71d50fe734f5ab955f18be8db712756c0b33741b?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:7HPl9yzxN0CXvsB7jXYMgR"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+          "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+          "name" : "Willie Nelson",
+          "type" : "artist",
+          "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3gJCa5oVaLUWTNPaJUIlvj"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3gJCa5oVaLUWTNPaJUIlvj",
+        "id" : "3gJCa5oVaLUWTNPaJUIlvj",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e93b071772d5cf89e5e339431d16c32664537c32",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/2a6850805b5a87ca94a1bf1700500c55ad024dfd",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/da5d44256991f8c7a171acc77573849261c31211",
+          "width" : 64
+        } ],
+        "name" : "Legend: The Best Of Willie Nelson",
+        "type" : "album",
+        "uri" : "spotify:album:3gJCa5oVaLUWTNPaJUIlvj"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 228973,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM19911681"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/29ulCNnsbSgKPE5Wng3qZz"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/29ulCNnsbSgKPE5Wng3qZz",
+      "id" : "29ulCNnsbSgKPE5Wng3qZz",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 31,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b1fba33e1423019477d6dc0682f3b3c7ce0c33dc?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 19,
+      "type" : "track",
+      "uri" : "spotify:track:29ulCNnsbSgKPE5Wng3qZz"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3rFuaqp0dIZI7ATAkdhaBx"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3rFuaqp0dIZI7ATAkdhaBx",
+          "id" : "3rFuaqp0dIZI7ATAkdhaBx",
+          "name" : "Mike Denver",
+          "type" : "artist",
+          "uri" : "spotify:artist:3rFuaqp0dIZI7ATAkdhaBx"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3mwoOG1F9JW4So7G43aPsq"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3mwoOG1F9JW4So7G43aPsq",
+        "id" : "3mwoOG1F9JW4So7G43aPsq",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d128b28c12581702f073aadc70c2f1305c50bc18",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/60788acf55dfd37bdddf5920f2f716e781317478",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/edecd7e4d8aac04331d48b3b0c1a23959015a2ca",
+          "width" : 64
+        } ],
+        "name" : "The Galway Boy",
+        "type" : "album",
+        "uri" : "spotify:album:3mwoOG1F9JW4So7G43aPsq"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3rFuaqp0dIZI7ATAkdhaBx"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3rFuaqp0dIZI7ATAkdhaBx",
+        "id" : "3rFuaqp0dIZI7ATAkdhaBx",
+        "name" : "Mike Denver",
+        "type" : "artist",
+        "uri" : "spotify:artist:3rFuaqp0dIZI7ATAkdhaBx"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 246586,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GB5ZE1001007"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3EweOr4OCUxs7FBNv96Wql"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3EweOr4OCUxs7FBNv96Wql",
+      "id" : "3EweOr4OCUxs7FBNv96Wql",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 13,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d6d5de037ae4d7d27436ee542893f2d7b52b922d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:3EweOr4OCUxs7FBNv96Wql"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0QrowybipCKUDnq5y10PD2"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0QrowybipCKUDnq5y10PD2",
+          "id" : "0QrowybipCKUDnq5y10PD2",
+          "name" : "Amos Lee",
+          "type" : "artist",
+          "uri" : "spotify:artist:0QrowybipCKUDnq5y10PD2"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7cVjhAnmuNSN5bjy1CHOCW"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7cVjhAnmuNSN5bjy1CHOCW",
+        "id" : "7cVjhAnmuNSN5bjy1CHOCW",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/114d1daeced75aa27ef799bc55ac27cadfca7961",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/7fe7b4504a5abdb145173899fcd3109f45d0b10e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/cbf4f7050235d8d8febf100660dd83bb0100598c",
+          "width" : 64
+        } ],
+        "name" : "Amos Lee: Live from the Artists Den",
+        "type" : "album",
+        "uri" : "spotify:album:7cVjhAnmuNSN5bjy1CHOCW"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0QrowybipCKUDnq5y10PD2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0QrowybipCKUDnq5y10PD2",
+        "id" : "0QrowybipCKUDnq5y10PD2",
+        "name" : "Amos Lee",
+        "type" : "artist",
+        "uri" : "spotify:artist:0QrowybipCKUDnq5y10PD2"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 317064,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "TCABL1354287"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4Ytkx71UYogEUsN6gEvbqi"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4Ytkx71UYogEUsN6gEvbqi",
+      "id" : "4Ytkx71UYogEUsN6gEvbqi",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 30,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9b237bcf63ad9217d525e1bd3bd87f0fd2e78d55?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 16,
+      "type" : "track",
+      "uri" : "spotify:track:4Ytkx71UYogEUsN6gEvbqi"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+          "id" : "1eYhYunlNJlDoQhtYBvPsi",
+          "name" : "Ray Charles",
+          "type" : "artist",
+          "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2lGXWEZWsV0iSW6QCfOk3F"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2lGXWEZWsV0iSW6QCfOk3F",
+        "id" : "2lGXWEZWsV0iSW6QCfOk3F",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/98fd057d980482923a7fdfcc0bdbe8dee72ddedb",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4a5e05847fb764f31ad37e36d91ca8c6dae53a79",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/03251edbb0c5e88b59340639dbdb0b9622cbb075",
+          "width" : 64
+        } ],
+        "name" : "Ray Charles & Friends/Super Hits",
+        "type" : "album",
+        "uri" : "spotify:album:2lGXWEZWsV0iSW6QCfOk3F"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 229933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM18400197"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0LmpJ4raAqakP8vL878bfj"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0LmpJ4raAqakP8vL878bfj",
+      "id" : "0LmpJ4raAqakP8vL878bfj",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 22,
+      "preview_url" : "https://p.scdn.co/mp3-preview/fe763aba170d0f645c109e8e4b77d68d9a752224?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:0LmpJ4raAqakP8vL878bfj"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1aTLhV7R5gUjrR60ubjz6V"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1aTLhV7R5gUjrR60ubjz6V",
+          "id" : "1aTLhV7R5gUjrR60ubjz6V",
+          "name" : "The Mahones",
+          "type" : "artist",
+          "uri" : "spotify:artist:1aTLhV7R5gUjrR60ubjz6V"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5YLR5h7gC9eLrxQ4STMsVz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5YLR5h7gC9eLrxQ4STMsVz",
+        "id" : "5YLR5h7gC9eLrxQ4STMsVz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/d629e75c839b738f6fa8a03dd08e7ffdf5ce9c4f",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/fc1dea4ac9ff9b6be992d08d9cd8f27c2641c753",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f919a7f92a620904b5c58a956e3ca7e09aebb3d8",
+          "width" : 64
+        } ],
+        "name" : "Angels & Devils",
+        "type" : "album",
+        "uri" : "spotify:album:5YLR5h7gC9eLrxQ4STMsVz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1aTLhV7R5gUjrR60ubjz6V"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1aTLhV7R5gUjrR60ubjz6V",
+        "id" : "1aTLhV7R5gUjrR60ubjz6V",
+        "name" : "The Mahones",
+        "type" : "artist",
+        "uri" : "spotify:artist:1aTLhV7R5gUjrR60ubjz6V"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 147573,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "CAT241200035"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/18a45d2y4XhJKXmsDkthnb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/18a45d2y4XhJKXmsDkthnb",
+      "id" : "18a45d2y4XhJKXmsDkthnb",
+      "name" : "Spanish Lady",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0be938f3ed6fe946fe4bdb13f070f9af5b6d83e0?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 3,
+      "type" : "track",
+      "uri" : "spotify:track:18a45d2y4XhJKXmsDkthnb"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4nENBnQXeXD5KGoghpN2Ib"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4nENBnQXeXD5KGoghpN2Ib",
+          "id" : "4nENBnQXeXD5KGoghpN2Ib",
+          "name" : "Bjøro Håland",
+          "type" : "artist",
+          "uri" : "spotify:artist:4nENBnQXeXD5KGoghpN2Ib"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6XeeGJKutU25BOImdF9QBf"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6XeeGJKutU25BOImdF9QBf",
+        "id" : "6XeeGJKutU25BOImdF9QBf",
+        "images" : [ {
+          "height" : 633,
+          "url" : "https://i.scdn.co/image/eb7ab34988af6d651b9302a02bdb28a7171854d7",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/9b1825491c9dd794b48ca5d7a3f900f144c2abf1",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/3a219aebb769c627412467f82ec30db787cb3074",
+          "width" : 64
+        } ],
+        "name" : "By Request",
+        "type" : "album",
+        "uri" : "spotify:album:6XeeGJKutU25BOImdF9QBf"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4nENBnQXeXD5KGoghpN2Ib"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4nENBnQXeXD5KGoghpN2Ib",
+        "id" : "4nENBnQXeXD5KGoghpN2Ib",
+        "name" : "Bjøro Håland",
+        "type" : "artist",
+        "uri" : "spotify:artist:4nENBnQXeXD5KGoghpN2Ib"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 234109,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "NOFGG5847020"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3IB4xOtQiGXj6BldIqEK4g"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3IB4xOtQiGXj6BldIqEK4g",
+      "id" : "3IB4xOtQiGXj6BldIqEK4g",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e5213a519900b4c44bae9bdc6205b6ad0f90a7cf?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:3IB4xOtQiGXj6BldIqEK4g"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0t06Z31x5HtVA9E6MeMuag"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0t06Z31x5HtVA9E6MeMuag",
+        "id" : "0t06Z31x5HtVA9E6MeMuag",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/2d02305947e04330ce1936654b23974b47590e7a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/42e828817a9ac860489fd0a008b9be814c8d5604",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/85e25123bb74d77bcddb0712d132e9d37cfc032a",
+          "width" : 64
+        } ],
+        "name" : "Irish Country",
+        "type" : "album",
+        "uri" : "spotify:album:0t06Z31x5HtVA9E6MeMuag"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4xn52tkgbJs2TvscqYOlYq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4xn52tkgbJs2TvscqYOlYq",
+        "id" : "4xn52tkgbJs2TvscqYOlYq",
+        "name" : "Roly Daniels",
+        "type" : "artist",
+        "uri" : "spotify:artist:4xn52tkgbJs2TvscqYOlYq"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 209360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA2P1317005"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/66dX8IghGEW4r9L6hfGdkV"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/66dX8IghGEW4r9L6hfGdkV",
+      "id" : "66dX8IghGEW4r9L6hfGdkV",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 8,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1ba61e7ee3a612c2fa8638831e8e179b62edff56?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 18,
+      "type" : "track",
+      "uri" : "spotify:track:66dX8IghGEW4r9L6hfGdkV"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6KgFozuS2MUWsQfgWRrbGh"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6KgFozuS2MUWsQfgWRrbGh",
+          "id" : "6KgFozuS2MUWsQfgWRrbGh",
+          "name" : "Heidi Hauge",
+          "type" : "artist",
+          "uri" : "spotify:artist:6KgFozuS2MUWsQfgWRrbGh"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/020fzjStnGG6zIqUDZ7FXa"
+        },
+        "href" : "https://api.spotify.com/v1/albums/020fzjStnGG6zIqUDZ7FXa",
+        "id" : "020fzjStnGG6zIqUDZ7FXa",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/1663a185c8d93ed96b6794582b13431c8aab3d74",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/e0c9d6f65f17786cf79cf3c30ed0901d5cdfa089",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/1849991710b9d93fe5c4f0ad35f9ee551d3bbb69",
+          "width" : 64
+        } ],
+        "name" : "Country Time",
+        "type" : "album",
+        "uri" : "spotify:album:020fzjStnGG6zIqUDZ7FXa"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6KgFozuS2MUWsQfgWRrbGh"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6KgFozuS2MUWsQfgWRrbGh",
+        "id" : "6KgFozuS2MUWsQfgWRrbGh",
+        "name" : "Heidi Hauge",
+        "type" : "artist",
+        "uri" : "spotify:artist:6KgFozuS2MUWsQfgWRrbGh"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 237493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "FR2X41548348"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2OlKrALNpLk0C0vtmb0Am4"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2OlKrALNpLk0C0vtmb0Am4",
+      "id" : "2OlKrALNpLk0C0vtmb0Am4",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 23,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4c3e15d76dd429b3e1a67838b85121272c0db8f3?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:2OlKrALNpLk0C0vtmb0Am4"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3rFuaqp0dIZI7ATAkdhaBx"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3rFuaqp0dIZI7ATAkdhaBx",
+          "id" : "3rFuaqp0dIZI7ATAkdhaBx",
+          "name" : "Mike Denver",
+          "type" : "artist",
+          "uri" : "spotify:artist:3rFuaqp0dIZI7ATAkdhaBx"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3kw5CNMLBVN3JJLk7YsVhU"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3kw5CNMLBVN3JJLk7YsVhU",
+        "id" : "3kw5CNMLBVN3JJLk7YsVhU",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/7aa8b4e8481c0ac03456aa8d566e617fc3a2f485",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/90019bccaa77f744321a676ab688e90f3065c784",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f78d870dfd4a229cd0147005b76d21bb56da56a8",
+          "width" : 64
+        } ],
+        "name" : "Live In Concert",
+        "type" : "album",
+        "uri" : "spotify:album:3kw5CNMLBVN3JJLk7YsVhU"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3rFuaqp0dIZI7ATAkdhaBx"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3rFuaqp0dIZI7ATAkdhaBx",
+        "id" : "3rFuaqp0dIZI7ATAkdhaBx",
+        "name" : "Mike Denver",
+        "type" : "artist",
+        "uri" : "spotify:artist:3rFuaqp0dIZI7ATAkdhaBx"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 245800,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GB52E1001414"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0JGVUTpNiE8Ar26wgL7TJJ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0JGVUTpNiE8Ar26wgL7TJJ",
+      "id" : "0JGVUTpNiE8Ar26wgL7TJJ",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 7,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f913c96601a5612419850653f07f275099b79950?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 14,
+      "type" : "track",
+      "uri" : "spotify:track:0JGVUTpNiE8Ar26wgL7TJJ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4UKsrYPsnr0VD22nV1URlI"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4UKsrYPsnr0VD22nV1URlI",
+          "id" : "4UKsrYPsnr0VD22nV1URlI",
+          "name" : "Alf Robertson",
+          "type" : "artist",
+          "uri" : "spotify:artist:4UKsrYPsnr0VD22nV1URlI"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5RleKPWkDW3LQ2L9APXkq6"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5RleKPWkDW3LQ2L9APXkq6",
+        "id" : "5RleKPWkDW3LQ2L9APXkq6",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9b8c7519019a81c01be9ff62c505b5246c2b4216",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/8093f6865fbbd6a0c98815fb345dbf3e7365ac55",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/bb9665e758699261eafb8c562b20b2255df8df80",
+          "width" : 64
+        } ],
+        "name" : "Rosenkyssar",
+        "type" : "album",
+        "uri" : "spotify:album:5RleKPWkDW3LQ2L9APXkq6"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4UKsrYPsnr0VD22nV1URlI"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4UKsrYPsnr0VD22nV1URlI",
+        "id" : "4UKsrYPsnr0VD22nV1URlI",
+        "name" : "Alf Robertson",
+        "type" : "artist",
+        "uri" : "spotify:artist:4UKsrYPsnr0VD22nV1URlI"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 278173,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "SEPQM0610961"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1vOc9s50lH3ENaB50jvXmc"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1vOc9s50lH3ENaB50jvXmc",
+      "id" : "1vOc9s50lH3ENaB50jvXmc",
+      "name" : "Sju små vita änglar (Seven Spanish Angels)",
+      "popularity" : 28,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ed49a32c9c6b3a64d8e25169a9696c998b4be3ee?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:1vOc9s50lH3ENaB50jvXmc"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4xn52tkgbJs2TvscqYOlYq"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4xn52tkgbJs2TvscqYOlYq",
+          "id" : "4xn52tkgbJs2TvscqYOlYq",
+          "name" : "Roly Daniels",
+          "type" : "artist",
+          "uri" : "spotify:artist:4xn52tkgbJs2TvscqYOlYq"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6AjwlIXbVCJWNIE9ngSaIS"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6AjwlIXbVCJWNIE9ngSaIS",
+        "id" : "6AjwlIXbVCJWNIE9ngSaIS",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3c98d9e21682be592f99757bf78bba6b30b2348c",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/7e45648abc63e25aeb8aff282100fbe4e692a80a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/bfbcc21a43f66fa9d763cd9d701c58d15710706f",
+          "width" : 64
+        } ],
+        "name" : "The Very Best of Roly Daniels",
+        "type" : "album",
+        "uri" : "spotify:album:6AjwlIXbVCJWNIE9ngSaIS"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4xn52tkgbJs2TvscqYOlYq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4xn52tkgbJs2TvscqYOlYq",
+        "id" : "4xn52tkgbJs2TvscqYOlYq",
+        "name" : "Roly Daniels",
+        "type" : "artist",
+        "uri" : "spotify:artist:4xn52tkgbJs2TvscqYOlYq"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 209360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA2P1492438"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5k1NfNNYVVSEjJOQ4ojK2o"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5k1NfNNYVVSEjJOQ4ojK2o",
+      "id" : "5k1NfNNYVVSEjJOQ4ojK2o",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 4,
+      "preview_url" : "https://p.scdn.co/mp3-preview/78b69a1aba399797eefa7d215b4c5ae7fd66834a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 14,
+      "type" : "track",
+      "uri" : "spotify:track:5k1NfNNYVVSEjJOQ4ojK2o"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/17XXKfRBMCWvLrqGoNkJXm"
+          },
+          "href" : "https://api.spotify.com/v1/artists/17XXKfRBMCWvLrqGoNkJXm",
+          "id" : "17XXKfRBMCWvLrqGoNkJXm",
+          "name" : "Engelbert Humperdinck",
+          "type" : "artist",
+          "uri" : "spotify:artist:17XXKfRBMCWvLrqGoNkJXm"
+        } ],
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2KG2UleoSWrI7Mu2X8WQdL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2KG2UleoSWrI7Mu2X8WQdL",
+        "id" : "2KG2UleoSWrI7Mu2X8WQdL",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/a4a57cbe29daa756614a29df14fcedce816c7054",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ffddc7989e661ea7faec44e55f5bd1e3c32aa26f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/0164a11095cd0c366dcd0c486dcc782c582fb90e",
+          "width" : 64
+        } ],
+        "name" : "Spanish Eyes: The Best Of",
+        "type" : "album",
+        "uri" : "spotify:album:2KG2UleoSWrI7Mu2X8WQdL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/17XXKfRBMCWvLrqGoNkJXm"
+        },
+        "href" : "https://api.spotify.com/v1/artists/17XXKfRBMCWvLrqGoNkJXm",
+        "id" : "17XXKfRBMCWvLrqGoNkJXm",
+        "name" : "Engelbert Humperdinck",
+        "type" : "artist",
+        "uri" : "spotify:artist:17XXKfRBMCWvLrqGoNkJXm"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 233506,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBBFR0100116"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3rOxxD1YOL1GwSX53J9GPN"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3rOxxD1YOL1GwSX53J9GPN",
+      "id" : "3rOxxD1YOL1GwSX53J9GPN",
+      "name" : "Angels",
+      "popularity" : 2,
+      "preview_url" : "https://p.scdn.co/mp3-preview/d20de5b47dc92c23903f0753a3f7e89d857c565f?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 20,
+      "type" : "track",
+      "uri" : "spotify:track:3rOxxD1YOL1GwSX53J9GPN"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5vViCpDnSSDRHtSmFhrKfY"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5vViCpDnSSDRHtSmFhrKfY",
+          "id" : "5vViCpDnSSDRHtSmFhrKfY",
+          "name" : "Rune Rudberg",
+          "type" : "artist",
+          "uri" : "spotify:artist:5vViCpDnSSDRHtSmFhrKfY"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1ZkdXL6Mf10vUQ8ViebBkV"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1ZkdXL6Mf10vUQ8ViebBkV",
+        "id" : "1ZkdXL6Mf10vUQ8ViebBkV",
+        "images" : [ {
+          "height" : 635,
+          "url" : "https://i.scdn.co/image/25651707827386dccaea33022e31b3524ee5bc05",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/4fb948a7e6d9dc457fb29eac853c39f4a7d40951",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/4b5e6ad579d664a6d36b4e074a45ec909d8f52d9",
+          "width" : 64
+        } ],
+        "name" : "Strong Enough",
+        "type" : "album",
+        "uri" : "spotify:album:1ZkdXL6Mf10vUQ8ViebBkV"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5vViCpDnSSDRHtSmFhrKfY"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5vViCpDnSSDRHtSmFhrKfY",
+        "id" : "5vViCpDnSSDRHtSmFhrKfY",
+        "name" : "Rune Rudberg",
+        "type" : "artist",
+        "uri" : "spotify:artist:5vViCpDnSSDRHtSmFhrKfY"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 232096,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "NOGTA1222040"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0sks0orPzWfbxCQDKUoBxL"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0sks0orPzWfbxCQDKUoBxL",
+      "id" : "0sks0orPzWfbxCQDKUoBxL",
+      "name" : "Seven spanish angels",
+      "popularity" : 27,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f36278ff15887a74d253a43d48abb7355ca6ca90?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:0sks0orPzWfbxCQDKUoBxL"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+          "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+          "name" : "Willie Nelson",
+          "type" : "artist",
+          "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4QQfWSR8uMbTye3EjCAea2"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4QQfWSR8uMbTye3EjCAea2",
+        "id" : "4QQfWSR8uMbTye3EjCAea2",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/75a31a50415856d874f1fc6fb7e786a7084b5fbd",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4044967e54b74498b9ee974d45490098176b6576",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c38d562f70d7a29cc2b4d2e7705785f79086177e",
+          "width" : 64
+        } ],
+        "name" : "Willie Nelson The Collection",
+        "type" : "album",
+        "uri" : "spotify:album:4QQfWSR8uMbTye3EjCAea2"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 229960,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM18400014"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6W8XWFadaRsSDz6MbaInaQ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6W8XWFadaRsSDz6MbaInaQ",
+      "id" : "6W8XWFadaRsSDz6MbaInaQ",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 9,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4277bc6111fb1c1677e22b64bd2516b7769e2140?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 14,
+      "type" : "track",
+      "uri" : "spotify:track:6W8XWFadaRsSDz6MbaInaQ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4kZgzUZbpe4CmnehxflUNE"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4kZgzUZbpe4CmnehxflUNE",
+          "id" : "4kZgzUZbpe4CmnehxflUNE",
+          "name" : "Arc Angels",
+          "type" : "artist",
+          "uri" : "spotify:artist:4kZgzUZbpe4CmnehxflUNE"
+        } ],
+        "available_markets" : [ "GB", "IE" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6DYm4NSNHv754rw9yQB2yz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6DYm4NSNHv754rw9yQB2yz",
+        "id" : "6DYm4NSNHv754rw9yQB2yz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/aefba2ebc28ac863436303764457de3eed2238b9",
+          "width" : 639
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0692017a864bf0610150e99a8bd2cf5d6946f667",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f279fe5fb009ab05f019a9f81ce3bf16091e2f14",
+          "width" : 64
+        } ],
+        "name" : "Arc Angels",
+        "type" : "album",
+        "uri" : "spotify:album:6DYm4NSNHv754rw9yQB2yz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4kZgzUZbpe4CmnehxflUNE"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4kZgzUZbpe4CmnehxflUNE",
+        "id" : "4kZgzUZbpe4CmnehxflUNE",
+        "name" : "Arc Angels",
+        "type" : "artist",
+        "uri" : "spotify:artist:4kZgzUZbpe4CmnehxflUNE"
+      } ],
+      "available_markets" : [ "GB", "IE" ],
+      "disc_number" : 1,
+      "duration_ms" : 347640,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USGF19246509"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0lB2o4ra9FU3ceLXrAB1Fp"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0lB2o4ra9FU3ceLXrAB1Fp",
+      "id" : "0lB2o4ra9FU3ceLXrAB1Fp",
+      "name" : "Spanish Moon",
+      "popularity" : 1,
+      "preview_url" : "https://p.scdn.co/mp3-preview/1b9dae0a16f517dd68b2da895caf4bf02e7f91b8?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:0lB2o4ra9FU3ceLXrAB1Fp"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0T7J61YgErxSH8yuyggHJO"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0T7J61YgErxSH8yuyggHJO",
+          "id" : "0T7J61YgErxSH8yuyggHJO",
+          "name" : "Stoney LaRue",
+          "type" : "artist",
+          "uri" : "spotify:artist:0T7J61YgErxSH8yuyggHJO"
+        } ],
+        "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0MSCv0bI5DvjMVV3BNkl2Q"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0MSCv0bI5DvjMVV3BNkl2Q",
+        "id" : "0MSCv0bI5DvjMVV3BNkl2Q",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/487e48b2ce755250198f94fd12e81c45403788b9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/8822f36d55f17d968374a0cbf4e8eef3885ad015",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/874a644eef3829fb9cdbc433c640c61a73803b27",
+          "width" : 64
+        } ],
+        "name" : "Us Time",
+        "type" : "album",
+        "uri" : "spotify:album:0MSCv0bI5DvjMVV3BNkl2Q"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0T7J61YgErxSH8yuyggHJO"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0T7J61YgErxSH8yuyggHJO",
+        "id" : "0T7J61YgErxSH8yuyggHJO",
+        "name" : "Stoney LaRue",
+        "type" : "artist",
+        "uri" : "spotify:artist:0T7J61YgErxSH8yuyggHJO"
+      } ],
+      "available_markets" : [ "AD", "AT", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MT", "NL", "NO", "PL", "PT", "SE", "SK" ],
+      "disc_number" : 1,
+      "duration_ms" : 226080,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DER375067209"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6tuYIDFOGIWA7ZQk8lgQ2E"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6tuYIDFOGIWA7ZQk8lgQ2E",
+      "id" : "6tuYIDFOGIWA7ZQk8lgQ2E",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 6,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b7de928d328c4217d5ef6b2544ac052f0cb92a6c?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:6tuYIDFOGIWA7ZQk8lgQ2E"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6KgFozuS2MUWsQfgWRrbGh"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6KgFozuS2MUWsQfgWRrbGh",
+          "id" : "6KgFozuS2MUWsQfgWRrbGh",
+          "name" : "Heidi Hauge",
+          "type" : "artist",
+          "uri" : "spotify:artist:6KgFozuS2MUWsQfgWRrbGh"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3FSEoABdxhSGXssQUNfPcu"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3FSEoABdxhSGXssQUNfPcu",
+        "id" : "3FSEoABdxhSGXssQUNfPcu",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9b950f9c6bfc36999ac3c5e60efa2f4dfec556b6",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/eaca0a0e82d32e3e11f194cccbf9a093c92620a6",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/2b811831cc1f5a4408bd9080275f38037e42cfa4",
+          "width" : 64
+        } ],
+        "name" : "Country Gold",
+        "type" : "album",
+        "uri" : "spotify:album:3FSEoABdxhSGXssQUNfPcu"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6KgFozuS2MUWsQfgWRrbGh"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6KgFozuS2MUWsQfgWRrbGh",
+        "id" : "6KgFozuS2MUWsQfgWRrbGh",
+        "name" : "Heidi Hauge",
+        "type" : "artist",
+        "uri" : "spotify:artist:6KgFozuS2MUWsQfgWRrbGh"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 230600,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "FR2X41569727"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0fch8oj2PGMw3x8zQP5jfd"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0fch8oj2PGMw3x8zQP5jfd",
+      "id" : "0fch8oj2PGMw3x8zQP5jfd",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 10,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dddc9fde4aeeeddcc913b4b44747aad1c108ff88?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:0fch8oj2PGMw3x8zQP5jfd"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+          "id" : "1eYhYunlNJlDoQhtYBvPsi",
+          "name" : "Ray Charles",
+          "type" : "artist",
+          "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/42ieRLcfN6czrj7BHD1wi9"
+        },
+        "href" : "https://api.spotify.com/v1/albums/42ieRLcfN6czrj7BHD1wi9",
+        "id" : "42ieRLcfN6czrj7BHD1wi9",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ea278eeef7fedb4415ce5aba32f74c8acb5b8104",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/1f6df21f6806c273f424748ada96e0bee5a3ab0b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/e633b3a11132ebdaf287bfeb67279dd12e1de5e0",
+          "width" : 64
+        } ],
+        "name" : "Collections",
+        "type" : "album",
+        "uri" : "spotify:album:42ieRLcfN6czrj7BHD1wi9"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 229933,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM18400197"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/61P0MrwxOceB43yuFMRbhi"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/61P0MrwxOceB43yuFMRbhi",
+      "id" : "61P0MrwxOceB43yuFMRbhi",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 6,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0d20c87485d19104525a8ad41b6ccb1a592fc6a5?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:61P0MrwxOceB43yuFMRbhi"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+          "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+          "name" : "Willie Nelson",
+          "type" : "artist",
+          "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4Jh0a4YXdXmIMaB0oIWyqv"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4Jh0a4YXdXmIMaB0oIWyqv",
+        "id" : "4Jh0a4YXdXmIMaB0oIWyqv",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/651e35be5c90758bee280b04cfebe94060f199f9",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/ef4e2ade303ccb0fc77fd7edd0b58928ffb03907",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/61a22ae0ead77e8209d55f85104b2b442910b8f0",
+          "width" : 64
+        } ],
+        "name" : "One Hell Of A Ride",
+        "type" : "album",
+        "uri" : "spotify:album:4Jh0a4YXdXmIMaB0oIWyqv"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 4,
+      "duration_ms" : 229226,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM19911681"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7uRiGbh9ITHtQVRd0Eq9hX"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7uRiGbh9ITHtQVRd0Eq9hX",
+      "id" : "7uRiGbh9ITHtQVRd0Eq9hX",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 15,
+      "preview_url" : "https://p.scdn.co/mp3-preview/83f5414670bcf7542a5c78328d0a0224dd2516be?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:7uRiGbh9ITHtQVRd0Eq9hX"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5stiO4W5xbuQnrQ7cYrgzp"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5stiO4W5xbuQnrQ7cYrgzp",
+          "id" : "5stiO4W5xbuQnrQ7cYrgzp",
+          "name" : "Kathy Durkin",
+          "type" : "artist",
+          "uri" : "spotify:artist:5stiO4W5xbuQnrQ7cYrgzp"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5nI9MdRqjGsbKpE1d2yFPO"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5nI9MdRqjGsbKpE1d2yFPO",
+        "id" : "5nI9MdRqjGsbKpE1d2yFPO",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ccc981dca3de7eed12359b708f0387e8be25a030",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/21701ddc5d20b0494b2272dd1efeca74cc3320bf",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/77891b8ae8a9085235f98177466899ed26357a3d",
+          "width" : 64
+        } ],
+        "name" : "Kathy's Gold",
+        "type" : "album",
+        "uri" : "spotify:album:5nI9MdRqjGsbKpE1d2yFPO"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5stiO4W5xbuQnrQ7cYrgzp"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5stiO4W5xbuQnrQ7cYrgzp",
+        "id" : "5stiO4W5xbuQnrQ7cYrgzp",
+        "name" : "Kathy Durkin",
+        "type" : "artist",
+        "uri" : "spotify:artist:5stiO4W5xbuQnrQ7cYrgzp"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 234893,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBHFP0902101"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2WexHn5zwh3YiM7oRxxlzZ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2WexHn5zwh3YiM7oRxxlzZ",
+      "id" : "2WexHn5zwh3YiM7oRxxlzZ",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 5,
+      "preview_url" : "https://p.scdn.co/mp3-preview/129db2b74c2f00d6162269d3ab0922ffbe35978d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 7,
+      "type" : "track",
+      "uri" : "spotify:track:2WexHn5zwh3YiM7oRxxlzZ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3RIsSUoG3tw0S19WabHxiM"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3RIsSUoG3tw0S19WabHxiM",
+          "id" : "3RIsSUoG3tw0S19WabHxiM",
+          "name" : "Troy Cassar-Daley",
+          "type" : "artist",
+          "uri" : "spotify:artist:3RIsSUoG3tw0S19WabHxiM"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3uKiMJO25JbcnE72DrmUMf"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3uKiMJO25JbcnE72DrmUMf",
+          "id" : "3uKiMJO25JbcnE72DrmUMf",
+          "name" : "Adam Harvey",
+          "type" : "artist",
+          "uri" : "spotify:artist:3uKiMJO25JbcnE72DrmUMf"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4pGp5C1NMtCKCDsuVFpoan"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4pGp5C1NMtCKCDsuVFpoan",
+        "id" : "4pGp5C1NMtCKCDsuVFpoan",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/de79cc27036a098ee4e4f7402a64c8aade2594ec",
+          "width" : 639
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d0156a3899c356ba907d0577afc50fb8054af99a",
+          "width" : 299
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/fdf23613212d2949dd8f8a1f2480efe079df9f20",
+          "width" : 64
+        } ],
+        "name" : "The Great Country Songbook",
+        "type" : "album",
+        "uri" : "spotify:album:4pGp5C1NMtCKCDsuVFpoan"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3RIsSUoG3tw0S19WabHxiM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3RIsSUoG3tw0S19WabHxiM",
+        "id" : "3RIsSUoG3tw0S19WabHxiM",
+        "name" : "Troy Cassar-Daley",
+        "type" : "artist",
+        "uri" : "spotify:artist:3RIsSUoG3tw0S19WabHxiM"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3uKiMJO25JbcnE72DrmUMf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3uKiMJO25JbcnE72DrmUMf",
+        "id" : "3uKiMJO25JbcnE72DrmUMf",
+        "name" : "Adam Harvey",
+        "type" : "artist",
+        "uri" : "spotify:artist:3uKiMJO25JbcnE72DrmUMf"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 198760,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "AUBM00900239"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6DOOoqkkuSe4RqDVdB270I"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6DOOoqkkuSe4RqDVdB270I",
+      "id" : "6DOOoqkkuSe4RqDVdB270I",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 17,
+      "preview_url" : "https://p.scdn.co/mp3-preview/3b4b052f8c4eb5959e9ad1ba74d58306d9db90b6?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 18,
+      "type" : "track",
+      "uri" : "spotify:track:6DOOoqkkuSe4RqDVdB270I"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/5oMvKfHAyoVcXM1TkmXw2I"
+          },
+          "href" : "https://api.spotify.com/v1/artists/5oMvKfHAyoVcXM1TkmXw2I",
+          "id" : "5oMvKfHAyoVcXM1TkmXw2I",
+          "name" : "Robert Michaels",
+          "type" : "artist",
+          "uri" : "spotify:artist:5oMvKfHAyoVcXM1TkmXw2I"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4jcVIuJxOFw5OBIhHWl1w5"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4jcVIuJxOFw5OBIhHWl1w5",
+        "id" : "4jcVIuJxOFw5OBIhHWl1w5",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/54eab370ae10357cc0ab5d69f9108ae16736e011",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/69e9445afbf3de41054bf09e4e757c97ea393e6f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/4a2fe1cad14bd7e56c91efcb04f8d25755250eca",
+          "width" : 64
+        } ],
+        "name" : "Arizona",
+        "type" : "album",
+        "uri" : "spotify:album:4jcVIuJxOFw5OBIhHWl1w5"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5oMvKfHAyoVcXM1TkmXw2I"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5oMvKfHAyoVcXM1TkmXw2I",
+        "id" : "5oMvKfHAyoVcXM1TkmXw2I",
+        "name" : "Robert Michaels",
+        "type" : "artist",
+        "uri" : "spotify:artist:5oMvKfHAyoVcXM1TkmXw2I"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 329520,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMPKX1323554"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7sSWAbRb8Woufj61V7Xdug"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7sSWAbRb8Woufj61V7Xdug",
+      "id" : "7sSWAbRb8Woufj61V7Xdug",
+      "name" : "Spanish Angels",
+      "popularity" : 8,
+      "preview_url" : "https://p.scdn.co/mp3-preview/9d5eceac04df0e52db79f5625a9fed9ed2af44ed?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 10,
+      "type" : "track",
+      "uri" : "spotify:track:7sSWAbRb8Woufj61V7Xdug"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/774Brtq32Qevtdex1BKTaC"
+          },
+          "href" : "https://api.spotify.com/v1/artists/774Brtq32Qevtdex1BKTaC",
+          "id" : "774Brtq32Qevtdex1BKTaC",
+          "name" : "Miller",
+          "type" : "artist",
+          "uri" : "spotify:artist:774Brtq32Qevtdex1BKTaC"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3qQWRET026N0aWL2zrvXHm"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3qQWRET026N0aWL2zrvXHm",
+        "id" : "3qQWRET026N0aWL2zrvXHm",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/dac84bcca0155f6ce3854c05de29d7f681339c60",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/2e38a3e0453c54ba1539e1140c8964ece498df7b",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/7944da10beec660a7bee8b9b758d4e6b4535d7b4",
+          "width" : 64
+        } ],
+        "name" : "Backwoods Angels",
+        "type" : "album",
+        "uri" : "spotify:album:3qQWRET026N0aWL2zrvXHm"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/774Brtq32Qevtdex1BKTaC"
+        },
+        "href" : "https://api.spotify.com/v1/artists/774Brtq32Qevtdex1BKTaC",
+        "id" : "774Brtq32Qevtdex1BKTaC",
+        "name" : "Miller",
+        "type" : "artist",
+        "uri" : "spotify:artist:774Brtq32Qevtdex1BKTaC"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 399453,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ushm90661623"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4oq3sTtSZsPBY5ofgfW32t"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4oq3sTtSZsPBY5ofgfW32t",
+      "id" : "4oq3sTtSZsPBY5ofgfW32t",
+      "name" : "Spanish Town",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/fd5db4ace80836db379747fe2d9237569dcd1929?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:4oq3sTtSZsPBY5ofgfW32t"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/1fbT0WFksXKH0JlJbf9puB"
+          },
+          "href" : "https://api.spotify.com/v1/artists/1fbT0WFksXKH0JlJbf9puB",
+          "id" : "1fbT0WFksXKH0JlJbf9puB",
+          "name" : "Richard J Falcon, Jr",
+          "type" : "artist",
+          "uri" : "spotify:artist:1fbT0WFksXKH0JlJbf9puB"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0vmz66afwqaLyuWk3oEHi5"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0vmz66afwqaLyuWk3oEHi5",
+        "id" : "0vmz66afwqaLyuWk3oEHi5",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9836e7a0f87ef4c4a93941a36997bc34583b4e61",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/15ce42dade81e0258df4b470da1f8dd4435ea6a8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/1df3636bd2b113a3f24a81fdc97b1b7d678d6e61",
+          "width" : 64
+        } ],
+        "name" : "Send Angels",
+        "type" : "album",
+        "uri" : "spotify:album:0vmz66afwqaLyuWk3oEHi5"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1fbT0WFksXKH0JlJbf9puB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1fbT0WFksXKH0JlJbf9puB",
+        "id" : "1fbT0WFksXKH0JlJbf9puB",
+        "name" : "Richard J Falcon, Jr",
+        "type" : "artist",
+        "uri" : "spotify:artist:1fbT0WFksXKH0JlJbf9puB"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 339040,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ushm20469216"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0BKe8ShtkGWtFmBfY4Iary"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0BKe8ShtkGWtFmBfY4Iary",
+      "id" : "0BKe8ShtkGWtFmBfY4Iary",
+      "name" : "Spanish Fire",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/75c4c5acc14da5b2fe0f5f03926b3d8f3610e223?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:0BKe8ShtkGWtFmBfY4Iary"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6AEz5ai2TLJVw1XiosfKfA"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6AEz5ai2TLJVw1XiosfKfA",
+          "id" : "6AEz5ai2TLJVw1XiosfKfA",
+          "name" : "Jurie Els",
+          "type" : "artist",
+          "uri" : "spotify:artist:6AEz5ai2TLJVw1XiosfKfA"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2hLG2duLg9gRf2VbtK6SvB"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2hLG2duLg9gRf2VbtK6SvB",
+        "id" : "2hLG2duLg9gRf2VbtK6SvB",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ece99f71daa3f25da69ff3672262c457d6d1d260",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3267815402eccdbbae882ae537d483eb9100b390",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6474be4eb72e83d4f0b37aba998c49494e75baba",
+          "width" : 64
+        } ],
+        "name" : "40 Goue Treffers (Dankie Suid Africa...)",
+        "type" : "album",
+        "uri" : "spotify:album:2hLG2duLg9gRf2VbtK6SvB"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6AEz5ai2TLJVw1XiosfKfA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6AEz5ai2TLJVw1XiosfKfA",
+        "id" : "6AEz5ai2TLJVw1XiosfKfA",
+        "name" : "Jurie Els",
+        "type" : "artist",
+        "uri" : "spotify:artist:6AEz5ai2TLJVw1XiosfKfA"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 211333,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ZAK210700029"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1MRyxEkNeM8faVqV2C9HA8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1MRyxEkNeM8faVqV2C9HA8",
+      "id" : "1MRyxEkNeM8faVqV2C9HA8",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b82b705524a2913c68282c8c367f8397f9de4d4a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 26,
+      "type" : "track",
+      "uri" : "spotify:track:1MRyxEkNeM8faVqV2C9HA8"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6AEz5ai2TLJVw1XiosfKfA"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6AEz5ai2TLJVw1XiosfKfA",
+          "id" : "6AEz5ai2TLJVw1XiosfKfA",
+          "name" : "Jurie Els",
+          "type" : "artist",
+          "uri" : "spotify:artist:6AEz5ai2TLJVw1XiosfKfA"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3OGL5eXo4ymkCC5Oqx7qOz"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3OGL5eXo4ymkCC5Oqx7qOz",
+        "id" : "3OGL5eXo4ymkCC5Oqx7qOz",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/659eff3cc77dd1f54f4074a3d86167b6a166d7e0",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/d1d4fcf9b533e2b366a78b7e553248e9712de2b2",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c1dd6d0071731a45d52d8aa871a43d80c436de44",
+          "width" : 64
+        } ],
+        "name" : "Stille Rivierstroom (16 Country Gunstelinge)",
+        "type" : "album",
+        "uri" : "spotify:album:3OGL5eXo4ymkCC5Oqx7qOz"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6AEz5ai2TLJVw1XiosfKfA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6AEz5ai2TLJVw1XiosfKfA",
+        "id" : "6AEz5ai2TLJVw1XiosfKfA",
+        "name" : "Jurie Els",
+        "type" : "artist",
+        "uri" : "spotify:artist:6AEz5ai2TLJVw1XiosfKfA"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 208733,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ZAK210700029"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4JLg77kNInZaZzoHaeLjrQ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4JLg77kNInZaZzoHaeLjrQ",
+      "id" : "4JLg77kNInZaZzoHaeLjrQ",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/2913e724769ce1bece9e402c0970ca3819969647?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:4JLg77kNInZaZzoHaeLjrQ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6KgFozuS2MUWsQfgWRrbGh"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6KgFozuS2MUWsQfgWRrbGh",
+          "id" : "6KgFozuS2MUWsQfgWRrbGh",
+          "name" : "Heidi Hauge",
+          "type" : "artist",
+          "uri" : "spotify:artist:6KgFozuS2MUWsQfgWRrbGh"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1yZkURedk6fHL8HbtBLsW2"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1yZkURedk6fHL8HbtBLsW2",
+        "id" : "1yZkURedk6fHL8HbtBLsW2",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/855092f5cc83ed1b17fedf0a96e79b236d38e069",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/37f01dcdbdcd3803ca940fc7840efe8d03fd667f",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/05a347b77e5c1ed7c7b9dcb257c05cbabe430f0b",
+          "width" : 64
+        } ],
+        "name" : "Country Dance",
+        "type" : "album",
+        "uri" : "spotify:album:1yZkURedk6fHL8HbtBLsW2"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6KgFozuS2MUWsQfgWRrbGh"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6KgFozuS2MUWsQfgWRrbGh",
+        "id" : "6KgFozuS2MUWsQfgWRrbGh",
+        "name" : "Heidi Hauge",
+        "type" : "artist",
+        "uri" : "spotify:artist:6KgFozuS2MUWsQfgWRrbGh"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 232506,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "FR2X41552630"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5Hq2beptArW7KqfK7kWn8K"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5Hq2beptArW7KqfK7kWn8K",
+      "id" : "5Hq2beptArW7KqfK7kWn8K",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 7,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4d12d543f584cf4531e2c856c727003208d97679?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:5Hq2beptArW7KqfK7kWn8K"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6vOTqSu1jEVElHXgym1GBT"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6vOTqSu1jEVElHXgym1GBT",
+          "id" : "6vOTqSu1jEVElHXgym1GBT",
+          "name" : "GG Gibson & Tim Broadbent Band",
+          "type" : "artist",
+          "uri" : "spotify:artist:6vOTqSu1jEVElHXgym1GBT"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6FbwcMA5VXGlWABdiCP8sL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6FbwcMA5VXGlWABdiCP8sL",
+        "id" : "6FbwcMA5VXGlWABdiCP8sL",
+        "images" : [ {
+          "height" : 600,
+          "url" : "https://i.scdn.co/image/f5b936089aaa22c35db847e47e31c8abb528011a",
+          "width" : 600
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/08bf712d61660bb561150300e16d2e921d1e3eb8",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d8b976dbeb56a65240695712986b67de35582c5d",
+          "width" : 64
+        } ],
+        "name" : "Country",
+        "type" : "album",
+        "uri" : "spotify:album:6FbwcMA5VXGlWABdiCP8sL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6vOTqSu1jEVElHXgym1GBT"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6vOTqSu1jEVElHXgym1GBT",
+        "id" : "6vOTqSu1jEVElHXgym1GBT",
+        "name" : "GG Gibson & Tim Broadbent Band",
+        "type" : "artist",
+        "uri" : "spotify:artist:6vOTqSu1jEVElHXgym1GBT"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 290253,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "CH6540831814"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/1unJ4y0sTCQ26Jy5XyxINS"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/1unJ4y0sTCQ26Jy5XyxINS",
+      "id" : "1unJ4y0sTCQ26Jy5XyxINS",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/ad719e5007458867d389028c4bcd499d013574b9?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:1unJ4y0sTCQ26Jy5XyxINS"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6AEz5ai2TLJVw1XiosfKfA"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6AEz5ai2TLJVw1XiosfKfA",
+          "id" : "6AEz5ai2TLJVw1XiosfKfA",
+          "name" : "Jurie Els",
+          "type" : "artist",
+          "uri" : "spotify:artist:6AEz5ai2TLJVw1XiosfKfA"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2Fj08ae3AOkYNqHgrx2gYk"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2Fj08ae3AOkYNqHgrx2gYk",
+        "id" : "2Fj08ae3AOkYNqHgrx2gYk",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ece99f71daa3f25da69ff3672262c457d6d1d260",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/3267815402eccdbbae882ae537d483eb9100b390",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6474be4eb72e83d4f0b37aba998c49494e75baba",
+          "width" : 64
+        } ],
+        "name" : "40 Goue Treffers (Dankie Suid Africa...)",
+        "type" : "album",
+        "uri" : "spotify:album:2Fj08ae3AOkYNqHgrx2gYk"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6AEz5ai2TLJVw1XiosfKfA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6AEz5ai2TLJVw1XiosfKfA",
+        "id" : "6AEz5ai2TLJVw1XiosfKfA",
+        "name" : "Jurie Els",
+        "type" : "artist",
+        "uri" : "spotify:artist:6AEz5ai2TLJVw1XiosfKfA"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 211333,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMDA61585711"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6uSc1VfaRYgPdjFuZ4gSzQ"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6uSc1VfaRYgPdjFuZ4gSzQ",
+      "id" : "6uSc1VfaRYgPdjFuZ4gSzQ",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c3b71b53cfa528a084e1fabc9ff6635726ac257d?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 26,
+      "type" : "track",
+      "uri" : "spotify:track:6uSc1VfaRYgPdjFuZ4gSzQ"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AR", "BO", "BR", "CL", "CO", "CR", "DO", "EC", "GB", "GT", "HN", "IT", "JP", "MT", "MX", "NI", "PA", "PE", "PY", "SV", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2Ga8Jr8etu6LocvBOQ0brO"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2Ga8Jr8etu6LocvBOQ0brO",
+        "id" : "2Ga8Jr8etu6LocvBOQ0brO",
+        "images" : [ {
+          "height" : 547,
+          "url" : "https://i.scdn.co/image/657514cf9f99a3d657257577779bdea0a773a7b1",
+          "width" : 640
+        }, {
+          "height" : 257,
+          "url" : "https://i.scdn.co/image/31868c2c1da02462a96aa8298c6f770a5abd3ebb",
+          "width" : 300
+        }, {
+          "height" : 55,
+          "url" : "https://i.scdn.co/image/9695b96c423e625b388bd6c959ab1aa523a0e693",
+          "width" : 64
+        } ],
+        "name" : "Golden Country",
+        "type" : "album",
+        "uri" : "spotify:album:2Ga8Jr8etu6LocvBOQ0brO"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/5W5bDNCqJ1jbCgTxDD0Cb3"
+        },
+        "href" : "https://api.spotify.com/v1/artists/5W5bDNCqJ1jbCgTxDD0Cb3",
+        "id" : "5W5bDNCqJ1jbCgTxDD0Cb3",
+        "name" : "Willie Nelson",
+        "type" : "artist",
+        "uri" : "spotify:artist:5W5bDNCqJ1jbCgTxDD0Cb3"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1eYhYunlNJlDoQhtYBvPsi"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1eYhYunlNJlDoQhtYBvPsi",
+        "id" : "1eYhYunlNJlDoQhtYBvPsi",
+        "name" : "Ray Charles",
+        "type" : "artist",
+        "uri" : "spotify:artist:1eYhYunlNJlDoQhtYBvPsi"
+      } ],
+      "available_markets" : [ "AR", "BO", "BR", "CL", "CO", "CR", "DO", "EC", "GB", "GT", "HN", "IT", "JP", "MT", "MX", "NI", "PA", "PE", "PY", "SV", "UY" ],
+      "disc_number" : 2,
+      "duration_ms" : 229880,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USSM18400014"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5M1uWNVvwiXD7JsaOsaxyI"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5M1uWNVvwiXD7JsaOsaxyI",
+      "id" : "5M1uWNVvwiXD7JsaOsaxyI",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 1,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e14fa956b2cc3a5c6eb386fa747df89105bc7c29?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:5M1uWNVvwiXD7JsaOsaxyI"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3uKiMJO25JbcnE72DrmUMf"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3uKiMJO25JbcnE72DrmUMf",
+          "id" : "3uKiMJO25JbcnE72DrmUMf",
+          "name" : "Adam Harvey",
+          "type" : "artist",
+          "uri" : "spotify:artist:3uKiMJO25JbcnE72DrmUMf"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6LV9s5oLmOa8JYexoMYuqC"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6LV9s5oLmOa8JYexoMYuqC",
+        "id" : "6LV9s5oLmOa8JYexoMYuqC",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/468905d7cee7f1e33b635d42f649306f5191e605",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/06b195ee0f656f4b3d8ce8b879181a547f384199",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/45dfa9734078dc3b3215d4d22c0b76a281b86779",
+          "width" : 64
+        } ],
+        "name" : "Both Sides Now",
+        "type" : "album",
+        "uri" : "spotify:album:6LV9s5oLmOa8JYexoMYuqC"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3RIsSUoG3tw0S19WabHxiM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3RIsSUoG3tw0S19WabHxiM",
+        "id" : "3RIsSUoG3tw0S19WabHxiM",
+        "name" : "Troy Cassar-Daley",
+        "type" : "artist",
+        "uri" : "spotify:artist:3RIsSUoG3tw0S19WabHxiM"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3uKiMJO25JbcnE72DrmUMf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3uKiMJO25JbcnE72DrmUMf",
+        "id" : "3uKiMJO25JbcnE72DrmUMf",
+        "name" : "Adam Harvey",
+        "type" : "artist",
+        "uri" : "spotify:artist:3uKiMJO25JbcnE72DrmUMf"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 197493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "AUBM00900239"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6rU0V0ajVbVyNZ0yl3Qqtq"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6rU0V0ajVbVyNZ0yl3Qqtq",
+      "id" : "6rU0V0ajVbVyNZ0yl3Qqtq",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 3,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f5044ce72f72f0dcef9b3e0e5d97295f61ae1608?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:6rU0V0ajVbVyNZ0yl3Qqtq"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3uKiMJO25JbcnE72DrmUMf"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3uKiMJO25JbcnE72DrmUMf",
+          "id" : "3uKiMJO25JbcnE72DrmUMf",
+          "name" : "Adam Harvey",
+          "type" : "artist",
+          "uri" : "spotify:artist:3uKiMJO25JbcnE72DrmUMf"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5fFfI5HKbvGXREZ2xApbHf"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5fFfI5HKbvGXREZ2xApbHf",
+        "id" : "5fFfI5HKbvGXREZ2xApbHf",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/468905d7cee7f1e33b635d42f649306f5191e605",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/06b195ee0f656f4b3d8ce8b879181a547f384199",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/45dfa9734078dc3b3215d4d22c0b76a281b86779",
+          "width" : 64
+        } ],
+        "name" : "Both Sides Now",
+        "type" : "album",
+        "uri" : "spotify:album:5fFfI5HKbvGXREZ2xApbHf"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3RIsSUoG3tw0S19WabHxiM"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3RIsSUoG3tw0S19WabHxiM",
+        "id" : "3RIsSUoG3tw0S19WabHxiM",
+        "name" : "Troy Cassar-Daley",
+        "type" : "artist",
+        "uri" : "spotify:artist:3RIsSUoG3tw0S19WabHxiM"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3uKiMJO25JbcnE72DrmUMf"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3uKiMJO25JbcnE72DrmUMf",
+        "id" : "3uKiMJO25JbcnE72DrmUMf",
+        "name" : "Adam Harvey",
+        "type" : "artist",
+        "uri" : "spotify:artist:3uKiMJO25JbcnE72DrmUMf"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "BE", "BG", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 197493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "AUBM00900239"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2D21K6lDyr6onO6hWnCv0y"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2D21K6lDyr6onO6hWnCv0y",
+      "id" : "2D21K6lDyr6onO6hWnCv0y",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 1,
+      "preview_url" : "https://p.scdn.co/mp3-preview/f5044ce72f72f0dcef9b3e0e5d97295f61ae1608?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:2D21K6lDyr6onO6hWnCv0y"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0r7VCiHRqfNFMbo6V3Jafx"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0r7VCiHRqfNFMbo6V3Jafx",
+          "id" : "0r7VCiHRqfNFMbo6V3Jafx",
+          "name" : "Tamra Rosanes",
+          "type" : "artist",
+          "uri" : "spotify:artist:0r7VCiHRqfNFMbo6V3Jafx"
+        }, {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/7w3cBTNvcT9F0HySJ0fp9N"
+          },
+          "href" : "https://api.spotify.com/v1/artists/7w3cBTNvcT9F0HySJ0fp9N",
+          "id" : "7w3cBTNvcT9F0HySJ0fp9N",
+          "name" : "DR RadioUnderholdningsOrkestret",
+          "type" : "artist",
+          "uri" : "spotify:artist:7w3cBTNvcT9F0HySJ0fp9N"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4IScncPJM95iAQ9pQnlVNO"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4IScncPJM95iAQ9pQnlVNO",
+        "id" : "4IScncPJM95iAQ9pQnlVNO",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/8b6ce0806f1211d535237916c968b53a0d2e5753",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/50e79b4ed180046cde59e756008a1832964b3eda",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/0d21dde19f85da516bb5d4b764cb63fa9b5002fb",
+          "width" : 64
+        } ],
+        "name" : "With Strings",
+        "type" : "album",
+        "uri" : "spotify:album:4IScncPJM95iAQ9pQnlVNO"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0r7VCiHRqfNFMbo6V3Jafx"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0r7VCiHRqfNFMbo6V3Jafx",
+        "id" : "0r7VCiHRqfNFMbo6V3Jafx",
+        "name" : "Tamra Rosanes",
+        "type" : "artist",
+        "uri" : "spotify:artist:0r7VCiHRqfNFMbo6V3Jafx"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7w3cBTNvcT9F0HySJ0fp9N"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7w3cBTNvcT9F0HySJ0fp9N",
+        "id" : "7w3cBTNvcT9F0HySJ0fp9N",
+        "name" : "DR RadioUnderholdningsOrkestret",
+        "type" : "artist",
+        "uri" : "spotify:artist:7w3cBTNvcT9F0HySJ0fp9N"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 237360,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DKABA1200563"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/67GNz8W79jKb7DiXkiOZ4h"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/67GNz8W79jKb7DiXkiOZ4h",
+      "id" : "67GNz8W79jKb7DiXkiOZ4h",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4beeb76a896445b86dde1eaf17892b3d4bb112c0?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 6,
+      "type" : "track",
+      "uri" : "spotify:track:67GNz8W79jKb7DiXkiOZ4h"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4Ly9QAmazLxR4IKjGxBIkt"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4Ly9QAmazLxR4IKjGxBIkt",
+          "id" : "4Ly9QAmazLxR4IKjGxBIkt",
+          "name" : "Becky Doucette",
+          "type" : "artist",
+          "uri" : "spotify:artist:4Ly9QAmazLxR4IKjGxBIkt"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/66MKPPlCV1RyLVRPvZYU6I"
+        },
+        "href" : "https://api.spotify.com/v1/albums/66MKPPlCV1RyLVRPvZYU6I",
+        "id" : "66MKPPlCV1RyLVRPvZYU6I",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/99c8324a08b747cfecb19ae0de51d224c9767bc4",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/282e422e82e76c9fa1f4fbdc9177078304e14090",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/652cbbfadc55325102b17d895a822d3aae800db0",
+          "width" : 64
+        } ],
+        "name" : "On a Wing and a Prayer",
+        "type" : "album",
+        "uri" : "spotify:album:66MKPPlCV1RyLVRPvZYU6I"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4Ly9QAmazLxR4IKjGxBIkt"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4Ly9QAmazLxR4IKjGxBIkt",
+        "id" : "4Ly9QAmazLxR4IKjGxBIkt",
+        "name" : "Becky Doucette",
+        "type" : "artist",
+        "uri" : "spotify:artist:4Ly9QAmazLxR4IKjGxBIkt"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0J6ivBTOuNwrAUb6ov7gj7"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0J6ivBTOuNwrAUb6ov7gj7",
+        "id" : "0J6ivBTOuNwrAUb6ov7gj7",
+        "name" : "Denise Doucette",
+        "type" : "artist",
+        "uri" : "spotify:artist:0J6ivBTOuNwrAUb6ov7gj7"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 226613,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "uscgj1622384"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3UsYdjK6uDsPY5LnhlozOF"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3UsYdjK6uDsPY5LnhlozOF",
+      "id" : "3UsYdjK6uDsPY5LnhlozOF",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/b401b4d1e9a8c61cf7dd7a48b5b79c3eca62cc57?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:3UsYdjK6uDsPY5LnhlozOF"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/36H9EBenJ3Tqbd6snt0lLm"
+          },
+          "href" : "https://api.spotify.com/v1/artists/36H9EBenJ3Tqbd6snt0lLm",
+          "id" : "36H9EBenJ3Tqbd6snt0lLm",
+          "name" : "Reg Lindsay",
+          "type" : "artist",
+          "uri" : "spotify:artist:36H9EBenJ3Tqbd6snt0lLm"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1ZdtImMuooFRa2tX0Jioxh"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1ZdtImMuooFRa2tX0Jioxh",
+        "id" : "1ZdtImMuooFRa2tX0Jioxh",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/e7126d3ddbb6edc80c345d52607f222a805a7fab",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/0b21a31302a75c8046f3c9d3f28f5937fb008dfa",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/963e7d4c78d177f830c0d3c3d963333d0a5d25a1",
+          "width" : 64
+        } ],
+        "name" : "No Dress Rehearsal: What a Ride, the Powderworks & Nashville Years",
+        "type" : "album",
+        "uri" : "spotify:album:1ZdtImMuooFRa2tX0Jioxh"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/36H9EBenJ3Tqbd6snt0lLm"
+        },
+        "href" : "https://api.spotify.com/v1/artists/36H9EBenJ3Tqbd6snt0lLm",
+        "id" : "36H9EBenJ3Tqbd6snt0lLm",
+        "name" : "Reg Lindsay",
+        "type" : "artist",
+        "uri" : "spotify:artist:36H9EBenJ3Tqbd6snt0lLm"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0M4w6wFmaVFmP4lIndnEU5"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0M4w6wFmaVFmP4lIndnEU5",
+        "id" : "0M4w6wFmaVFmP4lIndnEU5",
+        "name" : "Slim Dusty",
+        "type" : "artist",
+        "uri" : "spotify:artist:0M4w6wFmaVFmP4lIndnEU5"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 230506,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "AUGO41201440"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/11vd3NXM31S6G3F96T2D8w"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/11vd3NXM31S6G3F96T2D8w",
+      "id" : "11vd3NXM31S6G3F96T2D8w",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/cab31ec57f8060b0e3e0f8e60ed4e3241a6f2f25?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:11vd3NXM31S6G3F96T2D8w"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4DXFh21YxTFGzlwIiIItZ2"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4DXFh21YxTFGzlwIiIItZ2",
+          "id" : "4DXFh21YxTFGzlwIiIItZ2",
+          "name" : "Dry Branch Fire Squad",
+          "type" : "artist",
+          "uri" : "spotify:artist:4DXFh21YxTFGzlwIiIItZ2"
+        } ],
+        "available_markets" : [ "AR", "AT", "AU", "BE", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GT", "HN", "HU", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MT", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PT", "PY", "SE", "SG", "SK", "SV", "TR" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5w34UPCSGnQCOe7X7s0VWd"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5w34UPCSGnQCOe7X7s0VWd",
+        "id" : "5w34UPCSGnQCOe7X7s0VWd",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/c85619f10e543fc945357854baf7150af342cf55",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/eebbff8cbb8c8c1e83953accdb754f693b0da81e",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/5b943b40bc1aa5b1998d61138424318fdb3b1f21",
+          "width" : 64
+        } ],
+        "name" : "Echoes Of The Mountains",
+        "type" : "album",
+        "uri" : "spotify:album:5w34UPCSGnQCOe7X7s0VWd"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4DXFh21YxTFGzlwIiIItZ2"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4DXFh21YxTFGzlwIiIItZ2",
+        "id" : "4DXFh21YxTFGzlwIiIItZ2",
+        "name" : "Dry Branch Fire Squad",
+        "type" : "artist",
+        "uri" : "spotify:artist:4DXFh21YxTFGzlwIiIItZ2"
+      } ],
+      "available_markets" : [ "AR", "AT", "AU", "BE", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GT", "HN", "HU", "IE", "IS", "IT", "JP", "LT", "LU", "LV", "MT", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PT", "PY", "SE", "SG", "SK", "SV", "TR" ],
+      "disc_number" : 1,
+      "duration_ms" : 194853,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USRO20957408"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5fealSBTRQ3hzHiX4LKl5k"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5fealSBTRQ3hzHiX4LKl5k",
+      "id" : "5fealSBTRQ3hzHiX4LKl5k",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 1,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0de6dde081bc34afecac079b70542ce3eb152b6b?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:5fealSBTRQ3hzHiX4LKl5k"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/44jlg8mN6UecucFzOnTyaQ"
+          },
+          "href" : "https://api.spotify.com/v1/artists/44jlg8mN6UecucFzOnTyaQ",
+          "id" : "44jlg8mN6UecucFzOnTyaQ",
+          "name" : "Tommy Dell",
+          "type" : "artist",
+          "uri" : "spotify:artist:44jlg8mN6UecucFzOnTyaQ"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1kxvv9ueZaSo0MVjRq05SK"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1kxvv9ueZaSo0MVjRq05SK",
+        "id" : "1kxvv9ueZaSo0MVjRq05SK",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/7a50c3a9ad442e21df38c5c913d596fa37b0c454",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a6400967dd96e9771ef8f67ef015392f194ae0eb",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/023d5c8f3ed966ea4e661daf6b8fe026ce52d5f8",
+          "width" : 64
+        } ],
+        "name" : "My God Loves Me",
+        "type" : "album",
+        "uri" : "spotify:album:1kxvv9ueZaSo0MVjRq05SK"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/44jlg8mN6UecucFzOnTyaQ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/44jlg8mN6UecucFzOnTyaQ",
+        "id" : "44jlg8mN6UecucFzOnTyaQ",
+        "name" : "Tommy Dell",
+        "type" : "artist",
+        "uri" : "spotify:artist:44jlg8mN6UecucFzOnTyaQ"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 167493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USV291433138"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7iuwy5JYEWBSrd3tgrHu9D"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7iuwy5JYEWBSrd3tgrHu9D",
+      "id" : "7iuwy5JYEWBSrd3tgrHu9D",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 1,
+      "preview_url" : "https://p.scdn.co/mp3-preview/a13b859588661cb768fd8186a9eb27cc442fbccd?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 5,
+      "type" : "track",
+      "uri" : "spotify:track:7iuwy5JYEWBSrd3tgrHu9D"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/4xGzkmKKth6WCBzlEsalTV"
+          },
+          "href" : "https://api.spotify.com/v1/artists/4xGzkmKKth6WCBzlEsalTV",
+          "id" : "4xGzkmKKth6WCBzlEsalTV",
+          "name" : "GG Gibson Tim Broadbent band",
+          "type" : "artist",
+          "uri" : "spotify:artist:4xGzkmKKth6WCBzlEsalTV"
+        } ],
+        "available_markets" : [ "AR", "AU", "BO", "BR", "CA", "CL", "CO", "CR", "DO", "EC", "GB", "GT", "HK", "HN", "ID", "IE", "JP", "MX", "MY", "NI", "NZ", "PA", "PE", "PH", "PY", "SG", "SV", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4WsOxYrP57hu5S11W4JoG0"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4WsOxYrP57hu5S11W4JoG0",
+        "id" : "4WsOxYrP57hu5S11W4JoG0",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/5a322b6520d88f9b82936ee0a8be758b8bdc5445",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/650ade81d89eab8db3122d73e801759f5faf3494",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8da2c3396c16872b12be16d823aaf6f8fa4002ac",
+          "width" : 64
+        } ],
+        "name" : "Country",
+        "type" : "album",
+        "uri" : "spotify:album:4WsOxYrP57hu5S11W4JoG0"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6rBrQPzb7Vj9uEM0aus20X"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6rBrQPzb7Vj9uEM0aus20X",
+        "id" : "6rBrQPzb7Vj9uEM0aus20X",
+        "name" : "GG Gibson Tim Broadbent ba...",
+        "type" : "artist",
+        "uri" : "spotify:artist:6rBrQPzb7Vj9uEM0aus20X"
+      } ],
+      "available_markets" : [ "AR", "AU", "BO", "BR", "CA", "CL", "CO", "CR", "DO", "EC", "GB", "GT", "HK", "HN", "ID", "IE", "JP", "MX", "MY", "NI", "NZ", "PA", "PE", "PH", "PY", "SG", "SV", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 164520,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBMEZ1036864"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3tbnJY0Eq5l2lXUgZQFznN"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3tbnJY0Eq5l2lXUgZQFznN",
+      "id" : "3tbnJY0Eq5l2lXUgZQFznN",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/dc1f8629b91990f760ea56fd277381dea4193560?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:3tbnJY0Eq5l2lXUgZQFznN"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/09vx7zHa7grvqDf0zQ3Q8a"
+          },
+          "href" : "https://api.spotify.com/v1/artists/09vx7zHa7grvqDf0zQ3Q8a",
+          "id" : "09vx7zHa7grvqDf0zQ3Q8a",
+          "name" : "Rikke Bruhn Grøn",
+          "type" : "artist",
+          "uri" : "spotify:artist:09vx7zHa7grvqDf0zQ3Q8a"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/4DFjGb2qXmIo88Z83ukQdB"
+        },
+        "href" : "https://api.spotify.com/v1/albums/4DFjGb2qXmIo88Z83ukQdB",
+        "id" : "4DFjGb2qXmIo88Z83ukQdB",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/cbee38ec6afc1ded7b04adda6ff502ca2f802fc1",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a47c1cd644f8f70e2e263ce0a06b1655c94af16a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/f0b10fc7212b6d4aee059a4f0e34be85e1de0c20",
+          "width" : 64
+        } ],
+        "name" : "Dreams of Yesterday",
+        "type" : "album",
+        "uri" : "spotify:album:4DFjGb2qXmIo88Z83ukQdB"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/09vx7zHa7grvqDf0zQ3Q8a"
+        },
+        "href" : "https://api.spotify.com/v1/artists/09vx7zHa7grvqDf0zQ3Q8a",
+        "id" : "09vx7zHa7grvqDf0zQ3Q8a",
+        "name" : "Rikke Bruhn Grøn",
+        "type" : "artist",
+        "uri" : "spotify:artist:09vx7zHa7grvqDf0zQ3Q8a"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 218826,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DKATA0701009"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2rG8KZadQgleIB4mOhlRDP"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2rG8KZadQgleIB4mOhlRDP",
+      "id" : "2rG8KZadQgleIB4mOhlRDP",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 2,
+      "preview_url" : "https://p.scdn.co/mp3-preview/189d6a0bf7a571e1f40ea1cd0bb15c07e509a69f?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 9,
+      "type" : "track",
+      "uri" : "spotify:track:2rG8KZadQgleIB4mOhlRDP"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/7LY50VI3jAnyZrwGFELX5v"
+          },
+          "href" : "https://api.spotify.com/v1/artists/7LY50VI3jAnyZrwGFELX5v",
+          "id" : "7LY50VI3jAnyZrwGFELX5v",
+          "name" : "Klass",
+          "type" : "artist",
+          "uri" : "spotify:artist:7LY50VI3jAnyZrwGFELX5v"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3QytK4wLVDG0pv4v3qIOjp"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3QytK4wLVDG0pv4v3qIOjp",
+        "id" : "3QytK4wLVDG0pv4v3qIOjp",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/fdd529f4d03d09b595826a21b0d5d8025ffa4fab",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4fc461c88644dfe1dd28aa43f4d8fffd8cd93207",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/8467b3880eb2f27840c0f51d13d98d401f29ab8c",
+          "width" : 64
+        } ],
+        "name" : "Part of Me",
+        "type" : "album",
+        "uri" : "spotify:album:3QytK4wLVDG0pv4v3qIOjp"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/7LY50VI3jAnyZrwGFELX5v"
+        },
+        "href" : "https://api.spotify.com/v1/artists/7LY50VI3jAnyZrwGFELX5v",
+        "id" : "7LY50VI3jAnyZrwGFELX5v",
+        "name" : "Klass",
+        "type" : "artist",
+        "uri" : "spotify:artist:7LY50VI3jAnyZrwGFELX5v"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 261413,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAAU0402638"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4QoRCvbFXnd6hlic9XRqlb"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4QoRCvbFXnd6hlic9XRqlb",
+      "id" : "4QoRCvbFXnd6hlic9XRqlb",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/c87714a211ac092789b9130d61261e215b91eb8a?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 11,
+      "type" : "track",
+      "uri" : "spotify:track:4QoRCvbFXnd6hlic9XRqlb"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/3qvcWEYUY2kUXnRiQWgA3P"
+        },
+        "href" : "https://api.spotify.com/v1/albums/3qvcWEYUY2kUXnRiQWgA3P",
+        "id" : "3qvcWEYUY2kUXnRiQWgA3P",
+        "images" : [ {
+          "height" : 600,
+          "url" : "https://i.scdn.co/image/d86d7a032163741abaebffeacc6275a66bc74685",
+          "width" : 600
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/35ff8d889a498b0e1da307b0295d2d8532e5252c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/97a09f0f2131dd0ff833932587621bfbbf13f3eb",
+          "width" : 64
+        } ],
+        "name" : "Sihltal Super Session",
+        "type" : "album",
+        "uri" : "spotify:album:3qvcWEYUY2kUXnRiQWgA3P"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4jHHkYYK5l9UzPgNmUXhNw"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4jHHkYYK5l9UzPgNmUXhNw",
+        "id" : "4jHHkYYK5l9UzPgNmUXhNw",
+        "name" : "Max Stenz & Friends",
+        "type" : "artist",
+        "uri" : "spotify:artist:4jHHkYYK5l9UzPgNmUXhNw"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 196160,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "CH6540835867"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/6ROBKZFjv4vmrV0QGNLcx8"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/6ROBKZFjv4vmrV0QGNLcx8",
+      "id" : "6ROBKZFjv4vmrV0QGNLcx8",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/4dc5ca9f391302d6df6d1637a428f8f02f1e80bd?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 13,
+      "type" : "track",
+      "uri" : "spotify:track:6ROBKZFjv4vmrV0QGNLcx8"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/6rpmzptchmKft07GkRgD72"
+          },
+          "href" : "https://api.spotify.com/v1/artists/6rpmzptchmKft07GkRgD72",
+          "id" : "6rpmzptchmKft07GkRgD72",
+          "name" : "Fredi Nest",
+          "type" : "artist",
+          "uri" : "spotify:artist:6rpmzptchmKft07GkRgD72"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5KraWvJP5Uu03h9MyrvjXP"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5KraWvJP5Uu03h9MyrvjXP",
+        "id" : "5KraWvJP5Uu03h9MyrvjXP",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ac8fa51df1b1d6713fa93bbf3ec78a8ea304861d",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/de5dc9467b33105a73b084c199487d179f37aed3",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/11f85a30dad63b6c960e16ada3cc61ed3bfbeb78",
+          "width" : 64
+        } ],
+        "name" : "Begin By Die Begin",
+        "type" : "album",
+        "uri" : "spotify:album:5KraWvJP5Uu03h9MyrvjXP"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/6rpmzptchmKft07GkRgD72"
+        },
+        "href" : "https://api.spotify.com/v1/artists/6rpmzptchmKft07GkRgD72",
+        "id" : "6rpmzptchmKft07GkRgD72",
+        "name" : "Fredi Nest",
+        "type" : "artist",
+        "uri" : "spotify:artist:6rpmzptchmKft07GkRgD72"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3bKlEO17W5YwQRkmli678G"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3bKlEO17W5YwQRkmli678G",
+        "id" : "3bKlEO17W5YwQRkmli678G",
+        "name" : "Manie Jackson",
+        "type" : "artist",
+        "uri" : "spotify:artist:3bKlEO17W5YwQRkmli678G"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 220346,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ZAE531200057"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2MGuqwjtSvpzheM9AFwm8E"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2MGuqwjtSvpzheM9AFwm8E",
+      "id" : "2MGuqwjtSvpzheM9AFwm8E",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/cd02406d091a1576b8e110228fe8e800b210c5ff?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:2MGuqwjtSvpzheM9AFwm8E"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2N3mX8xtXgCJwaQYjm2qr4"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2N3mX8xtXgCJwaQYjm2qr4",
+          "id" : "2N3mX8xtXgCJwaQYjm2qr4",
+          "name" : "Anton Myburgh",
+          "type" : "artist",
+          "uri" : "spotify:artist:2N3mX8xtXgCJwaQYjm2qr4"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/76NwB4Ahyql5zb8lYKtfL7"
+        },
+        "href" : "https://api.spotify.com/v1/albums/76NwB4Ahyql5zb8lYKtfL7",
+        "id" : "76NwB4Ahyql5zb8lYKtfL7",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/a799fc44bc71a0ce7a5fe9a4a5d7df2ade17d860",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/6d27566c8344b6bfa453a4cf47c8a0d4ce962b85",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/040b0589b32925752d9c157edd333674e0cd91c2",
+          "width" : 64
+        } ],
+        "name" : "Country",
+        "type" : "album",
+        "uri" : "spotify:album:76NwB4Ahyql5zb8lYKtfL7"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2N3mX8xtXgCJwaQYjm2qr4"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2N3mX8xtXgCJwaQYjm2qr4",
+        "id" : "2N3mX8xtXgCJwaQYjm2qr4",
+        "name" : "Anton Myburgh",
+        "type" : "artist",
+        "uri" : "spotify:artist:2N3mX8xtXgCJwaQYjm2qr4"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 194874,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "usdy41687948"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7yVnPQayzFiSxhpQpt6HmW"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7yVnPQayzFiSxhpQpt6HmW",
+      "id" : "7yVnPQayzFiSxhpQpt6HmW",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/cdee2a167e2c813ea652cf1d76a3bac279bc77f7?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:7yVnPQayzFiSxhpQpt6HmW"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/3bKlEO17W5YwQRkmli678G"
+          },
+          "href" : "https://api.spotify.com/v1/artists/3bKlEO17W5YwQRkmli678G",
+          "id" : "3bKlEO17W5YwQRkmli678G",
+          "name" : "Manie Jackson",
+          "type" : "artist",
+          "uri" : "spotify:artist:3bKlEO17W5YwQRkmli678G"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/1l9L86Sk4gZNz2hOjiVq7h"
+        },
+        "href" : "https://api.spotify.com/v1/albums/1l9L86Sk4gZNz2hOjiVq7h",
+        "id" : "1l9L86Sk4gZNz2hOjiVq7h",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/55043f2d06dd4b82fde484f12e869366d9a31ec5",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/5ad3081e28891045fabc798ac58de30248a85b96",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/6c1f61e59b8d3f719e49d890c2fd3908710925ad",
+          "width" : 64
+        } ],
+        "name" : "In Duet met Ons Legendes",
+        "type" : "album",
+        "uri" : "spotify:album:1l9L86Sk4gZNz2hOjiVq7h"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3bKlEO17W5YwQRkmli678G"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3bKlEO17W5YwQRkmli678G",
+        "id" : "3bKlEO17W5YwQRkmli678G",
+        "name" : "Manie Jackson",
+        "type" : "artist",
+        "uri" : "spotify:artist:3bKlEO17W5YwQRkmli678G"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/74A1JytvpdwhdpCD7ydkk5"
+        },
+        "href" : "https://api.spotify.com/v1/artists/74A1JytvpdwhdpCD7ydkk5",
+        "id" : "74A1JytvpdwhdpCD7ydkk5",
+        "name" : "Clive Bruce",
+        "type" : "artist",
+        "uri" : "spotify:artist:74A1JytvpdwhdpCD7ydkk5"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 167106,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "ZAA011600247"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7sTqEpCIrTv9SQR6lBlVeB"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7sTqEpCIrTv9SQR6lBlVeB",
+      "id" : "7sTqEpCIrTv9SQR6lBlVeB",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 2,
+      "preview_url" : "https://p.scdn.co/mp3-preview/46613e79a4f855c8f06acc4e74fdc4d7e5422e69?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 13,
+      "type" : "track",
+      "uri" : "spotify:track:7sTqEpCIrTv9SQR6lBlVeB"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/69RjszlsDdOK8lUHM45PdQ"
+          },
+          "href" : "https://api.spotify.com/v1/artists/69RjszlsDdOK8lUHM45PdQ",
+          "id" : "69RjszlsDdOK8lUHM45PdQ",
+          "name" : "Will Cox",
+          "type" : "artist",
+          "uri" : "spotify:artist:69RjszlsDdOK8lUHM45PdQ"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6PpTG33edAPK4Q8Wf0g5dd"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6PpTG33edAPK4Q8Wf0g5dd",
+        "id" : "6PpTG33edAPK4Q8Wf0g5dd",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/9954452b796561b648369dd22dc76c3cbc880f50",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/682bed1911a5ded86378eb9ed2130de83d5a610c",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/d91caabe27845fdc694d4a1fc74b2018d0fbadfa",
+          "width" : 64
+        } ],
+        "name" : "Clear Country Cuts",
+        "type" : "album",
+        "uri" : "spotify:album:6PpTG33edAPK4Q8Wf0g5dd"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/69RjszlsDdOK8lUHM45PdQ"
+        },
+        "href" : "https://api.spotify.com/v1/artists/69RjszlsDdOK8lUHM45PdQ",
+        "id" : "69RjszlsDdOK8lUHM45PdQ",
+        "name" : "Will Cox",
+        "type" : "artist",
+        "uri" : "spotify:artist:69RjszlsDdOK8lUHM45PdQ"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 256040,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMFMF1581724"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2Es5nL80w3uJ7gGLAfF1a6"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2Es5nL80w3uJ7gGLAfF1a6",
+      "id" : "2Es5nL80w3uJ7gGLAfF1a6",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/0db231be742d71d2b6e85f8f14a44688e69071da?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 12,
+      "type" : "track",
+      "uri" : "spotify:track:2Es5nL80w3uJ7gGLAfF1a6"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/5D38brdDaGbsAPl4CG5FQN"
+        },
+        "href" : "https://api.spotify.com/v1/albums/5D38brdDaGbsAPl4CG5FQN",
+        "id" : "5D38brdDaGbsAPl4CG5FQN",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/cf3aaffaa0662e232333c41158f00e2e307faa0a",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/24b3f4ae05fb34beb0b7d56f79b0ef960e592ce9",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/56df2e621d24eecbf09ce199b0fb8702dd71d7bf",
+          "width" : 64
+        } ],
+        "name" : "Showband Years - The Love Songs Collection",
+        "type" : "album",
+        "uri" : "spotify:album:5D38brdDaGbsAPl4CG5FQN"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4xn52tkgbJs2TvscqYOlYq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4xn52tkgbJs2TvscqYOlYq",
+        "id" : "4xn52tkgbJs2TvscqYOlYq",
+        "name" : "Roly Daniels",
+        "type" : "artist",
+        "uri" : "spotify:artist:4xn52tkgbJs2TvscqYOlYq"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 206786,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA2P1676569"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7AYLW5aPcphXOEBityxUUH"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7AYLW5aPcphXOEBityxUUH",
+      "id" : "7AYLW5aPcphXOEBityxUUH",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/e4f376d19fc77f395d00720d6daa9d44c56047ab?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 37,
+      "type" : "track",
+      "uri" : "spotify:track:7AYLW5aPcphXOEBityxUUH"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2PWpGtRsHb9V3HtXdIVZJW"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2PWpGtRsHb9V3HtXdIVZJW",
+          "id" : "2PWpGtRsHb9V3HtXdIVZJW",
+          "name" : "Maarten Jansen",
+          "type" : "artist",
+          "uri" : "spotify:artist:2PWpGtRsHb9V3HtXdIVZJW"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/0il7GLIisPgNiFGK7WOPoZ"
+        },
+        "href" : "https://api.spotify.com/v1/albums/0il7GLIisPgNiFGK7WOPoZ",
+        "id" : "0il7GLIisPgNiFGK7WOPoZ",
+        "images" : [ {
+          "height" : 503,
+          "url" : "https://i.scdn.co/image/9ad282008f090a0bb4996181c36eae88db40f8ec",
+          "width" : 640
+        }, {
+          "height" : 236,
+          "url" : "https://i.scdn.co/image/727550b2e365e428a256dd06248949674df382e2",
+          "width" : 300
+        }, {
+          "height" : 50,
+          "url" : "https://i.scdn.co/image/303b9f36ed0469376a6ef4598f70b275d144b7b6",
+          "width" : 64
+        } ],
+        "name" : "Greatest Hits 1",
+        "type" : "album",
+        "uri" : "spotify:album:0il7GLIisPgNiFGK7WOPoZ"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2PWpGtRsHb9V3HtXdIVZJW"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2PWpGtRsHb9V3HtXdIVZJW",
+        "id" : "2PWpGtRsHb9V3HtXdIVZJW",
+        "name" : "Maarten Jansen",
+        "type" : "artist",
+        "uri" : "spotify:artist:2PWpGtRsHb9V3HtXdIVZJW"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 235680,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "DKNH30903708"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/7rNNkIhT3nU4CnbPyI7v9B"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/7rNNkIhT3nU4CnbPyI7v9B",
+      "id" : "7rNNkIhT3nU4CnbPyI7v9B",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/14c4b15f0f2801dac4911b111dfb388d5a651c78?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:7rNNkIhT3nU4CnbPyI7v9B"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+          },
+          "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+          "id" : "0LyfQWJT6nXafLPZqxe9Of",
+          "name" : "Various Artists",
+          "type" : "artist",
+          "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+        } ],
+        "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/7uTL061XvaZjUXdFqbtAiL"
+        },
+        "href" : "https://api.spotify.com/v1/albums/7uTL061XvaZjUXdFqbtAiL",
+        "id" : "7uTL061XvaZjUXdFqbtAiL",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/ecce5227a6bf775d72232e9a430a1c71c5241f68",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/4ee9b7bbc9c804a4b6254dc874ed536712971b0a",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/5acd37899629f4f00b43f641938ecb84ce90d5a1",
+          "width" : 64
+        } ],
+        "name" : "The Showband Hits",
+        "type" : "album",
+        "uri" : "spotify:album:7uTL061XvaZjUXdFqbtAiL"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4xn52tkgbJs2TvscqYOlYq"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4xn52tkgbJs2TvscqYOlYq",
+        "id" : "4xn52tkgbJs2TvscqYOlYq",
+        "name" : "Roly Daniels",
+        "type" : "artist",
+        "uri" : "spotify:artist:4xn52tkgbJs2TvscqYOlYq"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+      "disc_number" : 1,
+      "duration_ms" : 205333,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "USA2P1479925"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/3PKnqDa911wNfw4WEoF25F"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/3PKnqDa911wNfw4WEoF25F",
+      "id" : "3PKnqDa911wNfw4WEoF25F",
+      "name" : "Seven Spanish Angels",
+      "popularity" : 0,
+      "preview_url" : "https://p.scdn.co/mp3-preview/00d9976b09a3c0dea427dcdf28eb8f33cd79b8d1?cid=8897482848704f2a8f8d7c79726a70d4",
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:3PKnqDa911wNfw4WEoF25F"
+    } ],
+    "limit" : 50,
+    "next" : "https://api.spotify.com/v1/search?query=spanish+angels&type=track&market=GB&offset=50&limit=50",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 250
+  }
+}
