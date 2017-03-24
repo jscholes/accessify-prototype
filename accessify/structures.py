@@ -20,3 +20,9 @@ class Track(NamedTuple):
     length: Optional[int] = None
     type: str = 'normal'
 
+
+class Playlist(NamedTuple):
+    name: str
+    total_tracks: int
+    uri: Optional[str] = None
+
