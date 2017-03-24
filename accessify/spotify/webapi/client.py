@@ -4,6 +4,10 @@ import ujson as json
 
 
 class WebAPIClient:
+    pass
+
+
+class TestWebAPIClient:
     def search(self, query, search_type):
         # This code won't last for long
         module_dir, _ = os.path.split(__file__)
