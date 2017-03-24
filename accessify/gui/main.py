@@ -193,19 +193,16 @@ class SearchPage(TabsPage):
         self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
     def onQueryEntered(self, event):
+        def results_cb(result_list):
+            wx.CallAfter(self.HandleResults, result_list)
+
         query = self.query_field.GetValue()
         if not query:
             return
         else:
             self.results.Clear()
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
-            results = self.search.perform_new_search(query, search_type)
-            if results:
-                self.AddResults(results)
-            else:
-                self.results.Append('No results')
-                self.results.SetSelection(0)
-            self.results.SetFocus()
+            self.search.perform_new_search(query, search_type, results_cb)
 
     def onSearch(self, event):
         self.onQueryEntered(None)
@@ -217,6 +214,14 @@ class SearchPage(TabsPage):
         command_dict = context_menu_commands.get(event.GetId(), None)
         if command_dict:
             getattr(self, command_dict['method'])()
+
+    def HandleResults(self, result_list):
+        if result_list:
+            self.AddResults(result_list)
+        else:
+            self.results.Append('No results')
+            self.results.SetSelection(0)
+        self.results.SetFocus()
 
     def AddResults(self, results):
         for result in results:
