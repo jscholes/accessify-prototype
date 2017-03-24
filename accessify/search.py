@@ -40,5 +40,4 @@ class SearchType(Enum):
     ARTIST = 'artist'
     ALBUM = 'album'
     PLAYLIST = 'playlist'
-    USER = 'user'
 

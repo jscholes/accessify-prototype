@@ -41,7 +41,6 @@ SEARCH_TYPES = [
     (SearchType.ARTIST, '&Artist'),
     (SearchType.ALBUM, 'A&lbum'),
     (SearchType.PLAYLIST, '&Playlist'),
-    (SearchType.USER, '&User'),
 ]
 
 ID_PLAY_SELECTED = wx.NewId()
