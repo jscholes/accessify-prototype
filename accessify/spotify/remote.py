@@ -1,7 +1,6 @@
 from collections import defaultdict
 from enum import Enum
 import logging
-import queue
 import random
 import string
 import threading
@@ -14,8 +13,6 @@ import psutil
 import requests
 from functional import seq
 import ujson as json
-
-from ..utils.concurrency import consume_queue
 
 from . import exceptions
 
