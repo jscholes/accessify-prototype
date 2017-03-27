@@ -36,9 +36,9 @@ class EventManager(threading.Thread):
         while True:
             try:
                 if return_immediately:
-                    status = self._remote_bridge.get_status(from_event_manager=True)
+                    status = self._remote_bridge.get_status()
                 else:
-                    status = self._remote_bridge.get_status(return_after=60, from_event_manager=True)
+                    status = self._remote_bridge.get_status(return_after=60)
                 self._event_queue.put(status)
                 return_immediately = False
             except exceptions.MetadataNotReadyError:

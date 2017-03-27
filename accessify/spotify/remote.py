@@ -66,8 +66,7 @@ class RemoteBridge:
     """
 
     def __init__(self, port):
-        self._control_hostname = self.generate_hostname()
-        self._event_manager_hostname = self.generate_hostname()
+        self._hostname = self.generate_hostname()
         self._port = port
         self._session = requests.Session()
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
@@ -76,19 +75,15 @@ class RemoteBridge:
         self._csrf_token = None
         self._oauth_token = None
 
-    def get_status(self, return_after=None, from_event_manager=False):
-        if from_event_manager:
-            hostname = self._event_manager_hostname
-        else:
-            hostname = self._control_hostname
+    def get_status(self, return_after=None):
         if return_after is not None:
             params = {
                 'returnafter': return_after,
                 'returnon': 'login,logout,play,pause,error,ap',
             }
-            response = self.remote_request('status', params=params, hostname=hostname)
+            response = self.remote_request('status', params=params)
         else:
-            response = self.remote_request('status', hostname=hostname)
+            response = self.remote_request('status')
         # Do we have all the metadata we need?
         try:
             album = response['track']['album_resource']['name']
@@ -110,14 +105,12 @@ class RemoteBridge:
             params.update(context=uri)
         return self.remote_request('play', params=params)
 
-    def remote_request(self, endpoint, params=None, hostname=None):
-        if hostname is None:
-            hostname = self._control_hostname
+    def remote_request(self, endpoint, params=None):
         if self._csrf_token is None:
             self._csrf_token = self.get_csrf_token()
         if self._oauth_token is None:
             self._oauth_token = self.get_oauth_token()
-        request_url = 'https://{0}:{1}/remote/{2}.json'.format(hostname, self._port, endpoint)
+        request_url = 'https://{0}:{1}/remote/{2}.json'.format(self._hostname, self._port, endpoint)
         request_params = {
             'oauth': self._oauth_token,
             'csrf': self._csrf_token,
@@ -139,7 +132,7 @@ class RemoteBridge:
         return '{0}.spotilocal.com'.format(subdomain)
 
     def get_csrf_token(self):
-        url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._control_hostname, self._port)
+        url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._hostname, self._port)
         logger.debug('Requesting {0}'.format(url))
         response = self._session.get(url)
         data = json.loads(response.content)
