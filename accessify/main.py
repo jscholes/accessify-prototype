@@ -31,18 +31,19 @@ def main():
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController(spotify_remote, event_manager, executor)
-    search_controller = search.SearchController(spotify.webapi.WebAPIClient(), executor)
+    search_controller = search.SearchController.start(spotify.webapi.WebAPIClient())
 
     # Set up the GUI
     app = wx.App()
-    window = gui.main.MainWindow(playback_controller, search_controller)
+    window = gui.main.MainWindow(playback_controller, search_controller.proxy())
     window.SubscribeToSpotifyEvents(event_manager)
     window.Show()
     app.MainLoop()
 
     # Shutdown
-    logger.info('Shutting down')
+    search_controller.stop()
     executor.shutdown()
+    logger.info('Application shutdown complete')
 
 
 if __name__ == '__main__':

@@ -1,6 +1,7 @@
 from enum import Enum
 import logging
 
+import pykka
 from functional import seq
 
 from . import structures
@@ -9,32 +10,21 @@ from . import structures
 logger = logging.getLogger(__name__)
 
 
-class SearchController:
-    def __init__(self, api_client, thread_pool_executor):
+class SearchController(pykka.ThreadingActor):
+    def __init__(self, api_client):
+        super().__init__()
         self.api_client = api_client
-        self.executor = thread_pool_executor
 
     def perform_new_search(self, query, search_type, results_callback):
-        def done_cb(future):
-            try:
-                results_callback(future.result())
-            except Exception:
-                logger.error('Error while searching', exc_info=True)
-
-        future = self.executor.submit(self._perform_new_search, query, search_type)
-        future.add_done_callback(done_cb)
-
-    def _perform_new_search(self, query, search_type):
-        logger.debug('Searching for {0} (search type: {1})'.format(query, search_type))
         results = self.api_client.search(query, search_type.value)
         if results:
             container = item_containers[search_type]
             deserializer = item_deserializers[search_type]
-            return (seq(results[container]['items'])
-                .map(deserializer)
-            )
+            deserialized_results = seq(results[container]['items']).map(deserializer)
         else:
-            return []
+            deserialized_results = []
+
+        results_callback(deserialized_results)
 
 
 def deserialize_track(track):
