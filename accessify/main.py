@@ -16,10 +16,12 @@ log_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'accessify.l
 
 def main():
     # Set up logging
-    logger.setLevel(logging.DEBUG)
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.DEBUG)
     handler = logging.FileHandler(log_path, mode='w', encoding='utf-8')
     handler.setFormatter(logging.Formatter('%(name)s: %(message)s'))
-    logger.addHandler(handler)
+    root_logger.addHandler(handler)
+
     logger.info('Application starting up')
 
     # Set up communication with Spotify
