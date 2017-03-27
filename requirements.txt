@@ -2,6 +2,7 @@ appdirs
 packaging
 psutil
 PyFunctional
+pykka
 pyparsing
 pyperclip
 requests
