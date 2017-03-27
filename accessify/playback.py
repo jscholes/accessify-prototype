@@ -44,23 +44,23 @@ class PlaybackController(pykka.ThreadingActor):
         pyperclip.copy(uri)
 
     def play_pause(self):
-        self.spotify.queue_command(PlaybackCommand.PLAY_PAUSE)
+        self.spotify.send_command(PlaybackCommand.PLAY_PAUSE)
 
     def previous_track(self):
-        self.spotify.queue_command(PlaybackCommand.PREV_TRACK)
+        self.spotify.send_command(PlaybackCommand.PREV_TRACK)
 
     def next_track(self):
-        self.spotify.queue_command(PlaybackCommand.NEXT_TRACK)
+        self.spotify.send_command(PlaybackCommand.NEXT_TRACK)
 
     def seek_backward(self):
-        self.spotify.queue_command(PlaybackCommand.SEEK_BACKWARD)
+        self.spotify.send_command(PlaybackCommand.SEEK_BACKWARD)
 
     def seek_forward(self):
-        self.spotify.queue_command(PlaybackCommand.SEEK_FORWARD)
+        self.spotify.send_command(PlaybackCommand.SEEK_FORWARD)
 
     def increase_volume(self):
-        self.spotify.queue_command(PlaybackCommand.VOLUME_UP)
+        self.spotify.send_command(PlaybackCommand.VOLUME_UP)
 
     def decrease_volume(self):
-        self.spotify.queue_command(PlaybackCommand.VOLUME_DOWN)
+        self.spotify.send_command(PlaybackCommand.VOLUME_DOWN)
 

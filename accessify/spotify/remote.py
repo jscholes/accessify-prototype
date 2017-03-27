@@ -72,8 +72,6 @@ class RemoteBridge:
         self._control_hostname = self.generate_hostname()
         self._event_manager_hostname = self.generate_hostname()
         self._port = port
-        self._command_queue = queue.Queue()
-        consume_queue(self._command_queue, self._send_command)
         self._session = requests.Session()
         self._session.headers.update({'Origin': 'https://open.spotify.com'})
         self._session.verify = False
@@ -157,16 +155,7 @@ class RemoteBridge:
         logger.debug('OAuth token request response: {0}'.format(data))
         return data['t']
 
-    def queue_command(self, command):
-        """
-        Queue up a PlaybackCommand to be delivered to the Spotify window.
-
-        The queued command will eventually be delivered by the _send_command method, which implements the actual logic.
-        """
-        logger.debug('Queuing command: {0}'.format(command))
-        self._command_queue.put(command)
-
-    def _send_command(self, command):
+    def send_command(self, command):
         hwnd = find_window(SPOTIFY_WINDOW_CLASS, None)
         if hwnd == 0:
             return
