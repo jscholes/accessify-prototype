@@ -1,4 +1,3 @@
-from concurrent import futures
 import logging
 import os.path
 
@@ -23,26 +22,23 @@ def main():
     logger.addHandler(handler)
     logger.info('Application starting up')
 
-    # Set up concurrency
-    executor = futures.ThreadPoolExecutor()
-
     # Set up communication with Spotify
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
-    playback_controller = playback.PlaybackController(spotify_remote, event_manager, executor)
+    playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
     search_controller = search.SearchController.start(spotify.webapi.WebAPIClient())
 
     # Set up the GUI
     app = wx.App()
-    window = gui.main.MainWindow(playback_controller, search_controller.proxy())
+    window = gui.main.MainWindow(playback_controller.proxy(), search_controller.proxy())
     window.SubscribeToSpotifyEvents(event_manager)
     window.Show()
     app.MainLoop()
 
     # Shutdown
+    playback_controller.stop()
     search_controller.stop()
-    executor.shutdown()
     logger.info('Application shutdown complete')
 
 

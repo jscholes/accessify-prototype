@@ -176,6 +176,7 @@ class RemoteBridge:
             logger.debug('Sleeping to avoid command flooding')
             time.sleep(0.3)
 
+
 class PlaybackCommand(Enum):
     PLAY_PAUSE = 114
     PREV_TRACK = 116

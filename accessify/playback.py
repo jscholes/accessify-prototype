@@ -1,14 +1,15 @@
 import collections
 
+import pykka
 import pyperclip
 
 from .spotify.eventmanager import EventType
 from .spotify.remote import PlaybackCommand
 
 
-class PlaybackController:
-    def __init__(self, spotify_remote, event_manager, thread_pool_executor):
-        self.executor = thread_pool_executor
+class PlaybackController(pykka.ThreadingActor):
+    def __init__(self, spotify_remote, event_manager):
+        super().__init__()
         self.playback_queue = collections.deque()
         self.spotify = spotify_remote
         event_manager.subscribe(EventType.STOP, self._advance_playback_queue)
@@ -30,7 +31,7 @@ class PlaybackController:
         self.current_track = track
 
     def play_uri(self, uri, context=None):
-        self.executor.submit(self.spotify.play_uri, uri, context)
+        self.spotify.play_uri(uri, context)
 
     def queue_uri(self, uri, context=None):
         self.playback_queue.append({'uri': uri, 'context': context})
