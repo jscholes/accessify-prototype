@@ -85,6 +85,7 @@ class RemoteBridge:
         else:
             response = self.remote_request('status')
         # Do we have all the metadata we need?
+        # TODO: If track type is "other", this is probably a podcast and we should ignore it.
         try:
             album = response['track']['album_resource']['name']
             artist = response['track']['artist_resource']['name']
