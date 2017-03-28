@@ -9,8 +9,12 @@ API_VERSION = 'v1'
 
 
 class WebAPIClient:
-    def __init__(self):
+    def __init__(self, access_token):
         self._session = requests.Session()
+        self._session.headers.update({'Authorization': 'Bearer {0}'.format(access_token)})
+
+    def me(self):
+        return self.request('me')
 
     def search(self, query, search_type):
         return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': 'GB'})

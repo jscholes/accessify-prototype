@@ -1,4 +1,5 @@
 import logging
+import os
 import os.path
 
 import wx
@@ -25,11 +26,15 @@ def main():
     logger.info('Application starting up')
 
     # Set up communication with Spotify
+    access_token = os.environ.get('SPOTIFY_ACCESS_TOKEN')
+    if access_token is None:
+        print('No Spotify access token supplied.  Please set the SPOTIFY_ACCESS_TOKEN environment variable.')
+        return
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
-    search_controller = search.SearchController.start(spotify.webapi.WebAPIClient())
+    search_controller = search.SearchController.start(spotify.webapi.WebAPIClient(access_token))
 
     # Set up the GUI
     app = wx.App()

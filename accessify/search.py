@@ -17,6 +17,10 @@ class SearchController(pykka.ThreadingActor):
         super().__init__()
         self.api_client = api_client
 
+    def on_start(self):
+        profile = self.api_client.me()
+        logger.info('Logged into Spotify as {0} (account type {1})'.format(profile['id'], profile['product']))
+
     def perform_new_search(self, query, search_type, results_callback):
         results = self.api_client.search(query, search_type.value)
         if results:
