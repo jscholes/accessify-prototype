@@ -8,6 +8,8 @@ from .spotify.remote import PlaybackCommand
 
 
 class PlaybackController(pykka.ThreadingActor):
+    use_daemon_thread = True
+
     def __init__(self, spotify_remote, event_manager):
         super().__init__()
         self.playback_queue = collections.deque()
