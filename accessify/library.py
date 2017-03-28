@@ -10,7 +10,7 @@ from . import structures
 logger = logging.getLogger(__name__)
 
 
-class SearchController(pykka.ThreadingActor):
+class LibraryController(pykka.ThreadingActor):
     use_daemon_thread = True
 
     def __init__(self, api_client):

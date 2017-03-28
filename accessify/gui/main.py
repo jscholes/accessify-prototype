@@ -1,7 +1,7 @@
 from functional import seq
 import wx
 
-from ..search import SearchType
+from ..library import SearchType
 from .. import spotify
 from .. import structures
 
@@ -54,10 +54,10 @@ context_menu_commands = {
 
 
 class MainWindow(wx.Frame):
-    def __init__(self, playback_controller, search_controller, *args, **kwargs):
+    def __init__(self, playback_controller, library_controller, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
         self.playback = playback_controller
-        self.search = search_controller
+        self.library = library_controller
         self.InitialiseControls()
 
     def InitialiseControls(self):
@@ -71,7 +71,7 @@ class MainWindow(wx.Frame):
         return controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
 
     def         _addPages(self):
-        self.tabs.AddPage(SearchPage(self.tabs, self.playback, self.search), LABEL_SEARCH)
+        self.tabs.AddPage(SearchPage(self.tabs, self.playback, self.library), LABEL_SEARCH)
         self.tabs.AddPage(NowPlayingPage(self.tabs, self.playback), LABEL_NOW_PLAYING)
 
     def _createMenus(self):
@@ -148,8 +148,8 @@ class TabsPage(wx.Panel):
 
 
 class SearchPage(TabsPage):
-    def __init__(self, parent, playback_controller, search_controller, *args, **kwargs):
-        self.search = search_controller
+    def __init__(self, parent, playback_controller, library_controller, *args, **kwargs):
+        self.library = library_controller
         super().__init__(parent, playback_controller, *args, **kwargs)
 
     def InitialiseControls(self):
@@ -202,7 +202,7 @@ class SearchPage(TabsPage):
         else:
             self.results.Clear()
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
-            self.search.perform_new_search(query, search_type, results_cb)
+            self.library.perform_new_search(query, search_type, results_cb)
 
     def onSearch(self, event):
         self.onQueryEntered(None)

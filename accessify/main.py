@@ -6,7 +6,7 @@ import wx
 
 from . import gui
 from . import playback
-from . import search
+from . import library
 from . import spotify
 
 
@@ -34,18 +34,18 @@ def main():
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
-    search_controller = search.SearchController.start(spotify.webapi.WebAPIClient(access_token))
+    library_controller = library.LibraryController.start(spotify.webapi.WebAPIClient(access_token))
 
     # Set up the GUI
     app = wx.App()
-    window = gui.main.MainWindow(playback_controller.proxy(), search_controller.proxy())
+    window = gui.main.MainWindow(playback_controller.proxy(), library_controller.proxy())
     window.SubscribeToSpotifyEvents(event_manager)
     window.Show()
     app.MainLoop()
 
     # Shutdown
     playback_controller.stop()
-    search_controller.stop()
+    library_controller.stop()
     logger.info('Application shutdown complete')
 
 
