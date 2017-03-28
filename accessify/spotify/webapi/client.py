@@ -17,7 +17,7 @@ class WebAPIClient:
         return self.request('me')
 
     def search(self, query, search_type):
-        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': 'GB'})
+        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': 'from_token'})
 
     def request(self, endpoint, method='GET', query_parameters=None):
         if query_parameters is None:
