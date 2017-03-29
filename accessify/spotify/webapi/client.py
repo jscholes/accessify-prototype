@@ -1,8 +1,13 @@
+import logging
 import os.path
 
 import requests
 import ujson as json
 
+from . import exceptions
+
+
+logger = logging.getLogger(__name__)
 
 BASE_URL = 'https://api.spotify.com'
 API_VERSION = 'v1'
@@ -22,7 +27,16 @@ class WebAPIClient:
     def request(self, endpoint, method='GET', query_parameters=None):
         if query_parameters is None:
             query_parameters = {}
-        response = self._session.request(method, url=api_url(endpoint), params=query_parameters)
+        try:
+            response = self._session.request(method, url=api_url(endpoint), params=query_parameters)
+            response.raise_for_status()
+        except requests.exceptions.HTTPError:
+            logger.error('HTTP/{0} error during web API request:\n{1}'.format(response.status_code, response.content), exc_info=True)
+            try:
+                payload = json.loads(response.content)
+                raise exceptions.APIError(payload['error']['status'], payload['error']['message'])
+            except (ValueError, KeyError):
+                pass
         return json.loads(response.content)
 
 
