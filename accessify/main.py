@@ -42,6 +42,7 @@ def main():
     if not access_token:
         print('No Spotify access token supplied.  Please provide an access token in the config file located at {0}'.format(config_path))
         return
+
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
@@ -66,10 +67,15 @@ def load_config(path):
     logger.info('Attempting to load config from {0}'.format(path))
     try:
         with open(path, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            config = json.load(f)
     except (FileNotFoundError, ValueError):
         logger.info('Valid existing config not found, creating default')
         return default_config
+
+    for key in default_config.keys():
+        if key not in config:
+            config.update({key: default_config[key]})
+    return config
 
 
 def save_config(config_dict, path):
