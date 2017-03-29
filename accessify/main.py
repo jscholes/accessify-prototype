@@ -1,14 +1,14 @@
 import logging
-import os
 import os.path
 
 from appdirs import user_config_dir
+import ujson as json
 import wx
 
 from . import constants
 from . import gui
-from . import playback
 from . import library
+from . import playback
 from . import spotify
 
 
@@ -33,10 +33,14 @@ def main():
 
     logger.info('{0} v{1}'.format(constants.APP_NAME, constants.APP_VERSION))
 
+    # Load the config
+    config_path = os.path.join(config_directory, 'config.json')
+    config = load_config(config_path)
+
     # Set up communication with Spotify
-    access_token = os.environ.get('SPOTIFY_ACCESS_TOKEN')
-    if access_token is None:
-        print('No Spotify access token supplied.  Please set the SPOTIFY_ACCESS_TOKEN environment variable.')
+    access_token = config.get('spotify_access_token')
+    if not access_token:
+        print('No Spotify access token supplied.  Please provide an access token in the config file located at {0}'.format(config_path))
         return
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
@@ -54,7 +58,29 @@ def main():
     # Shutdown
     playback_controller.stop()
     library_controller.stop()
+    save_config(config, config_path)
     logger.info('Application shutdown complete')
+
+
+def load_config(path):
+    logger.info('Attempting to load config from {0}'.format(path))
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (FileNotFoundError, ValueError):
+        logger.info('Valid existing config not found, creating default')
+        return default_config
+
+
+def save_config(config_dict, path):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(config_dict, f, indent=4)
+    logger.info('Config saved to {0}'.format(path))
+
+
+default_config = {
+    'spotify_access_token': '',
+}
 
 
 if __name__ == '__main__':
