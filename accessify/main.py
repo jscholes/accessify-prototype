@@ -2,8 +2,10 @@ import logging
 import os
 import os.path
 
+from appdirs import user_config_dir
 import wx
 
+from . import constants
 from . import gui
 from . import playback
 from . import library
@@ -12,18 +14,24 @@ from . import spotify
 
 logger = logging.getLogger(__package__)
 
-log_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'accessify.log')
-
 
 def main():
+    config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
+    try:
+        os.makedirs(config_directory)
+    except FileExistsError:
+        pass
+
     # Set up logging
+    log_filename = '{0}.log'.format(constants.APP_NAME.lower())
+    log_path = os.path.join(config_directory, log_filename)
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.DEBUG)
     handler = logging.FileHandler(log_path, mode='w', encoding='utf-8')
     handler.setFormatter(logging.Formatter('%(name)s: %(message)s'))
     root_logger.addHandler(handler)
 
-    logger.info('Application starting up')
+    logger.info('{0} v{1}'.format(constants.APP_NAME, constants.APP_VERSION))
 
     # Set up communication with Spotify
     access_token = os.environ.get('SPOTIFY_ACCESS_TOKEN')
