@@ -1,4 +1,5 @@
 import logging
+import os
 import os.path
 
 from appdirs import user_config_dir
@@ -38,17 +39,26 @@ def main():
     config = load_config(config_path)
 
     # Set up communication with Spotify
+    client_id = os.environ.get('SPOTIFY_CLIENT_ID')
+    client_secret = os.environ.get('SPOTIFY_CLIENT_SECRET')
+    if not client_id or not client_secret:
+        print('Please ensure the environment variables SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET are set.')
+        return
+
     access_token = config.get('spotify_access_token')
     refresh_token = config.get('spotify_refresh_token')
     if not access_token or not refresh_token:
         print('You\'re missing either a Spotify access or refresh token in your config file.  Please provide these in the config file located at {0}'.format(config_path))
         return
 
+    auth_agent = spotify.webapi.authorisation.AuthorisationAgent(client_id, client_secret, access_token, refresh_token)
+    spotify_api_client = spotify.webapi.WebAPIClient(auth_agent)
+
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
-    library_controller = library.LibraryController.start(spotify.webapi.WebAPIClient(access_token))
+    library_controller = library.LibraryController.start(spotify_api_client)
 
     # Set up the GUI
     app = wx.App()

@@ -9,3 +9,7 @@ class AuthorisationError(Exception):
         self.error_id = error_id
         self.error_description = error_description
 
+
+class NotAuthenticatedError(Exception):
+    pass
+

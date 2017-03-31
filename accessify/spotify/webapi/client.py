@@ -14,9 +14,9 @@ API_VERSION = 'v1'
 
 
 class WebAPIClient:
-    def __init__(self, access_token):
+    def __init__(self, authorisation_agent):
+        self.authorisation = authorisation_agent
         self._session = requests.Session()
-        self._session.headers.update({'Authorization': 'Bearer {0}'.format(access_token)})
 
     def me(self):
         return self.request('me')
@@ -25,10 +25,12 @@ class WebAPIClient:
         return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': 'from_token', 'limit': 50})
 
     def request(self, endpoint, method='GET', query_parameters=None):
+        token = self.authorisation.get_access_token()
+        headers = {'Authorization': 'Bearer {0}'.format(token)}
         if query_parameters is None:
             query_parameters = {}
         try:
-            response = self._session.request(method, url=api_url(endpoint), params=query_parameters)
+            response = self._session.request(method, url=api_url(endpoint), params=query_parameters, headers=headers)
             response.raise_for_status()
         except requests.exceptions.HTTPError:
             logger.error('HTTP/{0} error during web API request:\n{1}'.format(response.status_code, response.content), exc_info=True)
