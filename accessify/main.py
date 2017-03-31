@@ -39,8 +39,9 @@ def main():
 
     # Set up communication with Spotify
     access_token = config.get('spotify_access_token')
-    if not access_token:
-        print('No Spotify access token supplied.  Please provide an access token in the config file located at {0}'.format(config_path))
+    refresh_token = config.get('spotify_refresh_token')
+    if not access_token or not refresh_token:
+        print('You\'re missing either a Spotify access or refresh token in your config file.  Please provide these in the config file located at {0}'.format(config_path))
         return
 
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
@@ -86,6 +87,7 @@ def save_config(config_dict, path):
 
 default_config = {
     'spotify_access_token': '',
+    'spotify_refresh_token': '',
 }
 
 
