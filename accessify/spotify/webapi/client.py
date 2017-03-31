@@ -2,6 +2,7 @@ import logging
 import os.path
 
 import requests
+from requests.status_codes import codes
 import ujson as json
 
 from . import exceptions
@@ -31,7 +32,11 @@ class WebAPIClient:
             query_parameters = {}
         try:
             response = self._session.request(method, url=api_url(endpoint), params=query_parameters, headers=headers)
-            response.raise_for_status()
+            if response.status_code == codes.unauthorized:
+                self.authorisation.refresh_token()
+                return self.request(endpoint, method, query_parameters)
+            else:
+                response.raise_for_status()
         except requests.exceptions.HTTPError:
             logger.error('HTTP/{0} error during web API request:\n{1}'.format(response.status_code, response.content), exc_info=True)
             try:
