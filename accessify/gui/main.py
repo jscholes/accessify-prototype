@@ -5,7 +5,7 @@ from ..library import SearchType
 from .. import spotify
 from .. import structures
 
-from . import controls
+from . import widgets
 
 
 WINDOW_TITLE = 'Accessify'
@@ -68,7 +68,7 @@ class MainWindow(wx.Frame):
         self._bindEvents()
 
     def _createTabs(self):
-        return controls.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
+        return widgets.KeyboardAccessibleNotebook(self.panel, style=wx.NB_BOTTOM|wx.NB_NOPAGETHEME|wx.NB_FLAT)
 
     def         _addPages(self):
         self.tabs.AddPage(SearchPage(self.tabs, self.playback, self.library), LABEL_SEARCH)
@@ -162,7 +162,7 @@ class SearchPage(TabsPage):
         self.query_field = wx.TextCtrl(self, -1, style=wx.TE_PROCESS_ENTER|wx.TE_DONTWRAP)
         self.initial_focus = self.query_field
 
-        self.search_type = controls.PopupChoiceButton(self, mainLabel=LABEL_SEARCH_TYPE)
+        self.search_type = widgets.PopupChoiceButton(self, mainLabel=LABEL_SEARCH_TYPE)
         for type, label in SEARCH_TYPES:
             self.search_type.Append(label, clientData=type)
         self.search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
