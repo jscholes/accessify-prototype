@@ -24,7 +24,7 @@ class EventManager(threading.Thread):
 
         self._previous_track_dict = {}
         self._playback_state = PlaybackState.UNDETERMINED
-        self._in_error_status = False
+        self._in_error_state = False
 
     def subscribe(self, event_type, callback):
         logger.debug('Subscribing callback {0} to {1}'.format(callback, event_type))

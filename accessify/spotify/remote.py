@@ -138,6 +138,11 @@ class RemoteBridge:
         response = self._session.get(url)
         data = json.loads(response.content)
         logger.debug('CSRF request response: {0}'.format(data))
+        if 'error' in data:
+            error_code = data['error']['type']
+            error_description = spotify_remote_errors[error_code]
+            logger.debug('Error {0} from Spotify: {1}'.format(error_code, error_description))
+            raise exceptions.SpotifyRemoteError(error_code, error_description)
         return data['token']
 
     def get_oauth_token(self):
@@ -165,6 +170,7 @@ class PlaybackCommand(Enum):
     SEEK_FORWARD = 117
     VOLUME_UP = 121
     VOLUME_DOWN = 122
+
 
 spotify_remote_errors = defaultdict(lambda: 'Unknown error', {
     '4001': 'Unknown method',
