@@ -1,5 +1,7 @@
 import wx
 
+from ..spotify.utils import is_spotify_uri
+
 from . import utils
 
 
@@ -31,11 +33,10 @@ class NowPlayingPage(wx.Panel):
     def onURIEntered(self, event):
         uri = self.uri_field.GetValue()
         self.uri_field.Clear()
-        if uri:
-            if uri.startswith('spotify:'):
-                self.playback.play_uri( uri)
-            else:
-                utils.show_error(self, 'Not a valid Spotify URI.')
+        if is_spotify_uri(uri):
+            self.playback.play_uri( uri)
+        else:
+            utils.show_error(self, 'Not a valid Spotify URI.')
 
     def onPlay(self, event):
         self.onURIEntered(None)
