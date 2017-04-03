@@ -1,6 +1,7 @@
 import wx
 
 from ..library import SearchType
+from ..spotify.utils import is_spotify_uri
 from .. import structures
 
 from . import utils
@@ -85,6 +86,8 @@ class SearchPage(wx.Panel):
         query = self.query_field.GetValue()
         if not query:
             return
+        if is_spotify_uri(query):
+            self.playback.play_uri(query)
         else:
             self.results.Clear()
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
