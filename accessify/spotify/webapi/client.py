@@ -33,7 +33,7 @@ class WebAPIClient:
         try:
             response = self._session.request(method, url=api_url(endpoint), params=query_parameters, headers=headers)
             if response.status_code == codes.unauthorized:
-                self.authorisation.refresh_token()
+                self.authorisation.refresh_access_token()
                 return self.request(endpoint, method, query_parameters)
             else:
                 response.raise_for_status()

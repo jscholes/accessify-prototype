@@ -58,7 +58,7 @@ def main():
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     event_manager.start()
     playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
-    library_controller = library.LibraryController.start(spotify_api_client)
+    library_controller = library.LibraryController.start(config, spotify_api_client)
 
     # Set up the GUI
     app = wx.App()

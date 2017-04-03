@@ -13,13 +13,20 @@ logger = logging.getLogger(__name__)
 class LibraryController(pykka.ThreadingActor):
     use_daemon_thread = True
 
-    def __init__(self, api_client):
+    def __init__(self, config, api_client):
         super().__init__()
+        self.config = config
         self.api_client = api_client
 
     def on_start(self):
         profile = self.api_client.me()
         logger.info('Logged into Spotify as {0} (account type {1})'.format(profile['id'], profile['product']))
+
+    def on_stop(self):
+        self.config.update({
+            'spotify_access_token': self.api_client.authorisation.get_access_token(),
+            'spotify_refresh_token': self.api_client.authorisation.get_refresh_token(),
+        })
 
     def perform_new_search(self, query, search_type, results_callback):
         results = self.api_client.search(query, search_type.value)
