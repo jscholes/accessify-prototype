@@ -13,6 +13,9 @@ logger = logging.getLogger(__name__)
 BASE_URL = 'https://api.spotify.com'
 API_VERSION = 'v1'
 
+MARKET_FROM_TOKEN = 'from_token'
+DEFAULT_LIMIT = 50
+
 
 class WebAPIClient:
     def __init__(self, authorisation_agent):
@@ -22,8 +25,8 @@ class WebAPIClient:
     def me(self):
         return self.request('me')
 
-    def search(self, query, search_type):
-        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': 'from_token', 'limit': 50})
+    def search(self, query, search_type, market=MARKET_FROM_TOKEN, limit=DEFAULT_LIMIT, offset=0):
+        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': market, 'limit': limit})
 
     def request(self, endpoint, method='GET', query_parameters=None):
         token = self.authorisation.get_access_token()
