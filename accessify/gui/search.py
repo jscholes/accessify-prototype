@@ -86,8 +86,8 @@ class SearchPage(wx.Panel):
         query = self.query_field.GetValue()
         if not query:
             return
-        self.query_field.SetSelection(-1, -1)
         if is_spotify_uri(query):
+            self.query_field.SetSelection(-1, -1)
             self.playback.play_uri(query)
         else:
             self.results.Clear()
