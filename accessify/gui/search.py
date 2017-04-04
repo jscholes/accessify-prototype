@@ -1,3 +1,5 @@
+import functools
+
 import wx
 
 from ..library import SearchType
@@ -12,7 +14,8 @@ LABEL_SEARCH = 'Search'
 LABEL_SEARCH_QUERY = 'S&earch'
 LABEL_SEARCH_TYPE = 'Search &type'
 LABEL_SEARCH_BUTTON = '&Search'
-LABEL_RESULTS = '&Results'
+LABEL_INITIAL_RESULTS = '&Results'
+LABEL_POST_SEARCH_RESULTS = '&Results {start} to {end} of {total}'
 LABEL_NO_RESULTS = 'No results'
 
 SEARCH_TYPES = [
@@ -52,7 +55,7 @@ class SearchPage(wx.Panel):
         self.search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
 
     def _createResultsList(self):
-        results_label = wx.StaticText(self, -1, LABEL_RESULTS)
+        self.results_label = wx.StaticText(self, -1, LABEL_INITIAL_RESULTS)
         self.results = SearchResultsList(self)
 
     def _bindEvents(self):
@@ -60,8 +63,11 @@ class SearchPage(wx.Panel):
         self.search_button.Bind(wx.EVT_BUTTON, self.onSearch)
 
     def onQueryEntered(self, event):
-        def results_cb(result_list):
-            wx.CallAfter(self.HandleResults, result_list)
+        def results_cb(result_collection):
+            self.results.SetCollection(result_collection)
+            if result_collection.total > 1:
+                self.results_label.SetLabel(LABEL_POST_SEARCH_RESULTS.format(start=1, end=len(result_collection), total=result_collection.total))
+            self.results.SetFocus()
 
         query = self.query_field.GetValue()
         if not query:
@@ -71,24 +77,13 @@ class SearchPage(wx.Panel):
             self.playback.play_uri(query)
         else:
             self.results.Clear()
+            self.results_label.SetLabel(LABEL_INITIAL_RESULTS)
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
-            self.library.perform_new_search(query, search_type, results_cb)
+            callback = functools.partial(wx.CallAfter, results_cb)
+            self.library.perform_new_search(query, search_type, callback)
 
     def onSearch(self, event):
         self.onQueryEntered(None)
-
-    def HandleResults(self, result_list):
-        if result_list:
-            self.AddResults(result_list)
-        else:
-            self.results.IndicateNoResults()
-        self.results.SetFocus()
-
-    def AddResults(self, results):
-        for result in results:
-            self.results.AddItem(result)
-        if self.results.GetSelectedURI() is None:
-            self.results.SelectFirstItem()
 
     def PlaySelectedURI(self):
         result_uri = self.results.GetSelectedURI()
@@ -151,13 +146,25 @@ class SearchResultsList:
     def Clear(self):
         self._widget.Clear()
 
-    def IndicateNoResults(self):
+    def IndicateNoItems(self):
         self._has_items = False
         self._widget.Append(LABEL_NO_RESULTS)
         self.SelectFirstItem()
 
     def SetFocus(self):
         self._widget.SetFocus()
+
+    def SetCollection(self, collection):
+        if len(collection) > 0:
+            self.AddItems(collection)
+        else:
+            self.IndicateNoItems()
+
+    def AddItems(self, items):
+        for item in items:
+            self.AddItem(item)
+        if self.GetSelectedURI() is None:
+            self.SelectFirstItem()
 
     def AddItem(self, item):
         if type(item) in (structures.Track, structures.Album):
@@ -178,10 +185,10 @@ class SearchResultsList:
     def GetSelectedURI(self):
         if not self._has_items:
             return None
-        selected_result = self._widget.GetSelection()
-        if selected_result != wx.NOT_FOUND:
-            result_uri = self._widget.GetClientData(selected_result)
-            return result_uri
+        selected_item = self._widget.GetSelection()
+        if selected_item != wx.NOT_FOUND:
+            item_uri = self._widget.GetClientData(selected_item)
+            return item_uri
         else:
             return None
 

@@ -33,11 +33,13 @@ class LibraryController(pykka.ThreadingActor):
         if results:
             container = item_containers[search_type]
             deserializer = item_deserializers[search_type]
-            deserialized_results = seq(results[container]['items']).map(deserializer)
+            entities = results[container]
+            deserialized_results = seq(entities['items']).map(deserializer)
+            result_collection = structures.ItemCollection(list(deserialized_results), entities['total'])
         else:
-            deserialized_results = []
+            result_collection = structures.ItemCollection([])
 
-        results_callback(deserialized_results)
+        results_callback(result_collection)
 
 
 def deserialize_track(track):

@@ -26,3 +26,15 @@ class Playlist(NamedTuple):
     total_tracks: int
     uri: Optional[str] = None
 
+
+class ItemCollection:
+    def __init__(self, items, total):
+        self._items = items
+        self.total = total
+
+    def __iter__(self):
+        return iter(self._items)
+
+    def __len__(self):
+        return len(self._items)
+
