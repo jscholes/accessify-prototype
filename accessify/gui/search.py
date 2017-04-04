@@ -13,6 +13,7 @@ LABEL_SEARCH_QUERY = 'S&earch'
 LABEL_SEARCH_TYPE = 'Search &type'
 LABEL_SEARCH_BUTTON = '&Search'
 LABEL_RESULTS = '&Results'
+LABEL_NO_RESULTS = 'No results'
 
 SEARCH_TYPES = [
     (SearchType.TRACK, '&Track'),
@@ -69,7 +70,7 @@ class SearchPage(wx.Panel):
             self.query_field.SetSelection(-1, -1)
             self.playback.play_uri(query)
         else:
-            self.results.GetWidget().Clear()
+            self.results.Clear()
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
             self.library.perform_new_search(query, search_type, results_cb)
 
@@ -80,47 +81,29 @@ class SearchPage(wx.Panel):
         if result_list:
             self.AddResults(result_list)
         else:
-            self.results.GetWidget().Append('No results')
-            self.results.GetWidget().SetSelection(0)
-        self.results.GetWidget().SetFocus()
+            self.results.IndicateNoResults()
+        self.results.SetFocus()
 
     def AddResults(self, results):
         for result in results:
-            if type(result) in (structures.Track, structures.Album):
-                text = '{0} by {1}'.format(result.name, ', '.join([artist.name for artist in result.artists]))
-            elif isinstance(result, structures.Artist):
-                text = result.name
-            elif isinstance(result, structures.Playlist):
-                text = '{0} ({1} tracks)'.format(result.name, result.total_tracks)
-            else:
-                utils.show_error(self, 'This result type is not yet supported')
-                return
-            self.results.GetWidget().Append(text, clientData=result.uri)
-        if self.GetSelectedURI() is None:
-            self.results.GetWidget().SetSelection(0)
+            self.results.AddItem(result)
+        if self.results.GetSelectedURI() is None:
+            self.results.SelectFirstItem()
 
     def PlaySelectedURI(self):
-        result_uri = self.GetSelectedURI()
+        result_uri = self.results.GetSelectedURI()
         if result_uri:
             self.playback.play_uri(result_uri)
 
     def CopySelectedURI(self):
-        result_uri = self.GetSelectedURI()
+        result_uri = self.results.GetSelectedURI()
         if result_uri:
             self.playback.copy_uri(result_uri)
 
     def QueueSelectedURI(self):
-        result_uri = self.GetSelectedURI()
+        result_uri = self.results.GetSelectedURI()
         if result_uri:
             self.playback.queue_uri(result_uri)
-
-    def GetSelectedURI(self):
-        selected_result = self.results.GetWidget().GetSelection()
-        if selected_result != wx.NOT_FOUND:
-            result_uri = self.results.GetWidget().GetClientData(selected_result)
-            return result_uri
-        else:
-            return None
 
 
 class SearchResultsList:
@@ -141,21 +124,54 @@ class SearchResultsList:
                 accelerator.FromString(shortcut)
                 accelerators.append(accelerator)
         shortcuts = wx.AcceleratorTable(accelerators)
-        self.GetWidget().SetAcceleratorTable(shortcuts)
+        self._widget.SetAcceleratorTable(shortcuts)
         self.context_menu = context_menu
 
     def _bindEvents(self):
-        self.GetWidget().Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
+        self._widget.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
         self._parent.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
     def GetWidget(self):
         return self._widget
 
     def onContextMenu(self, event):
-        self.GetWidget().PopupMenu(self.context_menu, event.GetPosition())
+        self._widget.PopupMenu(self.context_menu, event.GetPosition())
 
     def onContextMenuCommand(self, event):
         command_dict = context_menu_commands.get(event.GetId(), None)
         if command_dict:
             getattr(self._parent, command_dict['method'])()
+
+    def Clear(self):
+        self._widget.Clear()
+
+    def IndicateNoResults(self):
+        self._widget.Append(LABEL_NO_RESULTS)
+        self.SelectFirstItem()
+
+    def SetFocus(self):
+        self._widget.SetFocus()
+
+    def AddItem(self, item):
+        if type(item) in (structures.Track, structures.Album):
+            text = '{0} by {1}'.format(item.name, ', '.join([artist.name for artist in item.artists]))
+        elif isinstance(item, structures.Artist):
+            text = item.name
+        elif isinstance(item, structures.Playlist):
+            text = '{0} ({1} tracks)'.format(item.name, item.total_tracks)
+        else:
+            utils.show_error(self, 'This item type is not yet supported')
+            return
+        self._widget.Append(text, clientData=item.uri)
+
+    def SelectFirstItem(self):
+        self._widget.SetSelection(0)
+
+    def GetSelectedURI(self):
+        selected_result = self._widget.GetSelection()
+        if selected_result != wx.NOT_FOUND:
+            result_uri = self._widget.GetClientData(selected_result)
+            return result_uri
+        else:
+            return None
 
