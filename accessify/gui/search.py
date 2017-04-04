@@ -52,28 +52,11 @@ class SearchPage(wx.Panel):
 
     def _createResultsList(self):
         results_label = wx.StaticText(self, -1, LABEL_RESULTS)
-        self.results = wx.ListBox(self, style=wx.LB_SINGLE)
-        self._createContextMenu()
-
-    def _createContextMenu(self):
-        context_menu = wx.Menu()
-        accelerators = []
-        for id, command_dict in context_menu_commands.items():
-            context_menu.Append(id, command_dict['label'])
-            shortcut = command_dict.get('shortcut', None)
-            if shortcut:
-                accelerator = wx.AcceleratorEntry(cmd=id)
-                accelerator.FromString(shortcut)
-                accelerators.append(accelerator)
-        shortcuts = wx.AcceleratorTable(accelerators)
-        self.results.SetAcceleratorTable(shortcuts)
-        self.context_menu = context_menu
+        self.results = SearchResultsList(self)
 
     def _bindEvents(self):
         self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
         self.search_button.Bind(wx.EVT_BUTTON, self.onSearch)
-        self.results.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
-        self.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
     def onQueryEntered(self, event):
         def results_cb(result_list):
@@ -86,28 +69,20 @@ class SearchPage(wx.Panel):
             self.query_field.SetSelection(-1, -1)
             self.playback.play_uri(query)
         else:
-            self.results.Clear()
+            self.results.GetWidget().Clear()
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
             self.library.perform_new_search(query, search_type, results_cb)
 
     def onSearch(self, event):
         self.onQueryEntered(None)
 
-    def onContextMenu(self, event):
-        self.PopupMenu(self.context_menu, event.GetPosition())
-
-    def onContextMenuCommand(self, event):
-        command_dict = context_menu_commands.get(event.GetId(), None)
-        if command_dict:
-            getattr(self, command_dict['method'])()
-
     def HandleResults(self, result_list):
         if result_list:
             self.AddResults(result_list)
         else:
-            self.results.Append('No results')
-            self.results.SetSelection(0)
-        self.results.SetFocus()
+            self.results.GetWidget().Append('No results')
+            self.results.GetWidget().SetSelection(0)
+        self.results.GetWidget().SetFocus()
 
     def AddResults(self, results):
         for result in results:
@@ -120,9 +95,9 @@ class SearchPage(wx.Panel):
             else:
                 utils.show_error(self, 'This result type is not yet supported')
                 return
-            self.results.Append(text, clientData=result.uri)
+            self.results.GetWidget().Append(text, clientData=result.uri)
         if self.GetSelectedURI() is None:
-            self.results.SetSelection(0)
+            self.results.GetWidget().SetSelection(0)
 
     def PlaySelectedURI(self):
         result_uri = self.GetSelectedURI()
@@ -140,10 +115,47 @@ class SearchPage(wx.Panel):
             self.playback.queue_uri(result_uri)
 
     def GetSelectedURI(self):
-        selected_result = self.results.GetSelection()
+        selected_result = self.results.GetWidget().GetSelection()
         if selected_result != wx.NOT_FOUND:
-            result_uri = self.results.GetClientData(selected_result)
+            result_uri = self.results.GetWidget().GetClientData(selected_result)
             return result_uri
         else:
             return None
+
+
+class SearchResultsList:
+    def __init__(self, parent):
+        self._parent = parent
+        self._widget = wx.ListBox(parent, style=wx.LB_SINGLE)
+        self._createContextMenu()
+        self._bindEvents()
+
+    def _createContextMenu(self):
+        context_menu = wx.Menu()
+        accelerators = []
+        for id, command_dict in context_menu_commands.items():
+            context_menu.Append(id, command_dict['label'])
+            shortcut = command_dict.get('shortcut', None)
+            if shortcut:
+                accelerator = wx.AcceleratorEntry(cmd=id)
+                accelerator.FromString(shortcut)
+                accelerators.append(accelerator)
+        shortcuts = wx.AcceleratorTable(accelerators)
+        self.GetWidget().SetAcceleratorTable(shortcuts)
+        self.context_menu = context_menu
+
+    def _bindEvents(self):
+        self.GetWidget().Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
+        self._parent.Bind(wx.EVT_MENU, self.onContextMenuCommand)
+
+    def GetWidget(self):
+        return self._widget
+
+    def onContextMenu(self, event):
+        self.GetWidget().PopupMenu(self.context_menu, event.GetPosition())
+
+    def onContextMenuCommand(self, event):
+        command_dict = context_menu_commands.get(event.GetId(), None)
+        if command_dict:
+            getattr(self._parent, command_dict['method'])()
 
