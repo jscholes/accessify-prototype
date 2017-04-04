@@ -110,6 +110,7 @@ class SearchResultsList:
     def __init__(self, parent):
         self._parent = parent
         self._widget = wx.ListBox(parent, style=wx.LB_SINGLE)
+        self._has_results = False
         self._createContextMenu()
         self._bindEvents()
 
@@ -135,9 +136,14 @@ class SearchResultsList:
         return self._widget
 
     def onContextMenu(self, event):
-        self._widget.PopupMenu(self.context_menu, event.GetPosition())
+        if self.GetSelectedURI() is None:
+            return
+        else:
+            self._widget.PopupMenu(self.context_menu, event.GetPosition())
 
     def onContextMenuCommand(self, event):
+        if not self._has_results:
+            return
         command_dict = context_menu_commands.get(event.GetId(), None)
         if command_dict:
             getattr(self._parent, command_dict['method'])()
@@ -146,6 +152,7 @@ class SearchResultsList:
         self._widget.Clear()
 
     def IndicateNoResults(self):
+        self._has_results = False
         self._widget.Append(LABEL_NO_RESULTS)
         self.SelectFirstItem()
 
@@ -163,11 +170,14 @@ class SearchResultsList:
             utils.show_error(self, 'This item type is not yet supported')
             return
         self._widget.Append(text, clientData=item.uri)
+        self._has_results = True
 
     def SelectFirstItem(self):
         self._widget.SetSelection(0)
 
     def GetSelectedURI(self):
+        if not self._has_results:
+            return None
         selected_result = self._widget.GetSelection()
         if selected_result != wx.NOT_FOUND:
             result_uri = self._widget.GetClientData(selected_result)
