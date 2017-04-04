@@ -13,7 +13,6 @@ LABEL_SEARCH_QUERY = 'S&earch'
 LABEL_SEARCH_TYPE = 'Search &type'
 LABEL_SEARCH_BUTTON = '&Search'
 LABEL_RESULTS = '&Results'
-LABEL_PLAY_SELECTED = '&Play\tReturn'
 
 SEARCH_TYPES = [
     (SearchType.TRACK, '&Track'),
@@ -22,13 +21,10 @@ SEARCH_TYPES = [
     (SearchType.PLAYLIST, '&Playlist'),
 ]
 
-ID_PLAY_SELECTED = wx.NewId()
-ID_COPY_SELECTED = wx.NewId()
-ID_QUEUE_SELECTED = wx.NewId()
 context_menu_commands = {
-    ID_PLAY_SELECTED: {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
-    ID_QUEUE_SELECTED: {'label': 'Play ne&xt', 'method': 'QueueSelectedURI'},
-    ID_COPY_SELECTED: {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C'},
+    wx.NewId(): {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
+    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueSelectedURI'},
+    wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C'},
 }
 
 
