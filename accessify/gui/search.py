@@ -82,19 +82,19 @@ class SearchPage(wx.Panel):
         self.onQueryEntered(None)
 
     def PlaySelectedURI(self):
-        result_uri = self.results.GetSelectedURI()
-        if result_uri:
-            self.playback.play_uri(result_uri)
+        result = self.results.GetSelectedItem()
+        if result:
+            self.playback.play_uri(result.uri)
 
     def CopySelectedURI(self):
-        result_uri = self.results.GetSelectedURI()
-        if result_uri:
-            self.playback.copy_uri(result_uri)
+        result = self.results.GetSelectedItem()
+        if result:
+            self.playback.copy_uri(result.uri)
 
     def QueueSelectedURI(self):
-        result_uri = self.results.GetSelectedURI()
-        if result_uri:
-            self.playback.queue_uri(result_uri)
+        result = self.results.GetSelectedItem()
+        if result:
+            self.playback.queue_uri(result.uri)
 
 
 class SearchResultsList:
@@ -127,7 +127,7 @@ class SearchResultsList:
         return self._widget
 
     def onContextMenu(self, event):
-        if self.GetSelectedURI() is None:
+        if self.GetSelectedItem() is None:
             return
         else:
             self._widget.PopupMenu(self.context_menu, event.GetPosition())
@@ -159,7 +159,7 @@ class SearchResultsList:
     def AddItems(self, items):
         for item in items:
             self.AddItem(item)
-        if self.GetSelectedURI() is None:
+        if self.GetSelectedItem() is None:
             self.SelectFirstItem()
 
     def AddItem(self, item):
@@ -172,19 +172,18 @@ class SearchResultsList:
         else:
             utils.show_error(self, 'This item type is not yet supported')
             return
-        self._widget.Append(text, clientData=item.uri)
+        self._widget.Append(text, clientData=item)
         self._has_items = True
 
     def SelectFirstItem(self):
         self._widget.SetSelection(0)
 
-    def GetSelectedURI(self):
+    def GetSelectedItem(self):
         if not self._has_items:
             return None
         selected_item = self._widget.GetSelection()
         if selected_item != wx.NOT_FOUND:
-            item_uri = self._widget.GetClientData(selected_item)
-            return item_uri
+            return self._widget.GetClientData(selected_item)
         else:
             return None
 
