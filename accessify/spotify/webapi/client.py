@@ -26,7 +26,7 @@ class WebAPIClient:
         return self.request('me')
 
     def search(self, query, search_type, market=MARKET_FROM_TOKEN, limit=DEFAULT_LIMIT, offset=0):
-        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': market, 'limit': limit})
+        return self.request('search', query_parameters={'q': query, 'type': search_type, 'market': market, 'limit': limit, 'offset': offset})
 
     def request(self, endpoint, method='GET', query_parameters=None):
         token = self.authorisation.get_access_token()
