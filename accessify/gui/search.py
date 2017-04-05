@@ -54,7 +54,7 @@ class SearchPage(wx.Panel):
         self.search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
 
     def _createResultsList(self):
-        self.results_label = wx.StaticText(self, -1, LABEL_RESULTS)
+        results_label = wx.StaticText(self, -1, LABEL_RESULTS)
         self.results = SearchResultsList(self)
 
     def _bindEvents(self):
@@ -74,7 +74,6 @@ class SearchPage(wx.Panel):
             self.playback.play_uri(query)
         else:
             self.results.Clear()
-            self.results_label.SetLabel(LABEL_RESULTS)
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
             callback = functools.partial(wx.CallAfter, results_cb)
             self.library.perform_new_search(query, search_type, callback)

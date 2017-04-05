@@ -29,10 +29,11 @@ playback_commands = {
 
 class MainWindow(wx.Frame):
     def __init__(self, playback_controller, library_controller, *args, **kwargs):
-        super().__init__(parent=None, title=WINDOW_TITLE, *args, **kwargs)
+        super().__init__(parent=None, title=WINDOW_TITLE, size=(900, 900), *args, **kwargs)
         self.playback = playback_controller
         self.library = library_controller
         self.InitialiseControls()
+        self.Centre()
 
     def InitialiseControls(self):
         self.panel = wx.Panel(self)
