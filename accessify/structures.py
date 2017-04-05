@@ -31,10 +31,14 @@ class ItemCollection:
     def __init__(self, items, total):
         self._items = items
         self.total = total
+        self._length = len(items)
+
+    def has_more(self):
+        return len(self) < (self.total - 1)
 
     def __iter__(self):
         return iter(self._items)
 
     def __len__(self):
-        return len(self._items)
+        return self._length
 
