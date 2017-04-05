@@ -14,8 +14,7 @@ LABEL_SEARCH = 'Search'
 LABEL_SEARCH_QUERY = 'S&earch'
 LABEL_SEARCH_TYPE = 'Search &type'
 LABEL_SEARCH_BUTTON = '&Search'
-LABEL_INITIAL_RESULTS = '&Results'
-LABEL_POST_SEARCH_RESULTS = '&Results {start} to {end} of {total}'
+LABEL_RESULTS = '&Results'
 LABEL_NO_RESULTS = 'No results'
 
 SEARCH_TYPES = [
@@ -55,7 +54,7 @@ class SearchPage(wx.Panel):
         self.search_button = wx.Button(self, wx.ID_ANY, LABEL_SEARCH_BUTTON)
 
     def _createResultsList(self):
-        self.results_label = wx.StaticText(self, -1, LABEL_INITIAL_RESULTS)
+        self.results_label = wx.StaticText(self, -1, LABEL_RESULTS)
         self.results = SearchResultsList(self)
 
     def _bindEvents(self):
@@ -65,8 +64,6 @@ class SearchPage(wx.Panel):
     def onQueryEntered(self, event):
         def results_cb(result_collection):
             self.results.SetCollection(result_collection)
-            if result_collection.total > 1:
-                self.results_label.SetLabel(LABEL_POST_SEARCH_RESULTS.format(start=1, end=len(result_collection), total=result_collection.total))
             self.results.SetFocus()
 
         query = self.query_field.GetValue()
@@ -77,7 +74,7 @@ class SearchPage(wx.Panel):
             self.playback.play_uri(query)
         else:
             self.results.Clear()
-            self.results_label.SetLabel(LABEL_INITIAL_RESULTS)
+            self.results_label.SetLabel(LABEL_RESULTS)
             search_type = self.search_type.GetClientData(self.search_type.GetSelection())
             callback = functools.partial(wx.CallAfter, results_cb)
             self.library.perform_new_search(query, search_type, callback)
