@@ -169,9 +169,6 @@ class SearchResultsList:
             text = item.name
         elif isinstance(item, structures.Playlist):
             text = '{0} ({1} tracks)'.format(item.name, item.total_tracks)
-        else:
-            utils.show_error(self, 'This item type is not yet supported')
-            return
         self._widget.Append(text, clientData=item)
         self._has_items = True
 
