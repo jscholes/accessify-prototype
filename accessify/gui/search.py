@@ -55,7 +55,7 @@ class SearchPage(wx.Panel):
 
     def _createResultsList(self):
         results_label = wx.StaticText(self, -1, LABEL_RESULTS)
-        self.results = SearchResultsList(self)
+        self.results = SearchResultsList(parent=self, item_renderer=render_item_text)
 
     def _bindEvents(self):
         self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
@@ -98,8 +98,9 @@ class SearchPage(wx.Panel):
 
 
 class SearchResultsList:
-    def __init__(self, parent):
+    def __init__(self, parent, item_renderer):
         self._parent = parent
+        self.item_renderer = item_renderer
         self._widget = wx.ListBox(parent, style=wx.LB_SINGLE)
         self._has_items = False
         self._createContextMenu()
@@ -163,13 +164,8 @@ class SearchResultsList:
             self.SelectFirstItem()
 
     def AddItem(self, item):
-        if type(item) in (structures.Track, structures.Album):
-            text = '{0} by {1}'.format(item.name, ', '.join([artist.name for artist in item.artists]))
-        elif isinstance(item, structures.Artist):
-            text = item.name
-        elif isinstance(item, structures.Playlist):
-            text = '{0} ({1} tracks)'.format(item.name, item.total_tracks)
-        self._widget.Append(text, clientData=item)
+        item_text = self.item_renderer(item)
+        self._widget.Append(item_text, clientData=item)
         self._has_items = True
 
     def SelectFirstItem(self):
@@ -183,4 +179,14 @@ class SearchResultsList:
             return self._widget.GetClientData(selected_item)
         else:
             return None
+
+
+def render_item_text(item):
+    if type(item) in (structures.Track, structures.Album):
+        text = '{0} by {1}'.format(item.name, ', '.join([artist.name for artist in item.artists]))
+    elif isinstance(item, structures.Artist):
+        text = item.name
+    elif isinstance(item, structures.Playlist):
+        text = '{0} ({1} tracks)'.format(item.name, item.total_tracks)
+    return text
 
