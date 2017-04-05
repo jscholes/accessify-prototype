@@ -29,17 +29,21 @@ class LibraryController(pykka.ThreadingActor):
         })
 
     def perform_new_search(self, query, search_type, results_callback):
-        results = self.api_client.search(query, search_type.value)
+        results = self.perform_search(query, search_type, offset=0)
+        results_callback(results)
+
+    def perform_search(self, query, search_type, offset):
+        results = self.api_client.search(query, search_type.value, offset=offset)
         if results:
             container = item_containers[search_type]
             deserializer = item_deserializers[search_type]
             entities = results[container]
             deserialized_results = seq(entities['items']).map(deserializer)
-            result_collection = structures.ItemCollection(list(deserialized_results), entities['total'])
+            result_collection = structures.ItemCollection(items=list(deserialized_results), total=entities['total'])
         else:
-            result_collection = structures.ItemCollection([])
+            result_collection = structures.ItemCollection(items=[], total=0)
 
-        results_callback(result_collection)
+        return result_collection
 
 
 def deserialize_track(track):
