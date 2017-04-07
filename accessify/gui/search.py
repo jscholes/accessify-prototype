@@ -30,7 +30,7 @@ SEARCH_TYPES = [
 
 context_menu_commands = {
     wx.NewId(): {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
-    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueSelectedURI'},
+    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueSelectedURI', 'shortcut': 'Ctrl+Return'},
     wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C'},
 }
 
