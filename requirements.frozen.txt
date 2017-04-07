@@ -10,5 +10,6 @@ pyperclip==1.5.27
 requests==2.13.0
 six==1.10.0
 tabulate==0.7.7
+tolk==20170407
 ujson==1.35
 wxPython-Phoenix==3.0.3.dev2828+929a8af

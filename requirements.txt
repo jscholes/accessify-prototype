@@ -7,5 +7,6 @@ pyparsing
 pyperclip
 requests
 six
+--no-index --find-links=wheelhouse tolk
 ujson
 --no-index --find-links=http://wxpython.org/Phoenix/snapshot-builds/ --trusted-host wxpython.org wxPython_Phoenix
