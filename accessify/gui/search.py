@@ -30,8 +30,8 @@ SEARCH_TYPES = [
 
 context_menu_commands = {
     wx.NewId(): {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
-    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueSelectedURI', 'shortcut': 'Ctrl+Return'},
-    wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C'},
+    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueSelectedURI', 'shortcut': 'Ctrl+Return', 'message': MSG_QUEUED},
+    wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C', 'message': MSG_COPIED},
 }
 
 
@@ -94,13 +94,11 @@ class SearchPage(wx.Panel):
         result = self.results.GetSelectedItem()
         if result:
             self.playback.queue_uri(result.uri)
-            speech.speak(MSG_QUEUED)
 
     def CopySelectedURI(self):
         result = self.results.GetSelectedItem()
         if result:
             self.playback.copy_uri(result.uri)
-            speech.speak(MSG_COPIED)
 
 
 class SearchResultsList:
@@ -144,6 +142,9 @@ class SearchResultsList:
         command_dict = context_menu_commands.get(event.GetId(), None)
         if command_dict:
             getattr(self._parent, command_dict['method'])()
+            msg = command_dict.get('message', None)
+            if msg and event.GetEventObject() == self._widget:
+                speech.speak(msg)
 
     def IndicateNoItems(self):
         self._has_items = False
