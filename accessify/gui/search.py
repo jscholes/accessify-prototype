@@ -6,6 +6,7 @@ from ..library import SearchType
 from ..spotify.utils import is_spotify_uri
 from .. import structures
 
+from . import speech
 from . import utils
 from . import widgets
 
@@ -16,6 +17,9 @@ LABEL_SEARCH_TYPE = 'Search &type'
 LABEL_SEARCH_BUTTON = '&Search'
 LABEL_RESULTS = '&Results'
 LABEL_NO_RESULTS = 'No results'
+
+MSG_QUEUED = 'Added to queue'
+MSG_COPIED = 'Copied'
 
 SEARCH_TYPES = [
     (SearchType.TRACK, '&Track'),
@@ -86,15 +90,17 @@ class SearchPage(wx.Panel):
         if result:
             self.playback.play_uri(result.uri)
 
-    def CopySelectedURI(self):
-        result = self.results.GetSelectedItem()
-        if result:
-            self.playback.copy_uri(result.uri)
-
     def QueueSelectedURI(self):
         result = self.results.GetSelectedItem()
         if result:
             self.playback.queue_uri(result.uri)
+            speech.speak(MSG_QUEUED)
+
+    def CopySelectedURI(self):
+        result = self.results.GetSelectedItem()
+        if result:
+            self.playback.copy_uri(result.uri)
+            speech.speak(MSG_COPIED)
 
 
 class SearchResultsList:
