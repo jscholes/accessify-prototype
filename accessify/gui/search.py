@@ -124,9 +124,6 @@ class SearchResultsList:
         self._widget.Bind(wx.EVT_CONTEXT_MENU, self.onContextMenu)
         self._parent.Bind(wx.EVT_MENU, self.onContextMenuCommand)
 
-    def GetWidget(self):
-        return self._widget
-
     def onContextMenu(self, event):
         if self.GetSelectedItem() is None:
             return
@@ -140,16 +137,10 @@ class SearchResultsList:
         if command_dict:
             getattr(self._parent, command_dict['method'])()
 
-    def Clear(self):
-        self._widget.Clear()
-
     def IndicateNoItems(self):
         self._has_items = False
         self._widget.Append(LABEL_NO_RESULTS)
         self.SelectFirstItem()
-
-    def SetFocus(self):
-        self._widget.SetFocus()
 
     def SetCollection(self, collection):
         if len(collection) > 0:
@@ -168,8 +159,8 @@ class SearchResultsList:
         self._widget.Append(item_text, clientData=item)
         self._has_items = True
 
-    def SelectFirstItem(self):
-        self._widget.SetSelection(0)
+    def Clear(self):
+        self._widget.Clear()
 
     def GetSelectedItem(self):
         if not self._has_items:
@@ -179,6 +170,15 @@ class SearchResultsList:
             return self._widget.GetClientData(selected_item)
         else:
             return None
+
+    def GetWidget(self):
+        return self._widget
+
+    def SelectFirstItem(self):
+        self._widget.SetSelection(0)
+
+    def SetFocus(self):
+        self._widget.SetFocus()
 
 
 def render_item_text(item):
