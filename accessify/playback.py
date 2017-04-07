@@ -24,7 +24,7 @@ class PlaybackController(pykka.ThreadingActor):
         except IndexError:
             return
 
-        self.play_uri(item['uri'], item['context'])
+        self.play_item(item)
 
     def clear_queue(self):
         self.playback_queue.clear()
@@ -32,18 +32,18 @@ class PlaybackController(pykka.ThreadingActor):
     def _update_current_track(self, track):
         self.current_track = track
 
-    def play_uri(self, uri, context=None):
-        self.spotify.play_uri(uri, context)
+    def play_item(self, item, context=None):
+        self.spotify.play_uri(item.uri, context)
 
-    def queue_uri(self, uri, context=None):
-        self.playback_queue.append({'uri': uri, 'context': context})
+    def queue_item(self, item, context=None):
+        self.playback_queue.append(item)
 
     def copy_current_track_uri(self):
         if self.current_track is not None:
-            self.copy_uri(self.current_track.uri)
+            self.copy_item_uri(self.current_track)
 
-    def copy_uri(self, uri):
-        pyperclip.copy(uri)
+    def copy_item_uri(self, item):
+        pyperclip.copy(item.uri)
 
     def play_pause(self):
         self.spotify.send_command(PlaybackCommand.PLAY_PAUSE)
