@@ -116,12 +116,14 @@ class SearchResultsList:
         context_menu = wx.Menu()
         accelerators = []
         for id, command_dict in context_menu_commands.items():
-            context_menu.Append(id, command_dict['label'])
+            label = command_dict['label']
             shortcut = command_dict.get('shortcut', None)
             if shortcut:
                 accelerator = wx.AcceleratorEntry(cmd=id)
                 accelerator.FromString(shortcut)
                 accelerators.append(accelerator)
+                label = '{0}\t{1}'.format(label, command_dict['shortcut'])
+            context_menu.Append(id, label)
         shortcuts = wx.AcceleratorTable(accelerators)
         self._widget.SetAcceleratorTable(shortcuts)
         self.context_menu = context_menu
