@@ -29,9 +29,9 @@ SEARCH_TYPES = [
 ]
 
 context_menu_commands = {
-    wx.NewId(): {'label': '&Play', 'method': 'PlaySelectedURI', 'shortcut': 'Return'},
-    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueSelectedURI', 'shortcut': 'Ctrl+Return', 'message': MSG_QUEUED},
-    wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopySelectedURI', 'shortcut': 'Ctrl+C', 'message': MSG_COPIED},
+    wx.NewId(): {'label': '&Play', 'method': 'PlayItem', 'shortcut': 'Return'},
+    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueItem', 'shortcut': 'Ctrl+Return', 'message': MSG_QUEUED},
+    wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopyItemURI', 'shortcut': 'Ctrl+C', 'message': MSG_COPIED},
 }
 
 
@@ -85,20 +85,14 @@ class SearchPage(wx.Panel):
     def onSearch(self, event):
         self.onQueryEntered(None)
 
-    def PlaySelectedURI(self):
-        result = self.results.GetSelectedItem()
-        if result:
-            self.playback.play_uri(result.uri)
+    def PlayItem(self, item):
+        self.playback.play_uri(item.uri)
 
-    def QueueSelectedURI(self):
-        result = self.results.GetSelectedItem()
-        if result:
-            self.playback.queue_uri(result.uri)
+    def QueueItem(self, item):
+        self.playback.queue_uri(item.uri)
 
-    def CopySelectedURI(self):
-        result = self.results.GetSelectedItem()
-        if result:
-            self.playback.copy_uri(result.uri)
+    def CopyItemURI(self, item):
+        self.playback.copy_uri(item.uri)
 
 
 class SearchResultsList:
@@ -141,7 +135,7 @@ class SearchResultsList:
             return
         command_dict = context_menu_commands.get(event.GetId(), None)
         if command_dict:
-            getattr(self._parent, command_dict['method'])()
+            getattr(self._parent, command_dict['method'])(self.GetSelectedItem())
             msg = command_dict.get('message', None)
             if msg and event.GetEventObject() == self._widget:
                 speech.speak(msg)
