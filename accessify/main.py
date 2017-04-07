@@ -3,6 +3,7 @@ import os
 import os.path
 
 from appdirs import user_config_dir
+import tolk
 import ujson as json
 import wx
 
@@ -17,6 +18,11 @@ logger = logging.getLogger(__package__)
 
 
 def main():
+    try:
+        tolk.load()
+    except Exception:
+        pass
+
     config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
     try:
         os.makedirs(config_directory)
@@ -71,6 +77,7 @@ def main():
     playback_controller.stop()
     library_controller.stop()
     save_config(config, config_path)
+    tolk.unload()
     logger.info('Application shutdown complete')
 
 
