@@ -28,18 +28,19 @@ SEARCH_TYPES = [
     (SearchType.PLAYLIST, '&Playlist'),
 ]
 
-context_menu_commands = {
-    wx.NewId(): {'label': '&Play', 'method': 'PlayItem', 'shortcut': 'Return'},
-    wx.NewId(): {'label': '&Add to queue', 'method': 'QueueItem', 'shortcut': 'Ctrl+Return', 'message': MSG_QUEUED},
-    wx.NewId(): {'label': '&Copy Spotify URI', 'method': 'CopyItemURI', 'shortcut': 'Ctrl+C', 'message': MSG_COPIED},
-}
-
 
 class SearchPage(wx.Panel):
     def __init__(self, parent, playback_controller, library_controller, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.library = library_controller
         self.playback = playback_controller
+
+        self.context_menu_commands = {
+            wx.NewId(): {'label': '&Play', 'method': self.playback.play_item, 'shortcut': 'Return'},
+            wx.NewId(): {'label': '&Add to queue', 'method': self.playback.queue_item, 'shortcut': 'Ctrl+Return', 'message': MSG_QUEUED},
+            wx.NewId(): {'label': '&Copy Spotify URI', 'method': self.playback.copy_item_uri, 'shortcut': 'Ctrl+C', 'message': MSG_COPIED},
+        }
+
         self.InitialiseControls()
 
     def InitialiseControls(self):
@@ -59,7 +60,7 @@ class SearchPage(wx.Panel):
 
     def _createResultsList(self):
         results_label = wx.StaticText(self, -1, LABEL_RESULTS)
-        self.results = SearchResultsList(parent=self, item_renderer=render_item_text)
+        self.results = SearchResultsList(parent=self, item_renderer=render_item_text, context_menu_commands=self.context_menu_commands)
 
     def _bindEvents(self):
         self.query_field.Bind(wx.EVT_TEXT_ENTER, self.onQueryEntered)
@@ -85,20 +86,12 @@ class SearchPage(wx.Panel):
     def onSearch(self, event):
         self.onQueryEntered(None)
 
-    def PlayItem(self, item):
-        self.playback.play_uri(item.uri)
-
-    def QueueItem(self, item):
-        self.playback.queue_uri(item.uri)
-
-    def CopyItemURI(self, item):
-        self.playback.copy_uri(item.uri)
-
 
 class SearchResultsList:
-    def __init__(self, parent, item_renderer):
+    def __init__(self, parent, item_renderer, context_menu_commands):
         self._parent = parent
         self.item_renderer = item_renderer
+        self.context_menu_commands = context_menu_commands
         self._widget = wx.ListBox(parent, style=wx.LB_SINGLE)
         self._has_items = False
         self._createContextMenu()
@@ -107,7 +100,7 @@ class SearchResultsList:
     def _createContextMenu(self):
         context_menu = wx.Menu()
         accelerators = []
-        for id, command_dict in context_menu_commands.items():
+        for id, command_dict in self.context_menu_commands.items():
             label = command_dict['label']
             shortcut = command_dict.get('shortcut', None)
             if shortcut:
@@ -133,9 +126,10 @@ class SearchResultsList:
     def onContextMenuCommand(self, event):
         if not self._has_items:
             return
-        command_dict = context_menu_commands.get(event.GetId(), None)
+        command_dict = self.context_menu_commands.get(event.GetId(), None)
         if command_dict:
-            getattr(self._parent, command_dict['method'])(self.GetSelectedItem())
+            callback = command_dict['method']
+            callback(self.GetSelectedItem())
             msg = command_dict.get('message', None)
             if msg and event.GetEventObject() == self._widget:
                 speech.speak(msg)
