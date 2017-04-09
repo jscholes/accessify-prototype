@@ -181,7 +181,11 @@ class PopupChoiceButton(wx.adv.CommandLinkButton):
 
     def onChoiceSelectedFromKeyboard(self, event):
         key = event.GetKeyCode()
-        if key == wx.WXK_LEFT:
+        if key == wx.WXK_HOME:
+            self.SetSelection(0)
+        elif key == wx.WXK_END:
+            self.SetSelection(len(self._items) - 1)
+        elif key == wx.WXK_LEFT:
             self.SetSelection((self._selected_item_index - 1) % len(self._items))
         elif key == wx.WXK_RIGHT:
             self.SetSelection((self._selected_item_index + 1) % len(self._items))
