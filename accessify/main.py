@@ -38,7 +38,7 @@ def main():
     handler.setFormatter(logging.Formatter('%(name)s: %(message)s'))
     root_logger.addHandler(handler)
 
-    logger.info('{0} v{1}'.format(constants.APP_NAME, constants.APP_VERSION))
+    logger.info('Version: {0}'.format(constants.APP_VERSION))
 
     # Load the config
     config_path = os.path.join(config_directory, 'config.json')
