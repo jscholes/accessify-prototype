@@ -18,18 +18,12 @@ logger = logging.getLogger(__package__)
 
 
 def main():
-    try:
-        tolk.load()
-    except Exception:
-        pass
-
     config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
     try:
         os.makedirs(config_directory)
     except FileExistsError:
         pass
 
-    # Set up logging
     log_filename = '{0}.log'.format(constants.APP_NAME.lower())
     log_path = os.path.join(config_directory, log_filename)
     root_logger = logging.getLogger()
@@ -40,11 +34,9 @@ def main():
 
     logger.info('Version: {0}'.format(constants.APP_VERSION))
 
-    # Load the config
     config_path = os.path.join(config_directory, 'config.json')
     config = load_config(config_path)
 
-    # Set up communication with Spotify
     client_id = os.environ.get('SPOTIFY_CLIENT_ID')
     client_secret = os.environ.get('SPOTIFY_CLIENT_SECRET')
     if not client_id or not client_secret:
@@ -57,19 +49,25 @@ def main():
         print('You\'re missing either a Spotify access or refresh token in your config file.  Please provide these in the config file located at {0}'.format(config_path))
         return
 
+    # Create this early to avoid COM errors
+    app = wx.App()
+
+    try:
+        tolk.load()
+    except Exception:
+        pass
+
     auth_agent = spotify.webapi.authorisation.AuthorisationAgent(client_id, client_secret, access_token, refresh_token)
     spotify_api_client = spotify.webapi.WebAPIClient(auth_agent)
 
     spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
-    event_manager.start()
     playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
     library_controller = library.LibraryController.start(config, spotify_api_client)
 
-    # Set up the GUI
-    app = wx.App()
     window = gui.main.MainWindow(playback_controller.proxy(), library_controller.proxy())
     window.SubscribeToSpotifyEvents(event_manager)
+    event_manager.start()
     window.Show()
     app.MainLoop()
 
