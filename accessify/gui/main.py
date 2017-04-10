@@ -50,7 +50,7 @@ class MainWindow(wx.Frame):
         self.tabs.AddPage(nowplaying.NowPlayingPage(self.tabs, self.playback), nowplaying.LABEL_NOW_PLAYING)
 
     def _createMenus(self):
-        playback_menu = playback_menu = wx.Menu()
+        playback_menu = wx.Menu()
         for id, command_dict in playback_commands.items():
             menu_item = playback_menu.Append(id, command_dict['label'])
         menu_bar = wx.MenuBar()
