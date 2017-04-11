@@ -68,7 +68,6 @@ def main():
     window = gui.main.MainWindow(playback_controller.proxy(), library_controller.proxy())
     window.SubscribeToSpotifyEvents(event_manager)
     event_manager.start()
-    window.Show()
     app.MainLoop()
 
     # Shutdown

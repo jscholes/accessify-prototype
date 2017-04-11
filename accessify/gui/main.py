@@ -6,12 +6,14 @@ from .. import structures
 
 from . import nowplaying
 from . import search
+from . import speech
 from . import utils
 from . import widgets
 
 
 WINDOW_TITLE = 'Accessify'
 MENU_PLAYBACK = '&Playback'
+MSG_LOADING = 'Loading...'
 
 ID_PLAY_PAUSE = wx.NewId()
 playback_commands = {
@@ -30,10 +32,12 @@ playback_commands = {
 class MainWindow(wx.Frame):
     def __init__(self, playback_controller, library_controller, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, size=(900, 900), *args, **kwargs)
+        speech.speak(MSG_LOADING)
         self.playback = playback_controller
         self.library = library_controller
         self.InitialiseControls()
         self.Centre()
+        self._connected_to_spotify = False
 
     def InitialiseControls(self):
         self.panel = wx.Panel(self)
@@ -74,6 +78,9 @@ class MainWindow(wx.Frame):
             self.SetTitle(WINDOW_TITLE)
         else:
             self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(track)))
+        if not self._connected_to_spotify:
+            self._connected_to_spotify = True
+            self.Show()
 
     def onShow(self, event):
         page = self.tabs.GetCurrentPage()
