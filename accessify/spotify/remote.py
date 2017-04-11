@@ -119,14 +119,18 @@ class RemoteBridge:
         if params is not None:
             request_params.update(params)
         logger.debug('Requesting URL: {0} with params: {1}'.format(request_url, request_params))
-        response = json.loads(self._session.get(request_url, params=request_params).content)
-        logger.debug('Received response: {0}'.format(response))
-        if 'error' in response:
-            error_code = response['error']['type']
+        try:
+            response = self._session.get(request_url, params=request_params)
+        except requests.exceptions.ConnectionError:
+            raise exceptions.SpotifyConnectionError
+        response_content = json.loads(response.content)
+        logger.debug('Received response: {0}'.format(response_content))
+        if 'error' in response_content:
+            error_code = response_content['error']['type']
             error_description = spotify_remote_errors[error_code]
             logger.debug('Error {0} from Spotify: {1}'.format(error_code, error_description))
             raise exceptions.SpotifyRemoteError(error_code, error_description)
-        return response
+        return response_content
 
     def generate_hostname(self):
         subdomain = ''.join(random.choice(string.ascii_lowercase) for x in range(10))
@@ -135,7 +139,10 @@ class RemoteBridge:
     def get_csrf_token(self):
         url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._hostname, self._port)
         logger.debug('Requesting {0}'.format(url))
-        response = self._session.get(url)
+        try:
+            response = self._session.get(url)
+        except requests.exceptions.ConnectionError:
+            raise exceptions.SpotifyConnectionError
         data = json.loads(response.content)
         logger.debug('CSRF request response: {0}'.format(data))
         if 'error' in data:

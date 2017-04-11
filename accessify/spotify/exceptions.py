@@ -13,3 +13,7 @@ class SpotifyRemoteError(Exception):
 class MetadataNotReadyError(Exception):
     """Raised when Spotify has started playing a track, but the track resource hasn't been fully populated with metadata yet."""
 
+
+class SpotifyConnectionError(Exception):
+    pass
+

@@ -44,11 +44,11 @@ class EventManager(threading.Thread):
             except exceptions.MetadataNotReadyError:
                 return_immediately = True
                 continue
-            except exceptions.SpotifyRemoteError as e:
+            except (exceptions.SpotifyRemoteError, exceptions.SpotifyConnectionError) as e:
                 self._event_queue.put(e)
 
     def _process_item(self, item):
-        if isinstance(item, exceptions.SpotifyRemoteError):
+        if type(item) in (exceptions.SpotifyRemoteError, exceptions.SpotifyConnectionError):
             if self._in_error_state:
                 return
             else:

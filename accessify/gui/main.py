@@ -119,7 +119,10 @@ class MainWindow(wx.Frame):
         wx.CallAfter(self.UpdateTrackDisplay, None)
 
     def onError(self, exception):
-        utils.show_error(self, exception.error_description)
+        if isinstance(exception, spotify.remote.exceptions.SpotifyRemoteError):
+            utils.show_error(self, exception.error_description)
+        else:
+            utils.show_error(self, repr(exception))
 
 
 def format_track_display(track):
