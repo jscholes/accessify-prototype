@@ -60,7 +60,13 @@ def main():
     auth_agent = spotify.webapi.authorisation.AuthorisationAgent(client_id, client_secret, access_token, refresh_token)
     spotify_api_client = spotify.webapi.WebAPIClient(auth_agent)
 
-    spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
+    # TODO: Move this to a more appropriate place
+    try:
+        spotify_remote = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
+    except spotify.remote.exceptions.SpotifyNotRunningError:
+        print('Spotify doesn\'t seem to be running.')
+        return
+
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
     playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
     library_controller = library.LibraryController.start(config, spotify_api_client)
