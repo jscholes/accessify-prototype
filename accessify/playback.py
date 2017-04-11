@@ -33,7 +33,10 @@ class PlaybackController(pykka.ThreadingActor):
         self.current_track = track
 
     def play_item(self, item, context=None):
-        self.spotify.play_uri(item.uri, context)
+        self.play_uri(item.uri, context)
+
+    def play_uri(self, uri, context=None):
+        self.spotify.play_uri(uri, context)
 
     def queue_item(self, item, context=None):
         self.playback_queue.append(item)
