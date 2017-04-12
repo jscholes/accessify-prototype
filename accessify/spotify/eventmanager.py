@@ -73,6 +73,7 @@ class EventManager(threading.Thread):
             playback_state = PlaybackState.PLAYING
         elif not playing and status_dict['playing_position'] == 0:
             playback_state = PlaybackState.STOPPED
+            self._previous_track_dict = {}
         else:
             playback_state = PlaybackState.PAUSED
         if playback_state != self._playback_state:
