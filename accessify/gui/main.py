@@ -1,9 +1,11 @@
 from functional import seq
 import wx
 
+from .. import constants
 from .. import spotify
 from .. import structures
 
+from . import dialogs
 from . import nowplaying
 from . import search
 from . import speech
@@ -11,9 +13,10 @@ from . import utils
 from . import widgets
 
 
-WINDOW_TITLE = 'Accessify'
+WINDOW_TITLE = constants.APP_NAME
 MENU_PLAYBACK = '&Playback'
 MSG_LOADING = 'Loading...'
+MSG_NO_CONNECTION = '{0} cannot function without the Spotify client.  The application will now exit.'.format(constants.APP_NAME)
 
 ID_PLAY_PAUSE = wx.NewId()
 playback_commands = {
@@ -39,6 +42,7 @@ class MainWindow(wx.Frame):
         self.Centre()
 
         self._connected_to_spotify = False
+        self._spotify_error_dialog = None
 
     def InitialiseControls(self):
         self.panel = wx.Panel(self)
@@ -71,6 +75,7 @@ class MainWindow(wx.Frame):
         event_manager.subscribe(spotify.eventmanager.EventType.TRACK_CHANGE, self.onTrackChange)
         event_manager.subscribe(spotify.eventmanager.EventType.PLAY, self.onPlay)
         event_manager.subscribe(spotify.eventmanager.EventType.PAUSE, self.onPause)
+        event_manager.subscribe(spotify.eventmanager.EventType.STOP, self.onPause)
         event_manager.subscribe(spotify.eventmanager.EventType.ERROR, self.onSpotifyError)
 
     def UpdateTrackDisplay(self, track):
@@ -80,7 +85,14 @@ class MainWindow(wx.Frame):
             self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(track)))
         if not self._connected_to_spotify:
             self._connected_to_spotify = True
+            self._hideErrorDialog()
             self.Show()
+
+    def _hideErrorDialog(self):
+        if self._spotify_error_dialog is not None:
+            self._spotify_error_dialog.EndModal(wx.ID_CLOSE)
+            self._spotify_error_dialog.Destroy()
+            self._spotify_error_dialog = None
 
     def onShow(self, event):
         page = self.tabs.GetCurrentPage()
@@ -103,27 +115,34 @@ class MainWindow(wx.Frame):
         def cb():
             mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
             mi.SetItemLabel('P&lay\tCtrl+Space')
+            self.UpdateTrackDisplay(None)
+            self._hideErrorDialog()
             self._connected_to_spotify = True
 
         wx.CallAfter(cb)
 
-    def onPlay(self):
+    def onPlay(self, track):
         # TODO: Remove this ugly hack with CallAfter decorator
         def cb():
             mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
             mi.SetItemLabel('P&ause\tCtrl+Space')
-            self.UpdateTrackDisplay(None)
+            self.UpdateTrackDisplay(track)
+            self._hideErrorDialog()
             self._connected_to_spotify = True
 
         wx.CallAfter(cb)
 
     def onSpotifyError(self, exception):
-        if self._connected_to_spotify:
-            self._connected_to_spotify = False
-            if isinstance(exception, spotify.remote.exceptions.SpotifyRemoteError):
-                utils.show_error(self, exception.error_description)
-            else:
-                utils.show_error(self, repr(exception))
+        def cb():
+            if self._spotify_error_dialog is None:
+                self._connected_to_spotify = False
+                self._spotify_error_dialog = dialogs.SpotifyErrorDialog(self, exception)
+                result = self._spotify_error_dialog.ShowModal()
+                if result == wx.ID_CANCEL:
+                    wx.MessageBox(MSG_NO_CONNECTION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
+                    self.Close()
+
+        wx.CallAfter(cb)
 
 
 def format_track_display(track):

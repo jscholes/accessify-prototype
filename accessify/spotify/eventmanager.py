@@ -23,6 +23,7 @@ class EventManager(threading.Thread):
         self._callbacks = defaultdict(list)
 
         self._previous_track_dict = {}
+        self._current_track = None
         self._playback_state = PlaybackState.UNDETERMINED
 
     def subscribe(self, event_type, callback):
@@ -48,10 +49,10 @@ class EventManager(threading.Thread):
 
     def _process_item(self, item):
         if type(item) in (exceptions.SpotifyRemoteError, exceptions.SpotifyConnectionError):
+            self._previous_track_dict = {}
             self._update_subscribers(EventType.ERROR, context=item)
             return
         self._process_status_dict(item)
-        self._in_error_state = False
 
     def _process_status_dict(self, status_dict):
         # Remove the keys we're not really interested in
@@ -59,9 +60,9 @@ class EventManager(threading.Thread):
             status_dict.pop(key)
         track_dict = status_dict.pop('track')
         if track_dict != self._previous_track_dict:
-            track = deserialize_track(track_dict)
-            logger.debug('Deserialized track: {0}'.format(track))
-            self._update_subscribers(EventType.TRACK_CHANGE, context=track)
+            self._current_track = deserialize_track(track_dict)
+            logger.debug('Deserialized track: {0}'.format(self._current_track))
+            self._update_subscribers(EventType.TRACK_CHANGE, context=self._current_track)
             self._previous_track_dict = track_dict
         playing = status_dict['playing']
         if playing:
@@ -73,7 +74,7 @@ class EventManager(threading.Thread):
             playback_state = PlaybackState.PAUSED
         if playback_state != self._playback_state:
             if playback_state == PlaybackState.PLAYING:
-                self._update_subscribers(EventType.PLAY)
+                self._update_subscribers(EventType.PLAY, context=self._current_track)
             elif playback_state == PlaybackState.PAUSED:
                 self._update_subscribers(EventType.PAUSE)
             elif playback_state == PlaybackState.STOPPED:
