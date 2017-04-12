@@ -24,7 +24,6 @@ class EventManager(threading.Thread):
 
         self._previous_track_dict = {}
         self._playback_state = PlaybackState.UNDETERMINED
-        self._in_error_state = False
 
     def subscribe(self, event_type, callback):
         logger.debug('Subscribing callback {0} to {1}'.format(callback, event_type))
@@ -49,12 +48,8 @@ class EventManager(threading.Thread):
 
     def _process_item(self, item):
         if type(item) in (exceptions.SpotifyRemoteError, exceptions.SpotifyConnectionError):
-            if self._in_error_state:
-                return
-            else:
-                self._in_error_state = True
-                self._update_subscribers(EventType.ERROR, context=item)
-                return
+            self._update_subscribers(EventType.ERROR, context=item)
+            return
         self._process_status_dict(item)
         self._in_error_state = False
 

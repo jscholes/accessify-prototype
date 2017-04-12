@@ -37,6 +37,7 @@ class MainWindow(wx.Frame):
         self.library = library_controller
         self.InitialiseControls()
         self.Centre()
+
         self._connected_to_spotify = False
 
     def InitialiseControls(self):
@@ -70,8 +71,7 @@ class MainWindow(wx.Frame):
         event_manager.subscribe(spotify.eventmanager.EventType.TRACK_CHANGE, self.onTrackChange)
         event_manager.subscribe(spotify.eventmanager.EventType.PLAY, self.onPlay)
         event_manager.subscribe(spotify.eventmanager.EventType.PAUSE, self.onPause)
-        event_manager.subscribe(spotify.eventmanager.EventType.STOP, self.onStop)
-        event_manager.subscribe(spotify.eventmanager.EventType.ERROR, self.onError)
+        event_manager.subscribe(spotify.eventmanager.EventType.ERROR, self.onSpotifyError)
 
     def UpdateTrackDisplay(self, track):
         if track is None:
@@ -103,6 +103,7 @@ class MainWindow(wx.Frame):
         def cb():
             mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
             mi.SetItemLabel('P&lay\tCtrl+Space')
+            self._connected_to_spotify = True
 
         wx.CallAfter(cb)
 
@@ -111,18 +112,18 @@ class MainWindow(wx.Frame):
         def cb():
             mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
             mi.SetItemLabel('P&ause\tCtrl+Space')
+            self.UpdateTrackDisplay(None)
+            self._connected_to_spotify = True
 
         wx.CallAfter(cb)
 
-    def onStop(self):
-        wx.CallAfter(self.onPause)
-        wx.CallAfter(self.UpdateTrackDisplay, None)
-
-    def onError(self, exception):
-        if isinstance(exception, spotify.remote.exceptions.SpotifyRemoteError):
-            utils.show_error(self, exception.error_description)
-        else:
-            utils.show_error(self, repr(exception))
+    def onSpotifyError(self, exception):
+        if self._connected_to_spotify:
+            self._connected_to_spotify = False
+            if isinstance(exception, spotify.remote.exceptions.SpotifyRemoteError):
+                utils.show_error(self, exception.error_description)
+            else:
+                utils.show_error(self, repr(exception))
 
 
 def format_track_display(track):
