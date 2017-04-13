@@ -14,6 +14,10 @@ class SpotifyRemoteError(SpotifyError):
         self.error_description = error_description
 
 
+class ContentPlaybackError(SpotifyError):
+    pass
+
+
 class MetadataNotReadyError(SpotifyError):
     """Raised when Spotify has started playing a track, but the track resource hasn't been fully populated with metadata yet."""
 

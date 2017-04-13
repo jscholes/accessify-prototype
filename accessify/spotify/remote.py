@@ -75,7 +75,13 @@ class RemoteBridge:
             params.update(context=context)
         else:
             params.update(context=uri)
-        return self.remote_request('play', params=params)
+        try:
+            return self.remote_request('play', params=params)
+        except exceptions.SpotifyRemoteError as e:
+            if e.error_code in ('4204', '4205', '4301', '4302', '4303'):
+                raise exceptions.ContentPlaybackError
+            else:
+                raise
 
     def remote_request(self, endpoint, params=None, service='remote', authenticated=True):
         request_url = 'https://{0}:{1}/{2}/{3}.json'.format(self._hostname, self._port, service, endpoint)

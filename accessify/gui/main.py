@@ -17,6 +17,7 @@ WINDOW_TITLE = constants.APP_NAME
 MENU_PLAYBACK = '&Playback'
 MSG_LOADING = 'Loading...'
 MSG_NO_CONNECTION = '{0} cannot function without the Spotify client.  The application will now exit.'.format(constants.APP_NAME)
+ERROR_UNPLAYABLE_CONTENT = 'That content couldn\'t be played.  It might not be available in your country or an advert might be playing.'
 
 ID_PLAY_PAUSE = wx.NewId()
 playback_commands = {
@@ -143,7 +144,10 @@ class MainWindow(wx.Frame):
                     wx.MessageBox(MSG_NO_CONNECTION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
                     self.Close()
 
-        wx.CallAfter(cb)
+        if isinstance(exception, spotify.exceptions.ContentPlaybackError):
+            utils.show_error(self, ERROR_UNPLAYABLE_CONTENT)
+        else:
+            wx.CallAfter(cb)
 
 
 def format_track_display(track):
