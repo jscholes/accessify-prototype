@@ -1,4 +1,5 @@
 @echo off
 
-pyinstaller --distpath build\distribution --workpath build\temp --clean --noconfirm build\accessify.spec
+echo "Building Accessify..."
+pyinstaller --log-level WARN --distpath build\distribution --workpath build\temp --clean --noconfirm build\accessify.spec
 
