@@ -31,35 +31,6 @@ SPOTIFY_PORT_RANGE = range(4370, 4380)
 SPOTIFY_OPEN_TOKEN_URL = 'https://open.spotify.com/token'
 
 
-def find_listening_port():
-    """
-    Attempt to find the HTTPS port that the SpotifyWebHelper process is listening on.
-
-    If SpotifyWebHelper.exe is not running, this function will atempt to find the listening port for Spotify.exe as a backup.  If neither process is running, exceptions.SpotifyNotRunningError will be raised.  Otherwise it will return the port number which is guaranteed to be between 4370 and 4380 (not inclusive).
-    """
-    # Find all Spotify processes with at least one active connection
-    spotify_processes = (seq(psutil.process_iter())
-        .filter(lambda proc: proc.name() in SPOTIFY_PROCESSES and any(proc.connections()))
-    )
-
-    if not spotify_processes:
-        raise exceptions.SpotifyNotRunningError
-
-    # Find the first Spotify connection listening on ports 4370-4379
-    try:
-        connection = (seq(proc.connections() for proc in spotify_processes)
-            .flatten()
-            .filter(lambda conn: conn.status == 'LISTEN' and conn.laddr[1] in SPOTIFY_PORT_RANGE)
-            .sorted(key=lambda conn: conn.laddr[1])
-            .first()
-        )
-    except IndexError:
-        raise exceptions.SpotifyNotRunningError
-
-    host, port = connection.laddr
-    return port
-
-
 class RemoteBridge:
     """
     A Python interface to the remote bridge services hosted by the Spotify Web Helper.
@@ -106,16 +77,19 @@ class RemoteBridge:
             params.update(context=uri)
         return self.remote_request('play', params=params)
 
-    def remote_request(self, endpoint, params=None):
-        if self._csrf_token is None:
-            self._csrf_token = self.get_csrf_token()
-        if self._oauth_token is None:
-            self._oauth_token = self.get_oauth_token()
-        request_url = 'https://{0}:{1}/remote/{2}.json'.format(self._hostname, self._port, endpoint)
-        request_params = {
-            'oauth': self._oauth_token,
-            'csrf': self._csrf_token,
-        }
+    def remote_request(self, endpoint, params=None, service='remote', authenticated=True):
+        request_url = 'https://{0}:{1}/{2}/{3}.json'.format(self._hostname, self._port, service, endpoint)
+        if authenticated:
+            if self._csrf_token is None:
+                self._csrf_token = self.get_csrf_token()
+            if self._oauth_token is None:
+                self._oauth_token = self.get_oauth_token()
+            request_params = {
+                'oauth': self._oauth_token,
+                'csrf': self._csrf_token,
+            }
+        else:
+            request_params = {}
         if params is not None:
             request_params.update(params)
         logger.debug('Requesting URL: {0} with params: {1}'.format(request_url, request_params))
@@ -137,20 +111,8 @@ class RemoteBridge:
         return '{0}.spotilocal.com'.format(subdomain)
 
     def get_csrf_token(self):
-        url = 'https://{0}:{1}/simplecsrf/token.json'.format(self._hostname, self._port)
-        logger.debug('Requesting {0}'.format(url))
-        try:
-            response = self._session.get(url)
-        except requests.exceptions.ConnectionError:
-            raise exceptions.SpotifyConnectionError
-        data = json.loads(response.content)
-        logger.debug('CSRF request response: {0}'.format(data))
-        if 'error' in data:
-            error_code = data['error']['type']
-            error_description = spotify_remote_errors[error_code]
-            logger.debug('Error {0} from Spotify: {1}'.format(error_code, error_description))
-            raise exceptions.SpotifyRemoteError(error_code, error_description)
-        return data['token']
+        response = self.remote_request('token', service='simplecsrf', authenticated=False)
+        return response['token']
 
     def get_oauth_token(self):
         response = self._session.get(SPOTIFY_OPEN_TOKEN_URL)
@@ -167,6 +129,36 @@ class RemoteBridge:
         if command in (PlaybackCommand.PLAY_PAUSE, PlaybackCommand.PREV_TRACK, PlaybackCommand.NEXT_TRACK):
             logger.debug('Sleeping to avoid command flooding')
             time.sleep(0.3)
+
+
+def find_listening_port():
+    """
+    Attempt to find the HTTPS port that the SpotifyWebHelper process is listening on.
+
+    If SpotifyWebHelper.exe is not running, this function will atempt to find the listening port for Spotify.exe as a backup.  If neither process is running, exceptions.SpotifyNotRunningError will be raised.  Otherwise it will return the port number which is guaranteed to be between 4370 and 4380 (not inclusive).
+    """
+    # Find all Spotify processes with at least one active connection
+    spotify_processes = (seq(psutil.process_iter())
+        .filter(lambda proc: proc.name() in SPOTIFY_PROCESSES and any(proc.connections()))
+    )
+
+    if not spotify_processes:
+        raise exceptions.SpotifyNotRunningError
+
+    # Find the first Spotify connection listening on ports 4370-4379
+    try:
+        connection = (seq(proc.connections() for proc in spotify_processes)
+            .flatten()
+            .filter(lambda conn: conn.status == 'LISTEN' and conn.laddr[1] in SPOTIFY_PORT_RANGE)
+            .sorted(key=lambda conn: conn.laddr[1])
+            .first()
+        )
+    except IndexError:
+        raise exceptions.SpotifyNotRunningError
+
+    host, port = connection.laddr
+    logger.debug('Spotify listening on port {0}'.format(port))
+    return port
 
 
 class PlaybackCommand(Enum):
