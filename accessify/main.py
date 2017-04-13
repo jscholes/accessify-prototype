@@ -8,6 +8,13 @@ import ujson as json
 import wx
 
 from . import constants
+
+try:
+    from . import credentials
+    has_credentials = True
+except ImportError:
+    has_credentials = False
+
 from . import gui
 from . import library
 from . import playback
@@ -37,10 +44,15 @@ def main():
     config_path = os.path.join(config_directory, 'config.json')
     config = load_config(config_path)
 
-    client_id = os.environ.get('SPOTIFY_CLIENT_ID')
-    client_secret = os.environ.get('SPOTIFY_CLIENT_SECRET')
+    if has_credentials:
+        client_id = credentials.client_id
+        client_secret = credentials.client_secret
+    else:
+        client_id = os.environ.get('SPOTIFY_CLIENT_ID')
+        client_secret = os.environ.get('SPOTIFY_CLIENT_SECRET')
+
     if not client_id or not client_secret:
-        print('Please ensure the environment variables SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET are set.')
+        print('No Spotify credentials provided.  Please either set the environment variables SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET or create a credentials module with client_id and client_secret variables.')
         return
 
     access_token = config.get('spotify_access_token')
