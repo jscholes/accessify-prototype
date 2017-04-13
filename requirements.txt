@@ -1,3 +1,4 @@
+-e git+https://github.com/pyinstaller/pyinstaller
 appdirs
 packaging
 psutil
