@@ -1,7 +1,7 @@
 import wx
 
-from .. import constants
-from .. import spotify
+from accessify import constants
+from accessify import spotify
 
 
 TITLE_SPOTIFY_ERROR = constants.APP_NAME

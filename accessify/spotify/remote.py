@@ -14,7 +14,7 @@ import requests
 from functional import seq
 import ujson as json
 
-from . import exceptions
+from accessify.spotify import exceptions
 
 
 logger = logging.getLogger(__name__)

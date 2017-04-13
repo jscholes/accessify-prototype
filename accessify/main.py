@@ -7,18 +7,18 @@ import tolk
 import ujson as json
 import wx
 
-from . import constants
+from accessify import constants
 
 try:
-    from . import credentials
+    from accessify import credentials
     has_credentials = True
 except ImportError:
     has_credentials = False
 
-from . import gui
-from . import library
-from . import playback
-from . import spotify
+from accessify import gui
+from accessify import library
+from accessify import playback
+from accessify import spotify
 
 
 logger = logging.getLogger(__package__)

@@ -4,10 +4,10 @@ import logging
 import queue
 import threading
 
-from ..utils.concurrency import consume_queue
-from .. import structures
+from accessify import structures
+from accessify.utils.concurrency import consume_queue
 
-from . import exceptions
+from accessify.spotify import exceptions
 
 
 logger = logging.getLogger(__name__)

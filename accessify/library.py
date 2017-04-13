@@ -4,7 +4,7 @@ import logging
 import pykka
 from functional import seq
 
-from . import structures
+from accessify import structures
 
 
 logger = logging.getLogger(__name__)

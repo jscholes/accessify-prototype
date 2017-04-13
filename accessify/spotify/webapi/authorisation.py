@@ -4,7 +4,7 @@ import logging
 import requests
 import ujson as json
 
-from . import exceptions
+from accessify.spotify.webapi import exceptions
 
 
 logger = logging.getLogger(__name__)

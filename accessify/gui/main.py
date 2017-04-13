@@ -1,16 +1,16 @@
 from functional import seq
 import wx
 
-from .. import constants
-from .. import spotify
-from .. import structures
+from accessify import constants
+from accessify import spotify
+from accessify import structures
 
-from . import dialogs
-from . import nowplaying
-from . import search
-from . import speech
-from . import utils
-from . import widgets
+from accessify.gui import dialogs
+from accessify.gui import nowplaying
+from accessify.gui import search
+from accessify.gui import speech
+from accessify.gui import utils
+from accessify.gui import widgets
 
 
 WINDOW_TITLE = constants.APP_NAME

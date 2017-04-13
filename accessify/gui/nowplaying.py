@@ -1,8 +1,8 @@
 import wx
 
-from ..spotify.utils import is_spotify_uri
+from accessify.spotify.utils import is_spotify_uri
 
-from . import utils
+from accessify.gui import utils
 
 
 LABEL_NOW_PLAYING = 'Now playing'

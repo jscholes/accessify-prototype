@@ -1,7 +1,7 @@
 import wx
 import wx.adv
 
-from .utils import find_last_child
+from accessify.gui.utils import find_last_child
 
 
 class KeyboardAccessibleNotebook(wx.Notebook):

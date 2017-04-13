@@ -3,8 +3,8 @@ import collections
 import pykka
 import pyperclip
 
-from .spotify.eventmanager import EventType
-from .spotify.remote import PlaybackCommand
+from accessify.spotify.eventmanager import EventType
+from accessify.spotify.remote import PlaybackCommand
 
 
 class PlaybackController(pykka.ThreadingActor):

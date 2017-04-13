@@ -1,2 +1,2 @@
-from . import main
+from accessify.gui import main
 

@@ -1,4 +1,4 @@
-from .authorisation import AuthorisationAgent
-from .client import TestWebAPIClient
-from .client import WebAPIClient
+from accessify.spotify.webapi.authorisation import AuthorisationAgent
+from accessify.spotify.webapi.client import TestWebAPIClient
+from accessify.spotify.webapi.client import WebAPIClient
 

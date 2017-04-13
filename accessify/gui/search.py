@@ -2,13 +2,13 @@ import functools
 
 import wx
 
-from ..library import SearchType
-from ..spotify.utils import is_spotify_uri
-from .. import structures
+from accessify.library import SearchType
+from accessify.spotify.utils import is_spotify_uri
+from accessify import structures
 
-from . import speech
-from . import utils
-from . import widgets
+from accessify.gui import speech
+from accessify.gui import utils
+from accessify.gui import widgets
 
 
 LABEL_SEARCH = 'Search'
