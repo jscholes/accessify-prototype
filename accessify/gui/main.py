@@ -38,6 +38,7 @@ class MainWindow(wx.Frame):
         speech.speak(MSG_LOADING)
         self.playback = playback_controller
         self.library = library_controller
+        self.playback.set_error_callback(self.onSpotifyError)
         self.InitialiseControls()
         self.Centre()
 

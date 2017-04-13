@@ -1,10 +1,15 @@
 import collections
+import logging
 
 import pykka
 import pyperclip
 
 from accessify.spotify.eventmanager import EventType
+from accessify.spotify import exceptions
 from accessify.spotify.remote import PlaybackCommand
+
+
+logger = logging.getLogger(__name__)
 
 
 class PlaybackController(pykka.ThreadingActor):
@@ -17,6 +22,10 @@ class PlaybackController(pykka.ThreadingActor):
         event_manager.subscribe(EventType.STOP, self._advance_playback_queue)
         event_manager.subscribe(EventType.TRACK_CHANGE, self._update_current_track)
         self.current_track = None
+        self._error_callback = None
+
+    def set_error_callback(self, callback):
+        self._error_callback = callback
 
     def _advance_playback_queue(self):
         try:
@@ -36,7 +45,12 @@ class PlaybackController(pykka.ThreadingActor):
         self.play_uri(item.uri, context)
 
     def play_uri(self, uri, context=None):
-        self.spotify.play_uri(uri, context)
+        try:
+            self.spotify.play_uri(uri, context)
+        except exceptions.SpotifyError as e:
+            logger.error('Error while trying to play URI {0} with context {1}'.format(uri, context), exc_info=True)
+            if self._error_callback is not None:
+                self._error_callback(e)
 
     def queue_item(self, item, context=None):
         self.playback_queue.append(item)

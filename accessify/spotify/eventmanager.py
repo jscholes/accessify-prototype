@@ -44,11 +44,11 @@ class EventManager(threading.Thread):
             except exceptions.MetadataNotReadyError:
                 return_immediately = True
                 continue
-            except (exceptions.SpotifyRemoteError, exceptions.SpotifyConnectionError) as e:
+            except exceptions.SpotifyError as e:
                 self._event_queue.put(e)
 
     def _process_item(self, item):
-        if type(item) in (exceptions.SpotifyRemoteError, exceptions.SpotifyConnectionError):
+        if isinstance(item, exceptions.SpotifyError):
             self._previous_track_dict = {}
             self._update_subscribers(EventType.ERROR, context=item)
             return
