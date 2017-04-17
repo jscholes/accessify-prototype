@@ -25,6 +25,13 @@ logger = logging.getLogger(__package__)
 
 
 def main():
+    app = wx.App()
+    instance_checker = wx.SingleInstanceChecker()
+    if instance_checker.IsAnotherRunning():
+        # TODO: Focus the existing instance instead
+        gui.utils.show_error(None, 'Accessify is already running.')
+        return
+
     config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
     try:
         os.makedirs(config_directory)
@@ -60,9 +67,6 @@ def main():
     if not access_token or not refresh_token:
         print('You\'re missing either a Spotify access or refresh token in your config file.  Please provide these in the config file located at {0}'.format(config_path))
         return
-
-    # Create this early to avoid COM errors
-    app = wx.App()
 
     try:
         tolk.load()
