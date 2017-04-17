@@ -1,6 +1,5 @@
-import wx
-
 import tolk
+import wx
 
 
 def speak(text, delay_ms=0):
