@@ -58,7 +58,8 @@ class MainWindow(wx.Frame):
 
     def         _addPages(self):
         self.tabs.AddPage(search.SearchPage(self.tabs, self.playback, self.library), search.LABEL_SEARCH)
-        self.tabs.AddPage(nowplaying.NowPlayingPage(self.tabs, self.playback), nowplaying.LABEL_NOW_PLAYING)
+        # Don't bother with this for now
+        #self.tabs.AddPage(nowplaying.NowPlayingPage(self.tabs, self.playback), nowplaying.LABEL_NOW_PLAYING)
 
     def _createMenus(self):
         playback_menu = wx.Menu()
