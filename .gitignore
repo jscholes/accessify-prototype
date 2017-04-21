@@ -90,3 +90,5 @@ ENV/
 
 # Project-specific
 accessify/credentials.py
+docs/
+tolk-python/
