@@ -80,7 +80,6 @@ item_containers = {
 }
 
 
-# TODO: Probably a better way of doing this
 item_deserializers = {
     SearchType.TRACK: deserialize_track,
     SearchType.ALBUM: deserialize_album,
