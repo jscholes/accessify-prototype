@@ -5,6 +5,8 @@ from accessify import constants
 from accessify import spotify
 from accessify import structures
 
+from accessify.spotify.eventmanager import PlaybackState
+
 from accessify.gui import dialogs
 from accessify.gui import nowplaying
 from accessify.gui import search
@@ -109,18 +111,14 @@ class MainWindow(wx.Frame):
         self.UpdateTrackDisplay(track)
 
     @main_thread
-    def onPause(self, track):
+    def onPlaybackStateChange(self, state, track):
         mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
-        mi.SetItemLabel('P&lay\tCtrl+Space')
-        self.UpdateTrackDisplay(None)
-        self._hideErrorDialog()
-        self._connected_to_spotify = True
-
-    @main_thread
-    def onPlay(self, track):
-        mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
-        mi.SetItemLabel('P&ause\tCtrl+Space')
-        self.UpdateTrackDisplay(track)
+        if state in (PlaybackState.PAUSED, PlaybackState.STOPPED):
+            mi.SetItemLabel('P&lay\tCtrl+Space')
+            self.UpdateTrackDisplay(None)
+        elif state == PlaybackState.PLAYING:
+            mi.SetItemLabel('P&ause\tCtrl+Space')
+            self.UpdateTrackDisplay(track)
         self._hideErrorDialog()
         self._connected_to_spotify = True
 
