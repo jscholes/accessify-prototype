@@ -58,18 +58,12 @@ class EventManager(threading.Thread):
         # Remove the keys we're not really interested in
         for key in ('version', 'play_enabled', 'prev_enabled', 'next_enabled', 'open_graph_state', 'context', 'online', 'server_time'):
             status_dict.pop(key)
-        track_dict = status_dict.pop('track')
-        if track_dict != self._previous_track_dict:
-            self._current_track = deserialize_track(track_dict)
-            logger.debug('Deserialized track: {0}'.format(self._current_track))
-            self._update_subscribers(EventType.TRACK_CHANGE, context=self._current_track)
-            self._previous_track_dict = track_dict
+
         playing = status_dict['playing']
         if playing:
             playback_state = PlaybackState.PLAYING
         elif not playing and status_dict['playing_position'] == 0:
             playback_state = PlaybackState.STOPPED
-            self._previous_track_dict = {}
         else:
             playback_state = PlaybackState.PAUSED
         if playback_state != self._playback_state:
@@ -80,6 +74,13 @@ class EventManager(threading.Thread):
             elif playback_state == PlaybackState.STOPPED:
                 self._update_subscribers(EventType.STOP)
             self._playback_state = playback_state
+
+        track_dict = status_dict.pop('track')
+        if track_dict != self._previous_track_dict and self._playback_state != PlaybackState.STOPPED:
+            self._current_track = deserialize_track(track_dict)
+            logger.debug('Deserialized track: {0}'.format(self._current_track))
+            self._update_subscribers(EventType.TRACK_CHANGE, context=self._current_track)
+            self._previous_track_dict = track_dict
 
     def _update_subscribers(self, event_type, context=None):
         logger.debug('Updating subscribers to {0} with context: {1}'.format(event_type, context))
