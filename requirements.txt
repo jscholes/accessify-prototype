@@ -1,5 +1,6 @@
 -e git+https://github.com/pyinstaller/pyinstaller
 appdirs
+blinker
 packaging
 psutil
 PyFunctional
