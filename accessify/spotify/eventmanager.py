@@ -66,6 +66,14 @@ class EventManager(threading.Thread):
             playback_state = PlaybackState.STOPPED
         else:
             playback_state = PlaybackState.PAUSED
+
+        track_dict = status_dict.pop('track')
+        if track_dict != self._previous_track_dict and playback_state == PlaybackState.PLAYING:
+            self._current_track = deserialize_track(track_dict)
+            logger.debug('Deserialized track: {0}'.format(self._current_track))
+            self._update_subscribers(EventType.TRACK_CHANGE, context=self._current_track)
+            self._previous_track_dict = track_dict
+
         if playback_state != self._playback_state:
             if playback_state == PlaybackState.PLAYING:
                 self._update_subscribers(EventType.PLAY, context=self._current_track)
@@ -74,13 +82,6 @@ class EventManager(threading.Thread):
             elif playback_state == PlaybackState.STOPPED:
                 self._update_subscribers(EventType.STOP)
             self._playback_state = playback_state
-
-        track_dict = status_dict.pop('track')
-        if track_dict != self._previous_track_dict and self._playback_state == PlaybackState.PLAYING:
-            self._current_track = deserialize_track(track_dict)
-            logger.debug('Deserialized track: {0}'.format(self._current_track))
-            self._update_subscribers(EventType.TRACK_CHANGE, context=self._current_track)
-            self._previous_track_dict = track_dict
 
     def _update_subscribers(self, event_type, context=None):
         logger.debug('Updating subscribers to {0} with context: {1}'.format(event_type, context))
