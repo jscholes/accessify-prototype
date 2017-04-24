@@ -84,11 +84,23 @@ def main():
         return
 
     event_manager = spotify.eventmanager.EventManager(spotify_remote)
-    playback_controller = playback.PlaybackController.start(spotify_remote, event_manager)
-    library_controller = library.LibraryController.start(config, spotify_api_client)
+    psignalman = playback.PlaybackSignalman()
+    playback_controller = playback.PlaybackController.start(psignalman, spotify_remote, event_manager)
+    playback_proxy = playback_controller.proxy()
 
-    window = gui.main.MainWindow(playback_controller.proxy(), library_controller.proxy())
-    window.SubscribeToSpotifyEvents(event_manager)
+    library_controller = library.LibraryController.start(config, spotify_api_client)
+    library_proxy = library_controller.proxy()
+
+    window = gui.main.MainWindow(playback_proxy, library_proxy)
+
+    psignalman.play.connect(window.onPlay)
+    psignalman.pause.connect(window.onPause)
+    psignalman.stop.connect(window.onPause)
+    psignalman.track_change.connect(window.onTrackChange)
+    psignalman.error.connect(window.onSpotifyError)
+
+    playback_proxy.connect_to_spotify()
+    library_proxy.log_in()
     event_manager.start()
     app.MainLoop()
 

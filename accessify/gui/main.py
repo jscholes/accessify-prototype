@@ -41,7 +41,6 @@ class MainWindow(wx.Frame):
         speech.speak(MSG_LOADING)
         self.playback = playback_controller
         self.library = library_controller
-        self.playback.set_error_callback(self.onSpotifyError)
         self.InitialiseControls()
         self.Centre()
 
@@ -75,13 +74,6 @@ class MainWindow(wx.Frame):
     def _bindEvents(self):
         self.Bind(wx.EVT_MENU, self.onPlaybackCommand)
         self.Bind(wx.EVT_SHOW, self.onShow)
-
-    def SubscribeToSpotifyEvents(self, event_manager):
-        event_manager.subscribe(spotify.eventmanager.EventType.TRACK_CHANGE, self.onTrackChange)
-        event_manager.subscribe(spotify.eventmanager.EventType.PLAY, self.onPlay)
-        event_manager.subscribe(spotify.eventmanager.EventType.PAUSE, self.onPause)
-        event_manager.subscribe(spotify.eventmanager.EventType.STOP, self.onPause)
-        event_manager.subscribe(spotify.eventmanager.EventType.ERROR, self.onSpotifyError)
 
     def UpdateTrackDisplay(self, track):
         if track is None:
@@ -117,7 +109,7 @@ class MainWindow(wx.Frame):
         self.UpdateTrackDisplay(track)
 
     @main_thread
-    def onPause(self):
+    def onPause(self, track):
         mi = self.playback_menu.FindItemById(ID_PLAY_PAUSE)
         mi.SetItemLabel('P&lay\tCtrl+Space')
         self.UpdateTrackDisplay(None)

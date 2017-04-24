@@ -18,15 +18,15 @@ class LibraryController(pykka.ThreadingActor):
         self.config = config
         self.api_client = api_client
 
-    def on_start(self):
-        profile = self.api_client.me()
-        logger.info('Logged into Spotify as {0} (account type {1})'.format(profile['id'], profile['product']))
-
     def on_stop(self):
         self.config.update({
             'spotify_access_token': self.api_client.authorisation.get_access_token(),
             'spotify_refresh_token': self.api_client.authorisation.get_refresh_token(),
         })
+
+    def log_in(self):
+        profile = self.api_client.me()
+        logger.info('Logged into Spotify as {0} (account type {1})'.format(profile['id'], profile['product']))
 
     def perform_new_search(self, query, search_type, results_callback):
         results = self.perform_search(query, search_type, offset=0)
