@@ -15,7 +15,8 @@ class SpotifyRemoteError(SpotifyError):
 
 
 class ContentPlaybackError(SpotifyError):
-    pass
+    def __init__(self, uri, *args, **kwargs):
+        self.uri = uri
 
 
 class MetadataNotReadyError(SpotifyError):

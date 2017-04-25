@@ -79,7 +79,7 @@ class RemoteBridge:
             return self.remote_request('play', params=params)
         except exceptions.SpotifyRemoteError as e:
             if e.error_code in ('4204', '4205', '4301', '4302', '4303'):
-                raise exceptions.ContentPlaybackError
+                raise exceptions.ContentPlaybackError(uri)
             else:
                 raise
 
