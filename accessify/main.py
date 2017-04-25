@@ -99,7 +99,6 @@ def main():
 
     playback_proxy.connect_to_spotify()
     library_proxy.log_in()
-    event_manager.start()
     app.MainLoop()
 
     # Shutdown

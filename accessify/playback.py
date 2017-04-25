@@ -32,6 +32,7 @@ class PlaybackController(pykka.ThreadingActor):
         self._event_manager.subscribe(EventType.STOP, self.on_stop)
         self._event_manager.subscribe(EventType.TRACK_CHANGE, self.on_track_change)
         self._event_manager.subscribe(EventType.ERROR, self.on_error)
+        self._event_manager.start()
 
     def on_play(self, track):
         self._signalman.state_change.send(PlaybackState.PLAYING, track=self.current_track)
