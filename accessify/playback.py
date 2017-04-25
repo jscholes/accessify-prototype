@@ -24,7 +24,7 @@ class PlaybackController(pykka.ThreadingActor):
 
         self.playback_queue = collections.deque()
         self.current_track = None
-        self._error_callback = None
+        self._connected = None
 
     def connect_to_spotify(self):
         self._event_manager.subscribe(EventType.PLAY, self.on_play)
@@ -35,9 +35,15 @@ class PlaybackController(pykka.ThreadingActor):
         self._event_manager.start()
 
     def on_play(self, track):
+        if not self._connected:
+            self._connected = True
+            self._signalman.connection_established.send(None)
         self._signalman.state_changed.send(PlaybackState.PLAYING, track=self.current_track)
 
     def on_pause(self):
+        if not self._connected:
+            self._connected = True
+            self._signalman.connection_established.send(None)
         self._signalman.state_changed.send(PlaybackState.PAUSED, track=self.current_track)
 
     def on_stop(self):
@@ -45,14 +51,24 @@ class PlaybackController(pykka.ThreadingActor):
         if next_item is not None:
             self.play_item(next_item)
         else:
+            if not self._connected:
+                self._connected = True
+                self._signalman.connection_established.send(None)
             self._signalman.state_changed.send(PlaybackState.STOPPED, track=self.current_track)
 
     def on_track_change(self, new_track):
+        if not self._connected:
+            self._connected = True
+            self._signalman.connection_established.send(None)
         self.current_track = new_track
         self._signalman.track_changed.send(new_track)
 
     def on_error(self, exception):
-        self._signalman.error.send(exception)
+        if isinstance(exception, exceptions.ContentPlaybackError):
+            self._signalman.unplayable_content.send(exception.uri)
+        else:
+            self._connected = False
+            self._signalman.error.send(exception)
 
     def _advance_playback_queue(self):
         try:
@@ -71,9 +87,6 @@ class PlaybackController(pykka.ThreadingActor):
             self.spotify.play_uri(uri, context)
         except exceptions.SpotifyError as e:
             logger.error('Error while trying to play URI {0} with context {1}'.format(uri, context), exc_info=True)
-            if isinstance(e, exceptions.ContentPlaybackError):
-                self._signalman.unplayable_content.send(e.uri)
-        else:
             self.on_error(e_)
 
     def queue_item(self, item, context=None):
@@ -109,5 +122,5 @@ class PlaybackController(pykka.ThreadingActor):
 
 
 class PlaybackSignalman(Signalman):
-    signals = ('state_changed', 'track_changed', 'unplayable_content', 'error')
+    signals = ('state_changed', 'track_changed', 'unplayable_content', 'connection_established', 'error')
 

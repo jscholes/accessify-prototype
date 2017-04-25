@@ -1,3 +1,5 @@
+from enum import Enum
+
 from functional import seq
 import wx
 
@@ -40,13 +42,13 @@ playback_commands = {
 class MainWindow(wx.Frame):
     def __init__(self, playback_controller, library_controller, *args, **kwargs):
         super().__init__(parent=None, title=WINDOW_TITLE, size=(900, 900), *args, **kwargs)
-        speech.speak(MSG_LOADING)
+        self.SetState(GUIState.LOADING)
         self.playback = playback_controller
         self.library = library_controller
         self.InitialiseControls()
         self.Centre()
 
-        self._connected_to_spotify = False
+        self._authorisation_dialog = None
         self._spotify_error_dialog = None
 
     def InitialiseControls(self):
@@ -77,21 +79,16 @@ class MainWindow(wx.Frame):
         self.Bind(wx.EVT_MENU, self.onPlaybackCommand)
         self.Bind(wx.EVT_SHOW, self.onShow)
 
+    def SetState(self, new_state):
+        self.state = new_state
+        if new_state == GUIState.LOADING:
+            speech.speak(MSG_LOADING)
+
     def UpdateTrackDisplay(self, track):
         if track is None:
             self.SetTitle(WINDOW_TITLE)
         else:
             self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(track)))
-        if not self._connected_to_spotify:
-            self._connected_to_spotify = True
-            self._hideErrorDialog()
-            self.Show()
-
-    def _hideErrorDialog(self):
-        if self._spotify_error_dialog is not None:
-            self._spotify_error_dialog.EndModal(wx.ID_CLOSE)
-            self._spotify_error_dialog.Destroy()
-            self._spotify_error_dialog = None
 
     def onShow(self, event):
         page = self.tabs.GetCurrentPage()
@@ -119,24 +116,42 @@ class MainWindow(wx.Frame):
         elif state == PlaybackState.PLAYING:
             mi.SetItemLabel('P&ause\tCtrl+Space')
             self.UpdateTrackDisplay(track)
-        self._hideErrorDialog()
-        self._connected_to_spotify = True
 
     @main_thread
     def onUnplayableContent(self, uri):
         utils.show_error(self, ERROR_UNPLAYABLE_CONTENT.format(uri=uri))
 
     @main_thread
-    def onPlaybackError(self, exception):
-            if self._spotify_error_dialog is None:
-                self._connected_to_spotify = False
-                self._spotify_error_dialog = dialogs.SpotifyErrorDialog(self, exception)
-                result = self._spotify_error_dialog.ShowModal()
-                if result == wx.ID_CANCEL:
-                    wx.MessageBox(MSG_NO_CONNECTION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
-                    self.Close()
+    def onSpotifyConnectionEstablished(self, *args, **kwargs):
+        if self._spotify_error_dialog is not None:
+            self._spotify_error_dialog.EndModal(wx.ID_CLOSE)
+            self._spotify_error_dialog.Destroy()
+            self._spotify_error_dialog = None
+        if not self.IsShown():
+            self.Show()
+        self.SetState(GUIState.CONNECTED)
+
+    @main_thread
+    def onSpotifyError(self, exception):
+        if self.state in (GUIState.LOADING, GUIState.CONNECTED, GUIState.OPERATIONAL):
+            self.SetState(GUIState.CONNECTING)
+            self._spotify_error_dialog = dialogs.SpotifyErrorDialog(self, exception)
+            result = self._spotify_error_dialog.ShowModal()
+            if result == wx.ID_CANCEL:
+                wx.MessageBox(MSG_NO_CONNECTION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
+                self.Close()
 
 
 def format_track_display(track):
     return '{0} - {1}'.format(seq(track.artists).first().name, track.name).replace('&', 'and')
+
+
+class GUIState(Enum):
+    LOADING = 1
+    AUTHORISING = 2
+    AUTHORISED = 3
+    CONNECTING = 4
+    CONNECTED = 5
+    OPERATIONAL = 6
+    CLOSING = 7
 
