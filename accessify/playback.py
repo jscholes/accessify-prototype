@@ -70,8 +70,7 @@ class PlaybackController(pykka.ThreadingActor):
             self.spotify.play_uri(uri, context)
         except exceptions.SpotifyError as e:
             logger.error('Error while trying to play URI {0} with context {1}'.format(uri, context), exc_info=True)
-            if self._error_callback is not None:
-                self._error_callback(e)
+            self._signalman.error.send(e)
 
     def queue_item(self, item, context=None):
         self.playback_queue.append(item)
