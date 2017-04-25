@@ -95,7 +95,8 @@ def main():
 
     psignalman.state_changed.connect(window.onPlaybackStateChange)
     psignalman.track_changed.connect(window.onTrackChange)
-    psignalman.error.connect(window.onSpotifyError)
+    psignalman.unplayable_content.connect(window.onUnplayableContent)
+    psignalman.error.connect(window.onPlaybackError)
 
     playback_proxy.connect_to_spotify()
     library_proxy.log_in()

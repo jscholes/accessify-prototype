@@ -21,7 +21,7 @@ WINDOW_TITLE = constants.APP_NAME
 MENU_PLAYBACK = '&Playback'
 MSG_LOADING = 'Loading...'
 MSG_NO_CONNECTION = '{0} cannot function without the Spotify client.  The application will now exit.'.format(constants.APP_NAME)
-ERROR_UNPLAYABLE_CONTENT = 'That content couldn\'t be played.  It might not be available in your country or an advert might be playing.'
+ERROR_UNPLAYABLE_CONTENT = 'The URI {uri} couldn\'t be played.  The content might not be available in your country or an advert might currently be playing.'
 
 ID_PLAY_PAUSE = wx.NewId()
 playback_commands = {
@@ -123,10 +123,11 @@ class MainWindow(wx.Frame):
         self._connected_to_spotify = True
 
     @main_thread
-    def onSpotifyError(self, exception):
-        if isinstance(exception, spotify.exceptions.ContentPlaybackError):
-            utils.show_error(self, ERROR_UNPLAYABLE_CONTENT)
-        else:
+    def onUnplayableContent(self, uri):
+        utils.show_error(self, ERROR_UNPLAYABLE_CONTENT.format(uri=uri))
+
+    @main_thread
+    def onPlaybackError(self, exception):
             if self._spotify_error_dialog is None:
                 self._connected_to_spotify = False
                 self._spotify_error_dialog = dialogs.SpotifyErrorDialog(self, exception)

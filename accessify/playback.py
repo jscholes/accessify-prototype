@@ -51,8 +51,8 @@ class PlaybackController(pykka.ThreadingActor):
         self.current_track = new_track
         self._signalman.track_changed.send(new_track)
 
-    def on_error(self, exc):
-        self._signalman.error.send(exc)
+    def on_error(self, exception):
+        self._signalman.error.send(exception)
 
     def _advance_playback_queue(self):
         try:
@@ -71,7 +71,10 @@ class PlaybackController(pykka.ThreadingActor):
             self.spotify.play_uri(uri, context)
         except exceptions.SpotifyError as e:
             logger.error('Error while trying to play URI {0} with context {1}'.format(uri, context), exc_info=True)
-            self._signalman.error.send(e)
+            if isinstance(e, exceptions.ContentPlaybackError):
+                self._signalman.unplayable_content.send(e.uri)
+        else:
+            self.on_error(e_)
 
     def queue_item(self, item, context=None):
         self.playback_queue.append(item)
@@ -106,5 +109,5 @@ class PlaybackController(pykka.ThreadingActor):
 
 
 class PlaybackSignalman(Signalman):
-    signals = ('state_changed', 'track_changed', 'error')
+    signals = ('state_changed', 'track_changed', 'unplayable_content', 'error')
 
