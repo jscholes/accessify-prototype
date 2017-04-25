@@ -93,8 +93,8 @@ def main():
 
     window = gui.main.MainWindow(playback_proxy, library_proxy)
 
-    psignalman.state_change.connect(window.onPlaybackStateChange)
-    psignalman.track_change.connect(window.onTrackChange)
+    psignalman.state_changed.connect(window.onPlaybackStateChange)
+    psignalman.track_changed.connect(window.onTrackChange)
     psignalman.error.connect(window.onSpotifyError)
 
     playback_proxy.connect_to_spotify()

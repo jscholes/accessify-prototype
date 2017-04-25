@@ -35,21 +35,21 @@ class PlaybackController(pykka.ThreadingActor):
         self._event_manager.start()
 
     def on_play(self, track):
-        self._signalman.state_change.send(PlaybackState.PLAYING, track=self.current_track)
+        self._signalman.state_changed.send(PlaybackState.PLAYING, track=self.current_track)
 
     def on_pause(self):
-        self._signalman.state_change.send(PlaybackState.PAUSED, track=self.current_track)
+        self._signalman.state_changed.send(PlaybackState.PAUSED, track=self.current_track)
 
     def on_stop(self):
         next_item = self._advance_playback_queue()
         if next_item is not None:
             self.play_item(next_item)
         else:
-            self._signalman.state_change.send(PlaybackState.STOPPED, track=self.current_track)
+            self._signalman.state_changed.send(PlaybackState.STOPPED, track=self.current_track)
 
     def on_track_change(self, new_track):
         self.current_track = new_track
-        self._signalman.track_change.send(new_track)
+        self._signalman.track_changed.send(new_track)
 
     def on_error(self, exc):
         self._signalman.error.send(exc)
@@ -106,5 +106,5 @@ class PlaybackController(pykka.ThreadingActor):
 
 
 class PlaybackSignalman(Signalman):
-    signals = ('state_change', 'track_change', 'error')
+    signals = ('state_changed', 'track_changed', 'error')
 
