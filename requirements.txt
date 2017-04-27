@@ -1,6 +1,7 @@
 -e git+https://github.com/pyinstaller/pyinstaller
 appdirs
 blinker
+flask
 packaging
 psutil
 PyFunctional
