@@ -23,6 +23,7 @@ WINDOW_TITLE = constants.APP_NAME
 MENU_PLAYBACK = '&Playback'
 MSG_LOADING = 'Loading...'
 MSG_NO_CONNECTION = '{0} cannot function without the Spotify client.  The application will now exit.'.format(constants.APP_NAME)
+MSG_NO_AUTHORISATION = 'You can\'t use {0} without a Spotify account.  The application will now exit.'.format(constants.APP_NAME)
 ERROR_UNPLAYABLE_CONTENT = 'The URI {uri} couldn\'t be played.  The content might not be available in your country or an advert might currently be playing.'
 
 ID_PLAY_PAUSE = wx.NewId()
@@ -147,11 +148,20 @@ class MainWindow(wx.Frame):
 
     @main_thread
     def onAuthorisationRequired(self, revoked=False):
-        utils.show_error(self, 'Authorisation required!')
-        self.Close()
+        if self.state in (GUIState.LOADING, GUIState.CONNECTED, GUIState.AUTHORISED, GUIState.OPERATIONAL):
+            self.SetState(GUIState.AUTHORISING)
+            self._authorisation_dialog = dialogs.AuthorisationDialog(self, first_run=not revoked)
+            result = self._authorisation_dialog.ShowModal()
+            if result == wx.ID_CANCEL:
+                wx.MessageBox(MSG_NO_AUTHORISATION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
+                self.Close()
 
     @main_thread
     def onAuthorisationCompleted(self, profile):
+        if self._spotify_error_dialog is not None:
+            self._spotify_error_dialog.EndModal(wx.ID_CLOSE)
+            self._spotify_error_dialog.Destroy()
+            self._spotify_error_dialog = None
         if self.state == GUIState.CONNECTED:
             self.SetState(GUIState.OPERATIONAL)
         else:
