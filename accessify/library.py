@@ -6,6 +6,8 @@ from functional import seq
 
 from accessify import structures
 
+from accessify.signalling import Signalman
+
 
 logger = logging.getLogger(__name__)
 
@@ -13,8 +15,9 @@ logger = logging.getLogger(__name__)
 class LibraryController(pykka.ThreadingActor):
     use_daemon_thread = True
 
-    def __init__(self, config, api_client):
+    def __init__(self, signalman, config, api_client):
         super().__init__()
+        self._signalman = signalman
         self.config = config
         self.api_client = api_client
 
@@ -27,6 +30,7 @@ class LibraryController(pykka.ThreadingActor):
     def log_in(self):
         profile = self.api_client.me()
         logger.info('Logged into Spotify as {0} (account type {1})'.format(profile['id'], profile['product']))
+        self._signalman.authorisation_completed.send(profile)
 
     def perform_new_search(self, query, search_type, results_callback):
         results = self.perform_search(query, search_type, offset=0)
@@ -86,4 +90,8 @@ item_deserializers = {
     SearchType.ARTIST: deserialize_artist,
     SearchType.PLAYLIST: deserialize_playlist,
 }
+
+
+class LibrarySignalman(Signalman):
+    signals = ['authorisation_required', 'authorisation_completed', 'authorisation_error']
 

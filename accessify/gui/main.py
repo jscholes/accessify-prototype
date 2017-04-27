@@ -83,6 +83,9 @@ class MainWindow(wx.Frame):
         self.state = new_state
         if new_state == GUIState.LOADING:
             speech.speak(MSG_LOADING)
+        elif new_state == GUIState.OPERATIONAL:
+            if not self.IsShown():
+                self.Show()
 
     def UpdateTrackDisplay(self, track):
         if track is None:
@@ -127,19 +130,27 @@ class MainWindow(wx.Frame):
             self._spotify_error_dialog.EndModal(wx.ID_CLOSE)
             self._spotify_error_dialog.Destroy()
             self._spotify_error_dialog = None
-        if not self.IsShown():
-            self.Show()
-        self.SetState(GUIState.CONNECTED)
+        if self.state in (GUIState.AUTHORISED, GUIState.CONNECTING):
+            self.SetState(GUIState.OPERATIONAL)
+        else:
+            self.SetState(GUIState.CONNECTED)
 
     @main_thread
     def onSpotifyError(self, exception):
-        if self.state in (GUIState.LOADING, GUIState.CONNECTED, GUIState.OPERATIONAL):
+        if self.state in (GUIState.LOADING, GUIState.CONNECTED, GUIState.AUTHORISED, GUIState.OPERATIONAL):
             self.SetState(GUIState.CONNECTING)
             self._spotify_error_dialog = dialogs.SpotifyErrorDialog(self, exception)
             result = self._spotify_error_dialog.ShowModal()
             if result == wx.ID_CANCEL:
                 wx.MessageBox(MSG_NO_CONNECTION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
                 self.Close()
+
+    @main_thread
+    def onAuthorisationCompleted(self, profile):
+        if self.state == GUIState.CONNECTED:
+            self.SetState(GUIState.OPERATIONAL)
+        else:
+            self.SetState(GUIState.AUTHORISED)
 
 
 def format_track_display(track):

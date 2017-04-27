@@ -88,7 +88,8 @@ def main():
     playback_controller = playback.PlaybackController.start(psignalman, spotify_remote, event_manager)
     playback_proxy = playback_controller.proxy()
 
-    library_controller = library.LibraryController.start(config, spotify_api_client)
+    lsignalman = library.LibrarySignalman()
+    library_controller = library.LibraryController.start(lsignalman, config, spotify_api_client)
     library_proxy = library_controller.proxy()
 
     window = gui.main.MainWindow(playback_proxy, library_proxy)
@@ -98,6 +99,10 @@ def main():
     psignalman.unplayable_content.connect(window.onUnplayableContent)
     psignalman.connection_established.connect(window.onSpotifyConnectionEstablished)
     psignalman.error.connect(window.onSpotifyError)
+
+    # lsignalman.authorisation_required.connect(window.onAuthorisationRequired)
+    lsignalman.authorisation_completed.connect(window.onAuthorisationCompleted)
+    # lsignalman.authorisation_error.connect(window.onAuthorisationError)
 
     playback_proxy.connect_to_spotify()
     library_proxy.log_in()
