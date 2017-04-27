@@ -31,6 +31,12 @@ class AuthorisationAgent:
     def get_refresh_token(self):
         return self._refresh_token
 
+    def set_access_token(self, token):
+        self.access_token = token
+
+    def set_refresh_token(self, token):
+        self._refresh_token = token
+
     def refresh_access_token(self):
         logger.debug('Attempting to refresh expired access token')
         params = {
