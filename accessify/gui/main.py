@@ -146,6 +146,11 @@ class MainWindow(wx.Frame):
                 self.Close()
 
     @main_thread
+    def onAuthorisationRequired(self, revoked=False):
+        utils.show_error(self, 'Authorisation required!')
+        self.Close()
+
+    @main_thread
     def onAuthorisationCompleted(self, profile):
         if self.state == GUIState.CONNECTED:
             self.SetState(GUIState.OPERATIONAL)

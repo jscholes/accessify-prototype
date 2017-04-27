@@ -28,6 +28,16 @@ class LibraryController(pykka.ThreadingActor):
         })
 
     def log_in(self):
+        access_token = self.config.get('spotify_access_token')
+        refresh_token = self.config.get('spotify_refresh_token')
+        if not access_token or not refresh_token:
+            self._signalman.authorisation_required.send(False)
+        else:
+            self.api_client.authorisation.set_access_token(access_token)
+            self.api_client.authorisation.set_refresh_token(refresh_token)
+            self.load_profile()
+
+    def load_profile(self):
         profile = self.api_client.me()
         logger.info('Logged into Spotify as {0} (account type {1})'.format(profile['id'], profile['product']))
         self._signalman.authorisation_completed.send(profile)

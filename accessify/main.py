@@ -62,18 +62,12 @@ def main():
         print('No Spotify credentials provided.  Please either set the environment variables SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET or create a credentials module with client_id and client_secret variables.')
         return
 
-    access_token = config.get('spotify_access_token')
-    refresh_token = config.get('spotify_refresh_token')
-    if not access_token or not refresh_token:
-        print('You\'re missing either a Spotify access or refresh token in your config file.  Please provide these in the config file located at {0}'.format(config_path))
-        return
-
     try:
         tolk.load()
     except Exception:
         pass
 
-    auth_agent = spotify.webapi.authorisation.AuthorisationAgent(client_id, client_secret, access_token, refresh_token)
+    auth_agent = spotify.webapi.authorisation.AuthorisationAgent(client_id, client_secret)
     spotify_api_client = spotify.webapi.WebAPIClient(auth_agent)
 
     # TODO: Move this to a more appropriate place
@@ -100,7 +94,7 @@ def main():
     psignalman.connection_established.connect(window.onSpotifyConnectionEstablished)
     psignalman.error.connect(window.onSpotifyError)
 
-    # lsignalman.authorisation_required.connect(window.onAuthorisationRequired)
+    lsignalman.authorisation_required.connect(window.onAuthorisationRequired)
     lsignalman.authorisation_completed.connect(window.onAuthorisationCompleted)
     # lsignalman.authorisation_error.connect(window.onAuthorisationError)
 
