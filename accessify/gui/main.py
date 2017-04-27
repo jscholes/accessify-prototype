@@ -150,7 +150,7 @@ class MainWindow(wx.Frame):
     def onAuthorisationRequired(self, revoked=False):
         if self.state in (GUIState.LOADING, GUIState.CONNECTED, GUIState.AUTHORISED, GUIState.OPERATIONAL):
             self.SetState(GUIState.AUTHORISING)
-            self._authorisation_dialog = dialogs.AuthorisationDialog(self, first_run=not revoked)
+            self._authorisation_dialog = dialogs.AuthorisationDialog(self, authorisation_callback=self.library.begin_authorisation, first_run=not revoked)
             result = self._authorisation_dialog.ShowModal()
             if result == wx.ID_CANCEL:
                 wx.MessageBox(MSG_NO_AUTHORISATION, constants.APP_NAME, parent=self, style=wx.ICON_INFORMATION)
@@ -158,10 +158,10 @@ class MainWindow(wx.Frame):
 
     @main_thread
     def onAuthorisationCompleted(self, profile):
-        if self._spotify_error_dialog is not None:
-            self._spotify_error_dialog.EndModal(wx.ID_CLOSE)
-            self._spotify_error_dialog.Destroy()
-            self._spotify_error_dialog = None
+        if self._authorisation_dialog is not None:
+            self._authorisation_dialog .EndModal(wx.ID_CLOSE)
+            self._authorisation_dialog.Destroy()
+            self._authorisation_dialog = None
         if self.state == GUIState.CONNECTED:
             self.SetState(GUIState.OPERATIONAL)
         else:

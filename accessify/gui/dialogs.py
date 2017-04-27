@@ -57,8 +57,9 @@ class SpotifyErrorDialog(wx.Dialog):
 
 
 class AuthorisationDialog(wx.Dialog):
-    def __init__(self, parent, first_run, *args, **kwargs):
+    def __init__(self, parent, authorisation_callback, first_run, *args, **kwargs):
         super().__init__(parent=parent, title=TITLE_SPOTIFY_ERROR, *args, **kwargs)
+        self.callback = authorisation_callback
         self.first_run = first_run
         self._initialiseControls()
         self.Centre()
@@ -88,6 +89,7 @@ class AuthorisationDialog(wx.Dialog):
     def onAuthorise(self, event):
         self.authorise_button.Hide()
         self.cancel_button.SetFocus()
+        self.callback()
 
     def onCancel(self, event):
         self.EndModal(wx.ID_CANCEL)

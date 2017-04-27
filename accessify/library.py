@@ -1,5 +1,6 @@
 from enum import Enum
 import logging
+import webbrowser
 
 import pykka
 from functional import seq
@@ -7,6 +8,7 @@ from functional import seq
 from accessify import structures
 
 from accessify.signalling import Signalman
+from accessify.spotify.webapi import authorisation
 
 
 logger = logging.getLogger(__name__)
@@ -33,9 +35,23 @@ class LibraryController(pykka.ThreadingActor):
         if not access_token or not refresh_token:
             self._signalman.authorisation_required.send(False)
         else:
-            self.api_client.authorisation.set_access_token(access_token)
-            self.api_client.authorisation.set_refresh_token(refresh_token)
-            self.load_profile()
+            self.complete_authorisation(access_token, refresh_token)
+
+    def begin_authorisation(self):
+        auth_callback = self.actor_ref.proxy().on_authorisation_code_received
+        self.authorisation_server = authorisation.OAuthCallbackServer(self.api_client.authorisation.client_id, auth_callback)
+        self.authorisation_server.run_threaded()
+        webbrowser.open(self.authorisation_server.get_authorisation_url(authorisation.ALL_SCOPES))
+
+    def on_authorisation_code_received(self, code):
+        logger.debug('Received auth code: {0}'.format(code))
+        self.api_client.authorisation.fetch_access_token(code, self.authorisation_server.get_redirect_uri())
+        self.load_profile()
+
+    def complete_authorisation(self, access_token, refresh_token):
+        self.api_client.authorisation.set_access_token(access_token)
+        self.api_client.authorisation.set_refresh_token(refresh_token)
+        self.load_profile()
 
     def load_profile(self):
         profile = self.api_client.me()
