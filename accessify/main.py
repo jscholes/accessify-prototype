@@ -1,6 +1,8 @@
 import logging
 import os
 import os.path
+import platform
+import sys
 
 from appdirs import user_config_dir
 import tolk
@@ -46,7 +48,7 @@ def main():
     handler.setFormatter(logging.Formatter('%(name)s: %(message)s'))
     root_logger.addHandler(handler)
 
-    logger.info('Version: {0}'.format(constants.APP_VERSION))
+    log_startup_info()
 
     config_path = os.path.join(config_directory, 'config.json')
     config = load_config(config_path)
@@ -108,6 +110,18 @@ def main():
     save_config(config, config_path)
     tolk.unload()
     logger.info('Application shutdown complete')
+
+
+def log_startup_info():
+    logger.info('Version: {0}'.format(constants.APP_VERSION))
+
+    # Windows info
+    release, version, service_pack, processor_type = platform.win32_ver()
+    uname = platform.uname()
+    logger.info('OS: Windows {0} {1} ({2}) running on {3}'.format(release, service_pack, version, uname.machine))
+
+    # Python info
+    logger.info('Python {0}'.format(sys.version))
 
 
 def load_config(path):
