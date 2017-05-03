@@ -113,8 +113,8 @@ class MainWindow(wx.Frame):
 
     @main_thread
     def onTrackChange(self, track):
-        if track is None:
-            self.UpdateTrackDisplay(unknown_content=True)
+        is_unknown = track is None
+        self.UpdateTrackDisplay(track, unknown_content=is_unknown)
 
     @main_thread
     def onPlaybackStateChange(self, state, track):
