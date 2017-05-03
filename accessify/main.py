@@ -80,7 +80,7 @@ def main():
     spotify_api_client = spotify.webapi.WebAPIClient(auth_agent)
 
     psignalman = playback.PlaybackSignalman()
-    playback_controller = playback.PlaybackController.start(psignalman)
+    playback_controller = playback.PlaybackController.start(psignalman, config)
     playback_proxy = playback_controller.proxy()
 
     lsignalman = library.LibrarySignalman()
@@ -148,6 +148,7 @@ def save_config(config_dict, path):
 default_config = {
     'spotify_access_token': '',
     'spotify_refresh_token': '',
+    'spotify_polling_interval': 60,
 }
 
 

@@ -14,11 +14,12 @@ logger = logging.getLogger(__name__)
 
 
 class EventManager(threading.Thread):
-    def __init__(self, remote_bridge, *args, **kwargs):
+    def __init__(self, remote_bridge, polling_interval, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.setDaemon(True)
 
         self._remote_bridge = remote_bridge
+        self.polling_interval = polling_interval
         self._event_queue = queue.Queue()
         self._callbacks = defaultdict(list)
 
@@ -39,7 +40,7 @@ class EventManager(threading.Thread):
                 if return_immediately:
                     status = self._remote_bridge.get_status()
                 else:
-                    status = self._remote_bridge.get_status(return_after=60)
+                    status = self._remote_bridge.get_status(return_after=self.polling_interval)
                 self._event_queue.put(status)
                 return_immediately = False
             except exceptions.MetadataNotReadyError as e:

@@ -17,9 +17,10 @@ logger = logging.getLogger(__name__)
 class PlaybackController(pykka.ThreadingActor):
     use_daemon_thread = True
 
-    def __init__(self, signalman):
+    def __init__(self, signalman, config):
         super().__init__()
         self._signalman = signalman
+        self.config = config
         self.playback_queue = collections.deque()
         self.current_track = None
         self._connected = None
@@ -31,7 +32,7 @@ class PlaybackController(pykka.ThreadingActor):
             self._signalman.spotify_not_running.send()
             return
 
-        event_manager = spotify.eventmanager.EventManager(self.spotify)
+        event_manager = spotify.eventmanager.EventManager(self.spotify, self.config.get('spotify_polling_interval'))
         self._connect_spotify_events(event_manager)
         event_manager.start()
 
