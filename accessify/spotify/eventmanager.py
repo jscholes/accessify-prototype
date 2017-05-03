@@ -33,6 +33,7 @@ class EventManager(threading.Thread):
     def run(self):
         consume_queue(self._event_queue, self._process_item)
         return_immediately = True
+        metadata_retries = 0
         while True:
             try:
                 if return_immediately:
@@ -41,8 +42,14 @@ class EventManager(threading.Thread):
                     status = self._remote_bridge.get_status(return_after=60)
                 self._event_queue.put(status)
                 return_immediately = False
-            except exceptions.MetadataNotReadyError:
-                return_immediately = True
+            except exceptions.MetadataNotReadyError as e:
+                if metadata_retries >= 3:
+                    metadata_retries = 0
+                    return_immediately = False
+                    self._event_queue.put(e)
+                else:
+                    return_immediately = True
+                    metadata_retries += 1
                 continue
             except exceptions.SpotifyError as e:
                 self._event_queue.put(e)
@@ -84,7 +91,7 @@ class EventManager(threading.Thread):
             self._playback_state = playback_state
 
     def _update_subscribers(self, event_type, context=None):
-        logger.debug('Updating subscribers to {0} with context: {1}'.format(event_type, context))
+        logger.debug('Updating subscribers to {0} with context: {1}'.format(event_type, repr(context)))
         for callback in self._callbacks[event_type]:
             self._update_subscriber(event_type, callback, context)
 

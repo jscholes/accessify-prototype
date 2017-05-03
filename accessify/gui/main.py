@@ -25,6 +25,7 @@ MSG_LOADING = 'Loading...'
 MSG_NO_CONNECTION = '{0} cannot function without the Spotify client.  The application will now exit.'.format(constants.APP_NAME)
 MSG_NO_AUTHORISATION = 'You can\'t use {0} without a Spotify account.  The application will now exit.'.format(constants.APP_NAME)
 MSG_SPOTIFY_NOT_RUNNING = '{0} uses the Spotify client to play content, but it doesn\'t seem to be running.  Please start it up, log into your account and then restart {0}.'.format(constants.APP_NAME)
+MSG_UNKNOWN_CONTENT = 'Unknown Content'
 ERROR_UNPLAYABLE_CONTENT = 'The URI {uri} couldn\'t be played.  The content might not be available in your country or an advert might currently be playing.'
 
 ID_PLAY_PAUSE = wx.NewId()
@@ -89,8 +90,10 @@ class MainWindow(wx.Frame):
             if not self.IsShown():
                 self.Show()
 
-    def UpdateTrackDisplay(self, track):
-        if track is None:
+    def UpdateTrackDisplay(self, track=None, unknown_content=False):
+        if unknown_content:
+            self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, MSG_UNKNOWN_CONTENT))
+        elif track is None:
             self.SetTitle(WINDOW_TITLE)
         else:
             self.SetTitle('{0} - {1}'.format(WINDOW_TITLE, format_track_display(track)))
@@ -110,7 +113,8 @@ class MainWindow(wx.Frame):
 
     @main_thread
     def onTrackChange(self, track):
-        self.UpdateTrackDisplay(track)
+        if track is None:
+            self.UpdateTrackDisplay(unknown_content=True)
 
     @main_thread
     def onPlaybackStateChange(self, state, track):

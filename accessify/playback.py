@@ -74,6 +74,8 @@ class PlaybackController(pykka.ThreadingActor):
     def on_error(self, exception):
         if isinstance(exception, exceptions.ContentPlaybackError):
             self._signalman.unplayable_content.send(exception.uri)
+        elif isinstance(exception, exceptions.MetadataNotReadyError):
+            self._signalman.track_changed.send(None)
         else:
             self._connected = False
             self._signalman.error.send(exception)
