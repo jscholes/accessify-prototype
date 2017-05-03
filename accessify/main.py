@@ -68,6 +68,7 @@ def main():
 
     if not client_id or not client_secret:
         print('No Spotify credentials provided.  Please either set the environment variables SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET or create a credentials module with client_id and client_secret variables.')
+        logger.error('No Spotify credentials provided.')
         return
 
     try:
