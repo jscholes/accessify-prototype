@@ -26,6 +26,8 @@ from accessify import spotify
 
 logger = logging.getLogger(__package__)
 
+LOG_RECORD_FORMAT = '%(levelname)s - %(asctime)s:%(msecs)d:\n%(name)s: %(message)s'
+LOG_DATE_TIME_FORMAT = '%d-%m-%Y @ %H:%M:%S'
 LOG_FILE_DATE_TIME_FORMAT = '%Y_%m_%d-%H_%M_%S'
 
 
@@ -49,7 +51,7 @@ def main():
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.DEBUG)
     handler = logging.FileHandler(log_path, mode='w', encoding='utf-8')
-    handler.setFormatter(logging.Formatter('%(name)s: %(message)s'))
+    handler.setFormatter(logging.Formatter(LOG_RECORD_FORMAT, LOG_DATE_TIME_FORMAT))
     root_logger.addHandler(handler)
 
     log_startup_info()
