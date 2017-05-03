@@ -1,3 +1,4 @@
+from datetime import datetime
 import logging
 import os
 import os.path
@@ -25,6 +26,8 @@ from accessify import spotify
 
 logger = logging.getLogger(__package__)
 
+LOG_FILE_DATE_TIME_FORMAT = '%Y_%m_%d-%H_%M_%S'
+
 
 def main():
     app = wx.App()
@@ -35,13 +38,14 @@ def main():
         return
 
     config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
+    log_directory = os.path.join(config_directory, 'logs')
     try:
-        os.makedirs(config_directory)
+        os.makedirs(log_directory)
     except FileExistsError:
         pass
 
-    log_filename = '{0}.log'.format(constants.APP_NAME.lower())
-    log_path = os.path.join(config_directory, log_filename)
+    log_filename = '{0}.{1}.log'.format(constants.APP_NAME.lower(), datetime.utcnow().strftime(LOG_FILE_DATE_TIME_FORMAT))
+    log_path = os.path.join(log_directory, log_filename)
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.DEBUG)
     handler = logging.FileHandler(log_path, mode='w', encoding='utf-8')
@@ -146,3 +150,4 @@ default_config = {
 
 if __name__ == '__main__':
     main()
+
