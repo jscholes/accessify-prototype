@@ -19,6 +19,7 @@ except ImportError:
     has_credentials = False
 
 from accessify import gui
+from accessify import ipc
 from accessify import library
 from accessify import playback
 from accessify import spotify
@@ -32,11 +33,17 @@ LOG_FILE_DATE_TIME_FORMAT = '%Y_%m_%d-%H_%M_%S'
 
 
 def main():
+    config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
+    hwnd_file = os.path.join(config_directory, '{0}.hwnd'.format(constants.APP_NAME))
+
     app = wx.App()
     instance_checker = wx.SingleInstanceChecker()
     if instance_checker.IsAnotherRunning():
-        # TODO: Focus the existing instance instead
-        gui.utils.show_error(None, 'Accessify is already running.')
+        hwnd = ipc.get_existing_hwnd(hwnd_file)
+        if hwnd:
+            ipc.focus_window(hwnd)
+        else:
+            gui.utils.show_error(None, 'Accessify is already running.')
         return
 
     config_directory = user_config_dir(appname=constants.APP_NAME, appauthor=False, roaming=True)
@@ -88,6 +95,7 @@ def main():
     library_proxy = library_controller.proxy()
 
     window = gui.main.MainWindow(playback_proxy, library_proxy)
+    ipc.save_hwnd(window.GetHandle(), hwnd_file)
 
     psignalman.state_changed.connect(window.onPlaybackStateChange)
     psignalman.track_changed.connect(window.onTrackChange)
