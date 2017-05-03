@@ -5,6 +5,7 @@ import pykka
 import pyperclip
 
 from accessify.signalling import Signalman
+from accessify import spotify
 from accessify.spotify.eventmanager import EventType, PlaybackState
 from accessify.spotify import exceptions
 from accessify.spotify.remote import PlaybackCommand
@@ -16,23 +17,30 @@ logger = logging.getLogger(__name__)
 class PlaybackController(pykka.ThreadingActor):
     use_daemon_thread = True
 
-    def __init__(self, signalman, spotify_remote, event_manager):
+    def __init__(self, signalman):
         super().__init__()
         self._signalman = signalman
-        self.spotify = spotify_remote
-        self._event_manager = event_manager
-
         self.playback_queue = collections.deque()
         self.current_track = None
         self._connected = None
 
     def connect_to_spotify(self):
-        self._event_manager.subscribe(EventType.PLAY, self.on_play)
-        self._event_manager.subscribe(EventType.PAUSE, self.on_pause)
-        self._event_manager.subscribe(EventType.STOP, self.on_stop)
-        self._event_manager.subscribe(EventType.TRACK_CHANGE, self.on_track_change)
-        self._event_manager.subscribe(EventType.ERROR, self.on_error)
-        self._event_manager.start()
+        try:
+            self.spotify = spotify.remote.RemoteBridge(spotify.remote.find_listening_port())
+        except spotify.remote.exceptions.SpotifyNotRunningError as e:
+            self._signalman.spotify_not_running.send()
+            return
+
+        event_manager = spotify.eventmanager.EventManager(self.spotify)
+        self._connect_spotify_events(event_manager)
+        event_manager.start()
+
+    def _connect_spotify_events(self, event_manager):
+        event_manager.subscribe(EventType.PLAY, self.on_play)
+        event_manager.subscribe(EventType.PAUSE, self.on_pause)
+        event_manager.subscribe(EventType.STOP, self.on_stop)
+        event_manager.subscribe(EventType.TRACK_CHANGE, self.on_track_change)
+        event_manager.subscribe(EventType.ERROR, self.on_error)
 
     def on_play(self, track):
         if not self._connected:
@@ -122,5 +130,5 @@ class PlaybackController(pykka.ThreadingActor):
 
 
 class PlaybackSignalman(Signalman):
-    signals = ('state_changed', 'track_changed', 'unplayable_content', 'connection_established', 'error')
+    signals = ('state_changed', 'track_changed', 'unplayable_content', 'connection_established', 'spotify_not_running', 'error')
 
