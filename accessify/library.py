@@ -79,7 +79,7 @@ class LibraryController(pykka.ThreadingActor):
 def deserialize_track(track):
     artists = seq(track['artists']).map(deserialize_artist)
     album = deserialize_album(track['album'])
-    return structures.Track(artists=artists, name=track['name'], uri=track['uri'], album=album, length=track['duration_ms'] / 1000)
+    return structures.Track(artists=artists, name=track['name'], uri=track['uri'], album=album, length=round(track['duration_ms'] / 1000))
 
 
 def deserialize_album(album):

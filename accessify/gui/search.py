@@ -2,9 +2,11 @@ import functools
 
 import wx
 
+from accessify import structures
+
 from accessify.library import SearchType
 from accessify.spotify.utils import is_spotify_uri
-from accessify import structures
+from accessify.utils.formatting import format_seconds
 
 from accessify.gui import speech
 from accessify.gui import utils
@@ -179,7 +181,9 @@ class SearchResultsList:
 
 
 def render_item_text(item):
-    if type(item) in (structures.Track, structures.Album):
+    if isinstance(item, structures.Track):
+        text = '{0} by {1} ({2})'.format(item.name, ', '.join([artist.name for artist in item.artists]), format_seconds(item.length))
+    elif isinstance(item, structures.Album):
         text = '{0} by {1}'.format(item.name, ', '.join([artist.name for artist in item.artists]))
     elif isinstance(item, structures.Artist):
         text = item.name
