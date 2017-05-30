@@ -90,5 +90,5 @@ ENV/
 
 # Project-specific
 accessify/credentials.py
-docs/
+ignored/
 tolk-python/
