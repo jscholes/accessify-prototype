@@ -63,6 +63,7 @@ Low priority:
 
 Other ideas:
 
+<<<<<<< HEAD
 - Copy/paste between playlists and other lists of content in the application (e.g. copy a search result onto a playlist) and cut/paste within the same playlist to reorder tracks.
 - Create our own API for collaborating on a playlist as Spotify currently don't provide one.
 
@@ -114,3 +115,8 @@ Other ideas:
 
 - Shuffle and repeat.  Lots of details to be worked out, it might be best to wait until we have native playback capability to implement them.
 
+=======
+- Copy/paste between playlists and other lists of content in the application (e.g. copy a search result onto a playlist).
+- Create our own API for collaborating on a playlist as Spotify currently don't provide one.
+
+>>>>>>> 14a402986eed2b6294eea0d1ccc7dfa741e825e5
