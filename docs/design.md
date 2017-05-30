@@ -40,7 +40,7 @@ Note: These features should be designed in line with how the Spotify playlists s
 
 High priority:
 
-- Create new playlists.
+- Create new playlists, with the option to make them public or private.
 - List the playlists owned and followed by a user.
 - Delete or rename user-owned playlists.
 - Fetch and browse all tracks in a playlist.
