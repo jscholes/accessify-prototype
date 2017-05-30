@@ -15,7 +15,7 @@ High priority:
 Medium priority:
 
 - Cache results to speed up repeated searches.
-- Store a history of previously-performed searches and autocomplete as the user types.
+- Store a history of previously performed searches and autocomplete as the user types.
 - Opt to display saved albums/tracks at the top of search results.
 
 Low priority:
@@ -27,7 +27,7 @@ Low priority:
 
 Other ideas:
 
-- Show frequently/recently-played content first in results lists.
+- Show frequently/recently played content first in results lists.
 - Use croud-sourced data to provide search suggestions via an API.
 
 ### Playlist Management
@@ -65,4 +65,24 @@ Other ideas:
 
 - Copy/paste between playlists and other lists of content in the application (e.g. copy a search result onto a playlist) and cut/paste within the same playlist to reorder tracks.
 - Create our own API for collaborating on a playlist as Spotify currently don't provide one.
+
+### User Library
+
+High priority:
+
+- Save tracks and albums.
+- List all saved tracks and albums.
+- Remove saved tracks and albums.
+
+Medium priority:
+
+- Sort and filter saved tracks and albums.
+- Browse a list of saved artists, made up of the artists for currently saved tracks and albums plus any artists the user follows.
+- Browse a list of the user's recently played tracks.
+
+Low priority:
+
+- Browse a separate list of artists that the user follows.
+- Follow/unfollow artists.
+- Browse a list of the user's top artists or tracks.
 
