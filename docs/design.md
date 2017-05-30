@@ -86,3 +86,31 @@ Low priority:
 - Follow/unfollow artists.
 - Browse a list of the user's top artists or tracks.
 
+### Browse
+
+- Featured playlists.
+- New releases.
+- Categories and playlists for each category.
+
+### Playback Control
+
+High priority:
+
+- Play/pause, previous/next track, seek backwards/forwards, volume up/down.
+- Copy the Spotify URI for the currently playing track to the clipboard.
+- Transfer playback to an alternative Spotify Connect device (Premium users only).
+- Start playback of a given URI, handling both the standard URI format and HTTP/HTTPS links (open.spotify.com/play.spotify.com/etc).
+
+Medium priority:
+
+- Jump to time in currently playing track.
+- Provide a Windows URI handler to play URIs from the Run dialog, web pages etc, intercepting Spotify's default handling.
+
+Low priority:
+
+- Copy the Spotify URI for the currently playing track to the clipboard including current playback position.
+
+Other ideas:
+
+- Shuffle and repeat.  Lots of details to be worked out, it might be best to wait until we have native playback capability to implement them.
+
