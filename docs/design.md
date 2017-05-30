@@ -20,7 +20,6 @@ Medium priority:
 
 Low priority:
 
-- Bookmark favourite searchs for quick access.
 - Give weights to autocomplete suggestions based on previous search frequency.
 - Browse previous search history.
 - Specify advanced search criteria in a dialog instead of using Spotify search modifiers e.g. artist and year directly.
@@ -129,4 +128,11 @@ Medium priority:
 Other ideas:
 
 - Create a user-friendly UI for obtaining recommendations, which offers check-boxes, dropdowns and the like instead of presenting raw values for the parameters.
+
+### Content Management
+
+- Bookmark favourite searches, tracks, artists, albums and playlists for quick access.
+- Add labels to tracks, albums, artists and playlists e.g. classical, folk, exercise, shower, instrumental etc.
+- Filter content views such as saved tracks based on labels.
+- Tag local media files using metadata obtained from Spotify.
 
