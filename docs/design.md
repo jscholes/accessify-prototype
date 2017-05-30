@@ -114,3 +114,19 @@ Other ideas:
 
 - Shuffle and repeat.  Lots of details to be worked out, it might be best to wait until we have native playback capability to implement them.
 
+### Radio and Recommendations
+
+High priority:
+
+- Access user library, recommendations and mix stations from Last.fm (login required).
+- Access recommendations for Spotify tracks, albums or artists using default recommendations API parameters.
+
+Medium priority:
+
+- Access similar artists and tag radio streams from Last.fm.
+- Create a custom recommendations request, setting parameters such as key, tempo, liveness etc.
+
+Other ideas:
+
+- Create a user-friendly UI for obtaining recommendations, which offers check-boxes, dropdowns and the like instead of presenting raw values for the parameters.
+
