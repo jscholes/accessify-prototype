@@ -96,6 +96,7 @@ Low priority:
 High priority:
 
 - Play/pause, previous/next track, seek backwards/forwards, volume up/down.
+- Add tracks, albums and playlists to the playback queue.
 - Copy the Spotify URI for the currently playing track to the clipboard.
 - Transfer playback to an alternative Spotify Connect device (Premium users only).
 - Start playback of a given URI, handling both the standard URI format and HTTP/HTTPS links (open.spotify.com/play.spotify.com/etc).
@@ -107,6 +108,7 @@ Medium priority:
 
 Low priority:
 
+- Browse and modify the current playback queue.
 - Copy the Spotify URI for the currently playing track to the clipboard including current playback position.
 
 Other ideas:
@@ -123,6 +125,8 @@ High priority:
 Medium priority:
 
 - Access similar artists and tag radio streams from Last.fm.
+- Substitute certain tracks in Last.fm for user-preferred versions.
+
 - Create a custom recommendations request, setting parameters such as key, tempo, liveness etc.
 
 Other ideas:
@@ -133,6 +137,26 @@ Other ideas:
 
 - Bookmark favourite searches, tracks, artists, albums and playlists for quick access.
 - Add labels to tracks, albums, artists and playlists e.g. classical, folk, exercise, shower, instrumental etc.
+- Save labelled content to playlists so they can be accessed from other Spotify devices and apps.
 - Filter content views such as saved tracks based on labels.
 - Tag local media files using metadata obtained from Spotify.
+
+### Application User Experience
+
+High priority:
+
+- Automatically update to new stable and beta releases.
+- Control playback using global hotkeys.
+- Minimise Accessify to the System Tray.
+
+Medium priority:
+
+- Customise the global and local hotkeys assigned to actions.
+- Submit bug reports and log files from within the application.
+
+Low priority:
+
+- Submit bug reports and log files even if the application cannot fully start.
+- File new feature requests and vote on those suggested by other users.
+- Run the application as an installed or portable copy.
 
