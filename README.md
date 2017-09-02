@@ -2,6 +2,8 @@
 
 Accessify is a screen reader-accessible control interface for Spotify on Windows.
 
+Note: This code represents a prototype, written in Python.  Please go to https://github.com/jscholes/accessify for updated code.
+
 ## Running the code
 
 The software is still in its pre-alpha stages, but if you wish to run it and try it out, here's what you'll need to do:
