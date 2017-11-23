@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 TOKEN_URL = 'https://accounts.spotify.com/api/token'
 AUTHORISATION_URL = 'https://accounts.spotify.com/authorize?{params}'
 
-ALL_SCOPES = ['playlist-read-private', 'playlist-read-collaborative', 'playlist-modify-public', 'playlist-modify-private', 'user-follow-modify', 'user-follow-read', 'user-library-read', 'user-library-modify', 'user-read-private', 'user-read-birthdate', 'user-read-email', 'user-top-read', 'user-read-recently-played', 'user-read-playback-state', 'user-modify-playback-state', 'user-read-currently-playing']
+ALL_SCOPES = ['playlist-read-private', 'playlist-read-collaborative', 'playlist-modify-public', 'playlist-modify-private', 'user-follow-modify', 'user-follow-read', 'user-library-read', 'user-library-modify', 'user-read-private', 'user-read-birthdate', 'user-read-email', 'user-top-read', 'user-read-recently-played', 'user-read-playback-state', 'user-modify-playback-state', 'user-read-currently-playing', 'streaming', 'ugc-image-upload']
 CALLBACK_SERVER_PORT = 43612
 
 
